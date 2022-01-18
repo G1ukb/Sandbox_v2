@@ -1,0 +1,10 @@
+- What is Amazon S3?
+- How Amazon S3 works
+- What are buckets in S3?
+- Main Bucket naming rules?
+- S3 objects?
+- S3 Keys?
+- Replication?
+- What steps are required to gain AWS CLI access to an S3 bucket?с
+- How is it possible to control access to S3 resources?
+- What does it mean to delete an object in S3 when versioning is enabled?

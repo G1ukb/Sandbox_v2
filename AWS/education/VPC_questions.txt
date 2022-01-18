@@ -1,0 +1,12 @@
+- What is VPC?
+- What kinds of IP addresses does AWS VPC offer?
+- What happens to different IP address types when an EC2 instance is rebooted, stopped, started?
+- What is elastic ip?
+- What is elastic network interface?
+- How many elastic IPs is it possible to create per account/region?
+- What is CIDR?
+- What is NAT?
+    - What is difference between NAT Gateway and NAT Instance?
+- What is the difference between security groups and network ACLs?
+- What does “local” target mean in terms of an AWS routing table?
+- What is bastion in terms of networking?

@@ -1,0 +1,21 @@
+- What hardware is offered by EC2?
+- What provisioning/billing options are available with EC2?
+- What is EBS?
+- What types of volumes are offered by EC2?
+- What is the difference between AMI and snapshot in terms of EC2?
+- What are regions and availability zones in AWS?
+- (Странный вопрос) How is it possible to install/configure software on a EC2 instance?
+- (Странный вопрос) What keys are created for each EC2 instance? What for?
+- What happens to EC2 instances when they are stopped and started vs re-started?
+- What is the difference between IAM roles and EC2 (VPC) security groups?
+- Is it possible to decrease the size of an existing EBS volume?
+- Is it possible to reuse a EBS volume for multiple instances?
+- How is it possible to get such metadata as current region/AZ from within a running EC2 instance?
+- What are the available elastic load balancer types? What is the key difference between them?
+- What are the key events in EC2 instance lifecycle?
+- How does load balancing works? What are its core components?
+- How is it possible to grant a EC2 instance permissions to access certain AWS resources like S3?
+- What is auto-scaling? How is it related to load balancing?
+
+* Стресс тест лоад балансера
+

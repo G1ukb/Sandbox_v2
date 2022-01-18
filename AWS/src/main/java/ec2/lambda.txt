@@ -1,0 +1,99 @@
+const aws = require('aws-sdk');
+const sqs = new aws.SQS({region: 'eu-west-2'});
+const sns = new aws.SNS({region: 'eu-west-2'});
+
+let responseMsgArray = [];
+let lastMsg = null;
+
+exports.handler = async (event, context, callback) => {
+
+    console.log('Hi');
+    console.log('Received event:', JSON.stringify(event, null, 2));
+
+    let response = {
+        statusCode: 200,
+        body: JSON.stringify(''),
+    };
+
+    var startTime = Date.now();
+    while ((Date.now() - startTime) < 2000) {
+       await receiveOneSQSMsg();
+       await deleteSQSMsg(lastMsg);
+    }
+
+    await publishSNSMsg();
+
+    response.body = responseMsgArray;
+    return response;
+};
+
+async function receiveOneSQSMsg() {
+    const params = {
+        MessageAttributeNames: ["All"],
+        QueueUrl: "https://sqs.eu-west-2.amazonaws.com/045229570143/Task9-uploads-notification-queue",
+        MaxNumberOfMessages: 1,
+        VisibilityTimeout: 0,
+        WaitTimeSeconds: 0
+    };
+
+    let sqsPromise = sqs.receiveMessage(params).promise();
+    await Promise.all([sqsPromise]).then(function (result) {
+        console.log('receiveMessage result');
+        console.log(result);
+        if (result[0].Messages) {
+            let sqsMSG = JSON.parse(result[0].Messages[0].Body).Message;
+            console.log('msg - ' + sqsMSG);
+
+            //Push msg to body to see in return answer all resived msges
+            responseMsgArray.push(JSON.stringify(sqsMSG));
+            lastMsg = result;
+
+        } else {
+            //does nothing in case no messages found
+            console.log('No msgs');
+        }
+    });
+}
+
+async function deleteSQSMsg(result) {
+    console.log('we are in deleteSQSMsg');
+    console.log(result);
+
+    if(result !== null) {
+        var deleteParams = {
+            QueueUrl: "https://sqs.eu-west-2.amazonaws.com/045229570143/Task9-uploads-notification-queue",
+            ReceiptHandle: result[0].Messages[0].ReceiptHandle
+        };
+
+        sqs.deleteMessage(deleteParams, function(err, deleteData) {
+            if (err) {
+                console.log("Delete Error", err);
+            }
+        });
+    }
+}
+
+async function publishSNSMsg() {
+    console.log('we are in publishSNSMsg');
+    console.log(responseMsgArray);
+
+    if(responseMsgArray.length !== 0) {
+        let snsParams = {
+            Message: JSON.stringify(responseMsgArray),
+            TopicArn: 'arn:aws:sns:eu-west-2:045229570143:Task9-uploads-email-notification-topic',
+            MessageAttributes: {'KEY': { DataType: 'String', StringValue: 'Test' },}
+        };
+
+        let snsPromise = sns.publish(snsParams).promise();
+        await Promise.all([snsPromise]).then(function (result) {
+            console.log('published');
+            console.log(result);
+        }).catch(function (error) {
+            console.log("Promise Rejected");
+            console.log(error);
+        });
+    } else {
+        console.log('noghing to publish');
+    }
+
+}

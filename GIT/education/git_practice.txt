@@ -1,0 +1,30 @@
+- Change your system, global, and repository config (add some values). Inspect how it is overridden.
+	(Можешь добавить свои данные: мой пример)
+	[user]
+		name = Hleb Belski
+		email = hleb_belski@epam.com
+
+- Create an account on gitHub and connect to it with intellj  (Later we will use this account as your main account for training.)
+- Make init commit. (you can add Readme.md file only)
+- Create develop branch. Check out on it.
+- Create txt file with 2 rows. Commit.
+- Create a branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existings. Commit.
+- Create a second branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existings. Commit.
+- Go to develop branch.
+- Merge two new branches into development using git merge command.
+- Don’t delete two new branches!
+- Merge develop into master
+- Try to inspect your repository with git log command. Use different options with this command (git log --help)
+- Push all your changes with all your branches to remote repository.
+- Moves to one of the custom brunches. Re-make 2-3 commits to supplement the file.
+  Try to revert to the state before commits like this:
+	-- with saving the changes (after you go to the beginning and save the files, back up the files in the following ways:
+																											--- patch
+																											--- shelve)
+	-- without saving changes
+- try renaming your branch
+- re-commit 2-3 commits and try to rebase it to another custom branch (see the result in the commit history)
+  (read what is the difference between merge and rebase and in what situations we need to use what)
+- re-commit 2-3 commits and try to take the changes made by one commit (middle one) and tries to reapply them as a new commit
+  on the current branch.
+- create a folder named ignored and add any file there. Make it so that the git doesn't want to commit any files that are in this folder
