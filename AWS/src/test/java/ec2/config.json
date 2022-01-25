@@ -1,14 +1,12 @@
 {
-  "aws": {
-    "accessKeyId": "AKIAQVB7EPBP7UIHGME5",
-    "secretKey": "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",
-    "region": "eu-central-1"
-  },
   "SNS": {
     "TopicArn" : "arn:aws:sns:eu-west-2:045229570143:Task9-uploads-notification-topic",
     "EmailArn" : "arn:aws:sns:eu-west-2:045229570143:Task9-email-topic"
   },
   "SQS": {
     "SQS_URL": "https://sqs.eu-west-2.amazonaws.com/045229570143/Task9-uploads-notification-queue"
+  },
+  "S3": {
+    "S3_Name": "self-study-main"
   }
 }

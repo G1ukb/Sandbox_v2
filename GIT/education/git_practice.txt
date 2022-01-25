@@ -8,8 +8,8 @@
 - Make init commit. (you can add Readme.md file only)
 - Create develop branch. Check out on it.
 - Create txt file with 2 rows. Commit.
-- Create a branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existings. Commit.
-- Create a second branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existings. Commit.
+- Create a branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existing. Commit.
+- Create a second branch with any name. Check out on it. Add to txt file 2 rows that rewrite the existing. Commit.
 - Go to develop branch.
 - Merge two new branches into development using git merge command.
 - Don’t delete two new branches!
@@ -20,7 +20,7 @@
   Try to revert to the state before commits like this:
 	-- with saving the changes (after you go to the beginning and save the files, back up the files in the following ways:
 																											--- patch
-																											--- shelve)
+																											--- shelf)
 	-- without saving changes
 - try renaming your branch
 - re-commit 2-3 commits and try to rebase it to another custom branch (see the result in the commit history)

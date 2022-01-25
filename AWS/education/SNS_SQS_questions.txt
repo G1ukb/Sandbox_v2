@@ -1,0 +1,19 @@
+What is Amazon Simple Notification Service (Amazon SNS)?
+What messaging patterns do SNS and SQS implement?
+    Какие шаблоны обмена сообщениями реализуют SNS и SQS?
+What delivery protocols does SNS support?
+How large SQS messages can be? What happens when that limit is exceeded?
+What are the typical scenarios for using SQS?
+What’s the difference between standard and FIFO queues in SQS?
+What is SNS pricing?
+What is SQS pricing?
+What are SNS security best practices?
+What are the security features supported by SNS/SQS?
+What is the anatomy of an SNS message? (атрибуты SNS)
+What can SNS do in case of failing messages?
+    What is Amazon SNS dead-letter queues (DLQs)?
+What is SNS message filtering?
+How is it possible to monitor SNS delivery process?
+What is message lifecycle in SQS?
+What’s the difference between short and long polling in SQS?
+What messaging brokers are API-compatible with SQS? (вопрос не понятен)
