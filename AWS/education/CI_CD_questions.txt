@@ -1,0 +1,15 @@
+What is deployment configuration for the AWS CodeDeploy?
+What is deployment strategies for the AWS CodeDeploy?
+What is deployment application specification for the AWS CodeDeploy?
+What is deployment application for the AWS CodeDeploy?
+What is revision for the AWS CodeDeploy?
+What is deployment group for the AWS CodeDeploy?
+What is stage, action and transition in CodePipeline?
+What is pricing for the AWS CodeCommit/AWS CodeDeploy/AWS CodePipeline services?
+What is CI? What is CD (delivery)? What is CD (deployment)?
+What CodePipeline best practices do you know?
+How would you compare CodeCommit to Git?
+What are the key elements of an app spec in CodeDeploy?
+What are the key elements of a build spec in CodeBuild?
+What AWS services may aid CodeBuild execution? (Ответа не найдено)
+What 3rd party tools and other AWS services may participate CodePipeline execution?
