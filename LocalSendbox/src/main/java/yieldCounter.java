@@ -1,8 +1,14 @@
 public class yieldCounter {
 
     public static void main(String[] args) {
+        Double count = 0.1344;
+        Double startPrice = 0.07173663;
+        Boolean isLong = false;
+        Long margin = 2L;
+        Double percent = 0.02;
+
         Counter counter = new Counter();
-        counter.priceCounter(0.1344,0.0704305, true, 2L, 0.02);
+        counter.priceCounter(count,startPrice, isLong, margin, percent);
     }
 
 }
