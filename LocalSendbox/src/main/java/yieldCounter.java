@@ -2,18 +2,20 @@ public class yieldCounter {
 
     public static void main(String[] args) {
         Counter counter = new Counter();
-        counter.priceCounter(0.0018,54230.0, false);
+        counter.priceCounter(0.1344,0.0704305, true, 2L, 0.02);
     }
 
 }
 
 class Counter {
-    void priceCounter(Double count, Double startPrice, Boolean isLong){
-
-        for (double i = 0.05; i <= 0.25; i = i + 0.05) {
+    void priceCounter(Double count, Double startPrice, Boolean isLong, Long margin, Double percent) {
+        double pricePercent = 0.05;
+        for (double i = percent; i <= percent * 5; i = i + percent) {
             System.out.println("============" + i * 100 + "%%");
-            System.out.println(isLong ? startPrice + (startPrice * (i / 2)) : startPrice - (startPrice * (i / 2)));
-            System.out.println(count * i);
+            System.out.println(isLong ? startPrice + (startPrice * (i / margin)) : startPrice - (startPrice * (i / margin)));
+            System.out.println(count * pricePercent);
+
+            pricePercent += 0.05;
         }
     }
 }
