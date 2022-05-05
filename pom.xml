@@ -13,7 +13,7 @@
         <module>AWS</module>
         <module>DesignPatterns</module>
         <module>GIT</module>
-        <module>initBlockTest.JavaCore</module>
+        <module>JavaCore</module>
         <module>Maven</module>
         <module>REST</module>
         <module>LocalSendbox</module>

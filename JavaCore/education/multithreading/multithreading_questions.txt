@@ -1,0 +1,28 @@
+What are the benefits of using Multithreading? Что по минусам? Когда необходимо юзать?
+What is Thread in Java?
+What are the ways of implementing thread in Java? Почему их несколько? Как отличаются и когда юзаются?
+What is Runnable and Callable Interface? Write the difference between them.
+What's the difference between thread and process?
+What’s the difference between class lock and object lock?
+What's the difference between User thread and Daemon thread? How can we create daemon threads?
+What are the wait() and sleep() methods?
+What’s the difference between notify() and notifyAll()?
+Why wait(), notify(), and notifyAll() methods are present in Object class?
+What is the start() and run() method of Thread class?
+Explain thread pool?
+What’s the purpose of the join() method?
+Explain the meaning of the deadlock and when it can occur?
+Explain volatile variables in Java?
+How do threads communicate with each other?
+Can two threads execute two methods (static and non-static concurrently)?
+What is the purpose of the finalize() method?
+What is the synchronization process? Why use it?
+What is synchronized method and synchronized block? Which one should be preferred?
+What is thread starvation?
+What is Livelock? What happens when it occurs?
+What is BlockingQueue?
+Can you start a thread twice? Жц потоков?
+Explain context switching?
+What is CyclicBarrier and CountDownLatch? Рассмотреть другие блокеры?
+Explain thread priority.
+What do you mean by the ThreadLocal variable in Java?
