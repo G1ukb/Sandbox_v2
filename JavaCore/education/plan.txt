@@ -1,0 +1,20 @@
+- Java Language Fundamentals                                (+)
+- Type of Classes                                           (+)
+- Exceptions in Java                                        (+)
+- Annotations                                               (+)
+- Generics                                                  (+)
+- Java Collections Framework - Basics.                      (+)
+- Java Collections Framework - Lists. Sets.                 (+)
+- Java Collections Framework - Maps. Queues.                (+)
+- Java memory model. Stacks and heap.                       ( )
+- Java garbage collection basics.                           ( )
+- Java IO. Streams, readers, writers. Serialization.        ( )
+- Java NIO. Concepts and basic API.                         ( )
+- Multithreading: classic model and concurrency             ( )
+- Java Collections Framework - Concurrency and performance. ( )
+- Java concurrency utilities. Locks and atomics.            ( )
+- Java class loading basics.                                ( )
+- JMX                                                       ( ) (*optional)
+
+
+

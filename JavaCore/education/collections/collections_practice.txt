@@ -1,0 +1,36 @@
+---- Basic ----
+- Convert array to String with toString and with Arrays.toString
+- Use Collection methods on ArrayList object
+- Implement Iterator and Iterable
+    - Использовать ListIterator
+- Create List from an array with Arrays.asList
+- Remove an element from ArrayList inside for-each loop and get ConcurrentModificationException
+- Implement Comparator and Comparable
+- Use Collections.sort and List.sort
+
+---- List and Set ----
+- Try to add null into ArrayList
+- Show that LinkedList implements List, Queue, Deque
+- Используйте методы коллекций: emptyList, singletonList, немодифицируемый список.
+- Use non-inherited List methods on ArrayList object
+- Try to add null to HashSet
+- Show that LinkedHashSet iterates elements in insertion order
+- Create TreeSet by different constructors
+- Try to add an object that not implements Comparable into TreeSet
+- Show that TreeSet iterates elements in sorted order
+- Implement a class, override equals, hashCode methods, use it with HashSet (Важно, переопределить неправильно, например hash всегда возвращает 1)
+- Implement a class, override equals, hashCode, compareTo methods, use it with TreeSet (Важно, переопределить неправильно, например hash всегда возвращает 1)
+- Use Collections methods: emptySet, singleton, unmodifiableSet
+- Use non-inherited Set methods on HashSet object
+
+---- Queue and Map ----
+- Create HashMap by different constructors
+- Try to add null to HashMap as key and value
+- Create LinkedHashMap by different constructors
+- Create TreeMap by different constructors
+- Use Collections methods: emptyMap, singletonMap, unmodifiableMap
+- Use Map methods on HashMap object
+- Use non-inherited Queue methods on LinkedList object
+- Use non-inherited Deque methods on ArrayDeque object
+- Положить в мапу по 1 ключу 2 одинаковых объекта, но с разным полем, посмотреть что будет содержаться по ключу
+- Попробовать изменить ключ уже положенного элемента (после этого попытаться найти значение) (можно ли его достать?)

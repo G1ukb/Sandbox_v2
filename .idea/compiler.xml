@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Maven" />
-        <module name="Spring" />
-        <module name="SoftProc" />
-        <module name="JavaCore" />
-        <module name="DesignPatterns" />
         <module name="REST" />
         <module name="GIT" />
-        <module name="LocalSendbox" />
+        <module name="JavaCore" />
+        <module name="DesignPatterns" />
+        <module name="Spring" />
+        <module name="SoftProc" />
         <module name="AWS" />
+        <module name="LocalSendbox" />
         <module name="Testing" />
         <module name="SQL" />
       </profile>
