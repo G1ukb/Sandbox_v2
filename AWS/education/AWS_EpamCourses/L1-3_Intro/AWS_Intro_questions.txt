@@ -1,0 +1,36 @@
+Базовые вопросы:
+- Что такое облачные вычисления?
+- Что такое AWS?
+- Что такое EC2?
+- Что такое S3?
+- Что такое SCPs?
+- Что такое IAM?
+- What are the typical use case scenarios for IAM? (Типичный кейс использования IAM)
+- Что такое IAM группы?
+- Что такое Security Groups? (группы безопастности)
+- What are IAM policies? (Что такое политики IAM)
+- Что такое Inline policies? (Политики которые прявязаны конкретно к пользователю (не очень хорошая практика))
+- What is the allow/deny priority order when policies are configured on different levels (group, user,  etc.)?
+    (Порядок вызова приоритетов для определения будет ли обрабатываться запрос от пользователя?)
+- What ways of managing permissions for a given user do you know?
+    (Какие способы управления разрешениями для пользователя вы знаете?)
+- What output formats does AWS CLI support? (Какие форматы вывода поддерживает AWS CLI?)
+- What places can be used by AWS CLI to gather credentials and settings? (Где можно настройть места поиска кредов)
+- How to allow a user to programmatically access AWS resources? (Программный доступ пользователя)
+- Why we don’t use root user and create another one instead? (Почему не использовать root)
+- В каких случаях нам все же необходимо использовать root юзера?
+- Что такое Budgets?
+- Do my account contain unnecessary resources that I’m not using right now, but receive charges from them?
+    (Как посмотреть какие ресурсы активны и кушают)
+- How budget reached notifications work? (Как работают бюджетные нотификации)
+- Какими способами можно настроить политики управления службами (SCP)?
+
+Вопросы которые бы добавил я
+- Что стоит знать при выборе региона AWS? (Соблюдение региональных правил в отношении с данными,
+    близость к клиентам чтобы не было пинга, не все регионы содержат все сервисы, цены варьируются от региона к региону)
+- Каким правилом требуется руководствоваться при наделении пользователей правами доступа (не больше чем необходимо)
+- Может ли один пользователь состоять в разных группах? (Да, при смежных ответственностях пользователь может быть
+    заасайней на несколько групп)
+
+
+

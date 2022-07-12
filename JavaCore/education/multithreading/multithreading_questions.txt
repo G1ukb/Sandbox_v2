@@ -1,28 +1,26 @@
+Определение процесса / Потока / Потоки демоны
+Псевдопараллельность / Минусы псевдопараллельности (схемотично показать способ работы)
 What are the benefits of using Multithreading? Что по минусам? Когда необходимо юзать?
-What is Thread in Java?
+Жизненный цикл потоков / Можно ли стартовать Terminated поток? / В каких случаях поток получает статус Blocked?
+Область видимости ресурсов потоками
+Explain volatile variables in Java? Как работает volitile?
 What are the ways of implementing thread in Java? Почему их несколько? Как отличаются и когда юзаются?
 What is Runnable and Callable Interface? Write the difference between them.
-What's the difference between thread and process?
-What’s the difference between class lock and object lock?
-What's the difference between User thread and Daemon thread? How can we create daemon threads?
+Способы остановки потока? / Остановка Executor с InterruptExeption / Остановка Executor без InterruptExeption
+Приоритет потоков
 What are the wait() and sleep() methods?
 What’s the difference between notify() and notifyAll()?
 Why wait(), notify(), and notifyAll() methods are present in Object class?
-What is the start() and run() method of Thread class?
-Explain thread pool?
-What’s the purpose of the join() method?
-Explain the meaning of the deadlock and when it can occur?
-Explain volatile variables in Java?
+Проблема использования Wait() Stop() Interrupt()?
+What’s the purpose of the join() method? метод yield()
+Deadlocks? Как можно диагностировать дэдлоки в коде? Самый простой пример создания дэдлока (objA: synh(A) synh(B) / objB: synh(B) synh(A))
+Starvation / DeadLock / LiveLock потоков
 How do threads communicate with each other?
-Can two threads execute two methods (static and non-static concurrently)?
 What is the purpose of the finalize() method?
-What is the synchronization process? Why use it?
-What is synchronized method and synchronized block? Which one should be preferred?
-What is thread starvation?
-What is Livelock? What happens when it occurs?
-What is BlockingQueue?
-Can you start a thread twice? Жц потоков?
-Explain context switching?
-What is CyclicBarrier and CountDownLatch? Рассмотреть другие блокеры?
-Explain thread priority.
-What do you mean by the ThreadLocal variable in Java?
+Explain thread pool?
+What is the synchronization process? Why use it? Что можно передать в synchronized блок?
+What’s the difference between class lock and object lock?
+What is BlockingQueue? Барьеры / Мониторы / Что такое критическая секция?
+
+* happens before
+* 4 ядра на 12 потоков или 4 ядра на 4 потока (кто быстрее)

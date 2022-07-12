@@ -9,7 +9,7 @@
 - Java memory model. Stacks and heap.                       (+)
 - Java garbage collection basics.                           (+)
 - Java IO. Streams, readers, writers. Serialization.        (+)
-- Java NIO. Concepts and basic API.                         ( )
+- Java NIO. Concepts and basic API.                         (+)
 - Multithreading: classic model and concurrency             ( )
 - Java Collections Framework - Concurrency and performance. ( )
 - Java concurrency utilities. Locks and atomics.            ( )
