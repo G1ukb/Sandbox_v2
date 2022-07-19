@@ -1,12 +1,12 @@
 # 1.1 Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns. #
 
-[//]:<>(1.Commit code to a repository and invoke build, test and/or deployment actions)
+[//]:# (1.Commit code to a repository and invoke build, test and/or deployment actions)
 
 <details>
     <summary>
         <b><big><big>
             1.Commit code to a repository and invoke build, test and/or deployment actions
-            (Обзор AWS пайплайна и сервисов которые помогают выстроить грамотный CI/CD)
+            <br>(Обзор AWS пайплайна и сервисов которые помогают выстроить грамотный CI/CD)
         </big></big></b>
     </summary>
 
@@ -61,14 +61,15 @@
 ![](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2020/09/30/Screen-Shot-2020-09-30-at-6.05.53-PM.png)
 
 </details>
+<br>
 
-[//]:<>(2.Use labels and branches for version and release management)
+[//]:# (2.Use labels and branches for version and release management)
 
 <details>
     <summary>
         <b><big><big>
             2.Use labels and branches for version and release management
-            (Обзор подходов к версианированию CI/CD)
+            <br>(Обзор подходов к версианированию CI/CD)
         </big></big></b>
     </summary>
 
@@ -130,14 +131,15 @@ GitFlow включает в себя создание нескольких ур�
 ![](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2019/02/12/gitflow-Copy-of-Page-1-1.png)
 
 </details>
+<br>
 
-[//]:<>(3.Use AWS CodePipeline to orchestrate workflows against different environments)
+[//]:# (3.Use AWS CodePipeline to orchestrate workflows against different environments)
 
 <details>
     <summary>
         <b><big><big>
             3.Use AWS CodePipeline to orchestrate workflows against different environments
-            (Обзор типов развертки)
+            <br>(Обзор типов развертки)
         </big></big></b>
     </summary>
 
@@ -168,8 +170,9 @@ GitFlow включает в себя создание нескольких ур�
 
 
 </details>
+<br>
 
-[//]:<>(4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, and AWS 
+[//]:# (4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, and AWS 
 CodeDeploy for CI/CD purposes)
 
 <details>
@@ -177,7 +180,7 @@ CodeDeploy for CI/CD purposes)
         <b><big><big>
             4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, 
             and AWS CodeDeploy for CI/CD purposes 
-            (Обзор порядка и этапов использования сервисов при настройке пайплайна)
+            <br>(Обзор порядка и этапов использования сервисов при настройке пайплайна)
         </big></big></b>
     </summary>
 
@@ -195,14 +198,15 @@ CodeDeploy for CI/CD purposes)
 6. Создание нового AWS CodePipeline (настроить AWS CodeCommit/CodeBuild) и добавить CodeDeploy
 
 </details>
+<br>
 
-[//]:<>(5.Perform a roll back plan based on application deployment policy)
+[//]:# (5.Perform a roll back plan based on application deployment policy)
 
 <details>
     <summary>
         <b><big><big>
             5. Perform a roll back plan based on application deployment policy
-            (Обзор откатов развертывания в зависимости от выбора политики развертывания)
+            <br>(Обзор откатов развертывания в зависимости от выбора политики развертывания)
         </big></big></b>
     </summary>
 
@@ -227,4 +231,4 @@ CodeDeploy for CI/CD purposes)
 и следуя инструкциям по повторному развертыванию версии.
 
 </details>
-
+<br>

@@ -12,3 +12,8 @@ What is Lambda concurrency?
 What kinds of Lambda concurrency allocations are there?
 What AWS resources can Lambda access? How?
 What are the advantages of API Gateway endpoints over traditional web applications?
+
+####
+Дополнительные вопросы
+
+Что такое лямбда?

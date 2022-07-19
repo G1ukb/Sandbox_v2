@@ -5,66 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/D1_Deployment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_2.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_3.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task10.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task_10_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task_10_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Report_4.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Task_4_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Task_4_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task5.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task6.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task_6_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task_6_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task7.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task_7_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task_7_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task8.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task_8_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task_8_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task9.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task_9_Practice.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task_9_Theory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_questions_homework.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Intro_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/CI_CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/CI_CD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/CI_CD_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/CI_CD_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/CloudFormation.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/CloudFormation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/CloudFormation_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/CloudFormation_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/EC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/EC2_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/RDS_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/S3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/S3_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/S3_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/SNS_SQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/SNS_SQS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/SNS_SQS_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/SNS_SQS_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/Serverless_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/VPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/VPC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/VPC_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/VPC_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/app.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/es2DeployScript.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/lambda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/src/test/java/ec2/upload/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/plan.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticContainerService(ECS).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/D1_Deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS_questions.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +47,14 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -321,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651743127586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Started working on AWS certification, put Epam AWS courses in order">
+      <created>1657632513602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657632513602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -409,7 +379,8 @@
     <MESSAGE value="Added theory answers for aws parts 7 - 9&#10;AWS code was refactored to exclude the use of AWS credits in the open" />
     <MESSAGE value="Added theory answers for aws parts 10 - 11" />
     <MESSAGE value="Continue to develop the training program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue to develop the training program" />
+    <MESSAGE value="Started working on AWS certification, put Epam AWS courses in order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on AWS certification, put Epam AWS courses in order" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">
