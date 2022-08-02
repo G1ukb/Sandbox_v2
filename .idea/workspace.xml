@@ -5,21 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticContainerService(ECS).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/education/BasicStructureComponents.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/education/RxJs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/D1_Deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/RDS_questions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +183,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Angular/src/angular-app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14526129" />
     <property name="project.structure.side.proportion" value="0.28423238" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="ts.external.directory.path" value="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\AWS\src\test\java\ec2\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -183,7 +208,7 @@
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\AWS\education\AWS_EpamCourses\L7-CloudFormation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CollectionMain">
+  <component name="RunManager">
     <configuration name="AnnotationDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="annotations.AnnotationDemo" />
       <module name="JavaCore" />
@@ -231,13 +256,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CollectionMain" />
-        <item itemvalue="Application.AnnotationDemo" />
-        <item itemvalue="Application.JavaCore" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -255,6 +273,7 @@
       <workItem from="1643184301023" duration="10044000" />
       <workItem from="1643208186989" duration="8000" />
       <workItem from="1643367538425" duration="98000" />
+      <workItem from="1659286396644" duration="1741000" />
     </task>
     <task id="LOCAL-00001" summary="Added all modules from sandbox v1">
       <created>1642504299544</created>
@@ -291,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657632513602</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working on AWS certification">
+      <created>1658267682905</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658267682905</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -373,6 +399,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added all modules from sandbox v1" />
@@ -380,7 +407,8 @@
     <MESSAGE value="Added theory answers for aws parts 10 - 11" />
     <MESSAGE value="Continue to develop the training program" />
     <MESSAGE value="Started working on AWS certification, put Epam AWS courses in order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on AWS certification, put Epam AWS courses in order" />
+    <MESSAGE value="Working on AWS certification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on AWS certification" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">

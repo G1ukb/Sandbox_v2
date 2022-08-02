@@ -15,6 +15,7 @@
         <module name="SoftProc" />
         <module name="AWS" />
         <module name="LocalSendbox" />
+        <module name="Angular" />
         <module name="Testing" />
         <module name="SQL" />
       </profile>

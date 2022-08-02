@@ -1,0 +1,26 @@
+<div class="cardBorder">
+  <mat-grid-list cols="4" rowHeight="150px">
+
+    <mat-grid-tile colspan="3" rowspan="1">
+      <div class="card-grid-left-panel">
+        <h2>{{title}}</h2>
+        {{description}}
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <div class="card-grid-right-panel">
+        <b> authors: </b> {{authors}} <br>
+        <b> duration: </b> {{duration | timePipe}} <br>
+        <b> creationDate: </b> {{creationDate | date: 'dd.MM.yyyy'}} <br>
+
+        <app-button [buttonText]="buttonText"
+                    [iconName]="iconName"
+                    [isEditable]="isEditable">
+        </app-button>
+      </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</div>

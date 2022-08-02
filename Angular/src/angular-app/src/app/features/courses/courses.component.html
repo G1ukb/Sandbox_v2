@@ -1,0 +1,35 @@
+<app-header></app-header>
+<ul>
+  <span *ngFor="let course of courses">
+    <app-course-card [creationDate]="course.creationDate"
+                     [authors]="course.authors"
+                     [duration]="course.duration"
+                     [description]="course.description"
+                     [title]="course.title"
+
+                     [iconName]="course.iconName"
+                     [buttonText]="'Show course'"
+                     [isEditable]="course.isEditable">
+    </app-course-card>
+  </span>
+</ul>
+
+<div class="courseConfirmButton">
+  <button (click)="onPress()"
+          style="margin-left: 25px; padding: 10px"
+          class="btn btn-primary">
+    Don't press this button
+  </button>
+</div>
+
+<div id="modalRender" *ngIf="displayModal">
+  <app-modal-window [title]="'Why did you press this button'"
+                    [message]="'Now this button won\'t do anything else, it\'s offended. admit now that you pressed it on purpose'"
+                    [okButtonText]="'I agree'"
+                    [cancelButtonText]="'I didn\'t do anything wrong'"
+                    [displayStyle]="displayStyle"
+                    (displayStyleEmitter)="modalChange($event)"
+                    (modalWindowOutput)="modalOutput($event)">
+  </app-modal-window>
+</div>
+
