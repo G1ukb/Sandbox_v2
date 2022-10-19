@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface FirstAnnotation {
+public @interface CustomAnnotations {
     String value() default "This is an first annotation";
 }

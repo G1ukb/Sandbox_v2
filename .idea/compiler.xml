@@ -15,10 +15,13 @@
         <module name="SoftProc" />
         <module name="AWS" />
         <module name="LocalSendbox" />
-        <module name="Angular" />
-        <module name="Testing" />
         <module name="SQL" />
+        <module name="Testing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Angular" target="1.8" />
+      <module name="Interview" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

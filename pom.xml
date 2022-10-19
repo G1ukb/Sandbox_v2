@@ -21,7 +21,6 @@
         <module>Spring</module>
         <module>SQL</module>
         <module>Testing</module>
-        <module>Angular</module>
     </modules>
 
     <build>

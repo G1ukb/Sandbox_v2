@@ -3,30 +3,31 @@ package annotations;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Method;
+import java.util.concurrent.Callable;
 
-public class AnnotationDemo {
+public class CustomAnnotationDemo {
 
     public static void main(String[] args) {
-        readAnnotationOn(AnnotationDemo.class.getMethods());
+        readAnnotationOn(CustomAnnotationDemo.class.getMethods());
     }
 
-    @FirstAnnotation
+    @CustomAnnotations
     public void firstMethod() {
         System.out.println("first method");
     }
 
-    @FirstAnnotation(value = "This is an first annotation used by second method")
+    @CustomAnnotations(value = "This is an first annotation used by second method")
     public void secondMethod() {
         System.out.println("second method");
     }
 
     private static void readAnnotationOn(Method[] methods) {
         try {
-            for (AnnotatedElement element: methods) {
+            for (AnnotatedElement element : methods) {
                 Annotation[] annotations = element.getAnnotations();
                 for (Annotation annotation : annotations) {
-                    if (annotation instanceof FirstAnnotation) {
-                        System.out.println("Welcome msg is: " + ((FirstAnnotation) annotation).value());
+                    if (annotation instanceof CustomAnnotations) {
+                        System.out.println("Welcome msg is: " + ((CustomAnnotations) annotation).value());
                     }
                 }
             }

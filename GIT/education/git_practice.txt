@@ -28,3 +28,6 @@
 - re-commit 2-3 commits and try to take the changes made by one commit (middle one) and tries to reapply them as a new commit
   on the current branch.
 - create a folder named ignored and add any file there. Make it so that the git doesn't want to commit any files that are in this folder
+
+Запомнить гит команду которая отфильтрует все коммиты из коммит пула только принадлежащую активному пользователю (задается по маске)
+git for-each-ref --format=' %(authorname) %09 %(refname)' --sort=authorname | Select-String 'Belski'
