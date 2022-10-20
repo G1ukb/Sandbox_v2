@@ -5,127 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaCore/education/javaCore_eng.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REST/education/REST_ru.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/education/BasicStructureComponents.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/education/RxJs.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/course/course.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/javaCore_ru.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/course/course.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/course/course.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/course/course.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/course-card/course-card.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/course-card/course-card.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/course-card/course-card.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/course-card/course-card.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/courses.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/courses.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/courses.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/courses.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/courses/courses.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/features/registration/registration.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/button/button.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/button/button.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/button/button.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/button/button.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/header/header.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/header/header.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/header/header.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/header/header.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/info/info.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/info/info.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/info/info.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/info/info.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/modal-window/modal-window.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/modal-window/modal-window.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/modal-window/modal-window.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/modal-window/modal-window.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/search/search.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/search/search.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/search/search.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/components/search/search.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/shared-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/app/shared/shared.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/assets/svg/Logo.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/angular-app/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GIT/education/git_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GIT/education/git_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/annotations/annotation_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/annotation_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/annotations/annotations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/annotations/annotations_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/collections.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/collections/collections.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/collections/collections_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/collections_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/collections/collections_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/exeptions/exeptions_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/exeptions_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/exeptions/exeptions_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/fundomentals/javaCore.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/fundomentals/javaCore_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/javaCore_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/fundomentals/javaCore_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/questions_all_in_one.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/fundomentals/typeOfClasses.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/fundomentals/typeOfClasses_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/gcAndJmm/gcAndJmm.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/gcAndJmm.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/gcAndJmm/gcAndJmm_practice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/gcAndJmm/gcAndJmm_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/generics/generics.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/generics/generics_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/generics_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/generics/generics_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/io_nio_seroalization/io_nio_seroalization_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/io_nio_serialization_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/io_nio_seroalization/io_nio_seroalization_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_practice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/practice/multithreading_practice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/multithreading/multithreading_questions_homework.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/education/plan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/annotations/AnnotationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/annotations/CustomAnnotationDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/annotations/FirstAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/annotations/CustomAnnotations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/collections/CollectionMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/initBlockTest/JavaCore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/annotations/AnnotationDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/annotations/FirstAnnotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/collections/CollectionMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/initBlockTest/InitBlockTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/initBlockTest/JavaCore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL/education/sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/education/sql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoftProc/education/softProcesses.md" beforeDir="false" afterPath="$PROJECT_DIR$/SoftProc/education/softProcesses.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/education/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/education/testing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/education/testing_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/education/testing_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST/education/rest_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/REST/education/REST_questions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST/education/rest_theory.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658267682905</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Preparation for D3, actualize knowledge's regarding Java core">
+      <created>1666180304752</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666180304752</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -503,7 +393,8 @@
     <MESSAGE value="Continue to develop the training program" />
     <MESSAGE value="Started working on AWS certification, put Epam AWS courses in order" />
     <MESSAGE value="Working on AWS certification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on AWS certification" />
+    <MESSAGE value="Preparation for D3, actualize knowledge's regarding Java core" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparation for D3, actualize knowledge's regarding Java core" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">
