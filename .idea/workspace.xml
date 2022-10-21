@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/REST/education/REST_ru.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REST/education/rest_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/REST/education/REST_questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REST/education/rest_theory.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftProc/education/softProcesses.md" beforeDir="false" afterPath="$PROJECT_DIR$/SoftProc/education/SoftSkills_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftProc/education/softProcesses_questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SoftProc/education/questions_all_in_one.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,15 +141,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\JavaCore\education\collections" />
@@ -303,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666180304752</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Preparation for D3, actualize knowledge's regarding REST api">
+      <created>1666271118621</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666271118621</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -394,7 +400,8 @@
     <MESSAGE value="Started working on AWS certification, put Epam AWS courses in order" />
     <MESSAGE value="Working on AWS certification" />
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding Java core" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation for D3, actualize knowledge's regarding Java core" />
+    <MESSAGE value="Preparation for D3, actualize knowledge's regarding REST api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparation for D3, actualize knowledge's regarding REST api" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">

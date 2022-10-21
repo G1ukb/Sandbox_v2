@@ -1,4 +1,21 @@
------ Software development process -----
+[//]:# (SOFT skills)
+
+<details>
+    <summary>
+        <b><big><big><big>
+            SOFT skills
+        </big></big></big></b>
+    </summary>
+
+[//]:# (Software development process)
+<br>
+<details>
+<summary>
+    <b><big><big><big>
+         Software development process 
+    </big></big></big></b>
+</summary>
+
 - Что такое Software development process (SDP/SDLC)
 - Шаги SDLC
     - 1. Анализ и планирование
@@ -26,7 +43,23 @@
         - Ordering Rule (Выстраивание порядка)
 - Работа в команде в разработке программного обеспечения
 
------ EngX Bootcamp -----
+- Среды разработки
+- CI/CD
+    - CI
+    - CD
+- Тулы для CI/CD
+
+</details>
+
+[//]:# (EngX Bootcamp)
+<br>
+<details>
+<summary>
+    <b><big><big><big>
+         EngX Bootcamp
+    </big></big></big></b>
+</summary>
+
 - Что такое EngX Bootcamp
 - Engineering Culture
 - Продолжительность цикла разработки
@@ -41,9 +74,6 @@
 - Code Review
 - Качество продукта
 
------ Дополнительно -----
-- Среды разработки
-- CI/CD
-    - CI
-    - CD
-- Тулы для CI/CD
+</details>
+
+</details>
