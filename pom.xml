@@ -21,6 +21,8 @@
         <module>Spring</module>
         <module>SQL</module>
         <module>Testing</module>
+        <module>Architecture</module>
+        <module>Leadership</module>
     </modules>
 
     <build>

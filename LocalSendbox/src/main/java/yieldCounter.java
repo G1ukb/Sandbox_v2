@@ -11,7 +11,6 @@ public class yieldCounter {
         Counter counter = new Counter();
         counter.priceCounter(count,startPrice, currPrice, isLong, margin, percent);
     }
-
 }
 
 class Counter {
