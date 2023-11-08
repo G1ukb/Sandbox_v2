@@ -19,12 +19,14 @@
         <module name="REST" />
         <module name="GIT" />
         <module name="AWS" />
+        <module name="LocalSandbox" />
         <module name="Testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Angular" target="1.8" />
       <module name="Interview" target="1.8" />
+      <module name="LocalSendbox" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
