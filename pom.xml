@@ -23,6 +23,7 @@
         <module>Testing</module>
         <module>Architecture</module>
         <module>Leadership</module>
+        <module>Leetcode</module>
     </modules>
 
     <build>

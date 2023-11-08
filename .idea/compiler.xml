@@ -13,6 +13,7 @@
         <module name="DesignPatterns" />
         <module name="Spring" />
         <module name="SoftProc" />
+        <module name="Leetcode" />
         <module name="LocalSendbox" />
         <module name="SQL" />
         <module name="REST" />
