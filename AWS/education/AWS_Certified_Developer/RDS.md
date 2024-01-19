@@ -59,7 +59,7 @@ RDS означает службу реляционной базы данных. 
 </details>
 <br>
 
-[//]:# (What is RDS Read replicas? Read replicas vs Multi AZ?)
+[//]:# (What is RDS Read replicas? Read replicas vs Multi AZ vs Multi-Region deployments?)
 
 <details>
     <summary>
@@ -68,36 +68,29 @@ RDS означает службу реляционной базы данных. 
         </big></big></b>
     </summary>
 
-**Read replicas - специальные readonly копии основной базы**  
-- До 5 реплик чтения
-- В пределах AZ, через AZ или кросс-регион
-- Репликация выполняется асинхронно, поэтому операции чтения в конечном итоге непротиворечивы.
-- Реплики могут быть повышен до их собственная БД
-- Приложения должны обновить соединение строка для чтения реплики
+Amazon RDS Read Replicas provide enhanced performance and durability 
+for Amazon RDS database (DB) instances. 
+They make it easy to elastically scale out beyond the capacity 
+constraints of a single DB instance for **read-heavy database workloads**. 
 
-**Пример использования**
+You can create one or more replicas 
+of a given source DB Instance and serve high-volume application
+read traffic from multiple copies of your data
 
-У вас есть приложение на которое оказывается большая нагрузка. 
-Вы хотите провести тест нагрузки. 
-Вы создаете READ REPLICA для выполнения рабочей нагрузки
-Работающее основное приложение остается нетронутым и работает в спокойном режиме
+![img](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png)
 
-**Синхронная репликация (Multi AZ)**
-- Одно DNS-имя — автоматическое переключение приложения в режим ожидания
-- Повышение доступности
-- Аварийное переключение в случае потери AZ, потери сети, экземпляра или сбоя хранилища
-- Нет ручного вмешательства в приложения (переключение происходит автоматически средствами AWS)
-- Не используется для масштабирования
-- Репликация в нескольких зонах доступности предоставляется бесплатно.
-- Примечание. Реплики чтения должны быть настроены как несколько 
-  зон доступности для аварийного восстановления (DR).
+Read replicas vs Multi AZ vs Multi-Region deployments
 
-**Работа с нулевым временем простоя (нет необходимости останавливать БД) 
-  при синхронной репликации**
-- При замене базы данных происходит следующее.
-- Делается снимок БД
-- Новая БД восстанавливается из снимка в новой AZ
-- Установлена синхронизация между двумя базами данных
+Multi-AZ deployments
+  - **Main purpose is high availability**
+
+Multi-Region deployments
+  - **Main purpose is disaster recovery and local performance**
+
+Read replicas
+  - **Main purpose is scalability**
+
+https://aws.amazon.com/rds/features/read-replicas/?nc1=h_ls
 
 </details>
 <br>
@@ -216,6 +209,198 @@ Amazon описывает следующие юз кейсы использов�
 - Сетевой вход/выход должен быть зашифрован с использованием SSL.
 - IAM для централизованного управления пользователями вместо БД
 - Может использовать роли IAM и экземпляр EC2. профили для легкой интеграции
+
+</details>
+<br>
+
+[//]:# (What is difference between OLTP and OLAP?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is difference between OLTP and OLAP?
+        </big></big></b>
+    </summary>
+
+OLTP - Online Transaction Processing - processes data from
+  transactions in ral-time
+
+OLAP - Online Analytics Processing - process queries to analuze 
+  historical data
+
+</details>
+<br>
+
+[//]:# (Is RDS suitable for OLTP and OLAP?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Is RDS suitable for OLTP and OLAP?
+        </big></big></b>
+    </summary>
+
+Yes for OLTP (because of transactions processing)
+
+No for OLAP (there are another services for processing data analysis (RedShift))
+
+</details>
+<br>
+
+[//]:# (What is RDS Proxy? How we can increase ab availability?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is RDS Proxy? How we can increase ab availability?
+        </big></big></b>
+    </summary>
+
+RDS Proxy have these pluses: 
+- Serverless and scales automatically database connections
+- Preserves (Сохраняет) app connections during failover
+- Detects fail-over and routes requests
+- Deployable over Multu-AZ
+
+</details>
+<br>
+
+[//]:# (What is MemoryDB?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is MemoryDB? (Used in redis) ElastiCache vs MemoryDB
+        </big></big></b>
+    </summary>
+
+1. In-Memory Database
+2. Use cases - online gaming with millions users
+3. MemoryDB vs ElastiCashe
+  MemoryDB store whole dataset in memory without database
+  ElastiCache is an in-memory cache for DBs
+  
+</details>
+<br>
+
+[//]:# (How RDS DB snapshot works?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How RDS DB snapshot works?
+        </big></big></b>
+    </summary>
+
+1. User initiated
+2. Point-in-time snapshot
+3. no retention period
+4. used to back up your DB instance to a known state and restore
+   to that specific state at any time
+
+</details>
+<br>
+
+[//]:# (What two steps should you take to reduce the RDS CPU utilization?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What two steps should you take to reduce the RDS CPU utilization?
+        </big></big></b>
+    </summary>
+
+1. Create an ElastiCache cluster and use this to cache your most
+   frequently read blog posts.
+2. Create multiple RDS read replicas and point multiple EC2 
+   instances to these read replicas, thereby spreading the load.
+
+Amazon ElastiCache improves the performance of web applications 
+  by allowing you to retrieve information from a fast,
+  managed, in-memory system, instead of relying entirely on slower 
+  disk-based databases.
+
+Amazon RDS Read Replicas make it easy to elastically scale out beyond 
+  the capacity constraints of a single DB instance for read-heavy 
+  database workloads.
+
+</details>
+<br>
+
+[//]:# (Can we encrypt an existing AMI that is unencrypted? what we should do?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Can we encrypt an existing AMI that is unencrypted? what we should do?
+        </big></big></b>
+    </summary>
+
+You cannot add encryption to an existing AMI. 
+Instead, you will need to create a copy and specify that the copy has encryption enabled.
+
+</details>
+<br>
+
+[//]:# (How we improve performance of RDS db?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How we improve performance of RDS DB?
+        </big></big></b>
+    </summary>
+
+- ElastiCache for **Memcached** can be used to improve read performance of databases;
+but it does not have the ability to sort and rank query results.
+- ElastiCache for **Redis** can be used to improve read performance of databases, 
+and it also has the ability to sort and rank query results.
+- Add a read replica to improve performance for read queries.
+(A read replica will improve performance for read-only queries
+to an RDS database.)
+
+</details>
+<br>
+
+[//]:# (RDS vs DynamoDB?)
+
+<details>
+    <summary>
+        <b><big><big>
+            RDS vs DynamoDB?
+        </big></big></b>
+    </summary>
+
+RDS is relative db like MySQL, postgresSQl
+  - not so high scalability as DynamoDB
+  - Amazon RDS provides a cost-effective way to manage relational databases in the cloud
+
+DynamoDB is a key-value and document database 
+that delivers single-digit millisecond performance at any scale.
+  - features flexibility, scalability, and performance.
+  - offers high availability out of the box with no need for setup or configuration.
+  - automatically replicates your data across multiple Availability Zones
+
+https://cloudacademy.com/blog/amazon-rds-vs-dynamodb-12-differences/
+
+</details>
+<br>
+
+[//]:# (S3 vs DynamoDB?)
+
+<details>
+    <summary>
+        <b><big><big>
+            S3 vs DynamoDB?
+        </big></big></b>
+    </summary>
+
+S3 is a storage solution suitable for images, 
+documents, and other files or objects that can be accessed 
+by multiple users and services.
+
+DynamoDB is a NoSQL database and not a 
+suitable place to store images and text documents.
 
 </details>
 <br>

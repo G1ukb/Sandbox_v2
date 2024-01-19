@@ -55,31 +55,50 @@
         </big></big></b>
     </summary>
 
-Lambda@Edge - глобальная функция которая интегрируется вместе с CDN CloudFront и помогает
-обрабатывать и изменять запросы и ответы на лету.
+Lambda@Edge is a feature of Amazon CloudFront that allows you 
+to run code closer to users of your application, 
+which improves performance and reduces latency. 
+It’s an extension of AWS Lambda that lets you deploy Python and Node.js 
+functions at Amazon CloudFront edge locations.
 
-**Преимущества:**
-- Вы можете использовать Lambda для изменения запросов и ответов CloudFront
-- Вы также можете генерировать ответы зрителям, даже не отправляя запрос источнику
-- Работает как глобальная AWS Lambda не зависящая от региона
-- Создание более отзывчивого приложение
-- Настройка содержимого request и response
+- You can customize the content that your CloudFront distribution delivers 
+to your end users.
+- It allows you to run your code in response to events generated 
+by the Amazon CloudFront content delivery network (CDN).
+- You don’t have to provision or manage infrastructure in multiple locations 
+around the world.
+- It can automatically scale and run your code at AWS locations around the world.
+- It supports a limited set of runtimes and features.
 
-**Как это работает:**
-Клиент <---> CloudFront <---> Приложение
-CloudFront выступает как прокси и позволяет перехватить и изменить любой req и resp
+**Lambda@Edge can be used for various purposes such as website security,
+real-time image transformation, intelligent bot mitigation,
+search engine optimization, and more.**
 
-**Варианты использования**
-- Безопасность и конфиденциальность веб-сайта
-- Динамическое веб-приложение 
-- Поисковая оптимизация (SEO) 
-- Интеллектуальная маршрутизация между источниками и центрами обработки данных 
-- Предотвращение ботов в конечной точке 
-- Преобразование изображений в реальном времени 
-- A/B-тестирование
-- Аутентификация и авторизация пользователей
-- Приоритизация пользователей 
-- Отслеживание пользователей и аналитика
+For example, you can trigger a Lambda function 
+to add HTTP security headers on all origin responses without 
+having to modify your application code on your origin.
+
+</details>
+<br>
+
+[//]:# (Lambda@Edge vs CloudFront Functions?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Lambda@Edge vs CloudFront Functions
+        </big></big></b>
+    </summary>
+
+In summary, CloudFront Functions are ideal for lightweight, 
+short-running functions and are executed at the edge locations closest to the user. 
+
+They are more suitable for simple request transformations. 
+On the other hand, Lambda@Edge functions are more suitable 
+for compute-intensive workloads and provide more features 
+along with an increased execution time capability. 
+
+They are executed at Regional Edge Locations in major AWS Regions.
 
 </details>
 <br>
@@ -348,4 +367,467 @@ Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface))  ---> (Dest
 - Размер переменных среды: 4 КБ.
 
 </details>  
+<br>
+
+[//]:<>(What kinds of Lambda concurrency allocations are there?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What kinds of Lambda concurrency allocations are there?
+        </big></big></b>
+    </summary>
+
+Доступны два типа управления параллелизмом:
+
+**Зарезервированный параллелизм** — зарезервированный параллелизм
+гарантирует максимальное количество одновременных экземпляров для функции.
+Когда функция зарезервировала параллелизм, никакая другая функция
+не может использовать этот параллелизм.
+
+**Предоставленный параллелизм**. - Предоставленный параллелизм
+инициализирует запрошенное количество сред выполнения,
+чтобы они были готовы немедленно реагировать на вызовы вашей функции.
+
+</details>
+<br>
+
+[//]:<>(What resources trigger Lambda? How?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What resources trigger Lambda? How?
+        </big></big></b>
+    </summary>
+
+Lambda, Api Gateway, DynamoDB, S3, SNS, SQS
+
+By event
+
+</details>
+<br>
+
+[//]:<>(What AWS resources can Lambda access? How?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What kinds of Lambda concurrency allocations are there?
+        </big></big></b>
+    </summary>
+
+Теперь ваши функции Lambda могут получать доступ к базам данных
+Amazon RDS, хранилищам данных Amazon Redshift,
+узлам Amazon ElasticCache и другим конечным точкам,
+которые доступны только из определенного VPC.
+
+Вы должны предоставить дополнительную информацию о конфигурации VPC,
+такую как идентификаторы подсети VPC и идентификаторы группы безопасности,
+чтобы разрешить функциям Lambda доступ к ресурсам в Amazon VPC.
+
+</details>
+<br>
+
+[//]:<>(What are the advantages of API Gateway endpoints over traditional web applications?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What are the advantages of API Gateway endpoints over traditional web applications?
+        </big></big></b>
+    </summary>
+
+Gateway API позволяет выполнять общие задачи управления API,
+такие, как безопасность, кэширование, регулирование и мониторинг.
+
+Gateway API предоставляет ендпоинты к вашим приложениям AWS
+
+
+</details>
+<br>
+
+[//]:<>(What is API Gateway mock endpoints?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is API Gateway mock endpoints?
+        </big></big></b>
+    </summary>
+
+Creation of mock endpoints for mock not crated rests
+
+</details>
+<br>
+
+[//]:<>(What is API Gateway Stage?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is API Gateway Stage?
+        </big></big></b>
+    </summary>
+
+stage -> этап
+
+This is references in the lifecycle of the API using variables
+
+This stage vars can be used to ref a specific backend endpoint
+(e.g. Lambda function)
+
+</details>
+<br>
+
+[//]:<>(What is API Request Transformation?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is API Request Transformation?
+        </big></big></b>
+    </summary>
+
+We can dynamically transform request and response params by adding new params
+
+Example of request 
+    
+    -- request-parameters '{"append:header.header1":"$context.reqId"}'
+
+(this will add new header to requests)
+
+Example of response
+
+    -- response-parameters '{
+    "500" : {"append:header.header1":"$context.reqId""}'
+
+(this will add new header if backend returns 500 status code)
+
+</details>
+<br>
+
+[//]:# (How you can transform API requests and responses)
+
+<details>
+    <summary>
+        <b><big><big>
+            How you can transform API requests and responses?
+        </big></big></b>
+    </summary>
+
+- Using Request Transformation
+- Parameter mapping
+  (overwrite:path: "/sessions/${request.path.sessionId}/topics")
+
+</details>
+<br>
+
+[//]:<>(What is $Latest on lambda?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is $Latest on lambda?
+        </big></big></b>
+    </summary>
+
+This is alias for latest version on lambda code.
+You also can use previous lambda version by using create alias function
+
+</details>
+<br>
+
+[//]:<>(What is lambda alias? version? alias vs version)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is lambda alias? version? alias vs version
+        </big></big></b>
+    </summary>
+
+A lambda version is a snapshot of your Lambda function.
+When you create a new lambda function, it is named as $LATEST.
+
+A lambda alias at its simplest is a pointer to the lambda function’s version.
+We can use aliases to point to any lambda version you specify.
+
+**An alias is a pointer to a specific Lambda function version. 
+Aliases will not be updated automatically**
+
+</details>
+<br>
+
+[//]:<>(Lambda alias vs env variables?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Lambda alias vs env variables?
+        </big></big></b>
+    </summary>
+
+**Lambda** allows you to create aliases that are associated 
+with a specific version of a function. 
+They are not a method of changing the behavior of a particular function.
+
+**Environment variables** can be used to change the behavior of a Lambda 
+function without requiring you to update code and re-deploy the function.
+
+</details>
+<br>
+
+[//]:<>(What is step functions in lambda?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is step functions in lambda? Pros?
+        </big></big></b>
+    </summary>
+
+This is a chain of lambda functions that work in queue order.
+It can be chained. But each step can consists of parallel steps
+
+Pluses
+- Visualize (you can see all steps)
+- Automate (each step is triggered and tracked automatically)
+- Logging
+
+![img](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2019/09/18/step-functions-map-example.png)
+
+</details>
+<br>
+
+[//]:<>(What is step functions workflows? what type do you know?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is step functions workflows? what type do you know?
+        </big></big></b>
+    </summary>
+
+Standard workflow
+- Long-Running (may run for up to a year)
+- At-Most-Once (task never executed once unless you specify retry actions)
+- Non-Idempotent
+
+Express Workflows
+- Short-time (up to 5 min)
+- At-Least-Once (for run mor than once)
+- idempotent
+
+Express can be
+  - Synchronous express 
+    - Wait until it completes
+    - returns the result
+    - (operations that are performed one at a time)
+  - Asynchronous express
+    - confirms that workflow has started
+    - result can be found in cloudwatch
+    - (operations don't depend on the completion and result)
+
+</details>
+<br>
+
+[//]:<>(Lambda storages?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Lambda storages? 
+        </big></big></b>
+    </summary>
+
+|                | Native within lambda              |                           | External Storage Options     |                                     |
+|----------------|-----------------------------------|---------------------------|------------------------------|-------------------------------------|
+|                | /tmp                              | Lambda layer              | S3                           | EFS (elastic file system)           |
+| Use case       | Temporary data                    | Library and SDK           | Persistent data              | Persistent data                     |
+| Pluses         | the fastest                       |                           | best AWS service integration | best integration with other lambdas |
+| Minuses        | cannot be shared between lambdas  |                           | slowest                      |                                     |
+| Size           | 512 MB - 10 GB                    | 50 mb zipped 250 unzipped | Elastic                      | Elastic                             |
+| Dynamic update | dynamic read/write                | updates require new layer | Store and retrieve           | dynamic read/write                  |
+| Shared         | within env                        | across env                | across lambdas               | across env                          |
+
+
+</details>
+<br>
+
+[//]:<>(Error handling in lambda?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Error handling in lambda?
+        </big></big></b>
+    </summary>
+
+- Auto retried system (2 times)
+- Dead-letter queues (Lambda -> SQS or Lambda -> SNS)
+  - only error msg
+- Lambda Destinations (Lambda success -> SQS_1 or failure -> SQS_2) 
+
+can be found in json (param: responsePayload:/errorMessage: "test")
+
+</details>
+<br>
+
+[//]:<>(How we can deploy Lambda code?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How we can deploy Lambda code?
+        </big></big></b>
+    </summary>
+
+- by console
+- .zip file achieve
+  - Using the Lambda console
+  - Using the AWS CLI
+  - Using Amazon S3
+- deployment package (you can create package by yourself and upload from PC)
+    - up to 50 mb
+    - if it more than 50 mb use S3
+- Lambda layers 
+  - can be shared between lambdas
+  - best practise
+- The CloudFormation
+- Container images
+
+</details>
+<br>
+
+[//]:<>(Lambda performance best practices?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Lambda performance best practices?
+        </big></big></b>
+    </summary>
+
+- See your memory and CPU
+- Dependencies
+- Only what you need
+
+</details>
+<br>
+
+[//]:<>(How we can improve Lambda performance?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Lambda performance best practices?
+        </big></big></b>
+    </summary>
+
+- Increase the function memory allocation, 
+  that will also increase the CPU allocation.
+  (if function has CPU bound also)
+
+</details>
+<br>
+
+[//]:<>(How we can transfer existing external RESTs into AWS?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How we can transfer existing external RESTs into AWS?
+        </big></big></b>
+    </summary>
+
+- create API Gateway (supports OpenAPI v2-v3)
+- create lambdas
+- connect rest in gateway into lambdas
+
+</details>
+<br>
+
+[//]:<>(Минусы лямбд)
+
+<details>
+    <summary>
+        <b><big><big>
+            Минусы лямбд
+        </big></big></b>
+    </summary>
+
+Java работает плоховато из-за это того что у java cold start (надо поднимать сначала JVM)
+
+</details>
+<br>
+
+[//]:# (What is EventBridge?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is EventBridge?
+        </big></big></b>
+    </summary>
+
+EventBridge is a serverless service that uses events 
+to connect application components together, 
+making it easier for you to build scalable event-driven applications.
+
+Part of  Event-driven architecture
+
+</details>  
+<br>
+
+---
+
+[//]:# (What is Lambda event and context?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is Lambda event and context?
+        </big></big></b>
+    </summary>
+
+Event is the data that's passed to the function upon execution.
+- path
+- httpMethod
+- headers
+- queryStringParameters
+- body
+
+Context's main role is to provide information about the current execution environment
+* function_name – The name of the Lambda function.
+* function_version – The version of the function.
+* invoked_function_arn – The Amazon Resource Name (ARN) that's used to invoke the function. Indicates if the invoker specified a version number or alias.
+* memory_limit_in_mb – The amount of memory that's allocated for the function.
+* aws_request_id – The identifier of the invocation request.
+* log_group_name – The log group for the function.
+* log_stream_name – The log stream for the function instance.
+
+</details>  
+<br>
+
+[//]:# (How we can control featute A/B testing in case if we have 2 features, but whant use only one?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How we can control feature A/B testing in case if we have two features, but want to use only one?
+        </big></big></b>
+    </summary>
+
+By adding an override to the feature and setting the identifier 
+of the override to the engineer’s user ID, 
+and setting the variation to Variation A, 
+the engineer can ensure that Variation A 
+is the only variation that appears when they hit the application’s endpoint. 
+
+This is because overrides in Amazon CloudWatch Evidently 
+allow you to specify a specific variation for a specific identifier,
+which in this case is the engineer’s user ID.
+
+</details>
 <br>

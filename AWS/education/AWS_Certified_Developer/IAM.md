@@ -17,8 +17,8 @@
 **Компоненты IAM**:
 - Пользователи (Users)              - Кто управляет системой
 - Группы (Groups)                   - Объединения пользователей и выдача им правил работы
+- Полиси (Policies)                 - Правила доступа для сервисов и пользователей
 - Роли (Roles)                      - Правила доступа работы сервисов
-- Полиси (Policies)                 - Правила доступа работы пользователей
 - сервис токенов безопасности (STS) - предоставление временного доступа к записям 
 
 **Главные функции IAM**:
@@ -101,6 +101,25 @@
 </details>
 <br>
 
+[//]:# (How you can test IAM policy?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How you can test IAM policy?
+        </big></big></b>
+    </summary>
+
+IAM Policy Simulator
+
+For:
+- Test IAM permissions
+- validate that the policy works as expected
+- test policies attached to existing users for troubleshooting
+
+</details>
+<br>
+
 [//]:# (Best IAM practices?)
 
 <details>
@@ -128,3 +147,171 @@
 
 </details>
 <br>
+
+[//]:# (What is WIF Cognito "Web Identity federation Cognito" ?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is WIF Cognito "Web Identity federation Cognito" ?
+        </big></big></b>
+    </summary>
+
+This is an authentication broker that allows you
+ to connect to resources using your facebook, Google, amazon credentials
+
+It provides the following features:
+- Multi-Factor Authentication
+- Synchronization of user data across multiple device types
+- Sign-up and sign-in to your applications
+
+- Temporary credentials
+- Maps to IAM role
+- Secure and Seamless "бесшовный" (not stored)
+
+Consists of
+- Users Pools
+- Identity pools
+
+</details>
+<br>
+
+[//]:# (What API call can be used to enable a user authenticated by Facebook?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What API call can be used to enable a user authenticated by Facebook?
+        </big></big></b>
+    </summary>
+
+**assume-role-with-web-identity** returns a set of temporary security credentials 
+for users who have been authenticated in a mobile or web application with 
+a web identity provider.
+
+</details>
+<br>
+
+[//]:# (Cognito user pool workflow?)
+
+<details>
+    <summary>
+        <b><big><big>
+            Cognito user pool workflow?
+        </big></big></b>
+    </summary>
+
+The user needs to authenticate with Facebook first, 
+that will return a web identity token. 
+Then AWS STS is called and passes the web identity token as input. 
+AWS STS authorizes the call and provides temporary AWS access credentials. 
+The user is allowed to assume an IAM role and access AWS resources 
+in accordance with the role's security policy
+
+![UserPoolWorkflow.png](..%2Fimg%2FUserPoolWorkflow.png)
+
+</details>
+<br>
+
+[//]:# (User Pool vs Identity Pool?)
+
+<details>
+    <summary>
+        <b><big><big>
+            User Pool vs Identity Pool?
+        </big></big></b>
+    </summary>
+
+User pool used to managed sign-up and sign-in functionality
+
+Identity pool enable you to provide temporary AWS credentials
+and enable access to AWS services like S3
+
+</details>
+<br>
+
+[//]:# (IAM Managed policies/Customer managed policies/ ?)
+
+<details>
+    <summary>
+        <b><big><big>
+            User Pool vs Identity Pool?
+        </big></big></b>
+    </summary>
+
+Managed policies — created and administered by AWS
+AmazonDynamoDBFullAccess
+- no need to write policy yourself
+- attach to multiple users, groups, roles  
+- you cannot change permissions
+
+Customer managed policies
+- Created by you
+- Copy an Existing Policy
+- Recommended when your needs are not covered by managed policies
+
+Inline Policies
+- 1:1 relationship
+- when you delete user, group, a role in which policy is used, it also we be deleted
+- in most cases AWS recommends using Managed policies over inline
+- Used for single user, group, role
+
+</details>
+<br>
+
+[//]:# (What is STS AssumeRoleWithWebIdentity?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is STS AssumeRoleWithWebIdentity?
+        </big></big></b>
+    </summary>
+
+This is security token service api call.
+This service is referenced with temporary credentials, now with IAM role or user
+
+- STS API
+- temporary credentials
+- Web applications
+- associated with temporary credentials
+
+![img.png](../img/STSWorkflow.png)
+
+</details>
+<br>
+
+---
+
+[//]:# (How we can ensure that user from identity pools can access only their own files in S3?)
+
+<details>
+    <summary>
+        <b><big><big>
+            How we can ensure that user from identity pools can access only their own files in S3?
+        </big></big></b>
+    </summary>
+
+Use an IAM policy within the Amazon Cognito identity prefix 
+to restrict users to use their own folders in Amazon S3.
+
+As example:
+
+    {
+        "Sid": "ReadWriteDeleteYourObjects",
+        "Effect": "Allow",
+        "Action": [
+            "s3:DeleteObject",
+            "s3:GetObject",
+            "s3:PutObject"
+        ],
+    "Resource": [
+        "arn:aws:s3:::bucket-name/cognito/application-name/${cognito-identity.amazonaws.com:sub}/*"
+        ]
+    }
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_cognito-bucket.html
+
+</details>
+<br>
+

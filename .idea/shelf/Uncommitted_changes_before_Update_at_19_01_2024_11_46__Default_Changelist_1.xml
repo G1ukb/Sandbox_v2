@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1" date="1705657631121" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19.01.2024 11:46 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="LocalSendbox/target/classes/Counter.class" />
+    <option name="AFTER_PATH" value="LocalSendbox/target/classes/Counter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/Counter.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AWS/education/img/ExampleOfAppSpecFile.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/ExampleOfAppSpecFile.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="LocalSendbox/target/classes/yieldCounter.class" />
+    <option name="AFTER_PATH" value="LocalSendbox/target/classes/yieldCounter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/yieldCounter.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AWS/education/img/STSWorkflow.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/STSWorkflow.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AWS/education/img/UserPoolWorkflow.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46_[Default_Changelist]1/UserPoolWorkflow.png" />
+  </binary>
+</changelist>
