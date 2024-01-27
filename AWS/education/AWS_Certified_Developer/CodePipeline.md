@@ -1,4 +1,25 @@
-# 1.1 Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns. #
+[//]:# (Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?)
+
+<details>
+    <summary>
+        <b><big><big>
+           Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?
+        </big></big></b>
+    </summary>
+
+Use the AWS::Region pseudo parameter.
+
+AWS CloudFormation provides a set of pseudo parameters that are predefined
+by AWS CloudFormation.
+
+You can use them the same way as you would a parameter,
+as the argument for the Ref function.
+
+The AWS::Region pseudo parameter is a value that AWS CloudFormation
+resolves as the region where the stack is created
+
+</details>
+<br>
 
 [//]:# (1.Commit code to a repository and invoke build, test and/or deployment actions)
 
@@ -6,7 +27,6 @@
     <summary>
         <b><big><big>
             1.Commit code to a repository and invoke build, test and/or deployment actions
-            <br>(Обзор AWS пайплайна и сервисов которые помогают выстроить грамотный CI/CD)
         </big></big></b>
     </summary>
 
@@ -14,49 +34,26 @@
 
 ![](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2020/09/30/DevOps_feedback-diagram.png)
 
-Сервисы, которые участвуют в CI/CD
+Here’s a general process you can follow to perform these actions:
 
-1.**AWS CodeCommit** — **(Подключенный гит репозиторий)**
-    полностью управляемая служба контроля версий, в которой размещаются защищенные
-    репозитории на основе Git. CodeCommit упрощает совместную работу команд над 
-    кодом в безопасной и масштабируемой экосистеме. Это решение использует CodeCommit
-    для создания репозитория для хранения кода приложения и развертывания.
+* **Commit code to a repository:**
 
-2.**AWS CodeBuild** — **(Билд, Тест, Создание артефакта)**
-    полностью управляемый сервис непрерывной интеграции, который компилирует исходный код, 
-   запускает тесты и создает пакеты программного обеспечения, готовые к развертыванию, 
-   на динамически создаваемом сервере сборки. Это решение использует CodeBuild 
-   для создания и тестирования кода, который мы развертываем позже.
+    git add .
+    git commit -m "Your commit message"
+    git push origin Your_Branch
 
-3.**AWS CodeDeploy** — полностью **управляемый сервис развертывания**, 
-    который автоматизирует развертывание программного обеспечения в различных вычислительных сервисах, 
-   таких как Amazon EC2, AWS Fargate , AWS Lambda и на ваших локальных серверах. 
-   Это решение использует CodeDeploy для развертывания кода или приложения в наборе
-   экземпляров EC2, на которых запущены агенты CodeDeploy.
+- **Invoke build, test and/or deployment actions in AWS:**
+AWS provides various services for automating these processes. 
+For example, you can use AWS CodeBuild for building and testing your code. 
+AWS CodeDeploy can be used for deploying your application.
+You can also use AWS CodePipeline to model and visualize your software release process.
 
-4.**AWS CodePipeline** — **(Соединитель CodeCommit/CodeBuild/CodeDeploy)**
-   В этом решении используется CodePipeline для создания сквозного конвейера, 
-   который извлекает код приложения из CodeCommit, выполняет сборку и тестирование 
-   с помощью CodeBuild и, наконец, развертывает с помощью CodeDeploy.
-
-5.**События AWS CloudWatch** — **(триггер срабатывающий на коммиты в гите и запускающий пайплайн)**
-   правило AWS CloudWatch Events создается для запуска CodePipeline при фиксации 
-   Git в репозитории CodeCommit.
-
-6.**Amazon Simple Storage Service (Amazon S3)** - **хранения артефактов сборки и развертывания**,
-   созданных во время выполнения конвейера.
-
-7.**Сервис AWS Key Management Service (AWS KMS)**. - **(для шифрования артефактов)**
-   AWS KMS упрощает создание криптографических ключей 
-   и управление ими, а также контроль их использования в различных сервисах AWS и в ваших приложениях.
-   Это решение использует AWS KMS, чтобы убедиться, что артефакты сборки и развертывания, 
-   хранящиеся в корзине S3, зашифрованы в состоянии покоя.
-
-8.**AWS CodeStar** - **Содержит шаблоны быстрой настройки**. Что куда откуда уже задано.
-    Вам следует использовать CodeStar всякий раз, когда вы хотите быстро настроить проект разработки 
-    программного обеспечения на AWS. AWS CodeStar проведет вас через процесс настройки с помощью шаблонов 
-    проектов, которые настраивают реальные приложения и могут быть изменены в любой момент в
-    будущем в соответствии с вашими потребностями.
+Please note that you would need to configure these services 
+according to your requirements. 
+The exact commands or steps would depend on your specific setup and the nature 
+of your application. 
+It’s recommended to refer to the official 
+AWS documentation or consult with a DevOps professional for detailed guidance.
 
 ![](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2020/09/30/Screen-Shot-2020-09-30-at-6.05.53-PM.png)
 
@@ -69,66 +66,28 @@
     <summary>
         <b><big><big>
             2.Use labels and branches for version and release management
-            <br>(Обзор подходов к версианированию CI/CD)
         </big></big></b>
     </summary>
 
 [ORIGINAL](https://aws.amazon.com/blogs/devops/implementing-gitflow-using-aws-codepipeline-aws-codecommit-aws-codebuild-and-aws-codedeploy/)
 
-<h2>**Модели ветвления**</h2>
+In AWS, you can use labels and branches for version and release management 
+in the following way:
 
-Есть две популярные модели ветвления, которые клиенты обычно используют в своей организации. 
-Один из них основан на **магистрали Trunk-based**, а другой — на основе функций или модели «**GitFlow**».
+- **Branches:** Branches in Git allow you to create independent lines of development.
+You can use branches in your AWS CodeCommit repository to isolate work 
+on different versions of your project. 
+For example, you can create a branch for a new feature and then merge that
+branch into the main branch when the feature is ready.
 
-<h2>**Магистральная разработка**</h2>
+- **Labels:** AWS Elastic Beanstalk uses labels to identify different 
+versions of your application. 
+A label in AWS Elastic Beanstalk is a name you assign to a version of your application. 
+The label helps you track different versions of your application.
 
-Разработка непрерывного CI/CD. 
-Рабочая команда делает коммит, он автоматически тестируется и деплоится
-
-- Заказчик постоянно работает с актуальной версией продукта
-- Нирвана CI/CD (Автотесты работают сами, артефакт собирается сам, минимальное участие человека)
-
-<h2>**GIT-FLOW разработка**</h2>
-
-GitFlow включает в себя создание нескольких уровней ответвления от мастера, 
-где изменения в ветках функций только периодически объединяются на всем пути обратно к мастеру, 
-чтобы инициировать выпуск.
-
-<h3>**Когда это может быть нам полезно**:</h3>
-- **Не полностью налаженный CI/CD**
-- **Несколько команд** могут работать над разными выпусками функций **с разными сроками запуска**.
-- **Организации, предоставляющие SAAS** (программное обеспечение как услуга),
-  могут иметь **клиентов, которые не хотят постоянно использовать «последнюю» версию**, что вынуждает 
-  их создавать несколько веток «Выпуск» и «Исправление».
-- У некоторых команд в Организации могут быть **особые требования к QA/UAT**, которые 
-  **требуют ручного утверждения**, что может привести к задержке времени с момента введения 
-  новой функции до ее выпуска в производство.
-
-<h3>**Рекомендации команды aws, как реализовать Git-flow посредством pipeline** </h3>
-- Используйте dev как ветку непрерывной интеграции.
-- Используйте feature для работы с несколькими функциями.
-- Используйте release для работы над конкретным релизом (несколько функций).
-- Используйте hotfix от главной ветки, чтобы отправить исправление.
-- Слияние с мастером после каждого выпуска.
-- Мастер содержит готовый к производству код.
-
-![](https://static.us-east-1.prod.workshops.aws/public/68da5511-d096-4235-978b-f2e43cee8660/static/images/gitflow-only.png)
-
-<h3>**Инструменты разработчика AWS и GitFlow**</h3>
-
-Создается на все время:
-- Master/Dev ветка AWS CodeCommit
-- AWS CodeBuild для всех веток
-- AWS CodeDeploy для всех веток
-- AWS Cloudformation (экземпляр EC2) для мастера (prod) и разработки (stage/dev)
-
-Короткоживущие элементы:
-- Feature/Hotfix/Release ветки в AWS CodeCommit
-- AWS CodePipeline для временных веток
-- AWS CodeDeploy для временных веток
-- AWS Cloudformation (экземпляр EC2) для временных веток
-
-![](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2019/02/12/gitflow-Copy-of-Page-1-1.png)
+You can create an application version in the AWS Management Console, 
+AWS CLI, or by using an AWS SDK.
+When you create a version, you’ll include a label for that version.
 
 </details>
 <br>
@@ -139,35 +98,39 @@ GitFlow включает в себя создание нескольких ур�
     <summary>
         <b><big><big>
             3.Use AWS CodePipeline to orchestrate workflows against different environments
-            <br>(Обзор типов развертки)
         </big></big></b>
     </summary>
 
 [ORIGINAL](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
 
-В целом, AWS Pipeline самостоятельно имеет возможность совершенно спокойно деплоить 
-на несколько енвов сразу. Для этого имеется группа CodeDeploy которая может содержать порядок 
-инстансов на которые будет проводить установка разворачиваемых артефактов.
+AWS CodePipeline is a continuous integration and continuous delivery service 
+that allows you to manage and automate your workflows for different environments. 
+Here’s a high-level overview of how you can use it:
 
-<h3>CodeDeploy предоставляет два варианта типа развертывания: 
-**развертывание на месте и сине-зеленое развертывание.**</h3>
+- **Create a Pipeline:** Start by creating a pipeline in AWS CodePipeline. 
+This pipeline will define your workflow.
 
-<h3>**Развертывание на месте**</h3>
-приложение на каждом экземпляре в группе развертывания останавливается, 
-устанавливается последняя версия приложения, а новая версия приложения запускается и проверяется.
+- **Add Stages:** Add stages to your pipeline for each environment 
+(e.g., Development, Testing, Staging, Production).
+Each stage represents a phase in your release process.
 
-<h3>**Сине-зеленое развертывание**</h3>
-Принцип имеющий в своей основе следующий флоу работы. 
-- Подготовка новых енвов/лямбд/ресурсов (установка на них последней версии и прохождение тестов)
-- Постепенная замена старых работающих енвов на уже работающие новые /
-  в случае лямбд и ресурсов - постепенное перекидывание трафика со старого на новое
-- Экземпляры в исходной среде снимаются с учета и могут быть автоматически терминейтнуты 
-  или продолжать работу 
+- **Add Actions:** Within each stage, add actions that represent tasks
+such as building code, deploying to an environment, or running tests. 
+Actions in a stage can run in parallel or in sequence.
 
-На этой диаграмме показан шаблон развертывания в нескольких средах.
+- **Connect to Source Repository:** Connect your pipeline to your source repository. 
+AWS CodePipeline can integrate with AWS CodeCommit, GitHub, Bitbucket, and more. 
+Whenever a change is pushed to your repository, 
+AWS CodePipeline will automatically trigger your pipeline.
+
+- **Automate Deployments:** Use AWS CodeDeploy to automate your deployments. 
+You can set up deployment actions in your pipeline stages 
+to deploy your application to Amazon EC2, AWS Fargate, AWS Lambda, and more.
+
+- **Monitor Your Pipeline:** Monitor your pipeline’s performance, 
+and troubleshoot any issues using AWS CloudWatch.
 
 ![](https://mongodb-devhub-cms.s3.us-west-1.amazonaws.com/aws_codepipeline_161a68794c.png)
-
 
 </details>
 <br>
@@ -179,8 +142,7 @@ CodeDeploy for CI/CD purposes)
     <summary>
         <b><big><big>
             4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, 
-            and AWS CodeDeploy for CI/CD purposes 
-            <br>(Обзор порядка и этапов использования сервисов при настройке пайплайна)
+            and AWS CodeDeploy for CI/CD purposes
         </big></big></b>
     </summary>
 
@@ -188,14 +150,33 @@ CodeDeploy for CI/CD purposes)
 
 [Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html)
 
-1. Создание ролей IAM для всех групп пользователей
-2. Создание корзины S3 для хранения артефактов
-3. Создание инстансов EC2
-4. (необязательно) Воспользоваться AWS CodeStar. (выбрать один из предложенных шаблонов.
-5. Создать приложение (application) в AWS CodeDeploy и настроить группу добавив EC2 инстанс
-   (если потребуется добавление нескольких инстансов, добавляются в группу и 
-   отдельно указываются в пайплайне в необходимом для развертки порядке)
-6. Создание нового AWS CodePipeline (настроить AWS CodeCommit/CodeBuild) и добавить CodeDeploy
+* **AWS CodeCommit:** This is where you’ll store your code. 
+It’s a fully-managed source control service that hosts Git repositories.
+
+
+* **AWS CodeBuild:** This service will compile your source code, run tests, 
+and produce packages that are ready to deploy. 
+You can configure it to automatically build your application whenever 
+code is pushed to your CodeCommit repository.
+
+
+* **AWS CodePipeline:** This service models and visualizes 
+your software release process. You can design your entire workflow 
+including building, testing, and deploying your applications. 
+CodePipeline will orchestrate the steps and provide you with 
+a real-time view of the status of your software delivery
+
+
+* **AWS CodeStar:** This service is an optional layer of convenience 
+that helps you quickly develop, build, and deploy applications 
+on AWS by providing a unified user interface, 
+enabling you to easily manage your software development activities in one place.
+
+
+* **AWS CodeDeploy:** This service automates your software deployments, 
+allowing you to reliably deploy your application at any scale. 
+You can deploy your built and tested code to your servers or 
+AWS services like AWS Fargate, Amazon EC2, AWS Lambda, and more.
 
 </details>
 <br>
@@ -206,29 +187,31 @@ CodeDeploy for CI/CD purposes)
     <summary>
         <b><big><big>
             5. Perform a roll back plan based on application deployment policy
-            <br>(Обзор откатов развертывания в зависимости от выбора политики развертывания)
         </big></big></b>
     </summary>
 
-<big>CodeDeploy откатывает развертывания, **повторно развертывая ранее развернутую версию приложения
-в качестве нового развертывания**. Эти развертывания с откатом технически являются новыми 
-развертываниями с новыми идентификаторами развертывания, а не восстановленными версиями 
-предыдущего развертывания.
+Sure, here’s a high-level overview of how you can perform a
+rollback based on your application deployment policy using AWS services:
 
-Развертывания можно откатить автоматически или вручную.</big>
+* **AWS CodeDeploy:** This service has built-in functionality for automatic rollbacks.
+You can configure it to automatically roll back when a deployment fails,
+or when CloudWatch alarms are triggered.
 
-<h3>**Автоматические откаты**</h3>
 
-Вы можете настроить группу развертывания или развертывание для автоматического отката 
-в случае сбоя развертывания или при достижении заданного вами порогового значения мониторинга. 
-В этом случае развертывается последняя известная исправная версия редакции приложения. 
-Вы настраиваете автоматический откат при создании приложения или при создании 
-или обновлении группы развертывания.
+* **Deployment Configurations:** In AWS CodeDeploy, you can specify 
+a deployment configuration that determines the deployment’s rollout and rollback behavior.
+For example, you can specify that the deployment should be rolled back if 
+less than 95% of the instances are healthy after the deployment.
 
-<h3>**Ручной откат**</h3>
-Если вы не настроили автоматический откат, вы можете вручную откатить развертывание, 
-создав новое развертывание, в котором используется любая ранее развернутая версия приложения, 
-и следуя инструкциям по повторному развертыванию версии.
+
+* **CloudWatch Alarms:** You can set up CloudWatch alarms based on custom 
+health metrics or standard metrics like CPU usage, response time, etc. 
+If these alarms are triggered during a deployment, AWS CodeDeploy 
+can automatically roll back to the last known good state.
+
+
+* **Manual Rollback:** If you need more control, you can manually stop 
+a deployment and then redeploy the previous version of your application.
 
 </details>
 <br>

@@ -9,38 +9,21 @@
         </big></big></b>
     </summary>
 
-**Aurora — это запатентованная технология AWS (не с открытым исходным кодом).**
-- Postgres и MySQL поддерживаются как Aurora DB (это означает, что ваши драйверы будут работать так,
-как если бы Aurora была базой данных Postgres или MySQL). 
-- Aurora «оптимизирована для облака AWS» и заявляет о 5-кратном повышении производительности
-  над MySQL на RDS, производительность более чем в 3 раза выше, чем у Postgres на RDS
-- Объем хранилища Aurora автоматически увеличивается с шагом 10 ГБ до 128 ТБ.
-- У Aurora может быть 15 реплик, а у MySQL — 5, 
-- Процесс репликации быстрее (задержка реплики менее 10 мс).
-- Аварийное переключение в Aurora происходит мгновенно. Это родной HA (High Availability).
-- Aurora стоит дороже, чем RDS (на 20 % больше), но более эффективна.
+Amazon Aurora is a fully managed relational database engine that’s
+compatible with MySQL and PostgreSQL. 
 
-**Aurora High Availability and Read Scaling**
-- 6 копий ваших данных в 3 зонах доступности,
-- 4 копии из 6 необходимых для записи
-- 3 копии из 6 необходимых для чтения
-- Самовосстановление с одноранговой репликацией
-- Хранилище распределено по сотням томов.
-- Один экземпляр Aurora выполняет запись (мастер)
-- Автоматическое аварийное переключение для мастера менее чем за 30 секунд
-- Мастер + до 15 реплик чтения Aurora обслуживают операции чтения
-- Поддержка межрегиональной репликации
+It combines the speed and reliability of high-end commercial
+databases with the simplicity and cost-effectiveness of open-source databases
 
-**Преимущества**
-- Автоматический переход на другой ресурс при отказах
-- Резервное копирование и восстановление
-- Изоляция и безопасность
-- Отраслевое соответствие
-- Масштабирование нажатием кнопки
-- Автоматическое исправление с нулевым временем простоя
-- Расширенный мониторинг
-- Плановое техническое обслуживание
-- Backtrack: восстановление данных в любой момент времени без использования резервных копий.
+With some workloads, Aurora can deliver up to five times the throughput of 
+MySQL and up to three times the throughput of PostgreSQL 
+without requiring changes to most of your existing applications. 
+
+It includes a high-performance storage subsystem, and its MySQL- and
+PostgreSQL-compatible
+database engines are customized to take advantage of that fast distributed storage
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html
 
 </details>
 <br>
@@ -54,14 +37,21 @@
         </big></big></b>
     </summary>
 
-**Aurora Security (Простыми словами как и в RDS)**
-- Аналогичен RDS, поскольку использует те же механизмы
-- Шифрование в состоянии покоя с помощью KMS.
-- Автоматические резервные копии, моментальные снимки и реплики также шифруются.
-- Шифрование во время полета с использованием SSL (тот же процесс, что и в MySQL или Postgres).
-- Возможность аутентификации с использованием токена IAM (тот же метод, что и RDS).
-- Вы несете ответственность за защиту экземпляра с помощью групп безопасности.
-- Вы не можете использовать SSH
- 
+Security for Amazon Aurora is managed at three levels:
+
+- **AWS Identity and Access Management (IAM):** 
+IAM controls who can perform Amazon RDS management actions on Aurora DB
+clusters and DB instances. When you connect to AWS using IAM credentials, 
+your AWS account must have IAM policies that grant the permissions required 
+to perform Amazon RDS management operations
+
+- **Virtual Private Cloud (VPC):** 
+Aurora DB clusters must be created in a VPC based on the Amazon VPC service
+
+- **Authentication:** For authenticating logins and permissions for
+an Amazon Aurora DB cluster
+
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Security.html
+
 </details>
 <br>

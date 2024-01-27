@@ -9,16 +9,16 @@
         </big></big></b>
     </summary>
 
-Elastic Load Balancer — это управляемый балансировщик нагрузки.
-Он помогает балансировать трафик между несколькими нижестоящими инстонсами (например EC2)
+Elastic Load Balancer is a managed load balancer.
+It helps balance traffic between several downstream instances (for example EC2)
 
-**Преимущества**
-- Распределите нагрузку между несколькими подчиненными экземплярами
-- Предоставляйте единую точку доступа (DNS) для вашего приложения. 
-- Беспрепятственно работайте с нижестоящими экземплярами. 
-- Регулярно проверяйте работоспособность (хейлчеки) ваших экземпляров.
-- Отделяет публичный трафик от приватного (отдавая приватному приоритет)
-- Интегрирован и работает с другими сервисами AWS по необходимости
+**Advantages**
+- Distribute the load among multiple slave instances
+- Provide a single point of access (DNS) for your application.
+- Work seamlessly with downstream instances.
+- Regularly check the performance (heilchecks) of your copies.
+- Separates public traffic from private (giving priority to private)
+- Integrated and works with other AWS services as needed
   (EC2, EC2 Auto Scaling Groups, Amazon ECS)
 
 </details>
@@ -33,12 +33,12 @@ Elastic Load Balancer — это управляемый балансировщи
         </big></big></b>
     </summary>
 
-Проверки работоспособности имеют решающее значение для балансировщиков нагрузки.
-Они позволяют балансировщику нагрузки узнать, на какие экземпляры он перенаправляет трафик.
+Health checks are critical for load balancers.
+They allow the load balancer to know which instances it is forwarding traffic to.
 
-Проверка работоспособности выполняется для порта и маршрута (/health является общим)
-Если ответ не 200 (ОК), экземпляр неисправен.
-И трафик прекращается для этого экземпляра распределяясь дальше
+Health check is performed per port and route (/health is general)
+If the response is not 200 (OK), the instance is faulty.
+And the traffic stops for this instance and is distributed further
 
 </details>
 <br>
@@ -54,17 +54,17 @@ Elastic Load Balancer — это управляемый балансировщи
 
 **There are 4 types of load balancers**
 
-1) **Classic Load Balancer (CLB)** (v1 — старое поколение) — 2009 г.
-HTTP, HTTPS, TCP, SSL (защищенный TCP)
+1) **Classic Load Balancer (CLB)** (v1 - old generation) - 2009
+   HTTP, HTTPS, TCP, SSL (TCP Secure)
 
-2) **Application Load Balancer (ALB)** (v2 — новое поколение) — 2016
-HTTP, HTTPS, веб-сокет
+2) **Application Load Balancer (ALB)** (v2 - new generation) - 2016
+   HTTP, HTTPS, websocket
 
-3) **Network Load Balancer (NLB)** (v2 — новое поколение) — 2017
- TCP, TLS (защищенный TCP), UDP
+3) **Network Load Balancer (NLB)** (v2 - new generation) - 2017
+   TCP, TLS (TCP Secure), UDP
 
-4) **Gateway Load Balancer (GWLB)** — 2020
-Работает на уровне 3 (сетевой уровень) – IP-протокол
+4) **Gateway Load Balancer (GWLB)** - 2020
+   Operates at Layer 3 (Network Layer) – IP Protocol
 
 </details>
 <br>
@@ -78,28 +78,28 @@ HTTP, HTTPS, веб-сокет
         </big></big></b>
     </summary>
 
-Балансировщик нагрузки приложений (v2)
+Application Load Balancer (v2)
 
-Появилась возможность объединять инстансы в группы, к которым ALB будет роутится
-с помощью определенный правил
+It is now possible to combine instances into groups to which ALB will be routed
+using certain rules
 
-**Правила маршрутизации:**
-- Маршрутизация на основе пути в URL (example.com/users и example.com/posts).
-- Маршрутизация на основе имени хоста в URL (one.example.com и other.example.com)
-- Маршрутизация на основе строки запроса, заголовков (example.com/users?id=123&order=false)
-- ALB отлично подходят для микросервисов и приложений на основе контейнеров.
-(пример: Docker и Amazon ECS)
-- Имеет функцию сопоставления портов для перенаправления на динамический порт в ECS.
+**Routing rules:**
+- Route based on URL path (example.com/users and example.com/posts).
+- Routing based on hostname in URL (one.example.com and other.example.com)
+- Routing based on query string, headers (example.com/users?id=123&order=false)
+- ALBs are great for microservices and container-based applications.
+  (example: Docker and Amazon ECS)
+- Has a port mapping feature to forward to a dynamic port in ECS.
 
-**На что стоит обратить пристальное внимание**
+**What you should pay close attention to**
 
-Сервисы которые обрабатывают запрос приходящий от клиента (и распределенный с помощью ALB)
-не видят конечного хоста пользователя, поскольку ALB перемещает эту информацию в заголовки 
-запроса
+Services that process a request coming from a client (and distributed using ALB)
+do not see the user's end host because ALB moves this information into headers
+request
 
-- Истинный IP клиента вставлен в заголовок **X-Forwarded-For**
-- Порт **X-Forwarded-Port**
-- Прото* **X-Forwarded-Proto**
+- The true client IP is inserted into the **X-Forwarded-For** header
+- Port **X-Forwarded-Port**
+- Proto* **X-Forwarded-Proto**
 
 </details>
 <br>
@@ -113,22 +113,22 @@ HTTP, HTTPS, веб-сокет
         </big></big></b>
     </summary>
 
-Балансировщики сетевой нагрузки (уровень 4) позволяют:
-- Перенаправлять трафик TCP и UDP на ваши экземпляры.
-- Обрабатывать миллионы запросов в секунду
-- Меньшая задержка ~100 мс (по сравнению с 400 мс для ALB)
-- NLB имеет один статический IP-адрес на каждую зону доступности 
-  и поддерживает назначение эластичных IP-адресов.
-  (полезно для внесения в белый список определенных IP-адресов)
-- NLB используется для максимальной производительности, трафика TCP или UDP.
-- Не входит в уровень бесплатного пользования AWS.
+Network load balancers (layer 4) allow you to:
+- Redirect TCP and UDP traffic to your instances.
+- Process millions of requests per second
+- Lower latency ~100ms (compared to 400ms for ALB)
+- NLB has one static IP address per Availability Zone
+  and supports the assignment of elastic IP addresses.
+  (useful for whitelisting specific IP addresses)
+- NLB is used for maximum performance, TCP or UDP traffic.
+- Not included in the AWS Free Tier.
 
-В качестве маски перенаправления используются TCP и HTTP хосты (TCP + Rules)
+TCP and HTTP hosts are used as redirection masks (TCP + Rules)
 
-NLB тоже конектится к ожидающим его группам, а именно:
-- к группе EC2 машин (объединенных в группу по их именам)
-- к группе машин объединенных группой приватных IP
-- к включенному ALB
+NLB also connects to groups waiting for it, namely:
+- to a group of EC2 machines (grouped by their names)
+- to a group of machines united by a group of private IPs
+- to enabled ALB
 
 </details>
 <br>
@@ -142,9 +142,9 @@ NLB тоже конектится к ожидающим его группам, �
         </big></big></b>
     </summary>
 
-GWLB пригодиться нам в случае если нам необходимо перед тем как конечная точка (Ec2)
-получит запрос от пользователя, дополнительно пропустить его через сторонние 
-прокси инстансы (ec2). Это может быть проверка безопасности, таргетинт, секьюири и т.д. 
+GWLB is useful to us if we need it before the end point (Ec2)
+will receive a request from the user, additionally pass it through third-party
+proxy instances (ec2). This could be a security check, targetint, security, etc.
 
 ![](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2021/07/08/Screen-Shot-2021-07-08-at-12.39.00-PM.png)
 
@@ -160,27 +160,27 @@ GWLB пригодиться нам в случае если нам необхо�
         </big></big></b>
     </summary>
 
-AWS ELB предлагает возможность реализации липкости, чт**обы
-один и тот же клиент всегда перенаправляется на один и тот же
-экземпляр** за балансировщиком нагрузки
+AWS ELB offers the ability to implement stickiness so that
+the same client is always redirected to the same
+instance** behind load balancer
 
-- Это работает для CLB и ALB
-- реализована система через «Файл cookie», используемый для прилипания, 
-  имеющий срок годности, который вы контролируете
+- This works for CLB and ALB
+- the system is implemented through the “Cookie” used for sticking,
+  having an expiration date that you control
 
-**Включение липкости может привести к дисбалансу загружать серверные экземпляры EC2**
+**Enabling stickiness may cause imbalanced loading of EC2 server instances**
 
-**Куки деляться на два типа**
-1) Файлы cookie на основе приложений (Application Based)
-   - Может включать любые настраиваемые атрибуты, требуемые приложением.
-   - Имя файла cookie должно быть указано индивидуально для каждой целевой группы. 
-     (Это значит что если пользователь каким-то образом попадет в другую целевую группу,
-     прописанные куки могут не работать)
-   - Не используйте AWSALB, AWSALBAPP или AWSALBTG (зарезервировано для использования ELB).
+**Cookies are divided into two types**
+1) Application Based Cookies
+  - Can include any custom attributes required by the application.
+  - The cookie name must be specified individually for each target group.
+    (This means that if the user somehow ends up in a different target group,
+    prescribed cookies may not work)
+  - Do not use AWSALB, AWSALBAPP or AWSALBTG (reserved for ELB use).
 
-2) Файлы cookie на основе продолжительности
-    - Файл cookie, созданный балансировщиком нагрузки.
-    - Имя файла cookie: AWSALB для ALB, AWSELB для CLB.
+2) Duration based cookies
+  - Cookie created by the load balancer.
+  - Cookie name: AWSALB for ALB, AWSELB for CLB.
 
 </details>
 <br>
@@ -194,19 +194,19 @@ AWS ELB предлагает возможность реализации лип�
         </big></big></b>
     </summary>
 
-**С Cross-zone балансировкой нагрузки:**
-- каждый экземпляр балансировщика нагрузки распределяется равномерно
-  во всех зарегистрированных экземплярах во всех AZ
-  (Это значит что если есть 2 зоны (А и Б) и в зоне А запущено 2 EC2, а в Б 10. 
-  И нагрузка на зоны от клиента распределяется пополам (50/50), то не зависимо от этого
-  в балансировки будут участвовать все экземпляры во всех зонах)
+**With Cross-zone load balancing:**
+- each load balancer instance is distributed evenly
+  in all registered copies in all AZ
+  (This means that if there are 2 zones (A and B) and 2 EC2 are running in zone A, and 10 in B.
+  And the load on the zones from the client is distributed in half (50/50), then regardless of this
+  all instances in all zones will participate in balancing)
 
 ![](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/images/cross_zone_load_balancing_enabled.png)
 
-**Без балансировки нагрузки между зонами:**
-- Запросы распределяются по экземплярам только внутри зоны
-  (т.е. из ситуации выше. нагрузка 50% на зону А где 2 ec2 будет делится только между экземплярами
-  в этой AZ 25/25)
+**Without load balancing between zones:**
+- Requests are distributed across instances only within the zone
+  (i.e. from the situation above. 50% load on zone A where 2 ec2 will be divided only between instances
+  in this AZ 25/25)
 
 </details>
 <br>
@@ -220,28 +220,28 @@ AWS ELB предлагает возможность реализации лип�
         </big></big></b>
     </summary>
 
-**SSL-сертификат разрешает трафик между вашими клиентами, и балансировщиком нагрузки
-быть зашифрованным при передаче (шифрование в полете)**
-- SSL относится к уровню защищенных сокетов, используемому для шифрования соединений.
-- TLS относится к безопасности транспортного уровня, которая является более новой версией.
-- В настоящее время в основном используются сертификаты TLS, но люди по-прежнему называют их SSL.
-- Публичные SSL-сертификаты выдаются центрами сертификации (CA Certificate Authorities).
-- SSL-сертификаты имеют срок действия (устанавливается вами) и должны быть обновлены
-- Вы можете управлять сертификатами с помощью ACM (AWS Certificate Manager).
-- Клиенты могут использовать SNI (индикатор имени сервера), 
-  чтобы указать имя хоста, к которому они обращаются.
+**The SSL certificate allows traffic between your clients and the load balancer
+be encrypted during transmission (in-flight encryption)**
+- SSL refers to the secure sockets layer used to encrypt connections.
+- TLS refers to Transport Layer Security which is a newer version.
+- TLS certificates are mostly used nowadays, but people still call them SSL.
+- Public SSL certificates are issued by CA Certificate Authorities.
+- SSL certificates have an expiration date (set by you) and must be renewed
+- You can manage certificates using ACM (AWS Certificate Manager).
+- Clients can use SNI (Server Name Indicator),
+  to specify the hostname they are accessing.
 
-**Индикация имени сервера (SNI)**
-- SNI решает проблему загрузки нескольких SSL-сертификатов на один веб-сервер
-  (для обслуживания нескольких веб-сайтов).
-- Это «более новый» протокол, требующий, чтобы клиент
-  указал имя хоста целевого сервера в начальном вызове SSL
-  После этого сервер найдет правильный сертификат или вернет сертификат по умолчанию
-- (**ПРИМЕЧАНИЕ**) Работает только для ALB и NLB (новые поколения), CloudFront
+**Server Name Indication (SNI)**
+- SNI solves the problem of loading multiple SSL certificates onto one web server
+  (to serve multiple websites).
+- This is a "newer" protocol that requires the client
+  specified the hostname of the target server in the initial SSL call
+  After this, the server will find the correct certificate or return the default certificate
+- (**NOTE**) Works only for ALB and NLB (new generations), CloudFront
 
-Поэтому если нам нужны мультисертификаты для обращения к нескольким ресурсам
-- Необходимо использовать несколько CLB для нескольких имен хостов с несколькими SSL-сертификатами.
-- Для новых версий ELB используется индикация имени сервера (SNI)
+Therefore, if we need multi-certificates to access several resources
+- Multiple CLBs must be used for multiple hostnames with multiple SSL certificates.
+- For new versions of ELB, Server Name Indication (SNI) is used
 
 ![](https://miro.medium.com/max/1400/1*wV9ShOOD95MMyXE2fzZ6Lg.png)
 
@@ -257,19 +257,19 @@ AWS ELB предлагает возможность реализации лип�
         </big></big></b>
     </summary>
 
-Названия:
-- Connection Draining (Слив соединения) - если это CLB
-- Deregistration Delay (Задержка отмены регистрации) - если это ALB или NLB
+Titles:
+- Connection Draining - if it is a CLB
+- Deregistration Delay - if it is ALB or NLB
 
-Это функция представляет собой **время для выполнения «запросов в полете»**, пока
-экземпляр отменяет регистрацию или неработоспособен. Т.е. в случае какое время ELB
-нужно, для того чтобы понять что конечный сервис не доступен и отправлять запросы 
-в новый экземпляр ec2.
+This feature represents **time to complete "in-flight queries"** while
+the instance is deregistered or is inoperative. Those. in case what time is ELB
+necessary in order to understand that the final service is not available and send requests
+to a new ec2 instance.
 
-Эта переменная выставляется от 1 до 3600 секунд (300 (5 минут) - по умолчанию. 0 - отключено)
+This variable can be set from 1 to 3600 seconds (300 (5 minutes) is the default. 0 is disabled)
 
-Если сайту требуется быстрый отклик, устанавливается низкое пороговое значение
-(например 30 секунд).
+If the site requires a fast response, the threshold is set to a low value
+(for example 30 seconds).
 
 </details>
 <br>
@@ -283,20 +283,20 @@ AWS ELB предлагает возможность реализации лип�
         </big></big></b>
     </summary>
 
-**Цель Auto Scaling Group (ASG):**
-- Увеличение масштаба (добавление экземпляров EC2) в соответствии с возросшей нагрузкой.
-- Масштабирование (удаление инстансов EC2) в соответствии с уменьшенной нагрузкой.
-- Уверенность, что у нас есть минимальное и максимальное количество запущенных экземпляров EC2.
-- Автоматически регистрировать новые экземпляры в балансировщике нагрузки.
-- Повторное создание экземпляра EC2 в случае прекращения работы предыдущего экземпляра
-  (например, если он неработоспособен).
+**Auto Scaling Group (ASG) Goal:**
+- Scaling up (adding EC2 instances) to accommodate increased workload.
+- Scaling (removing EC2 instances) according to the reduced load.
+- Making sure we have a minimum and maximum number of EC2 instances running.
+- Automatically register new instances with the load balancer.
+- Re-creation of an EC2 instance if the previous instance terminates
+  (for example, if it is inoperative).
 
-**Очень крутой функцией является масштабировать ASG на основе аварийных сигналов CloudWatch**
-- Аварийный сигнал отслеживает метрику (например, среднее значение ЦП или пользовательскую метрику).
-- Такие метрики, как средняя загрузка ЦП, рассчитываются для всех экземпляров ASG.
-- На основе сигнала тревоги:
-  - Можно увеличивать максимальное кол-во инстансов
-  - Можно уменьшать максимальное кол-во инстансов
+**A very cool feature is to scale ASG based on CloudWatch alarms**
+- The alarm monitors a metric (such as a CPU average or a custom metric).
+- Metrics such as average CPU utilization are calculated for all ASG instances.
+- Based on alarm:
+  - You can increase the maximum number of instances
+  - You can reduce the maximum number of instances
 
 </details>
 <br>
@@ -310,28 +310,29 @@ AWS ELB предлагает возможность реализации лип�
         </big></big></b>
     </summary>
 
-Группы автоматического масштабирования — **политики динамического масштабирования**
-- Самый простой и легкий в настройке способ политик расширения инстансов для ASG
-  - Например
-    - Когда срабатывает сигнал тревоги CloudWatch (например, ЦП > 70%), добавьте 2 единицы.
-    - При срабатывании тревоги CloudWatch (например, ЦП < 30%), удалите 1
-  - Так же есть запланированные действия
-    - Увеличить в 3.00 уменьшить в 13.00
-  - Предусмотреть масштабирование на основе известных шаблонов использования.
-    - увеличьте минимальную вместимость до 10 в 17:00 по пятницам.
+Auto Scaling Groups - **Dynamic Scaling Policies**
+- The simplest and easiest to configure instance expansion policies for ASG
+  - For example
+    - When a CloudWatch alarm is triggered (eg CPU > 70%), add 2 units.
+    - When a CloudWatch alarm is triggered (e.g. CPU < 30%), remove 1
+  - There are also planned actions
+    - Increase at 3.00 decrease at 13.00
+  - Allow for scaling based on known usage patterns.
+    - Increase minimum capacity to 10 at 5:00 pm on Fridays.
 
-Так же есть функция **прогнозирующее масштабирование**
-- На основе данных метрик работы ASG и ELB можно составить полиси с учетом прогноза нагрузки
+There is also a function **predictive scaling**
+- Based on these ASG and ELB performance metrics, you can create 
+a policy taking into account the load forecast
 
-**Хорошие показатели для масштабирования**
-- CPUUtilization: средняя загрузка ЦП. использование в ваших инстансах
-- RequestCountPerTarget: чтобы убедиться, количество запросов на EC2 экземпляры стабильны
-- Средний сетевой вход/выход (если ваше приложение привязано к сети)
-- Любая пользовательская метрика (которую вы получили с помощью CloudWatch)
+**Good indicators for scaling**
+- CPUUtilization: Average CPU utilization. use in your instances
+- RequestCountPerTarget: to make sure the number of requests on EC2 instances is stable
+- Average network input/output (if your application is network bound)
+- Any custom metric (that you obtained using CloudWatch)
 
-**После масштабирования срабатывает период восстановления (cool-down) (по умолчанию 300 секунд)**.
-В течение периода восстановления ASG не будет запускать и не прекращать дополнительные
-экземпляры (чтобы метрики стабилизировались)
+**After scaling, a cool-down period is triggered (default 300 seconds)**.
+During the recovery period, ASG will not start or stop additional
+instances (so that the metrics stabilize)
 
 </details>
 <br>

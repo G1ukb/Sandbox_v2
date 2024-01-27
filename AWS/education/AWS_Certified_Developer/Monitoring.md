@@ -126,21 +126,21 @@ Other
         </big></big></b>
     </summary>
 
-Сервис Amazon CloudWatch Logs позволяет собирать и хранить журналы ресурсов,
-приложений и сервисов в режиме, близком к реальному времени.
-Существуют три основные категории журналов.
+Amazon CloudWatch Logs allows you to collect and store resource logs,
+applications and services in near real time.
+There are three main categories of magazines.
 
-1. **Предоставленные журналы**.
-   Эти журналы автоматически публикуются сервисами AWS от вашего имени.
-   В настоящее время поддерживаются два типа журналов:
-    1. журналы Amazon VPC Flow Logs
-    2. Amazon Route 53.
-2. **Журналы, публикуемые сервисами AWS**.
-   В настоящее время более 30 сервисов AWS публикуют журналы в CloudWatch.
-   В их число входят Amazon API Gateway, AWS Lambda, AWS CloudTrail и многие другие.
-3. **Пользовательские журналы**.
-   Это журналы пользовательских приложений и локальных ресурсов,
-   а также журналы из других облаков.
+1. **Provided magazines**.
+   These logs are automatically published by AWS services on your behalf.
+   There are currently two types of logs supported:
+    1. Amazon VPC Flow Logs
+    2. Amazon Route 53
+2. **Logs published by AWS services**.
+   Currently, more than 30 AWS services publish logs to CloudWatch.
+   These include Amazon API Gateway, AWS Lambda, AWS CloudTrail, and many others.
+3. **User Logs**.
+   These are logs of user applications and local resources,
+   as well as logs from other clouds.
 
 </details>
 <br>

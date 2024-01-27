@@ -7,11 +7,11 @@
         </big></big></b>
     </summary>
 
-Amazon Simple Notification Service (Amazon SNS) —
-это веб-служба отправки уведомлений из облака.
-Он предоставляет разработчикам возможность публиковать сообщения
-из приложения и немедленно доставлять их подписчикам
-или другим приложениям.
+Amazon Simple Notification Service (Amazon SNS) -
+is a web service for sending notifications from the cloud.
+It provides developers with the ability to publish messages
+from the application and immediately deliver them to subscribers
+or other applications.
 
 </details>
 <br>
@@ -25,14 +25,14 @@ Amazon Simple Notification Service (Amazon SNS) —
         </big></big></b>
     </summary>
 
-Amazon SNS позволяет приложениям отправлять срочные сообщения
-нескольким подписчикам с помощью механизма «push»,
-что избавляет от необходимости периодически проверять или «опрашивать»
-наличие обновлений.
+Amazon SNS allows apps to send urgent messages
+to several subscribers using the “push” mechanism,
+which eliminates the need to periodically check or “query”
+Availability of updates.
 
-SQS - это служба очереди сообщений, используемая для обмена сообщениями
-через модель опроса (когда пользователь сам спрашивает если ли сообщение),
-и может использоваться для разделения компонентов отправки и получения.
+SQS is a message queuing service used for messaging
+through a survey model (when the user himself asks if there is a message),
+and can be used to separate sending and receiving components.
 
 </details>
 <br>
@@ -46,10 +46,10 @@ SQS - это служба очереди сообщений, используе�
         </big></big></b>
     </summary>
 
-Сообщение отправляются по транспортным протоколам
-HTTP, HTTPS, Email-JSON и SQS,
-будет состоять из простого объекта JSON,
-который будет включать вложенную информацию
+Messages are sent using transport protocols
+HTTP, HTTPS, Email-JSON and SQS,
+will consist of a simple JSON object,
+which will include the attached information
 
 </details>
 <br>
@@ -63,16 +63,16 @@ HTTP, HTTPS, Email-JSON и SQS,
         </big></big></b>
     </summary>
 
-Максимальный размер — 262 144 байта (256 КБ).
+The maximum size is 262,144 bytes (256 KB).
 
-Для отправки сообщений размером более 256 КБ можно использовать
-расширенную клиентскую библиотеку Amazon SQS для Java.
+To send messages larger than 256 KB, you can use
+Amazon SQS Extended Client Library for Java.
 
-Эта библиотека позволяет отправлять сообщения Amazon SQS,
-содержащие ссылку на полезные данные сообщения в Amazon S3.
-Максимальный размер полезной нагрузки составляет 2 ГБ.
+This library allows you to send Amazon SQS messages,
+containing a link to the message payload in Amazon S3.
+The maximum payload size is 2 GB.
 
-В случае превышения aws разделит сообщения и отправит
+If exceeded, aws will split the messages and send
 
 </details>
 <br>
@@ -86,13 +86,13 @@ HTTP, HTTPS, Email-JSON и SQS,
         </big></big></b>
     </summary>
 
-Лучший механизм использования очередей является собственно механизм очереди
-когда что-то одновременно получает огромное кол-во сообщений и эти
-сообщения мы не можем обработать сразу ввиду своих вычислительных способностей
+The best mechanism for using queues is the actual queue mechanism
+when something simultaneously receives a huge number of messages and these
+We cannot process messages immediately due to our computing abilities
 
-Физическим примером является смс голосование, когда огромное кол-во людей
-фигачить в сервис и он кидает все сообщения в очередь и обрабатывает
-без риска тормоза всей системы
+A physical example is SMS voting, when a huge number of people
+fig into the service and it throws all messages into a queue and processes
+without the risk of slowing down the entire system
 
 </details>
 <br>
@@ -106,33 +106,34 @@ HTTP, HTTPS, Email-JSON и SQS,
         </big></big></b>
     </summary>
 
-Стандартные очереди
+Standard queues
 
-- **Неограниченная пропускная способность.**
-  Стандартные очереди поддерживают почти неограниченное количество
-  транзакций в секунду (TPS).
+- **Unlimited bandwidth.**
+  Standard queues support an almost unlimited number of
+  transactions per second (TPS).
 
-- **Доставка по принципу «хотя бы один раз».**
-  Сообщение доставляется как минимум один раз, иногда доставляется несколько копий сообщения.
+- **Delivery on the “at least once” principle.**
+  The message is delivered at least once, sometimes several copies of
+the message are delivered.
 
-- **Упорядочение «Наилучшее из возможного».**
-  Иногда сообщения могут быть доставлены в порядке, отличающемся от
-  порядка их отправки.
+- **Best Possible Ordering**
+  Sometimes messages may be delivered in a different order than
+  the order in which they are sent.
 
-Очереди FIFO (First in First out)
+FIFO (First in First out) queues
 
-- **Высокая пропускная способность.**
-  По умолчанию очереди FIFO поддерживают обработку до 300 сообщений
-  в секунду (300 операций отправки, получения или удаления в секунду).
+- **High throughput.**
+  By default, FIFO queues support up to 300 messages.
+  per second (300 send, receive, or delete operations per second).
 
-- **Строго однократная обработка.**
-  Сообщение доставляется один раз и остается доступным до тех пор,
-  пока получатель не обработает и не удалит его.
-  Дублирующие сообщения в очередь не помещаются.
+- **Strictly one-time processing.**
+  The message is delivered once and remains available as long as
+  until the recipient processes and deletes it.
+  Duplicate messages are not placed in the queue.
 
-- **Доставка по принципу «первым получено – первым отправлено».**
-  Порядок, в котором сообщения отправляются и принимаются,
-  строго сохраняется.
+- **Delivery on a first-in, first-out basis.**
+  The order in which messages are sent and received is
+  strictly preserved.
 
 </details>
 <br>
@@ -146,9 +147,9 @@ HTTP, HTTPS, Email-JSON и SQS,
         </big></big></b>
     </summary>
 
-В зависимости от типа передачи сообщения, цена выстраивается от кол-ва сообщений
-как пример
-Mobile Push Notifications	$0.50 per million notifications
+Depending on the type of message transmission, the price is based on the number of messages
+as an example
+Mobile Push Notifications $0.50 per million notifications
 
 </details>
 <br>
@@ -162,10 +163,10 @@ Mobile Push Notifications	$0.50 per million notifications
         </big></big></b>
     </summary>
 
-В зависимости от типа передачи сообщения, цена выстраивается от кол-ва сообщений
-и типа выбранной обработки (Standard \\ FIFO)
-как пример
-From 1 Million to 100 Billion Requests/Month	(ST)$0.40	(FIFO)$0.50
+Depending on the type of message transmission, the price is based on the number of messages
+and type of selected processing (Standard \\ FIFO)
+as an example
+From 1 Million to 100 Billion Requests/Month (ST)$0.40 (FIFO)$0.50
 
 </details>
 <br>
@@ -179,12 +180,12 @@ From 1 Million to 100 Billion Requests/Month	(ST)$0.40	(FIFO)$0.50
         </big></big></b>
     </summary>
 
-Советы от aws:
-- Убедитесь, что топики (sns) не являются общедоступными
-- Реализовать доступ с минимальными привилегиями
-- Реализовать шифрование на стороне сервера
-- Принудительное шифрование данных при передаче
-- Рассмотрите возможность использования конечных точек VPC для доступа к Amazon SNS.
+Tips from aws:
+- Make sure that topics (sns) are not public
+- Implement access with minimal privileges
+- Implement server-side encryption
+- Forced encryption of data during transmission
+- Consider using VPC endpoints to access Amazon SNS.
 
 </details>
 <br>

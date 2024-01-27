@@ -32,41 +32,39 @@ Workflow:
         </big></big></b>
     </summary>
 
-Преимущества CloudFormation:
+**AWS CloudFormation offers several benefits:**
+Infrastructure as Code: AWS CloudFormation is essentially **infrastructure as code**,
+which can create a seamless clone of the server configuration at any time. 
+This allows for the infrastructure to be deployed quickly, reliably, and repeatedly.
 
-- <b> Скорость развертывания </b> 
+**Simplified Infrastructure Management:** 
+AWS CloudFormation simplifies the management of AWS infrastructure resources 
+by assisting in simple modeling and setting up with ease in an orderly manner. 
+It allows you to spend less time managing those resources 
+and more time focusing on your applications that run in AWS.
 
-(Сама суть Cloud Formation в том, чтобы
-после единовременной настройки Formation не настраивать процесс
-деплоя вообще, что играет огромную роль)
+**Quick Replication of Infrastructure:** If your application requires additional 
+availability, you can easily replicate your infrastructure in multiple regions
+using the same CloudFormation template.
 
-- <b> Масштабирование </b> 
+**Easy Control and Tracking of Infrastructure Changes:** 
+AWS CloudFormation allows you to easily control 
+and track changes to your infrastructure. 
+If problems occur after you complete an update, 
+you can easily roll back your infrastructure to the original settings.
 
-(Возможность в любой момент времени контролировать,
-уменьшать или увеличивать кол-во развернутых инстансов)
+**Automation:** AWS CloudFormation helps to automate the process of creating,
+configuring, and managing AWS resources.
 
-- <b> Интеграция услуг </b> 
+**Template-Based Design:** It is easier to build a CloudFormation using
+a template design which can be designed with respect to user preference. 
+A template describes all your resources and their properties.
 
-(Из-за того что владельцем является AWS есть тонкая настройка
-и интеграция предоставляемых услуг сразу на разворачиваемые
-инстансы: это могут быть s3, vpc, расширение памяти и т.д.)
+In summary, AWS CloudFormation is a powerful tool that can help manage, 
+replicate, and track changes to your AWS infrastructure 
+in a simplified and automated manner.
 
-- <b> Последовательность </b> 
-
-(CloudFormation гарантирует, что приложения и службы будут
-согласованными и идентичными, независимо от того,
-сколько экземпляров создается)
-
-- <b> Безопасность </b> 
-
-(Гарантирует снижения риска недосмотра или человеческих ошибок)
-
-- Consistent — infrastructure is provisioned consistently, including mistakes
-- Less time and less effort than manual configuring
-- Version Control — all templates have versions
-- Free to Use
-- Can be used to manage updates and dependencies
-- Roll back to the previous state or delete the entire stack as well
+https://www.gangboard.com/blog/aws-cloudformation/
 
 </details>
 <br>
@@ -80,11 +78,37 @@ Workflow:
         </big></big></b>
     </summary>
 
-- глобально масштабировать инфраструктуру.
-- помогает соблюдать стандарты безопасности,
-  соответствия и конфигурации в рамках всей организации,
-  учетных записей AWS и регионов.
-- легко интегрировать с другими сервисами AWS
+AWS CloudFormation can be used in a variety of scenarios, including but not limited to:
+
+**Manage Infrastructure with DevOps:** 
+AWS CloudFormation can automate, test, 
+and deploy infrastructure templates with continuous integration 
+and delivery (CI/CD) automations.
+
+**Scale Production Stacks:** 
+It can run anything from a single Amazon Elastic Compute Cloud (EC2) 
+instance to a complex multi-region application.
+
+**Share Best Practices:** It can define an Amazon Virtual Private Cloud (VPC)
+subnet or provisioning services like AWS OpsWorks or 
+Amazon Elastic Container Service (ECS) with ease.
+
+**Simplify Infrastructure Management:** 
+For a scalable web application that also includes a backend database, 
+you might use an Auto Scaling group, an Elastic Load Balancing load balancer, 
+and an Amazon Relational Database Service database instance.
+
+**Quickly Replicate Your Infrastructure:** 
+If your application requires additional availability,
+you can easily replicate it in multiple regions so that
+if one region becomes unavailable, your users can still use 
+your application in other regions.
+
+**Easily Control and Track Changes to Your Infrastructure:**
+In some cases, you might have underlying resources that you want to upgrade incrementally.
+
+https://aws.amazon.com/ru/cloudformation/
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
 
 </details>
 <br>
@@ -97,6 +121,24 @@ Workflow:
             What happens when a CF stack is updated?
         </big></big></b>
     </summary>
+
+When a CloudFormation (CF) stack is updated, the following steps occur:
+
+**Submit Changes:** You submit changes, such as new input 
+parameter values or an updated template
+
+**Comparison:** AWS CloudFormation compares the changes
+you submit with the current state of your stack.
+
+**Update Resources:** AWS CloudFormation updates only the changed resources.
+
+**Update Methods: AWS CloudFormation provides two methods for updating stacks:** 
+direct update or creating and executing change sets.
+- Direct Update: When you directly update a stack, you submit 
+changes and AWS CloudFormation immediately deploys them
+- Change Sets: With change sets, you can preview the changes 
+AWS CloudFormation will make to your stack,
+and then decide whether to apply those changes
 
 AWS CloudFormation сравнивает отправляемые вами изменения
 с текущим состоянием вашего стека и обновляет только измененные ресурсы.
@@ -149,64 +191,37 @@ consists of
 </details>
 <br>
 
-[//]:# (What are the essential building blocks which Cloud Formation templates do not work without?)
+[//]:# (What is Nested stack?)
 
 <details>
     <summary>
         <b><big><big>
-            What are the essential building blocks which Cloud Formation templates do not work without?
+            What is Nested stack?
         </big></big></b>
     </summary>
 
-1. (Необязательный) список параметров шаблона (входные значения)
-2. (Необязательный) список выходных значений (например, полный URL-адрес веб-приложения).
-3. (Необязательный) список таблиц данных, используемых для поиска значений статической конфигурации (например, имен
-   AMI).
-4. (Обязательно)    список ресурсов AWS и их значения конфигурации
-5. (Обязательно)    номер версии формата файла шаблона
-6.
+A Nested Stack in AWS CloudFormation is a stack created as part of another stack.
+You create a nested stack within another stack by using 
+the AWS::CloudFormation::Stack resource. 
+As your infrastructure grows, common patterns 
+can emerge in which you declare the same components in multiple templates
 
-</details>
-<br>
+Here are some key points about nested stacks:
 
-[//]:# (Что такое Nested stack?)
+- **Efficiency:** Reusing common template patterns using nested stacks
+is efficient and considered a best practice in CloudFormation.
 
-<details>
-    <summary>
-        <b><big><big>
-            Что такое Nested stack?
-        </big></big></b>
-    </summary>
+- **Hierarchy of Stacks:** Nested stacks can themselves contain other nested stacks,
+resulting in a hierarchy of stacks
 
-Вложенные стеки — это стеки, созданные как часть других стеков.
-Вы создаете вложенный стек в другой стек,
-используя ресурс AWS::CloudFormation::Stack.
+- **Stack Operations:** Certain stack operations, such as stack updates, 
+should be initiated from 
+the root stack rather than performed directly on nested stacks themselves
 
-По мере роста вашей инфраструктуры могут появляться общие шаблоны,
-в которых вы объявляете одни и те же компоненты в нескольких шаблонах.
-Вы можете выделить эти общие компоненты и создать для них специальные
-шаблоны. Затем используйте ресурс в своем шаблоне для ссылки на другие
-шаблоны, создавая вложенные стеки.
+- **Template-Based Design:** You can separate out these common 
+components and create dedicated templates for them.
 
 [![img](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)]
-
-</details>
-<br>
-
-[//]:# (What is the order of resource creation in CF stacks?)
-
-<details>
-    <summary>
-        <b><big><big>
-            What is the order of resource creation in CF stacks?
-        </big></big></b>
-    </summary>
-
-С помощью атрибута DependsOn вы можете указать,
-что создание определенного ресурса следует за другим.
-Когда вы добавляете атрибут DependsOn к ресурсу,
-этот ресурс создается только после создания ресурса,
-указанного в атрибуте DependsOn.
 
 </details>
 <br>
@@ -220,18 +235,32 @@ consists of
         </big></big></b>
     </summary>
 
-AWS CloudFormation обеспечивает создание или удаление всех ресурсов
-стека по мере необходимости.
+When a CloudFormation (CF) stack is deleted, 
+AWS CloudFormation deletes all the resources 
+that were created as part of that stack1. Here’s the process in detail:
 
-Поскольку AWS CloudFormation обрабатывает ресурсы стека как единое целое,
-все они должны быть успешно созданы или удалены,
-чтобы стек был создан или удален.
+- **Delete Stack Command:** You initiate the delete stack command.
 
-Если ресурс создать не удается, AWS CloudFormation выполняет
-откат стека и автоматически удаляет все созданные ресурсы.
+- **Resource Deletion:** AWS CloudFormation deletes all 
+the resources associated with the stack. 
+The resources are deleted in the reverse order of their creation.
 
-Если ресурс невозможно удалить, все оставшиеся ресурсы
-сохраняются до тех пор, пока стек не будет успешно удален.
+- **Stack Deletion:** Once all the resources are deleted,
+the stack itself is deleted.
+
+- **Rollback on Failure:** If a resource can’t be deleted,
+any remaining resources are retained until the stack can be successfully deleted.
+AWS CloudFormation rolls the stack back and automatically 
+deletes any resources that were created.
+
+Please note that you are charged for the stack resources 
+for the time they were operating, even if you deleted the stack right away. 
+Also, it’s important to remember that some resources might not 
+be deleted if there are dependencies outside the stack.
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-stack.html
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html
 
 </details>
 <br>
@@ -245,27 +274,29 @@ AWS CloudFormation обеспечивает создание или удален
         </big></big></b>
     </summary>
 
-Прежде чем использовать шаблон для создания или обновления стека,
-вы можете использовать CloudFormation для его проверки.
-Проверка шаблона может помочь вам обнаружить синтаксические
-и некоторые семантические ошибки, такие как циклические зависимости,
-до того, как CloudFormation создаст какие-либо ресурсы.
+Yes, it is possible to test AWS CloudFormation (CF) templates 
+before creating any resources with them. 
+Here are a few methods:
 
-</details>
-<br>
+* **Validate the Template:** AWS provides a command aws cloudformation 
+validate-template that checks your template for syntax errors. 
+However, this command only checks the syntax of your template 
+and does not ensure that the property values specified for a resource 
+are valid for that resource. 
+It also does not determine the number of resources that will 
+exist when the stack is created.
+ 
+* **Use AWS CloudFormation Linter (cfn-lint):** 
+This tool validates your CloudFormation templates against the AWS CloudFormation Resource Specification2. It checks for valid values for resource properties and best practices2. Plugins for cfn-lint are available for a number of code editors2.
+ 
+* **Create Change Sets:** 
+Before updating your stacks, you can create change sets.
+This allows you to see how the changes might impact your resources.
 
-[//]:# (What is CF pricing?)
-
-<details>
-    <summary>
-        <b><big><big>
-           What is CF pricing?
-        </big></big></b>
-    </summary>
-
-Общая сумма = (операции стороннего обработчика * цена за обработчик)
-
-+ (продолжительность свыше 30 секунд * цена за секунду)
+Please note that there is no sandbox or test area for AWS CloudFormation stacks,
+so you will be charged for the resources you create during testing. 
+Therefore, it’s recommended to delete any resources or 
+stacks once you’re done testing to avoid unnecessary charges.
 
 </details>
 <br>

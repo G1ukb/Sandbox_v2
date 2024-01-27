@@ -107,7 +107,7 @@ Global Secondary Index
     </summary>
 
 - Use query expression (default)
-- Use AWS scan (тула формирует кверю за тебя)
+- Use AWS scan (Scan will form a query for you)
 
 </details>
 <br>

@@ -4,63 +4,42 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="Preparation for D3, actualize knowledge's regarding SOFT skills">
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/img/ExampleOfAppSpecFile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/img/STSWorkflow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/education/img/UserPoolWorkflow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocalSendbox/src/main/java/multiCount.java" afterDir="false" />
+    <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticContainerService(ECS).md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Serverless_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task10.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task_10_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L10-Serverless/Task_10_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L11-CI_CD/CI_CD.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L11-CI_CD/CI_CD_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L11-CI_CD/Task_11_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L11-CI_CD/Task_11_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Report_4.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/S3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/S3_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Task_4_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L4-S3/Task_4_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task6.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task_6_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/Task_6_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/VPC.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L6-VPC/VPC_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/CloudFormation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/CloudFormation_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task7.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task_7_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L7-CloudFormation/Task_7_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task8.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task_8_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L8-RDS/Task_8_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/SNS_SQS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/SNS_SQS_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task9.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task_9_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L9-SNS_SQS/Task_9_Theory.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Practice.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Theory.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Practice.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Theory.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2_questions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Practice.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Theory.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSandbox/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSandbox/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSendbox/src/main/java/multiCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSendbox/target/classes/multiCount.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +69,12 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "G1ukb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;G1ukb&quot;
   }
-}]]></component>
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -177,6 +156,10 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="125" />
@@ -209,27 +192,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/Hleb_Belski/Desktop/WorkProjects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "spring.configuration.checksum": "50780f47f6839d47d60bc4555ee00c3f",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hleb_Belski/Desktop/WorkProjects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;50780f47f6839d47d60bc4555ee00c3f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\SQL\education" />
@@ -358,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1666358063153</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Preparation for D3, actualize knowledge's regarding SOFT skills">
+      <option name="closed" value="true" />
+      <created>1705657728706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705657728706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">

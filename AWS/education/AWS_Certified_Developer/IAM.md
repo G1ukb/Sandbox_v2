@@ -9,31 +9,31 @@
         </big></big></b>
     </summary>
 
-**AWS Identity and Access Management (IAM)** - сервис, который предоставляет 
-возможности безопасного управления доступом к сервисам и ресурсам AWS.
-Используя IAM, можно создавать пользователей AWS и группы, управлять ими,
-а также использовать разрешения, чтобы предоставлять или запрещать доступ к ресурсам AWS.
+**AWS Identity and Access Management (IAM)** is a service that provides
+capabilities to securely control access to AWS services and resources.
+Using IAM, you can create and manage AWS users and groups,
+and use permissions to grant or deny access to AWS resources.
 
-**Компоненты IAM**:
-- Пользователи (Users)              - Кто управляет системой
-- Группы (Groups)                   - Объединения пользователей и выдача им правил работы
-- Полиси (Policies)                 - Правила доступа для сервисов и пользователей
-- Роли (Roles)                      - Правила доступа работы сервисов
-- сервис токенов безопасности (STS) - предоставление временного доступа к записям 
+**IAM Components**:
+- Users - Who controls the system
+- Groups - Associations of users and issuing operating rules to them
+- Policies - Access rules for services and users
+- Roles - Access rules for services
+- security token service (STS) - providing temporary access to records
 
-**Главные функции IAM**:
-- Вы можете предоставить другим людям разрешение на администрирование 
-  и использование ресурсов в вашей учетной записи AWS, не сообщая свой пароль или ключ доступа.
-- Вы можете предоставлять разные разрешения разным людям для разных ресурсов.
-- Вы можете предоставляnm вашим приложениям разрешения на доступ к другим ресурсам AWS.
-- Вы можете добавить двухфакторную аутентификацию для своей учетной записи 
-  и для отдельных пользователей для дополнительной безопасности.
-- Вы можете разрешить пользователям использовать (STS) для получения временного доступа
-  к вашей учетной записи AWS.
-- Мониторинг информации об удостоверениях IAM, которые запрашивали ресурсы в вашей учетной записи.
-- IAM подтвержден на соответствие стандарту безопасности данных индустрии платежных карт (PCI) (DSS).
-- IAM и AWS Security Token Service (STS) предлагаются без дополнительной оплаты.
-
+**Main functions of IAM**:
+- You can grant administration permission to other people
+  and use resources in your AWS account without sharing your password or access key.
+- You can grant different permissions to different people for different resources.
+- You can grant your applications permissions to access other AWS resources.
+- You can add two-factor authentication for your account
+  and for individual users for additional security.
+- You can allow users to use (STS) to gain temporary access
+  to your AWS account.
+- Monitor information about IAM identities that have requested resources in your account.
+- IAM is certified to comply with the Payment Card Industry (PCI) 
+Data Security Standard (DSS).
+- IAM and AWS Security Token Service (STS) are offered at no additional cost.
 </details>
 <br>
 
@@ -49,36 +49,37 @@
     </summary>
 
 ![Image alt](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/PolicyEvaluationHorizontal.png)
-Чтобы окончательно выставить приоритет проходятся следующие уровни проверок
 
-1. **Неявное отрицание.**
-   AWS оценивает все политики в аккаунте, применимые к запросу, 
-   отклоняя запрос если находит Deny инструкцию
-2. **Service control policies уровень.**
-   AWS оценивает Service control policies применимые к организации.
-   Если не находит никаких Allow в SCP, запрос неявно отклоняется.
-3. **Политики на основе ресурсов.**
-   Есть ли у запрошенного ресурса есть политика на основе ресурсов и эта политика 
-   предоставляет Allow доступ. То запрос обрабатывается и это окончательное решение.
-4. **IAM Граница разрешений (Permissions boundary)**
-   Если политика, используемая для установки границы разрешений,
-   не разрешает запрошенное действие, запрос отклоняется.
-5. **Политика сессии**
-   Если политика сеанса присутствует и не разрешает запрошенное действие, 
-   запрос неявно отклоняется.
-6. **Политики на основе идентификационных данных**
-   Смотрятся политики пользователя и политики из групп, к которым принадлежит пользователь.
-   Если какая-либо политика разрешает запрошенное действие, то решение окончательно «Разрешить».
-   Если таких нет, то окончательно "Запретить"
-7. **В любом месте проверки если находится ошибка** выбивается принудительное "Запретить"
+To finally set the priority, the following levels of checks are passed:
 
-Упрощенно:
-- Проверка Аккаунта
-- Проверка полиси организации
-- Проверка полиси ресурсов (если allow на этом этапе то доспут дается, если нет идем дальше)
-- Проверка IAM к пользователю
-- Проверка сеанса сессии (если таковая имеется)
-- Проверка групп в которых состоит пользователь
+1. **Implicit denial.**
+   AWS evaluates all policies in the account that apply to the request,
+   rejecting the request if it finds a Deny instruction
+2. **Service control policies level.**
+   AWS evaluates the Service control policies applicable to the organization.
+   If it does not find any Allows in SCP, the request is implicitly rejected.
+3. **Resource-based policies.**
+   Does the requested resource have a resource based policy and that policy
+   grants Allow access. Then the request is processed and this is the final decision.
+4. **IAM Permissions boundary**
+   If the policy used to set the permission boundary is
+   does not allow the requested action, the request is rejected.
+5. **Session Policy**
+   If the session policy is present and does not allow the requested action,
+   the request is implicitly rejected.
+6. **Identity-Based Policies**
+   The user's policies and policies from the groups to which the user belongs are looked at.
+   If any policy allows the requested action, then the decision is final "Allow".
+   If there are none, then finally “Ban”
+7. **At any point in the check if an error is found** the forced “Disable” is selected
+
+Simplified:
+- Account verification
+- Checking the organization's policy
+- Checking the resource policy (if allow at this stage, then access is given, if not, go further)
+- IAM check for user
+- Session session check (if any)
+- Checking the groups the user belongs to
 
 </details>
 <br>
@@ -92,11 +93,12 @@
         </big></big></b>
     </summary>
 
-Доступ можно осуществить и через консоль. 
-Все креды того или иного пользователя хранятся в папке ~/.aws/credentials
+Access can also be achieved through the console.
+All credentials of a particular user are stored in the ~/.aws/credentials folder
 
-Консоль автоматически обращается за кредами в эту папку и пингует AWS сервисы для проверки
-наличия полиси для указанного IAM профиля. 
+The console automatically requests credits to this folder 
+and pings AWS services for verification
+availability of a policy for the specified IAM profile.
 
 </details>
 <br>
@@ -129,21 +131,21 @@ For:
         </big></big></b>
     </summary>
 
-- Заблокируйте ключи доступа корневого пользователя к своей учетной записи AWS
-- Создание отдельных пользователей IAM
-- Используйте группы для назначения разрешений пользователям IAM
-- По возможности используйте политики, определенные AWS, для назначения разрешений
-- Предоставить наименьшие привилегии
-- Использование уровней доступа для просмотра разрешений IAM
-- Настройте надежную политику паролей для ваших пользователей
-- Включить MFA для привилегированных пользователей
-- Используйте роли для приложений, работающих на инстансах Amazon EC2
-- Используйте роли для делегирования разрешений
-- Не сообщайте ключи доступа
-- Регулярно меняйте учетные данные
-- Удалить ненужные учетные данные
-- Используйте условия политики для дополнительной безопасности
-- Мониторинг активности в вашей учетной записи AWS
+- Lock the root user's access keys to your AWS account
+- Create individual IAM users
+- Use groups to assign permissions to IAM users
+- Whenever possible, use policies defined by AWS to assign permissions
+- Grant least privilege
+- Using access levels to view IAM permissions
+- Set up a strong password policy for your users
+- Enable MFA for privileged users
+- Use roles for applications running on Amazon EC2 instances
+- Use roles to delegate permissions
+- Do not share access keys
+- Change your credentials regularly
+- Remove unnecessary credentials
+- Use policy terms for added security
+- Monitor activity in your AWS account
 
 </details>
 <br>

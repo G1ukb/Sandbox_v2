@@ -9,16 +9,16 @@
         </big></big></b>
     </summary>
 
-Виртуальные функции — никаких серверов для управления!
-- Ограничено по времени - короткие исполнения 
-- Запускать по требованию (лямбда запускается только тогда, когда необходима)
-- Масштабирование автоматизировано! 
-(В случае необходимости можно настроить автоматическую масштабируемость)
-- Интеграция со всем набором сервисов AWS.
-- Интегрирован со многими языками программирования
-- Простой мониторинг с помощью AWS CloudWatch.
-- Легко получить больше ресурсов для каждой функции (до 10 ГБ ОЗУ!)
-- Увеличение оперативной памяти также улучшит работу процессора и сети!
+Virtual functions - no servers to manage!
+- Time limited - short executions
+- Run on demand (lambda runs only when needed)
+- Scaling is automated!
+  (If necessary, you can configure automatic scalability)
+- Integration with the entire range of AWS services.
+- Integrated with many programming languages
+- Easy monitoring using AWS CloudWatch.
+- Easily get more resources for each feature (up to 10GB RAM!)
+- Increasing RAM will also improve CPU and network performance!
 
 </details>
 <br>
@@ -32,16 +32,16 @@
         </big></big></b>
     </summary>
 
-Функции Lambda можно активировать разными способами:
-- HTTP-запросом
-  (При этом HTTP запрос может содержать несколько заголовков значения.
-  Для этого настраивается APL (application load balancer) которые будет конвертировать
+Lambda functions can be activated in different ways:
+- HTTP request
+  (In this case, an HTTP request may contain several value headers.
+  To do this, configure APL (application load balancer) which will convert
   ...?name=one&name=two --> {"name":["one,"two"]})
-- загрузкой нового документа в S3 (действие, загрузка определенного вайла по маске и т.д.)
-- запланированным заданием (с помощью EventBridge (например раз в минуту))
-- потоком данных AWS Kinesis
+- uploading a new document to S3 (action, loading a specific file by mask, etc.)
+- scheduled task (using EventBridge (for example once a minute))
+- AWS Kinesis data stream
 - Event Source Mapping for SQS & SQS FIFO
-- уведомлением от AWS SNS
+- notification from AWS SNS
 
 </details>  
 <br>
@@ -112,19 +112,19 @@ They are executed at Regional Edge Locations in major AWS Regions.
         </big></big></b>
     </summary>
 
-Лямбда позволяет автоматически обработать некоторое кол-во сообщение из очередей SQS
-и SQS FIFO.
+Lambda allows you to automatically process a certain number of messages from SQS queues
+and SQS FIFO.
 
-При этом Лямбда будет автоматически масштабироваться при чтении сообщение партиями (1-10) для
-более быстрой обработки. 
-При возникновении ошибки сообщения отправляются в очередь как отдельные элементы.
-(Так же есть настройка очереди недоставленных сообщений, в случае сбоев (DLQ))
-Lambda удаляет сообщение из очереди после успешной обработки. 
+In this case, Lambda will automatically scale when reading the message in batches (1-10) for
+faster processing.
+When an error occurs, messages are sent to the queue as individual items.
+(There is also a setting for a dead-letter queue in case of failures (DLQ))
+Lambda removes the message from the queue after successful processing.
 
-Может масштабироваться:
-- масштабируется по количеству активных групп сообщений.
-- может создать до 60 экземпляров в минуту
-- одновременно обрабатывать до 1000 пакетов сообщений в минуту
+Can be scaled:
+- scales according to the number of active message groups.
+- can create up to 60 copies per minute
+- simultaneously process up to 1000 message packets per minute
 
 </details>  
 <br>
@@ -138,15 +138,15 @@ Lambda удаляет сообщение из очереди после успе
         </big></big></b>
     </summary>
 
-Лямбда предлагает возможность настроить направление (конечные точки) для работы функции
-(до отсылки результата реста на клиент)
+Lambda offers the ability to configure the direction (endpoints) for the function to work
+(before sending the rest result to the client)
 
-Работает для асинхронных вызовов предлагая выбрать сценарии для успешных или фейл активностей.
+Works for asynchronous calls, offering to select scenarios for successful or failed activities.
 
-Конечной точной можно выбрать:
+You can choose the final exact one:
 - SQS
 - SNS
-- другая Lambda
+- another Lambda
 - Bus Amazon EventBridge
 
 </details>  
@@ -161,16 +161,16 @@ Lambda удаляет сообщение из очереди после успе
         </big></big></b>
     </summary>
 
-Оплата за запросы:
-- Первые миллион запросов бесплатны
-- 0,20 доллара США за 1 миллион запросов в дальнейшем
+Payment for requests:
+- The first million requests are free
+- $0.20 per 1 million queries thereafter
 
-Оплата за продолжительность: (с шагом 1 мс)
-- 400 000 ГБ-секунд вычислительного времени в месяц БЕСПЛАТНО (если используется 1гб ОЗУ)
-- 3 200 000 секунд, если для функции используется 128 МБ ОЗУ 
-- После этого 1 доллар США за 600 000 ГБ-секунд.
+Pay per duration: (in 1ms increments)
+- 400,000 GB-seconds of computing time per month FREE (if 1GB of RAM is used)
+- 3,200,000 seconds if the function uses 128 MB of RAM
+- After that, 1 USD per 600,000 GB-seconds.
 
-AWS Lambda очень дешевый и из-за этого очень популярный
+AWS Lambda is very cheap and very popular because of this
 
 </details>
 <br>
@@ -184,9 +184,9 @@ AWS Lambda очень дешевый и из-за этого очень попу
         </big></big></b>
     </summary>
 
-С помощью интерфейса командной строки (CLI) AWS SAM
-вы можете локально тестировать и «пошагово» отлаживать
-свои бессерверные приложения перед их загрузкой в облако AWS
+Using the AWS SAM Command Line Interface (CLI)
+you can test locally and debug "step by step"
+your serverless applications before uploading them to the AWS cloud
 
 </details>
 <br>
@@ -200,26 +200,28 @@ AWS Lambda очень дешевый и из-за этого очень попу
         </big></big></b>
     </summary>
 
-**При синхронном** вызове вы ждете, пока функция обработает событие
-и вернет ответ.
+**With a synchronous** call, you wait for the function to process the event
+and will return the response.
 
-- Клиент отправляет запрос / SDK / CLI --(request)--> Lambda
-- Клиент отправляет запрос / SDK / CLI <-(response)-- Lambda
-(В том числе если возникла ошибка. Ее обработкой должен заниматься клиент)
+- Client sends request / SDK / CLI --(request)--> Lambda
+- Client sends request / SDK / CLI <-(response)-- Lambda
+  (Including if an error occurs. The client must handle it)
 
-**При асинхронном** вызове Lambda ставит событие в очередь для обработки.
-В случае возникновения ошибки Lambda пытается повторить событие
+**When called asynchronously**, Lambda queues the event for processing.
+If an error occurs, Lambda tries to retry the event
 
-(1 минута ожидания 1 раз 2 остальные (всего 3 раза))
-Есть четкая настройка действий на успешное и неуспешное выполнение
+(1 minute wait 1 time 2 others (3 times in total))
+There is a clear setting of actions for successful and unsuccessful execution
 
-Асинхронные вызовы позволяют ускорить обработку запроса если вам не нужно ждать результат
-(пример вам нужно перебрать 1000 файлов)
+Asynchronous calls allow you to speed up request processing if you don't need to wait for the result
+(example you need to iterate through 1000 files)
 
-**Как это работает**:
-При асинхронном вызове любой запрос пользователя будет возвращать ожидаемый результат (например 200)
-ДАЖЕ ЕСЛИ на самом деле запрос вызвал ошибку. При возникновении ошибки несколько раз подряд система
-обработает запрос и (например отправит сообщение SQS что что-то пошло не так)
+**How it works**:
+When called asynchronously, any user request will return the expected 
+result (for example 200)
+EVEN IF the request actually caused an error. 
+If an error occurs several times in a row, the system
+will process the request and (for example, send an SQS message that something went wrong)
 
 </details>
 <br>
@@ -233,17 +235,18 @@ AWS Lambda очень дешевый и из-за этого очень попу
         </big></big></b>
     </summary>
 
-Лямбда предлагает возможность настроить параметры окружения на подобии postman реализации
+Lambda offers the ability to configure environment settings 
+similar to the Postman implementation
 
-Есть возможность создать переменные типа ключ значения (только тип string)
-И работать с ключами, а лямбда будет самостоятельно подставлять указанные значения.
+It is possible to create variables of the key-value type (string type only)
+And work with keys, and the lambda will independently substitute the specified values.
 
-**Чем это полезно:**
-- Настройте поведение функции без обновления кода
-- Переменные среды доступны для вашего кода
-- Lambda Service также добавляет собственные системные переменные среды.
-- Полезно хранить секретные параметры (они зашифрованные KMS)
-  (Секреты могут быть зашифрованы сервисным ключом Lambda или вашим собственным ключом CMK.)
+**How is it useful:**
+- Customize function behavior without updating code
+- Environment variables available to your code
+- Lambda Service also adds its own system environment variables.
+- Useful to store secret parameters (they are KMS encrypted)
+  (Secrets can be encrypted with a Lambda service key or your own CMK.)
 
 </details>  
 <br>
@@ -257,16 +260,17 @@ AWS Lambda очень дешевый и из-за этого очень попу
         </big></big></b>
     </summary>
 
-Лямбда позволяет отслеживать все свои действия с помощью мониторов/логирования/AWS X-Ray
-- Вызовы, продолжительность, одновременные выполнения
-- Количество ошибок, показатели успеха, дроссели
-- Сбои асинхронной доставки
-- Скорость итерирования (потоки Kinesis и DynamoDB)
+Lambda allows you to track all your actions using monitors/logging/AWS X-Ray
+- Calls, duration, concurrent executions
+- Number of errors, success rates, throttles
+- Asynchronous delivery failures
+- Iteration speed (Kinesis and DynamoDB streams)
 
-Для X-Ray есть переменные среды (они включаются по умолчанию, но о них удобно знать):
-- X_AMZN_TRACE_ID: содержит заголовок трассировки.
-- AWS_XRAY_CONTEXT_MISSING: по умолчанию LOG_ERROR.
-- AWS_XRAY_DAEMON_ADDRESS: IP_ADDRESS демона X-Ray:PORT
+There are environment variables for X-Ray (they are enabled by default, 
+but are handy to know):
+- X_AMZN_TRACE_ID: Contains the trace header.
+- AWS_XRAY_CONTEXT_MISSING: Defaults to LOG_ERROR.
+- AWS_XRAY_DAEMON_ADDRESS: IP_ADDRESS of the X-Ray daemon:PORT
 
 </details>  
 <br>
@@ -282,24 +286,25 @@ or If Lambda in VPC how it connect to public www?)
         </big></big></b>
     </summary>
 
-**Если лямбда находится за пределами vpc (virtual private connection)**
-- **У нее есть доступ к сети интернет, но нет прямого доступа к VPC**
-- Лямбда должна создать ENI (Elastic Network Interface) в подсетях VPC и подключаться через него
-- Для этого должна быть явно прописана роль **AWSLambdaVPCAccessExecutionRole**
+**If the lambda is outside the vpc (virtual private connection)**
+- **She has access to the Internet, but does not have direct access to the VPC**
+- Lambda must create ENI (Elastic Network Interface) in VPC subnets 
+and connect through it
+- To do this, the role **AWSLambdaVPCAccessExecutionRole** must be explicitly specified
 
-Выглядит это следующим образом
+It looks like this
 
-Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface))  ---> (Destination (example S3))   ]
+Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface)) ---> (Destination (example S3)) ]
 
-**Если лямбда находится в vpc и (virtual private connection)**
-- **У нее НЕТ доступа к сети интернет, но ЕСТЬ прямой доступ к компонентам VPC**
-- Лямбда может использовать 2 варианта
-  - Использовать NAT который будет использовать IGW (InternetGetWay)
-    (При этом IGW сможет стучать как за пределы (www) так и во внутренние aws сервисы)
-  - **если нужен приватный доступ к aws сервисам** можно воспользоваться VPC Endpoint для того,
-  чтобы стучать в aws сервисы приватно
+**If the lambda is in vpc and (virtual private connection)**
+- **She DOES NOT have access to the Internet, but DOES have direct access to VPC components**
+- Lambda can use 2 options
+    - Use NAT which will use IGW (InternetGetWay)
+      (In this case, IGW will be able to knock both outside (www) and into internal aws services)
+    - **if you need private access to aws services** you can use VPC Endpoint to
+      to knock on aws services privately
 
-выглядит это следующим образом
+it looks like this
 
 [(private subnet) Lambda <---> private s3] -> 
 1) [] -> Nat -> IGW -> www (or) aws s3
@@ -318,28 +323,31 @@ Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface))  ---> (Dest
         </big></big></b>
     </summary>
 
-Лямбда позволяет вызывать обработку лямбды до 1000 одновременных исполнений.
-- Каждая лямбда функция может ограничить максимальное кол-во обработок (=limit)
-- Каждый вызов вызодящий за пределы ограничения будет вызывать ("тротлинг")
+Lambda allows you to call lambda processing for up to 1000 simultaneous executions.
+- Each lambda function can limit the maximum number of treatments (=limit)
+- Every call that goes beyond the limit will cause ("throttled")
 
-**Поведение лямбды при тротлинге**
-- **При синхронном вызове** возврат ThrottleError - 429
-- **При асинхронном вызове** повтор попытки автоматически через время (максмум до 6 часов)
-, затем помещение в DLQ
+**Lambda behavior when throttling**
+- **When called synchronously** return ThrottleError - 429
+- **For an asynchronous call** retry automatically after a while (maximum up to 6 hours)
+  , then placement in DLQ
 
-**Чем опасны лимиты**
+**What are the dangers of limits**
 
-Если у вас есть три одновременно работающие лямбда функции и на одну из них поступает сразу 
-1000 запросов, то остальные 2 функции будут выивать тротринг до тех пор пока тысяча не будет 
-уменьшаться. (ЛИМИТЫ ЗАПРОСОВ ДЕЙСТВУЮ ДЛЯ ВСЕХ ЛЯМБД В СУММЕ)
+If you have three simultaneously running lambda functions and one of 
+them receives input at once
+1000 requests, then the remaining 2 functions will perform throttling 
+until there are a thousand decrease. 
+(REQUEST LIMITS VALID FOR ALL LAMBDA IN THE SUM)
 
-**Холодный запуск**
+**Cold start**
 
-Как и в Java когда первый раз запрос обрабатывает хуже потому что нужно первый раз достать ресурсы,
-так и в лямбдах может возникнуть данная ситуация.
-Для борьбы с этим в лямбда есть **предоставленный параллелизм (provisioned concurrency)**.
-лямбда функция вызывается заранее, чтобы предотвратить холодный вызов. 
-Все настройки выполняются через **Application Auto Scaling**
+As in Java, when the first time the request is processed worse 
+because you need to get resources the first time,
+This situation can also arise in lambdas.
+To combat this, lambdas have **provisioned concurrency**.
+The lambda function is called in advance to prevent cold calling.
+All settings are done via **Application Auto Scaling**
 
 </details>  
 <br>
@@ -353,18 +361,18 @@ Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface))  ---> (Dest
         </big></big></b>
     </summary>
 
-Выполнение:
-- Распределение памяти: 128 МБ – 10 ГБ (с шагом 1 МБ)
-- Максимальное время выполнения: 900 секунд (15 минут)
-- Переменные среды (4 КБ)
-- Емкость диска в «контейнере функций» (в /tmp): 512 МБ.
-- Параллельные выполнения: 1000 (можно увеличить)
+Performance:
+- Memory distribution: 128 MB – 10 GB (in 1 MB increments)
+- Maximum execution time: 900 seconds (15 minutes)
+- Environment Variables (4 KB)
+- Disk capacity in the “function container” (in /tmp): 512 MB.
+- Parallel executions: 1000 (can be increased)
 
-Развертывание:
-- Размер развертывания функции Lambda (сжатый ZIP-файл): 50 МБ.
-- Размер несжатого развертывания (код + зависимости): 250 МБ.
-- Можно использовать каталог /tmp для загрузки других файлов при запуске.
-- Размер переменных среды: 4 КБ.
+Deployment:
+- Lambda function deployment size (compressed ZIP file): 50 MB.
+- Uncompressed deployment size (code + dependencies): 250 MB.
+- You can use the /tmp directory to load other files at startup.
+- Environment variables size: 4 KB.
 
 </details>  
 <br>
@@ -378,16 +386,16 @@ Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface))  ---> (Dest
         </big></big></b>
     </summary>
 
-Доступны два типа управления параллелизмом:
+Two types of concurrency control are available:
 
-**Зарезервированный параллелизм** — зарезервированный параллелизм
-гарантирует максимальное количество одновременных экземпляров для функции.
-Когда функция зарезервировала параллелизм, никакая другая функция
-не может использовать этот параллелизм.
+**Reserved parallelism** - reserved parallelism
+guarantees the maximum number of concurrent instances for a function.
+When a function has reserved concurrency, no other function
+cannot exploit this parallelism.
 
-**Предоставленный параллелизм**. - Предоставленный параллелизм
-инициализирует запрошенное количество сред выполнения,
-чтобы они были готовы немедленно реагировать на вызовы вашей функции.
+**Provided parallelism**. - Provided parallelism
+initializes the requested number of runtimes,
+so that they are ready to immediately respond to calls to your function.
 
 </details>
 <br>
@@ -417,14 +425,14 @@ By event
         </big></big></b>
     </summary>
 
-Теперь ваши функции Lambda могут получать доступ к базам данных
-Amazon RDS, хранилищам данных Amazon Redshift,
-узлам Amazon ElasticCache и другим конечным точкам,
-которые доступны только из определенного VPC.
+Your Lambda functions can now access databases
+Amazon RDS, Amazon Redshift data warehouses,
+Amazon ElasticCache nodes and other endpoints,
+which are only accessible from a specific VPC.
 
-Вы должны предоставить дополнительную информацию о конфигурации VPC,
-такую как идентификаторы подсети VPC и идентификаторы группы безопасности,
-чтобы разрешить функциям Lambda доступ к ресурсам в Amazon VPC.
+You must provide additional information about the VPC configuration,
+such as VPC subnet IDs and security group IDs,
+to allow Lambda functions to access resources in your Amazon VPC.
 
 </details>
 <br>
@@ -438,11 +446,10 @@ Amazon RDS, хранилищам данных Amazon Redshift,
         </big></big></b>
     </summary>
 
-Gateway API позволяет выполнять общие задачи управления API,
-такие, как безопасность, кэширование, регулирование и мониторинг.
+Gateway API allows you to perform common API management tasks,
+such as security, caching, throttling and monitoring.
 
-Gateway API предоставляет ендпоинты к вашим приложениям AWS
-
+Gateway API provides endpoints to your AWS applications
 
 </details>
 <br>
@@ -748,20 +755,6 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 </details>
 <br>
 
-[//]:<>(Минусы лямбд)
-
-<details>
-    <summary>
-        <b><big><big>
-            Минусы лямбд
-        </big></big></b>
-    </summary>
-
-Java работает плоховато из-за это того что у java cold start (надо поднимать сначала JVM)
-
-</details>
-<br>
-
 [//]:# (What is EventBridge?)
 
 <details>
@@ -775,7 +768,7 @@ EventBridge is a serverless service that uses events
 to connect application components together, 
 making it easier for you to build scalable event-driven applications.
 
-Part of  Event-driven architecture
+Part of Event-driven architecture
 
 </details>  
 <br>

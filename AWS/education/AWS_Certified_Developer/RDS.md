@@ -9,53 +9,52 @@
         </big></big></b>
     </summary>
 
-RDS означает службу реляционной базы данных. (Relational Database Service)
+RDS stands for Relational Database Service. (Relational Database Service)
 
-**Это управляемая служба БД для БД, использующая SQL в качестве языка запросов.**
+**This is a managed database service for databases using SQL as the query language.**
 
-Это позволяет создавать базы данных в облаке, которыми управляет AWS.
-Среди поддерживаемых языков:
-- Postgres
+This allows you to create databases in the cloud that are managed by AWS.
+Supported languages include:
+-Postgres
 - MySQL
-- MariaDB
-- Oracle
+  -MariaDB
+  -Oracle
 - Micr. SQL Server
-- Aurora (собственная база данных AWS)
+- Aurora (AWS proprietary database)
 
-**Преимущество перед использованием RDS по сравнению с развертыванием БД на EC2**
-- RDS — это управляемая служба
-- Автоматический провижен изменений, развертывание патчей
-- Непрерывное резервное копирование и восстановление с определенной временной меткой
-- Панели мониторинга
-- Реплики чтения для повышения производительности чтения
-- Настройка в нескольких зонах доступности для аварийного восстановления (аварийное восстановление)
-- Возможность масштабирования (вертикальное и горизонтальное)
-- Хранилище с поддержкой EBS (gp2 или io1)
-- **НО вы не можете подключиться к своим инстансам по SSH** (Хотя с MYSQL у меня получалось)
+**Advantage of using RDS over deploying a database on EC2**
+- RDS is a managed service
+- Automatic change promotion, patch deployment
+- Continuous backup and restore with specific timestamp
+- Dashboards
+- Read replicas to improve read performance
+- Multi-AZ setup for disaster recovery (disaster recovery)
+- Possibility of scaling (vertical and horizontal)
+- Storage with EBS support (gp2 or io1)
+- **BUT you cannot connect to your instances via SSH** (Although I did it with MYSQL)
 
-**Резервные копии RDS**
-- Ежедневное полное резервное копирование базы данных (в период обслуживания)
-- Журналы транзакций резервируются RDS каждые 5 минут.
-- => возможность восстановления на любой момент времени 
-  (от самой старой резервной копии до 5 минут назад)
-- Срок хранения 7 дней (можно увеличить до 35 дней)
-- **может создавать Снимки БД:**
-  - Запускается пользователем вручную
-  - Сохранение резервной копии столько, сколько вы хотите
-  
-**Автоматическое масштабирование хранилища**
-- Помогает увеличить объем хранилища в вашем экземпляре БД RDS. Динамично
-- Когда RDS обнаруживает, что у вас заканчивается свободная база данных
-  хранилище, масштабируется автоматически
-- Избегайте ручного масштабирования хранилища базы данных. 
-- Необходимо установить максимальный порог хранилища (максимальный предел для хранилища БД)
-- Автоматически изменять хранилище, если: 
-  - Свободное хранилище составляет менее 10% выделенного хранилища. 
-  - Нехватка хранилища длится не менее 5минут. 
-  - 6 часов с момента последнего изменения 
-  - Полезно для приложений с непредсказуемыми рабочими нагрузками 
-  - Поддерживает все механизмы баз данных RDS (MariaDB, MySQL, PostgreSQL, SQL Server, Oracle)
+**RDS Backups**
+- Daily full database backup (during maintenance period)
+- Transaction logs are backed up by RDS every 5 minutes.
+- => possibility of recovery at any point in time
+  (from oldest backup to 5 minutes ago)
+- Shelf life 7 days (can be increased to 35 days)
+- **can create DB Snapshots:**
+  - Launched manually by the user
+  - Save backup for as long as you want
 
+**Automatic storage scaling**
+- Helps to increase the storage capacity of your RDS DB instance. Dynamically
+- When RDS detects that you are running out of free database
+  storage, scales automatically
+- Avoid manually scaling database storage.
+- You need to set the maximum storage threshold (maximum limit for DB storage)
+- Automatically change storage if:
+  - Free storage is less than 10% of allocated storage.
+  - Storage shortage lasts for at least 5 minutes.
+  - 6 hours since last change
+  - Useful for applications with unpredictable workloads
+  - Supports all RDS database engines (MariaDB, MySQL, PostgreSQL, SQL Server, Oracle)
 </details>
 <br>
 
@@ -104,15 +103,15 @@ https://aws.amazon.com/rds/features/read-replicas/?nc1=h_ls
         </big></big></b>
     </summary>
 
-Amazon берет деньги за часы работы RDS
-За его память и выделенную зарезервированную память
+Amazon charges for RDS hours
+For its memory and allocated reserved memory
 
-Так же:
-AWS **не взимает плату** за данные которые идут **внутри одного региона**
-(например между us-west-1a и us-west-1b плата не взимается)
+Also:
+AWS **does not charge** for data that goes **within one region**
+(for example, there is no charge between us-west-1a and us-west-1b)
 
-Если **данные идут в разные регионы, AWS взимает плату**
-(например между us-west-1a и us-east-1b)
+If **data goes to different regions, AWS will charge a fee**
+(for example between us-west-1a and us-east-1b)
 
 </details>
 <br>
@@ -126,16 +125,16 @@ AWS **не взимает плату** за данные которые идут
         </big></big></b>
     </summary>
 
-Amazon описывает следующие юз кейсы использования:
-- Рекламные технологии (потоки кликов, пользовательские события и профили пользователей)
-- Игры (списки лидеров, хранилища данных об игроках и игровые состояния).
-- Розничная торговля (онлайн-корзины, отслеживание броней и профили клиентов)
-- Банковское дело и финансы (обработку транзакций на основе событий, 
-  обнаружение мошенничества и сбор измененных данных.).
-- Медиа и развлечения (управление цифровыми правами, хранилища пользовательских 
-  данных и хранилища метаданных).
-- Программное обеспечение как услуга (SaaS) — хранилища метаданных контента, 
-  кэши метаданных и хранилища данных графа отношений.
+Amazon describes the following use cases:
+- Advertising technologies (clickstreams, user events and user profiles)
+- Games (leader lists, player data stores and game states).
+- Retail (online shopping carts, reservation tracking and customer profiles)
+- Banking and finance (event-based transaction processing,
+  fraud detection and altered data collection).
+- Media and entertainment (digital rights management, user storage
+  data and metadata repositories).
+- Software as a service (SaaS) - content metadata repositories,
+  metadata caches and relationship graph data stores.
 
 </details>
 <br>
@@ -149,33 +148,34 @@ Amazon описывает следующие юз кейсы использов�
         </big></big></b>
     </summary>
 
-**Шифрование в RDS:**
-- Шифрование в состоянии покоя
-- Возможность шифрования мастер-реплик и реплик чтения с помощью AWS KMS — шифрование AES-256.
-- Шифрование должно быть определено во время запуска. (При создании выбираем шифруем или нет)
-- Если мастер не зашифрован, реплики чтения не могут быть зашифрованы.
-- Прозрачное шифрование данных (Transparent Data Encryption TDE) доступно для Oracle и SQL Server.
-  (Это специальный метод шифрования продуктов от microsoft)
+**RDS encryption:**
+- Encryption at rest
+- Ability to encrypt master and read replicas using AWS KMS - AES-256 encryption.
+- Encryption must be defined at startup time. (When creating, 
+choose whether to encrypt or not)
+- If the master is not encrypted, read replicas cannot be encrypted.
+- Transparent Data Encryption TDE is available for Oracle and SQL Server.
+  (This is a special encryption method for Microsoft products)
 
-**Шифрование в полете**
-- SSL-сертификаты для шифрования данных в RDS во время полета
-- Предоставить параметры SSL с доверенным сертификатом при подключении к базе данных.
-- Для принудительного использования SSL:
-  - PostgreSQL: rds.force_ssl=1 в консоли AWS RDS (группы параметров).
-  - MySQL: внутри БД:
+**In-flight encryption**
+- SSL certificates for RDS data encryption during flight
+- Provide SSL options with a trusted certificate when connecting to the database.
+- To force the use of SSL:
+  - PostgreSQL: rds.force_ssl=1 in AWS RDS console (parameter groups).
+  - MySQL: inside the database:
     GRANT USAGE ON *.* TO 'mysqluser'@'%' REQUIRE SSL;
 
-**Операции шифрования RDS**
-- Шифрование резервных копий RDS
-- Моментальные снимки незашифрованных баз данных RDS не зашифрованы.
-- Моментальные снимки зашифрованных баз данных RDS шифруются
-- Может копировать снимок в зашифрованный 
+**RDS encryption operations**
+- Encryption of RDS backups
+- Snapshots of unencrypted RDS databases are not encrypted.
+- Snapshots of encrypted RDS databases are encrypted
+- Can copy a snapshot to an encrypted one
 
-**Чтобы зашифровать, незашифрованную базу данных RDS:**
-- Создание моментального снимка незашифрованной базы данных.
-- Скопируйте снимок, и включите шифрование для снимка.
-- Восстановить базу данных из зашифрованного снимка
-- Перенос приложений в новую базу данных и удаление старой базы данных.
+**To encrypt an unencrypted RDS database:**
+- Create a snapshot of an unencrypted database.
+- Copy the photo and enable encryption for the photo.
+- Restore database from encrypted snapshot
+- Transferring applications to a new database and deleting the old database.
 
 </details>
 <br>
@@ -189,26 +189,26 @@ Amazon описывает следующие юз кейсы использов�
         </big></big></b>
     </summary>
 
-**Сетевая безопасность**
-- Базы данных RDS обычно развертываются в частной подсети (private subnet), а не в общедоступной.
-- Безопасность RDS работает за счет использования **групп безопасности** 
-  (та же концепция, что и для EC2 instances) — 
-  контролирует, какой IP/группа безопасности может взаимодействовать с RDS
+**Network Security**
+- RDS databases are typically deployed on a private subnet rather than a public subnet.
+- RDS security works through the use of **security groups**
+  (same concept as for EC2 instances) -
+  controls which IP/security group can communicate with RDS
 
-**Управление доступом**
-- Политики IAM помогают контролировать, кто может управлять AWS RDS (через RDS API).
-- Для входа в базу данных можно использовать традиционное имя пользователя и пароль.
-- Аутентификация на основе IAM может использоваться для входа в RDS MySQL и PostgreSQL.
+**Access Control**
+- IAM policies help control who can manage AWS RDS (via the RDS API).
+- You can use your traditional username and password to log into the database.
+- IAM based authentication can be used to login to RDS MySQL and PostgreSQL.
 
-**RDS — IAM-аутентификация**
-- Проверка подлинности базы данных IAM работает с MySQL и PostgreSQL
-- Вам не нужен пароль, просто токен аутентификации, полученный через Вызовы API IAM и RDS
-- Срок действия токена аутентификации составляет 15 минут.
+**RDS - IAM authentication**
+- IAM database authentication works with MySQL and PostgreSQL
+- You don't need a password, just an authentication token obtained through IAM and RDS API calls
+- The authentication token expires after 15 minutes.
 
-**Преимущества**
-- Сетевой вход/выход должен быть зашифрован с использованием SSL.
-- IAM для централизованного управления пользователями вместо БД
-- Может использовать роли IAM и экземпляр EC2. профили для легкой интеграции
+**Advantages**
+- Network input/output must be encrypted using SSL.
+- IAM for centralized user management instead of database
+- Can use IAM roles and EC2 instance. profiles for easy integration
 
 </details>
 <br>
@@ -258,7 +258,7 @@ No for OLAP (there are another services for processing data analysis (RedShift))
 
 RDS Proxy have these pluses: 
 - Serverless and scales automatically database connections
-- Preserves (Сохраняет) app connections during failover
+- Preserves app connections during failover
 - Detects fail-over and routes requests
 - Deployable over Multu-AZ
 

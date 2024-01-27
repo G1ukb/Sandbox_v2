@@ -9,25 +9,16 @@
         </big></big></b>
     </summary>
 
-ElasticCache Помогает снизить нагрузку на базы данных для рабочих нагрузок с интенсивным чтением.
-**За счет кеширования запросов**
+Amazon ElastiCache is a web service that simplifies the setup, 
+operation, and scaling of a distributed cache in the cloud. 
+It is compatible with Redis and Memcached, providing real-time, 
+cost-optimized performance for modern applications.
 
-- ElasticCache управляется с помощью Redis или Memcached.
-- Помогает сделать ваше приложение анонимным.
-- AWS берет на себя обслуживание/установку исправлений ОС, оптимизацию, настройку,
-  мониторинг, восстановление после сбоев и резервное копирование
-- Использование ElasticCache **связано со значительными изменениями кода приложения**.
-
-**Работает по следующему принципу**
-
-- От клиента поступает запрос на получение данных.
-- Этот запрос отправляется в ElasticCache
-- Если запрос недоступен, запрос отправляется в RDS
-- Ответ отправляется на сторону клиента и записывается в ElastiCache
-- Таким образом следующий такой-же запрос вернется из кеша
-- (Это помогает разгрузить RDS)
-- (Кэш должен иметь стратегию аннулирования, чтобы убедиться,
-  что там используются только самые последние данные).
+ElastiCache can scale to hundreds of millions of 
+operations per second with microsecond response times, 
+and offers enterprise-grade security and reliability.
+It allows you to add a cache for frequently read data 
+to maximize resources and lower the total cost of ownership
 
 </details>
 <br>
@@ -84,19 +75,44 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/SelectEngine.html
         </big></big></b>
     </summary>
 
-Все кэши в ElasticCache:
+Amazon ElastiCache provides several security measures:
 
-- **Не поддерживать аутентификацию IAM.**
+* **Shared Responsibility Model:** Security is a shared responsibility 
+between AWS and the user. 
+AWS is responsible for protecting the infrastructure that 
+runs AWS services in the AWS Cloud. 
+The user is responsible for security in the cloud, 
+including the sensitivity of their data, their company’s requirements, 
+and applicable laws and regulations.
 
-AUTH Redis
 
-- Вы можете установить «пароль/токен»
-- Это дополнительный уровень безопасности для вашего кеша. (поверх групп безопасности)
-- Поддержка SSL в шифровании полета
+* **Data Protection:** Amazon ElastiCache provides data protection features. 
+All backups are written to Amazon Simple Storage Service (Amazon S3), 
+which provides durable storage.
 
-AUTH Memcached
 
-- Поддерживает аутентификацию на основе SASL (расширенная)
+* **Identity and Access Management:** Amazon ElastiCache allows you 
+to control who can access your ElastiCache resources.
+
+
+* **Compliance Validation:** Amazon ElastiCache meets the requirements
+of various compliance programs.
+
+
+* **Infrastructure Security:** Amazon ElastiCache benefits from a 
+data center and network architecture built to meet the
+requirements of the most security-sensitive organizations.
+
+  
+* **Automatic Backups:** ElastiCache for Redis clusters 
+should have automatic backup enabled.
+
+
+* **Auto Minor Version Upgrade:** ElastiCache for Redis cache 
+clusters should have auto minor version upgrade enabled.
+
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/redis-security.html
+https://docs.aws.amazon.com/securityhub/latest/userguide/elasticache-controls.html
 
 </details>
 <br>
@@ -110,32 +126,43 @@ AUTH Memcached
         </big></big></b>
     </summary>
 
-Репликация для ElasticCache проходи в двух режимах. С включенным или выключенным кластер модом
+Amazon ElastiCache implements replication in two ways:
 
-**Cluster Mode выключен:**
+- **Redis (Cluster Mode Disabled):** This mode has a single shard 
+that contains all of the cluster’s data in each node. 
+Each shard in a replication group has a single read/write 
+primary node and up to 5 read-only replica nodes. 
+Applications can read from any node in the cluster, 
+but can write only to the primary node. 
+Asynchronous replication mechanisms are used 
+to keep the read replicas synchronized with the primary.
 
-- Один основной узел, до 5 реплик
-- Асинхронная репликация
-- Основной узел используется для чтения/записи.
-- Остальные узлы доступны только для чтения
-- Один осколок, все узлы имеют все данные
-- Защита от потери данных в случае сбоя узла
-- Несколько зон доступности включены по умолчанию для отработки отказа.
-- Полезен для масштабирования производительности чтения
+![](https://docs.aws.amazon.com/images/AmazonElastiCache/latest/red-ug/images/ElastiCacheClusters-CSN-Redis-Replicas.png)
 
-![](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/images/ElastiCacheClusters-CSN-Redis-Replicas.png)
+- **Redis (Cluster Mode Enabled):** This mode has data partitioned 
+across up to 500 shards.
+Each shard in a replication group has a single read/write primary node 
+and up to 5 read-only replica nodes. 
+You can create a cluster with a higher number of shards and a lower number 
+of replicas totaling up to 90 nodes per cluster. 
+The node or shard limit can be increased to a maximum of 500 per cluster 
+if the Redis engine version is 5.0.6 or higher.
 
-**Cluster Mode включен:**
+![](https://docs.aws.amazon.com/images/AmazonElastiCache/latest/red-ug/images/ElastiCacheClusters-CSN-RedisClusters.png)
 
-- Данные разделены на сегменты (полезно в масштабе записи)
-- Каждый осколок имеет основной и до 5 узлов-реплик (та же концепция, что и раньше)
-- Возможность работы в нескольких зонах доступности
-- До 500 узлов на кластер:
-    - 500 осколков с одним мастером
-    - 250 осколков с 1 мастером и 1 репликой
-    - 83 осколка с одним мастером и 5 репликами
+In both modes, when you add a read replica to a cluster, 
+all of the data from the primary is copied to the new node. 
+From that point on, whenever data is written to the primary, 
+the changes are asynchronously propagated to all the read replicas.
 
-![](https://digitalcloud.training/wp-content/uploads/2022/01/elasticache-redis-cluster-mode-enabled.jpeg)
+To improve fault tolerance and reduce write downtime, 
+enable Multi-AZ with Automatic Failover for your Redis 
+(cluster mode disabled) cluster with replicas. 
+For more information, see Minimizing downtime in ElastiCache for Redis with Multi-AZ1.
+
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Redis.Groups.html
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.html
+https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.CreatingRepGroup.html
 
 </details>
 <br>
@@ -153,35 +180,35 @@ AUTH Memcached
 
 ![](https://miro.medium.com/max/1400/1*pP5PWsso59895EZ8BUYrFw.png)
 
-**Плюсы:**
+**Pros:**
 
-- Кешируются только запрошенные данные (кеш не заполняется неиспользуемыми данными)
-- Отказы узлов не являются фатальными (просто увеличена задержка для прогрева кеша)
+- Only requested data is cached (the cache is not filled with unused data)
+- Node failures are not fatal (the delay for warming up the cache is just increased)
 
-**Минусы**
+**Minuses**
 
-- Штраф за промах кэша, который приводит к 3 обращениям туда и обратно,
-  заметной задержке для этого запроса.
-- Устаревшие данные: данные могут быть обновлены в базе данных и устарели в кэше.
+- Penalty for a cache miss that results in 3 round trips,
+  noticeable delay for this request.
+- Stale data: Data may be updated in the database and stale in the cache.
 
-<h3>Write Through (сквозная запись) - добавление или обновление кеша при
-обновлении базы данных</h3>
+<h3>Write Through - adding or updating the cache when
+database update</h3>
 
 ![](https://miro.medium.com/max/686/1*4c2gEZR3yXkr48lhR5vO2w.png)
 
-**Плюсы:**
+**Pros:**
 
-- Данные в кеше никогда не устаревают, чтение выполняется быстро
-- Штраф за запись против штрафа за чтение (каждая запись требует 2 вызовов)
+- Data in the cache never becomes stale, reading is fast
+- Write penalty vs. read penalty (each write requires 2 calls)
 
-**Минусы:**
+**Minuses:**
 
-- Отсутствующие данные, пока они не будут добавлены/обновлены в БД.
-- Кэширование — большая часть данных никогда не будет прочитана.
+- Missing data until it is added/updated to the database.
+- Caching - most of the data will never be read.
 
-<h3>Лучший метод</h3>
-Лучший метод это сочетание сквозной записи и ленивой загрузки, потому что
-разный тип данных должен записываться в кеш при разных обстоятельствах
+<h3>Best method</h3>
+The best method is a combination of write-through and lazy loading because
+different types of data should be written to cache under different circumstances
 
 </details>
 <br>
@@ -195,16 +222,16 @@ AUTH Memcached
         </big></big></b>
     </summary>
 
-**Удаление кэша может происходить тремя способами:**
+**Deleting the cache can occur in three ways:**
 
-- Вы явно удаляете элемент из кеша
-- Элемент удален, так как память заполнена и давно не использовалась (LRU).
-- Вы устанавливаете срок жизни элемента (или TTL).
+- You are explicitly removing the item from the cache
+- The item was deleted because the memory is full and has not been used for a long time (LRU).
+- You set the item's time to live (or TTL).
 
-**TTL полезен для любого типа данных:**
+**TTL is useful for any data type:**
 
-- TTL может варьироваться от нескольких секунд до часов или дней.
-- Если из-за памяти происходит слишком много выселений, следует увеличить или уменьшить масштаб.
+- TTL can vary from a few seconds to hours or days.
+- If there are too many evictions due to memory, you should scale up or down.
 
 </details>
 <br>

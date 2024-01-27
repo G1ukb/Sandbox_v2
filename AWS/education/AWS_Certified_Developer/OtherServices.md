@@ -55,13 +55,13 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 <details>
     <summary>
         <b><big><big>
-            What is AWS WAF?
+            What is AWS WAF (Web Access Firewall)?
         </big></big></b>
     </summary>
 
-AWS WAF помогает защититься от распространенных сетевых эксплойтов и ботов, 
-способных повлиять на доступность продуктов, привести к 
-нарушению безопасности или задействовать чрезмерное количество ресурсов.
+AWS WAF helps protect against common network exploits and bots,
+that could affect the availability of products, lead to
+breach of security or use excessive amounts of resources.
 
 </details>
 <br>
