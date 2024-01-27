@@ -1,3 +1,10 @@
+<h1>SNS-SQS</h1>
+<h4> 
+
+[Back to menu](..%2FMenu.md)
+
+</h4>
+
 [//]:# (What is Amazon Simple Notification Service "Amazon SNS"?)
 
 <details>
@@ -199,40 +206,40 @@ Tips from aws:
         </big></big></b>
     </summary>
 
-Amazon SNS предоставляет полный набор функций безопасности
-для защиты ваших данных от несанкционированного и анонимного доступа,
-включая шифрование сообщений при передаче с помощью сертификатов
-Amazon ATS, шифрование сообщений в состоянии покоя с помощью ключей
-AWS KMS, конфиденциальность сообщений с помощью AWS PrivateLink
-и аудит с помощью AWS CloudTrail.
+Amazon SNS provides a full range of security features
+to protect your data from unauthorized and anonymous access,
+including encrypting messages in transit using certificates
+Amazon ATS, message encryption at rest using keys
+AWS KMS, Message Privacy with AWS PrivateLink
+and auditing using AWS CloudTrail.
 
-Кроме того, вы можете подписать зашифрованные очереди Amazon SQS
-на зашифрованные темы Amazon SNS,
-чтобы установить сквозное шифрование в своих сценариях обмена сообщениями.
+Additionally, you can sign Amazon SQS encrypted queues
+on encrypted Amazon SNS topics,
+to install end-to-end encryption in your messaging scripts.
 
 </details>
 <br>
 
-[//]:# (What is the anatomy of an SNS message? "атрибуты SNS")
+[//]:# (What is the anatomy of an SNS message?)
 
 <details>
     <summary>
         <b><big><big>
-            What is the anatomy of an SNS message? (атрибуты SNS)
+            What is the anatomy of an SNS message?
         </big></big></b>
     </summary>
 
-Имя — имя атрибута сообщения.
-Имя не должно начинаться или заканчиваться точкой,
-а также не должно иметь последовательных точек.
-Имя может содержать до 256 символов.
+Name - the name of the message attribute.
+The name must not begin or end with a period,
+and must not have consecutive dots.
+The name can contain up to 256 characters.
 
-Тип — поддерживаемые типы данных атрибута сообщения:
-String, String.Array, Number и Binary.
+Type—supported message attribute data types:
+String, String.Array, Number and Binary.
 
-Значение – указанное пользователем значение атрибута сообщения.
-Для строковых типов данных атрибут value имеет те же ограничения
-на содержимое, что и тело сообщения.
+Value – user-specified value of the message attribute.
+For string data types, the value attribute has the same restrictions
+the same content as the body of the message.
 
 </details>
 <br>
@@ -246,16 +253,16 @@ String, String.Array, Number и Binary.
         </big></big></b>
     </summary>
 
-Если сообщение не может быть успешно доставлено с первой попытки,
-Amazon SNS применяет четырехэтапную политику повторных попыток:
-1) повторные попытки без задержки между попытками,
-2) повторные попытки с минимальной задержкой между попытками,
-3) повторные попытки в соответствии с отсрочкой (настроено)
-4) повторные попытки с максимальной задержкой между попытками.
+If the message cannot be successfully delivered on the first try,
+Amazon SNS enforces a four-step retry policy:
+1) repeated attempts without delay between attempts,
+2) repeated attempts with a minimum delay between attempts,
+3) retries according to deferment (configured)
+4) repeated attempts with a maximum delay between attempts.
 
-Когда политика повторной доставки сообщения исчерпана,
-Amazon SNS может переместить сообщение в очередь недоставленных
-сообщений (DLQ).
+When the message redelivery policy is exhausted,
+Amazon SNS may move a message to the dead-letter queue
+messages (DLQ).
 
 </details>
 <br>
@@ -269,12 +276,12 @@ Amazon SNS может переместить сообщение в очеред�
         </big></big></b>
     </summary>
 
-Очередь недоставленных сообщений — это очередь Amazon SQS,
-которую подписка Amazon SNS может использовать для сообщений,
-которые не могут быть успешно доставлены подписчикам.
-Сообщения, которые не могут быть доставлены из-за ошибок клиента
-или сервера, помещаются в очередь недоставленных сообщений
-для дальнейшего анализа или повторной обработки.
+The dead letter queue is an Amazon SQS queue.
+that your Amazon SNS subscription can use for messages
+which cannot be successfully delivered to subscribers.
+Messages that could not be delivered due to client errors
+or server, are placed in the dead-letter queue
+for further analysis or reprocessing.
 
 </details>
 <br>
@@ -288,22 +295,22 @@ Amazon SNS может переместить сообщение в очеред�
         </big></big></b>
     </summary>
 
-По умолчанию подписчик темы Amazon SNS получает каждое сообщение,
-опубликованное в теме.
-Чтобы получать подмножество сообщений,
-подписчик должен назначить политику фильтрации для подписки на тему.
+By default, an Amazon SNS topic subscriber receives every message
+published in the topic.
+To receive a subset of messages,
+The subscriber must assign a filtering policy to the topic subscription.
 
-Политика фильтрации — это простой объект JSON,
-содержащий атрибуты, определяющие, какие сообщения получает подписчик.
-Когда вы публикуете сообщение в теме,
-Amazon SNS сравнивает атрибуты сообщения с атрибутами в политике
-фильтрации для каждой из подписок темы.
-Если какой-либо из атрибутов совпадает, Amazon SNS отправляет
-сообщение подписчику.
-В противном случае Amazon SNS пропускает подписчика
-без отправки сообщения.
-Если у подписки нет политики фильтрации, подписка получает
-каждое сообщение, опубликованное в ее теме.
+A filter policy is a simple JSON object,
+containing attributes that determine what messages the subscriber receives.
+When you post a message to a topic,
+Amazon SNS compares message attributes to attributes in policy
+filtering for each of the topic subscriptions.
+If any of the attributes match, Amazon SNS sends
+message to subscriber.
+Otherwise Amazon SNS skips the subscriber
+without sending a message.
+If a subscription does not have a filtering policy, the subscription receives
+every message posted in her thread.
 
 </details>
 <br>
@@ -317,9 +324,9 @@ Amazon SNS сравнивает атрибуты сообщения с атри�
         </big></big></b>
     </summary>
 
-- aws консоль CloudWatch,
-- собственного интерфейса командной строки (CLI) CloudWatch
-- программно с помощью CloudWatch API.
+- aws CloudWatch console,
+- CloudWatch's own command line interface (CLI)
+- programmatically using the CloudWatch API.
 
 </details>
 <br>
@@ -335,9 +342,10 @@ Amazon SNS сравнивает атрибуты сообщения с атри�
 
 ![img](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png)
 
-- Отправка сообщения (сообщение избыточно распределяется по серверам Amazon SQS.)
-- Получение сообщения (Пока сообщение A обрабатывается, оно остается в очереди и не возвращается для последующих запросов на получение)
-- Удаление
+- Sending a message (the message is redundantly distributed across Amazon SQS servers.)
+- Receive message (While message A is being processed, 
+it remains in the queue and is not returned for subsequent receive requests)
+- Removal
 
 </details>
 <br>
@@ -353,15 +361,15 @@ Amazon SNS сравнивает атрибуты сообщения с атри�
 
 ![img](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png)
 
-Длительный опрос Amazon SQS — это способ извлечения сообщений
-из ваших очередей Amazon SQS.
+Amazon SQS Long Polling is a way to retrieve messages
+from your Amazon SQS queues.
 
-В то время как **обычный короткий опрос** возвращает результат немедленно,
-даже если опрашиваемая очередь сообщений пуста
+While a **regular short poll** returns the result immediately,
+even if the polled message queue is empty
 
-**длительный** опрос не возвращает ответ до тех пор, пока сообщение
-не поступит в очередь сообщений или пока не истечет
-время длительного опроса.
+**long** poll does not return a response until the message
+will not arrive in the message queue or until it expires
+long polling time.
 
 </details>
 <br>

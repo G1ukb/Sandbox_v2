@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS/education/Menu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
@@ -22,24 +24,10 @@
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/AWS_Intro_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_2.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Report_3.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_2_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L1-3_Intro/Task_3_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/EC2_questions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task5.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Practice.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_EpamCourses/L5-EC2/Task_5_Theory.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSandbox/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSandbox/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSendbox/src/main/java/multiCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSendbox/target/classes/multiCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +189,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hleb_Belski/Desktop/WorkProjects&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hleb_Belski/Desktop/WorkProjects/ICanCode&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -256,6 +244,13 @@
         <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

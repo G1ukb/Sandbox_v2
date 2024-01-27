@@ -1,3 +1,10 @@
+<h1>VPC</h1>
+<h4> 
+
+[Back to menu](..%2FMenu.md)
+
+</h4>
+
 [//]:# (What is VPC?)
 
 <details>
@@ -7,10 +14,10 @@
         </big></big></b>
     </summary>
 
-Виртуальное частное облако (VPC) -
-это безопасное изолированное частное облако, размещенное в общедоступном облаке.
-VPC сочетают в себе масштабируемость и удобство общедоступных облачных вычислений
-с изоляцией данных при вычислениях в частном облаке.
+Virtual Private Cloud (VPC) -
+it is a secure, isolated private cloud hosted on a public cloud.
+VPCs combine the scalability and convenience of public cloud computing
+with data isolation for private cloud computing.
 
 </details>
 <br>
@@ -24,11 +31,10 @@ VPC сочетают в себе масштабируемость и удобс�
         </big></big></b>
     </summary>
 
-В настоящее время Amazon VPC поддерживает пять (5) диапазонов IP-адресов, 
-один (1) первичный и четыре (4)
-вторичных для IPv4.
-Каждый из этих диапазонов может иметь размер от / 28 (в нотации CIDR) до / 16.
-
+Amazon VPC currently supports five (5) IP address ranges,
+one (1) primary and four (4)
+secondary for IPv4.
+Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 
 </details>
 <br>
@@ -42,8 +48,8 @@ VPC сочетают в себе масштабируемость и удобс�
         </big></big></b>
     </summary>
 
-- private ip's не изменятся
-- public ip's и dns изменятся
+- private ip does not change
+- public ip and dns will change
 
 </details>
 <br>
@@ -57,8 +63,10 @@ VPC сочетают в себе масштабируемость и удобс�
         </big></big></b>
     </summary>
 
-Эластичный IP-адрес - это зарезервированный общедоступный IP-адрес, который вы можете назначить
-любому экземпляру EC2 в определенном регионе, пока вы не решите его освободить.
+An elastic IP address is a reserved public IP address 
+that you can assign
+any EC2 instance in a specific region until you decide 
+to release it.
 
 </details>
 <br>
@@ -72,8 +80,9 @@ VPC сочетают в себе масштабируемость и удобс�
         </big></big></b>
     </summary>
 
-Все учетные записи AWS ограничены пятью эластик IP-адресами в каждом регионе.
-Их можно менять за дополнительную плату.
+All AWS accounts are limited to five elastic 
+IP addresses per region.
+They can be changed for an additional fee.
 
 </details>
 <br>
@@ -87,16 +96,18 @@ VPC сочетают в себе масштабируемость и удобс�
         </big></big></b>
     </summary>
 
-Elastic Network Interface - это логический сетевой компонент в VPC,
-представляющий виртуальную сетевую карту. Он может включать следующие атрибуты:
+Elastic Network Interface is a logical network component in a VPC,
+representing a virtual network card. It may include the following attributes:
 
-Основной приватный IPv4-адрес из диапазона IPv4-адресов вашего VPC.
-Один или несколько дополнительных приватных IPv4-адресов из диапазона IPv4-адресов вашего VPC.
-Один эластичный IP-адрес (IPv4)
-Один публичный IPv4-адрес
-Один или несколько адресов IPv6
-Одна или несколько групп безопасности
-MAC-адрес
+* The primary private IPv4 address from your VPC's IPv4 
+address range.
+* One or more additional private IPv4 addresses from your
+  VPC's IPv4 address range.
+* One elastic IP address (IPv4)
+* One public IPv4 address
+* One or more IPv6 addresses
+* One or more security groups
+* MAC address
 
 </details>
 <br>
@@ -110,10 +121,12 @@ MAC-адрес
         </big></big></b>
     </summary>
 
-CIDR, была разработана как альтернатива традиционному разделению на подсети.
-Идея состоит в том, что вы можете добавить в сам IP-адрес спецификацию количества значащих битов,
-составляющих часть маршрутизации или сети.
-127.0.0.0/24 помечает нам, что первые 24 бита данного IP-адреса считаются важными для сетевой маршрутизации.
+CIDR was developed as an alternative to traditional subnetting.
+The idea is that you can add to the IP address 
+itself a specification of the number of significant bits,
+forming part of a routing or network.
+127.0.0.0/24 tells us that the first 24 bits 
+of a given IP address are considered important for network routing.
 
 </details>
 <br>
@@ -127,20 +140,20 @@ CIDR, была разработана как альтернатива тради
         </big></big></b>
     </summary>
 
-Устройства преобразования сетевых адресов Network Address Translation (NAT),
-запущенные в общедоступной подсети, позволяют экземплярам в частной 
-подсети подключаться к Интернету,
-но не позволяют Интернету инициировать соединения с экземплярами.
+Network Address Translation (NAT) devices,
+running on a public subnet, allow instances on a private
+subnets to connect to the Internet,
+but do not allow the Internet to initiate connections to instances.
 
-NAT направляет трафик из частной подсети в Интернет, заменяя 
-исходный IP-адрес своим адресом,
-а для ответного трафика оно преобразует адрес обратно в частные 
-IP-адреса экземпляров.
+NAT routes traffic from a private subnet to the Internet, replacing
+source IP address with its address,
+and for response traffic it converts the address back to private
+Instance IP addresses.
 
 </details>
 <br>
 
-[//]:# (NAT vs VPC vs Internet Gateway (IGW)?)
+[//]:# (NAT vs VPC vs Internet Gateway "IGW"?)
 
 <details>
     <summary>
@@ -174,15 +187,18 @@ but it prevents the internet from initiating connections with those instances
         </big></big></b>
     </summary>
 
-Существенное различие в том что GateWay - 
-автоматизированная система которая управляется амазоном
-а NAT Instance это частный случай более глубокой настройки.
+The significant difference is that GateWay -
+automated system controlled by Amazon
+and NAT Instance is a special case of deeper settings.
 
-NAT Instance не обеспечивают такую же доступность и пропускную способность,
-и его необходимо настраивать в соответствии с потребностями приложения.
+NAT Instance does not provide the same availability 
+and throughput
+and it needs to be customized according to the needs 
+of the application.
 
-Экземпляры NAT должны иметь группы безопасности,
-связанные с входящим трафиком из частных подсетей и исходящим трафиком в Интернет.
+NAT instances must have security groups,
+associated with incoming traffic from private
+subnets and outgoing traffic to the Internet.
 
 </details>
 <br>
@@ -214,8 +230,10 @@ it controls the inbound and outbound traffic for the instance.
         </big></big></b>
     </summary>
 
-Цель => Куда вы хотите отправить трафик для указанного пункта назначения
-(если пункт назначения - моя локальная подсеть, укажите цель как "локальную")
+Target => Where you want to send traffic for 
+the specified destination
+(if the destination is my local subnet, 
+specify the destination as "local")
 
 </details>
 <br>
@@ -229,12 +247,12 @@ it controls the inbound and outbound traffic for the instance.
         </big></big></b>
     </summary>
 
-Хост-бастион - это специальный компьютер в сети, специально 
-разработанный и настроенный для защиты от атак.
-На компьютере обычно размещается одно приложение или процесс,
-например прокси-сервер или балансировщик нагрузки,
-а все другие службы удаляются или ограничиваются,
-чтобы уменьшить угрозу для компьютера.
+A bastion host is a special computer on a network specifically
+designed and configured to protect against attacks.
+A computer typically hosts one application or process,
+such as a proxy server or load balancer,
+and all other services are removed or limited,
+to reduce the threat to your computer.
 
 </details>
 <br>

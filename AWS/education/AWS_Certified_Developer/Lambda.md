@@ -1,4 +1,9 @@
 <h1> Lambda </h1>
+<h4> 
+
+[Back to menu](..%2FMenu.md)
+
+</h4>
 
 [//]:# (Lambdas vs. ec2)
 

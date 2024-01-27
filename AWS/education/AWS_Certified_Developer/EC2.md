@@ -1,4 +1,9 @@
-<h1>EC2</h1>
+<h1>EC2</h1> 
+<h4> 
+
+[Back to menu](..%2FMenu.md)
+
+</h4>
 
 [//]:# (EC2 Instance Types?)
 
