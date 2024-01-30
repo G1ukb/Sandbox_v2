@@ -1,7 +1,7 @@
 <h1> Lambda </h1>
 <h4> 
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](..%2F..%2FMenu.md)
 
 </h4>
 
@@ -312,7 +312,7 @@ Lambda ---> [(private subnet) ---> (ENI (Elastic Network Interface)) ---> (Desti
 it looks like this
 
 [(private subnet) Lambda <---> private s3] -> 
-1) [] -> Nat -> IGW -> www (or) aws s3
+1) [] -> Nat (Network Address Translation) -> IGW (InternetGetWay) -> www (or) aws s3
 2) [] -> private VPC endpoint -> aws s3
 
 

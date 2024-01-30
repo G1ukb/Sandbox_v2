@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AWS/education/Menu.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2024_11_46__Default_Changelist_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Architecture/Menu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingAchitecture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingParadigms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/DP_Menu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns/education/SOLID.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/easy/FindNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/hard/MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/medium/AddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/medium/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
@@ -24,10 +29,16 @@
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/Menu.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/Menu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/CI_CD_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/CI_CD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/architecture_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/Architecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leetcode/src/main/java/twoSum/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/src/main/java/easy/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leetcode/target/classes/twoSum/TwoSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,28 +191,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hleb_Belski/Desktop/WorkProjects/ICanCode&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;50780f47f6839d47d60bc4555ee00c3f&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AddTwoNumbers.executor": "Run",
+    "Application.FindNum.executor": "Run",
+    "Application.LongestSubstringWithoutRepeatingCharacters.executor": "Run",
+    "Application.MedianOfTwoSortedArrays.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hleb_Belski/Desktop/WorkProjects/ICanCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "spring.configuration.checksum": "50780f47f6839d47d60bc4555ee00c3f",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\SQL\education" />
@@ -211,20 +227,72 @@
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\AWS\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\AWS" />
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\Architecture\education" />
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\JavaCore\education" />
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\JavaCore\education\practice" />
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\JavaCore\education\collections" />
-      <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\AWS\education\AWS_EpamCourses\L11-CI_CD" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TwoSum">
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="twoSum.TwoSum" />
+  <component name="RunManager" selected="Application.MedianOfTwoSortedArrays">
+    <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.AddTwoNumbers" />
       <module name="Leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="twoSum.*" />
+          <option name="PATTERN" value="medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.FindNum" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.LongestSubstringWithoutRepeatingCharacters" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedianOfTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hard.MedianOfTwoSortedArrays" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.TwoSum" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,6 +309,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MedianOfTwoSortedArrays" />
+        <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
+        <item itemvalue="Application.FindNum" />
+        <item itemvalue="Application.AddTwoNumbers" />
         <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
@@ -345,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705657728706</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added menu for AWS and main repository menu">
+      <option name="closed" value="true" />
+      <created>1706348842454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706348842454</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -438,7 +518,8 @@
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding Java core" />
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding REST api" />
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding SOFT skills" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation for D3, actualize knowledge's regarding SOFT skills" />
+    <MESSAGE value="Added menu for AWS and main repository menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added menu for AWS and main repository menu" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">

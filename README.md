@@ -9,6 +9,7 @@ read  information for yourself
 <h2>
 
 Topic list:
-* [AWS](AWS%2Feducation%2FMenu.md)
+* [Architecture questions](Architecture%2FMenu.md)
+* [AWS](AWS%2FMenu.md)
 
 </h2>
