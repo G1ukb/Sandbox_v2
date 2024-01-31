@@ -1,4 +1,4 @@
-[//]:# (Java Fund)
+[//]: # (Java Fund)
 
 <details>
     <summary>
@@ -49,7 +49,7 @@
 </details>
 <br>
 
-[//]:# (Nested class)
+[//]: # (Nested class)
 
 <details>
     <summary>
@@ -69,7 +69,7 @@
 </details>
 <br>
 
-[//]:# (Serialization)
+[//]: # (Serialization)
 
 <details>
     <summary>
@@ -109,7 +109,7 @@
 </details>
 <br>
 
-[//]:# (IO/NIO)
+[//]: # (IO/NIO)
 
 <details>
     <summary>
@@ -128,7 +128,7 @@
 </details>
 <br>
 
-[//]:# (Annotations)
+[//]: # (Annotations)
 
 <details>
     <summary>
@@ -165,7 +165,7 @@
 </details>
 <br>
 
-[//]:# (Generics)
+[//]: # (Generics)
 
 <details>
     <summary>
@@ -191,7 +191,7 @@
 </details>
 <br>
 
-[//]:# (Collections)
+[//]: # (Collections)
 
 <details>
     <summary>
@@ -226,7 +226,7 @@
 </details>
 <br>
 
-[//]:# (Multithreading)
+[//]: # (Multithreading)
 
 <details>
     <summary>
@@ -288,7 +288,7 @@
 </details>
 <br>
 
-[//]:# (GC and JMM)
+[//]: # (GC and JMM)
 
 <details>
     <summary>

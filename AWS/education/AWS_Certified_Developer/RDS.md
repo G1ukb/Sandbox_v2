@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is RDS?)
+[//]: # (What is RDS?)
 
 <details>
     <summary>
@@ -63,7 +63,7 @@ Supported languages include:
 </details>
 <br>
 
-[//]:# (What is RDS Read replicas? Read replicas vs Multi AZ vs Multi-Region deployments?)
+[//]: # (What is RDS Read replicas? Read replicas vs Multi AZ vs Multi-Region deployments?)
 
 <details>
     <summary>
@@ -99,7 +99,7 @@ https://aws.amazon.com/rds/features/read-replicas/?nc1=h_ls
 </details>
 <br>
 
-[//]:# (What is RDS pricing?)
+[//]: # (What is RDS pricing?)
 
 <details>
     <summary>
@@ -121,7 +121,7 @@ If **data goes to different regions, AWS will charge a fee**
 </details>
 <br>
 
-[//]:# (What RDS operational [maintenance, monitoring] practices do you know?)
+[//]: # (What RDS operational [maintenance, monitoring] practices do you know?)
 
 <details>
     <summary>
@@ -144,7 +144,7 @@ Amazon describes the following use cases:
 </details>
 <br>
 
-[//]:# (What about RDS Encryption? How we can get encrypted DB from decrypted?)
+[//]: # (What about RDS Encryption? How we can get encrypted DB from decrypted?)
 
 <details>
     <summary>
@@ -185,7 +185,7 @@ choose whether to encrypt or not)
 </details>
 <br>
 
-[//]:# (What about RDS Security – Network & IAM?)
+[//]: # (What about RDS Security – Network & IAM?)
 
 <details>
     <summary>
@@ -218,7 +218,7 @@ choose whether to encrypt or not)
 </details>
 <br>
 
-[//]:# (What is difference between OLTP and OLAP?)
+[//]: # (What is difference between OLTP and OLAP?)
 
 <details>
     <summary>
@@ -236,7 +236,7 @@ OLAP - Online Analytics Processing - process queries to analuze
 </details>
 <br>
 
-[//]:# (Is RDS suitable for OLTP and OLAP?)
+[//]: # (Is RDS suitable for OLTP and OLAP?)
 
 <details>
     <summary>
@@ -252,7 +252,7 @@ No for OLAP (there are another services for processing data analysis (RedShift))
 </details>
 <br>
 
-[//]:# (What is RDS Proxy? How we can increase ab availability?)
+[//]: # (What is RDS Proxy? How we can increase ab availability?)
 
 <details>
     <summary>
@@ -270,7 +270,7 @@ RDS Proxy have these pluses:
 </details>
 <br>
 
-[//]:# (What is MemoryDB?)
+[//]: # (What is MemoryDB?)
 
 <details>
     <summary>
@@ -288,7 +288,7 @@ RDS Proxy have these pluses:
 </details>
 <br>
 
-[//]:# (How RDS DB snapshot works?)
+[//]: # (How RDS DB snapshot works?)
 
 <details>
     <summary>
@@ -306,7 +306,7 @@ RDS Proxy have these pluses:
 </details>
 <br>
 
-[//]:# (What two steps should you take to reduce the RDS CPU utilization?)
+[//]: # (What two steps should you take to reduce the RDS CPU utilization?)
 
 <details>
     <summary>
@@ -332,7 +332,7 @@ Amazon RDS Read Replicas make it easy to elastically scale out beyond
 </details>
 <br>
 
-[//]:# (Can we encrypt an existing AMI that is unencrypted? what we should do?)
+[//]: # (Can we encrypt an existing AMI that is unencrypted? what we should do?)
 
 <details>
     <summary>
@@ -347,7 +347,7 @@ Instead, you will need to create a copy and specify that the copy has encryption
 </details>
 <br>
 
-[//]:# (How we improve performance of RDS db?)
+[//]: # (How we improve performance of RDS db?)
 
 <details>
     <summary>
@@ -367,7 +367,7 @@ to an RDS database.)
 </details>
 <br>
 
-[//]:# (RDS vs DynamoDB?)
+[//]: # (RDS vs DynamoDB?)
 
 <details>
     <summary>
@@ -391,7 +391,7 @@ https://cloudacademy.com/blog/amazon-rds-vs-dynamodb-12-differences/
 </details>
 <br>
 
-[//]:# (S3 vs DynamoDB?)
+[//]: # (S3 vs DynamoDB?)
 
 <details>
     <summary>

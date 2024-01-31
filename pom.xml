@@ -16,7 +16,6 @@
         <module>JavaCore</module>
         <module>Maven</module>
         <module>REST</module>
-        <module>LocalSandbox</module>
         <module>SoftProc</module>
         <module>Spring</module>
         <module>SQL</module>

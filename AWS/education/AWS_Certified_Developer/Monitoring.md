@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is required in order to get X-Ray working?)
+[//]: # (What is required in order to get X-Ray working?)
 
 <details>
     <summary>
@@ -20,7 +20,7 @@
 </details>
 <br>
 
-[//]:# (What is X-Ray SDK and X-Ray Daemon?)
+[//]: # (What is X-Ray SDK and X-Ray Daemon?)
 
 <details>
     <summary>
@@ -43,7 +43,7 @@ and must be running so that data sent by the SDKs can reach the X-Ray service.
 </details>
 <br>
 
-[//]:# (Can X-Ray deamon work with Docker? How?)
+[//]: # (Can X-Ray deamon work with Docker? How?)
 
 <details>
     <summary>
@@ -60,7 +60,7 @@ that you can deploy alongside your application.
 </details>
 <br>
 
-[//]:# (Which of the following services does X-Ray integrate with?)
+[//]: # (Which of the following services does X-Ray integrate with?)
 
 <details>
     <summary>
@@ -81,7 +81,7 @@ and Amazon Simple Queue Service.
 </details>
 <br>
 
-[//]:# (What is CloudWatch Monitor?)
+[//]: # (What is CloudWatch Monitor?)
 
 <details>
     <summary>
@@ -124,7 +124,7 @@ Other
 </details>
 <br>
 
-[//]:# (What is CloudWatch Logs?)
+[//]: # (What is CloudWatch Logs?)
 
 <details>
     <summary>
@@ -152,7 +152,7 @@ There are three main categories of magazines.
 </details>
 <br>
 
-[//]:# (How CloudWatch can watch to EC2?)
+[//]: # (How CloudWatch can watch to EC2?)
 
 <details>
     <summary>
@@ -173,7 +173,7 @@ and then CloudWatch will see metrics:
 </details>
 <br>
 
-[//]:# (What is CloudWatch Agent?)
+[//]: # (What is CloudWatch Agent?)
 
 <details>
     <summary>
@@ -188,7 +188,7 @@ that autonomously and continuously runs on your servers.
 </details>
 <br>
 
-[//]:# (CloudWatch metric frequency?)
+[//]: # (CloudWatch metric frequency?)
 
 <details>
     <summary>
@@ -206,7 +206,7 @@ and in addition 1 sec interval
 </details>
 <br>
 
-[//]:# (What is CloudWatch Alarm?)
+[//]: # (What is CloudWatch Alarm?)
 
 <details>
     <summary>
@@ -222,7 +222,7 @@ You can set appropriate thresholds to trigger the alarms
 </details>
 <br>
 
-[//]:# (What is CloudWatch Actions?)
+[//]: # (What is CloudWatch Actions?)
 
 <details>
     <summary>
@@ -246,7 +246,7 @@ putMetricAlarm - creates alarm associated with a metric for alerting
 </details>
 <br>
 
-[//]:# (What is CloudWatch Dashboard?)
+[//]: # (What is CloudWatch Dashboard?)
 
 <details>
     <summary>
@@ -265,7 +265,7 @@ Remember to save (CloudWatch doesn't automatically save your dashboard)
 </details>
 <br>
 
-[//]:# (What is CloudWatch Metrics?)
+[//]: # (What is CloudWatch Metrics?)
 
 <details>
     <summary>
@@ -282,7 +282,7 @@ namespace: container for metrics
 </details>
 <br>
 
-[//]:# (What is CloudWatch Dimension?)
+[//]: # (What is CloudWatch Dimension?)
 
 <details>
     <summary>
@@ -301,7 +301,7 @@ a specific EC2 Instance
 </details>
 <br>
 
-[//]:# (How CloudTrail works?)
+[//]: # (How CloudTrail works?)
 
 <details>
     <summary>
@@ -319,7 +319,7 @@ Athena is a service that can be used to run SQL queries on data stored in S3.
 </details>
 <br>
 
-[//]:# (What is CloudTrail? CloudTrail vs CloudWatch)
+[//]: # (What is CloudTrail? CloudTrail vs CloudWatch)
 
 <details>
     <summary>
@@ -345,7 +345,7 @@ CloudTrail is about Audit trail
 </details>
 <br>
 
-[//]:# (X-Ray vs CloudWatch)
+[//]: # (X-Ray vs CloudWatch)
 
 <details>
     <summary>
@@ -374,7 +374,7 @@ Use Cases for CloudWatch:
 </details>
 <br>
 
-[//]:# (What is CloudWatch Logs Insights?)
+[//]: # (What is CloudWatch Logs Insights?)
 
 <details>
     <summary>
@@ -394,7 +394,7 @@ causes and validate deployed fixes.
 </details>
 <br>
 
-[//]:# (What is EventBridge?)
+[//]: # (What is EventBridge?)
 
 <details>
     <summary>
@@ -411,7 +411,7 @@ We can create a schedule event with Event Bridge.
 </details>
 <br>
 
-[//]:# (What is event bus?)
+[//]: # (What is event bus?)
 
 <details>
     <summary>
@@ -432,7 +432,7 @@ of events prior to delivery to a target.
 
 ---
 
-[//]:# (How EC2 instances in multiple AWS accounts can store lifecycle events in a single SQS main AWS account?)
+[//]: # (How EC2 instances in multiple AWS accounts can store lifecycle events in a single SQS main AWS account?)
 
 <details>
     <summary>

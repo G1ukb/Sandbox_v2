@@ -1,4 +1,4 @@
-[//]:# (SOFT skills)
+[//]: # (SOFT skills)
 
 <details>
     <summary>
@@ -7,7 +7,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (Software development process)
+[//]: # (Software development process)
 <br>
 <details>
     <summary>
@@ -16,7 +16,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (Что такое Software development process)
+[//]: # (Что такое Software development process)
 <br>
 <details>
     <summary>
@@ -53,7 +53,7 @@
 
 </details>
 
-[//]:# (Шаги SDLC)
+[//]: # (Шаги SDLC)
 <br>
 <details>
     <summary>
@@ -142,7 +142,7 @@
 
 </details>
 
-[//]:# (Лучшие практики SDP)
+[//]: # (Лучшие практики SDP)
 <br>
 <details>
     <summary>
@@ -265,7 +265,7 @@
 
 </details>
 
-[//]:# (Code review)
+[//]: # (Code review)
 <br>
 <details>
     <summary>
@@ -289,7 +289,7 @@
 
 </details>
 
-[//]:# (Эстимации)
+[//]: # (Эстимации)
 <br>
 <details>
     <summary>
@@ -314,7 +314,7 @@
 
 </details>
 
-[//]:# (Виды эстимации задач)
+[//]: # (Виды эстимации задач)
 <br>
 <details>
     <summary>
@@ -418,7 +418,7 @@ Cамые мелкие задачи принимаются за XS .
 
 </details>
 
-[//]:# (Стратегии ветвления)
+[//]: # (Стратегии ветвления)
 <br>
 <details>
     <summary>
@@ -496,7 +496,7 @@ GitLab предлагает создать ветки staging and production.
 
 </details>
 
-[//]:# (Работа в команде)
+[//]: # (Работа в команде)
 <br>
 <details>
     <summary>
@@ -505,7 +505,7 @@ GitLab предлагает создать ветки staging and production.
         </big></big></big></b>
     </summary>
 
-[//]:# (Работа в команде в разработке программного обеспечения)
+[//]: # (Работа в команде в разработке программного обеспечения)
 <br>
 <details>
     <summary>
@@ -538,7 +538,7 @@ TWQ состоит из:
 
 </details>
 
-[//]:# (EngX Bootcamp)
+[//]: # (EngX Bootcamp)
 <br>
 <details>
     <summary>
@@ -547,7 +547,7 @@ TWQ состоит из:
         </big></big></big></b>
     </summary>
 
-[//]:# (Что такое EngX Bootcamp)
+[//]: # (Что такое EngX Bootcamp)
 <br>
 <details>
     <summary>
@@ -563,7 +563,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Engineering Culture)
+[//]: # (Engineering Culture)
 <br>
 <details>
     <summary>
@@ -619,7 +619,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Продолжительность цикла разработки)
+[//]: # (Продолжительность цикла разработки)
 <br>
 <details>
     <summary>
@@ -651,7 +651,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Жизненный цикл релиза)
+[//]: # (Жизненный цикл релиза)
 <br>
 <details>
     <summary>
@@ -687,7 +687,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Доставка конечного продукта)
+[//]: # (Доставка конечного продукта)
 <br>
 <details>
     <summary>
@@ -711,7 +711,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Контроль качества кода)
+[//]: # (Контроль качества кода)
 <br>
 <details>
     <summary>
@@ -720,7 +720,7 @@ Engineering Bootcamp был создан как инструмент,
         </big></big></big></b>
     </summary>
 
-[//]:# (Контроль качества кода)
+[//]: # (Контроль качества кода)
 <br>
 <details>
     <summary>
@@ -751,7 +751,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Категории качества кода)
+[//]: # (Категории качества кода)
 <br>
 <details>
     <summary>
@@ -772,7 +772,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Параметры хорошего кода:)
+[//]: # (Параметры хорошего кода:)
 <br>
 <details>
     <summary>
@@ -791,7 +791,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Почему это важно )
+[//]: # (Почему это важно )
 <br>
 <details>
     <summary>
@@ -823,7 +823,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Стандарты кода)
+[//]: # (Стандарты кода)
 <br>
 <details>
     <summary>
@@ -878,7 +878,7 @@ Engineering Bootcamp был создан как инструмент,
 - Делать код легко расширяемым и поддерживаемым
 </details>
 
-[//]:# (Code Review)
+[//]: # (Code Review)
 <br>
 <details>
     <summary>
@@ -931,7 +931,7 @@ Engineering Bootcamp был создан как инструмент,
 - Тесты
 </details>
 
-[//]:# (Качество продукта)
+[//]: # (Качество продукта)
 <br>
 <details>
     <summary>
@@ -979,7 +979,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Наблюдаемость кода Logging/Трассировка/Мониторинг)
+[//]: # (Наблюдаемость кода Logging/Трассировка/Мониторинг)
 <br>
 <details>
     <summary>
@@ -988,7 +988,7 @@ Engineering Bootcamp был создан как инструмент,
         </big></big></big></b>
     </summary>
 
-[//]:# (Logging)
+[//]: # (Logging)
 <br>
 <details>
     <summary>
@@ -1006,7 +1006,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Отслеживание кода/Трассировка)
+[//]: # (Отслеживание кода/Трассировка)
 <br>
 <details>
     <summary>
@@ -1027,7 +1027,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Мониторинг)
+[//]: # (Мониторинг)
 <br>
 <details>
     <summary>
@@ -1059,7 +1059,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (Лучшие советы по мониторингу приложений)
+[//]: # (Лучшие советы по мониторингу приложений)
 <br>
 <details>
     <summary>
@@ -1078,7 +1078,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (CI/CD)
+[//]: # (CI/CD)
 <br>
 <details>
     <summary>
@@ -1087,7 +1087,7 @@ Engineering Bootcamp был создан как инструмент,
         </big></big></big></b>
     </summary>
 
-[//]:# (CI)
+[//]: # (CI)
 <br>
 <details>
     <summary>
@@ -1133,7 +1133,7 @@ Engineering Bootcamp был создан как инструмент,
 
 </details>
 
-[//]:# (CD)
+[//]: # (CD)
 <br>
 <details>
     <summary>

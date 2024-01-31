@@ -1,4 +1,4 @@
-[//]:# (SOFT skills)
+[//]: # (SOFT skills)
 
 <details>
     <summary>
@@ -7,7 +7,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (Software development process)
+[//]: # (Software development process)
 <br>
 <details>
 <summary>
@@ -51,7 +51,7 @@
 
 </details>
 
-[//]:# (EngX Bootcamp)
+[//]: # (EngX Bootcamp)
 <br>
 <details>
 <summary>

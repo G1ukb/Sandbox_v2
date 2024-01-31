@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is Elastic load balancing [ELB]?)
+[//]: # (What is Elastic load balancing [ELB]?)
 
 <details>
     <summary>
@@ -29,7 +29,7 @@ It helps balance traffic between several downstream instances (for example EC2)
 </details>
 <br>
 
-[//]:# (What is Health Checks in ELB?)
+[//]: # (What is Health Checks in ELB?)
 
 <details>
     <summary>
@@ -48,7 +48,7 @@ And the traffic stops for this instance and is distributed further
 </details>
 <br>
 
-[//]:# (Types of load balancer on AWS?)
+[//]: # (Types of load balancer on AWS?)
 
 <details>
     <summary>
@@ -74,7 +74,7 @@ And the traffic stops for this instance and is distributed further
 </details>
 <br>
 
-[//]:# (Explain work of the ALB?)
+[//]: # (Explain work of the ALB?)
 
 <details>
     <summary>
@@ -109,7 +109,7 @@ request
 </details>
 <br>
 
-[//]:# (Explain work of the NLB?)
+[//]: # (Explain work of the NLB?)
 
 <details>
     <summary>
@@ -138,7 +138,7 @@ NLB also connects to groups waiting for it, namely:
 </details>
 <br>
 
-[//]:# (Explain work of the GWLB?)
+[//]: # (Explain work of the GWLB?)
 
 <details>
     <summary>
@@ -156,7 +156,7 @@ proxy instances (ec2). This could be a security check, targetint, security, etc.
 </details>
 <br>
 
-[//]:# (What is Sticky Sessions [Session Affinity]?)
+[//]: # (What is Sticky Sessions [Session Affinity]?)
 
 <details>
     <summary>
@@ -190,7 +190,7 @@ instance** behind load balancer
 </details>
 <br>
 
-[//]:# (What is Cross-Zone Load Balancing?)
+[//]: # (What is Cross-Zone Load Balancing?)
 
 <details>
     <summary>
@@ -216,7 +216,7 @@ instance** behind load balancer
 </details>
 <br>
 
-[//]:# (What is ELB SSL Certificates?)
+[//]: # (What is ELB SSL Certificates?)
 
 <details>
     <summary>
@@ -253,7 +253,7 @@ Therefore, if we need multi-certificates to access several resources
 </details>
 <br>
 
-[//]:# (What is ELB Connection Draining?)
+[//]: # (What is ELB Connection Draining?)
 
 <details>
     <summary>
@@ -279,7 +279,7 @@ If the site requires a fast response, the threshold is set to a low value
 </details>
 <br>
 
-[//]:# (What is an ELB Auto Scaling Group?)
+[//]: # (What is an ELB Auto Scaling Group?)
 
 <details>
     <summary>
@@ -306,7 +306,7 @@ If the site requires a fast response, the threshold is set to a low value
 </details>
 <br>
 
-[//]:# (What is an ELB Auto Scaling Group?)
+[//]: # (What is an ELB Auto Scaling Group?)
 
 <details>
     <summary>

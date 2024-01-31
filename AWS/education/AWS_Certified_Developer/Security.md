@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is Systems Manager Parameter Store?)
+[//]: # (What is Systems Manager Parameter Store?)
 
 <details>
     <summary>
@@ -23,7 +23,7 @@
 </details>
 <br>
 
-[//]:# (Secrets Manager vs Systems Manager Parameter Store?)
+[//]: # (Secrets Manager vs Systems Manager Parameter Store?)
 
 <details>
     <summary>
@@ -42,7 +42,7 @@ Systems Manager Parameter Store boils down to your specific needs:
 </details>
 <br>
 
-[//]:# (What is KMS?)
+[//]: # (What is KMS?)
 
 <details>
     <summary>
@@ -56,7 +56,7 @@ KMS - is a key management service
 </details>
 <br>
 
-[//]:# (What is CMS?)
+[//]: # (What is CMS?)
 
 <details>
     <summary>
@@ -76,7 +76,7 @@ CMS — customer master key
 </details>
 <br>
 
-[//]:# (Main cli KMS commands?)
+[//]: # (Main cli KMS commands?)
 
 <details>
     <summary>
@@ -94,7 +94,7 @@ CMS — customer master key
 </details>
 <br>
 
-[//]:# (What is Envelope Encryption? data key)
+[//]: # (What is Envelope Encryption? data key)
 
 <details>
     <summary>
@@ -119,7 +119,7 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 </details>
 <br>
 
-[//]:# (Why to use envelope encryption?)
+[//]: # (Why to use envelope encryption?)
 
 <details>
     <summary>
@@ -136,7 +136,7 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 </details>
 <br>
 
-[//]:# (What is KMS AWS managed keys? Can you rotate, manage them?)
+[//]: # (What is KMS AWS managed keys? Can you rotate, manage them?)
 
 <details>
     <summary>
@@ -159,7 +159,7 @@ but you cannot use them directly yourself.
 </details>
 <br>
 
-[//]:# (What is key rotation?)
+[//]: # (What is key rotation?)
 
 <details>
     <summary>
@@ -176,7 +176,7 @@ but you cannot use them directly yourself.
 </details>
 <br>
 
-[//]:# (What is key ACM?)
+[//]: # (What is key ACM?)
 
 <details>
     <summary>
@@ -195,7 +195,7 @@ This tool enables secure connections to your website using HTTPS
 </details>
 <br>
 
-[//]:# (How can we use client-side encryption to protect the files?)
+[//]: # (How can we use client-side encryption to protect the files?)
 
 <details>
     <summary>
@@ -215,7 +215,7 @@ You can do this in Lambda by using the AWS Encryption SDK.
 
 ---
 
-[//]:# (How we can store and share accesse of the access token to AWS account?)
+[//]: # (How we can store and share accesse of the access token to AWS account?)
 
 <details>
     <summary>

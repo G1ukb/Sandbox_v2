@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is Amazon Simple Notification Service "Amazon SNS"?)
+[//]: # (What is Amazon Simple Notification Service "Amazon SNS"?)
 
 <details>
     <summary>
@@ -23,7 +23,7 @@ or other applications.
 </details>
 <br>
 
-[//]:# (What messaging patterns do SNS and SQS implement? Какие шаблоны обмена сообщениями реализуют SNS и SQS?)
+[//]: # (What messaging patterns do SNS and SQS implement? Какие шаблоны обмена сообщениями реализуют SNS и SQS?)
 
 <details>
     <summary>
@@ -44,7 +44,7 @@ and can be used to separate sending and receiving components.
 </details>
 <br>
 
-[//]:# (What delivery protocols does SNS support?)
+[//]: # (What delivery protocols does SNS support?)
 
 <details>
     <summary>
@@ -61,7 +61,7 @@ which will include the attached information
 </details>
 <br>
 
-[//]:# (How large SQS messages can be? What happens when that limit is exceeded?)
+[//]: # (How large SQS messages can be? What happens when that limit is exceeded?)
 
 <details>
     <summary>
@@ -84,7 +84,7 @@ If exceeded, aws will split the messages and send
 </details>
 <br>
 
-[//]:# (What are the typical scenarios for using SQS?)
+[//]: # (What are the typical scenarios for using SQS?)
 
 <details>
     <summary>
@@ -104,7 +104,7 @@ without the risk of slowing down the entire system
 </details>
 <br>
 
-[//]:# (What’s the difference between standard and FIFO queues in SQS?)
+[//]: # (What’s the difference between standard and FIFO queues in SQS?)
 
 <details>
     <summary>
@@ -145,7 +145,7 @@ FIFO (First in First out) queues
 </details>
 <br>
 
-[//]:# (What is SNS pricing?)
+[//]: # (What is SNS pricing?)
 
 <details>
     <summary>
@@ -161,7 +161,7 @@ Mobile Push Notifications $0.50 per million notifications
 </details>
 <br>
 
-[//]:# (What is SQS pricing?)
+[//]: # (What is SQS pricing?)
 
 <details>
     <summary>
@@ -178,7 +178,7 @@ From 1 Million to 100 Billion Requests/Month (ST)$0.40 (FIFO)$0.50
 </details>
 <br>
 
-[//]:# (What are SNS security best practices?)
+[//]: # (What are SNS security best practices?)
 
 <details>
     <summary>
@@ -197,7 +197,7 @@ Tips from aws:
 </details>
 <br>
 
-[//]:# (What are the security features supported by SNS/SQS?)
+[//]: # (What are the security features supported by SNS/SQS?)
 
 <details>
     <summary>
@@ -220,7 +220,7 @@ to install end-to-end encryption in your messaging scripts.
 </details>
 <br>
 
-[//]:# (What is the anatomy of an SNS message?)
+[//]: # (What is the anatomy of an SNS message?)
 
 <details>
     <summary>
@@ -244,7 +244,7 @@ the same content as the body of the message.
 </details>
 <br>
 
-[//]:# (What can SNS do in case of failing messages?)
+[//]: # (What can SNS do in case of failing messages?)
 
 <details>
     <summary>
@@ -267,7 +267,7 @@ messages (DLQ).
 </details>
 <br>
 
-[//]:# (What is Amazon SNS dead-letter queues DLQs?)
+[//]: # (What is Amazon SNS dead-letter queues DLQs?)
 
 <details>
     <summary>
@@ -286,7 +286,7 @@ for further analysis or reprocessing.
 </details>
 <br>
 
-[//]:# (What is SNS message filtering?)
+[//]: # (What is SNS message filtering?)
 
 <details>
     <summary>
@@ -315,7 +315,7 @@ every message posted in her thread.
 </details>
 <br>
 
-[//]:# (How is it possible to monitor SNS delivery process?)
+[//]: # (How is it possible to monitor SNS delivery process?)
 
 <details>
     <summary>
@@ -331,7 +331,7 @@ every message posted in her thread.
 </details>
 <br>
 
-[//]:# (How is it possible to monitor SNS delivery process?)
+[//]: # (How is it possible to monitor SNS delivery process?)
 
 <details>
     <summary>
@@ -350,7 +350,7 @@ it remains in the queue and is not returned for subsequent receive requests)
 </details>
 <br>
 
-[//]:# (What’s the difference between short and long polling in SQS?)
+[//]: # (What’s the difference between short and long polling in SQS?)
 
 <details>
     <summary>
@@ -374,7 +374,7 @@ long polling time.
 </details>
 <br>
 
-[//]:# (What is SQS Delay Queues?)
+[//]: # (What is SQS Delay Queues?)
 
 <details>
     <summary>
@@ -392,7 +392,7 @@ This is a special type of messages that you can use to
 </details>
 <br>
 
-[//]:# (How you can manage large SQS messages in S3?)
+[//]: # (How you can manage large SQS messages in S3?)
 
 <details>
     <summary>
@@ -410,7 +410,7 @@ to store large messages 256KB - 2GB you need following
 </details>
 <br>
 
-[//]:# (What is SES "Simple Email Service"? SES vs SNS)
+[//]: # (What is SES "Simple Email Service"? SES vs SNS)
 
 <details>
     <summary>
@@ -437,7 +437,7 @@ SNS:
 </details>
 <br>
 
-[//]:# (What you should do to prevent duplicate messages from being processed?)
+[//]: # (What you should do to prevent duplicate messages from being processed?)
 
 <details>
     <summary>

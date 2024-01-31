@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is ElasticCache?)
+[//]: # (What is ElasticCache?)
 
 <details>
     <summary>
@@ -28,7 +28,7 @@ to maximize resources and lower the total cost of ownership
 </details>
 <br>
 
-[//]:# (ElasticCache – Redis vs Memcached)
+[//]: # (ElasticCache – Redis vs Memcached)
 
 <details>
     <summary>
@@ -71,7 +71,7 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/SelectEngine.html
 </details>
 <br>
 
-[//]:# (ElastiCache – Cache Security)
+[//]: # (ElastiCache – Cache Security)
 
 <details>
     <summary>
@@ -122,7 +122,7 @@ https://docs.aws.amazon.com/securityhub/latest/userguide/elasticache-controls.ht
 </details>
 <br>
 
-[//]:# (ElastiCache Replication)
+[//]: # (ElastiCache Replication)
 
 <details>
     <summary>
@@ -172,7 +172,7 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Creating
 </details>
 <br>
 
-[//]:# (ElastiCache Caching strategies)
+[//]: # (ElastiCache Caching strategies)
 
 <details>
     <summary>
@@ -218,7 +218,7 @@ different types of data should be written to cache under different circumstances
 </details>
 <br>
 
-[//]:# (ElastiCache сache Evictions and Time-to-live [TTL])
+[//]: # (ElastiCache сache Evictions and Time-to-live [TTL])
 
 <details>
     <summary>

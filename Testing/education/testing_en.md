@@ -1,4 +1,4 @@
-[//]:# (Testing)
+[//]: # (Testing)
 <br>
 <details>
     <summary>
@@ -7,7 +7,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (What is divided into, what happens)
+[//]: # (What is divided into, what happens)
 <br>
 <details>
     <summary>
@@ -52,7 +52,7 @@
   but he is familiar with the internal structure of the program and the interaction between the components.
 </details>
 
-[//]:# (Auto tests vs manual tests)
+[//]: # (Auto tests vs manual tests)
 <br>
 <details>
     <summary>
@@ -97,7 +97,7 @@
 
 </details>
 
-[//]:# (Automation Metrics vs Manual Testing)
+[//]: # (Automation Metrics vs Manual Testing)
 <br>
 <details>
     <summary>
@@ -127,7 +127,7 @@ the right balance between manual and automated testing.
 
 </details>
 
-[//]:# (Test levels)
+[//]: # (Test levels)
 <br>
 <details>
     <summary>
@@ -156,7 +156,7 @@ the right balance between manual and automated testing.
 
 </details>
 
-[//]:# (Unit testing)
+[//]: # (Unit testing)
 <br>
 <details>
     <summary>
@@ -200,7 +200,7 @@ They are described by the rule **F.I.R.S.T.**
 
 </details>
 
-[//]:# (Integration testing)
+[//]: # (Integration testing)
 <br>
 <details>
     <summary>
@@ -233,7 +233,7 @@ Advantages:
 
 </details>
 
-[//]:# (System testing/Functional testing/Smoke testing)
+[//]: # (System testing/Functional testing/Smoke testing)
 <br>
 <details>
     <summary>
@@ -271,7 +271,7 @@ if, after applying power, smoke and a burning smell appear, then the equipment i
 
 </details>
 
-[//]:# (Regression/Penetration test/Fuzzing/Acceptance tests)
+[//]: # (Regression/Penetration test/Fuzzing/Acceptance tests)
 <br>
 <details>
     <summary>
@@ -314,7 +314,7 @@ end user requirements.
 
 </details>
 
-[//]:# (Test pyramid)
+[//]: # (Test pyramid)
 <br>
 <details>
     <summary>
@@ -355,7 +355,7 @@ Two **principles** follow from this pyramid:
 
 </details>
 
-[//]:# (Test Driven Development)
+[//]: # (Test Driven Development)
 <br>
 <details>
     <summary>

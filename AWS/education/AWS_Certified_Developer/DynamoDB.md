@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is DynamoDB?)
+[//]: # (What is DynamoDB?)
 
 <details>
     <summary>
@@ -19,7 +19,7 @@ DynamoDB is a low latency NoSQL database
 </details>
 <br>
 
-[//]:# (What data models are supported in DynamoDB?)
+[//]: # (What data models are supported in DynamoDB?)
 
 <details>
     <summary>
@@ -37,7 +37,7 @@ DynamoDB is a low latency NoSQL database
 </details>
 <br>
 
-[//]:# (Consistency models?)
+[//]: # (Consistency models?)
 
 <details>
     <summary>
@@ -53,7 +53,7 @@ DynamoDB is a low latency NoSQL database
 </details>
 <br>
 
-[//]:# (Types of PK in dynDB?)
+[//]: # (Types of PK in dynDB?)
 
 <details>
     <summary>
@@ -68,7 +68,7 @@ DynamoDB is a low latency NoSQL database
 </details>
 <br>
 
-[//]:# (How we can control access to dunDB?)
+[//]: # (How we can control access to dunDB?)
 
 <details>
     <summary>
@@ -84,7 +84,7 @@ where the partition key value matches their id)
 </details>
 <br>
 
-[//]:# (What is flexible querying?)
+[//]: # (What is flexible querying?)
 
 <details>
     <summary>
@@ -104,7 +104,7 @@ Global Secondary Index
 </details>
 <br>
 
-[//]:# (What we can you to find data on tables?)
+[//]: # (What we can you to find data on tables?)
 
 <details>
     <summary>
@@ -119,7 +119,7 @@ Global Secondary Index
 </details>
 <br>
 
-[//]:# (Scan vs query?)
+[//]: # (Scan vs query?)
 
 <details>
     <summary>
@@ -135,7 +135,7 @@ units than strongly consistent reads.
 </details>
 <br>
 
-[//]:# (Dynamo DB capacity units?)
+[//]: # (Dynamo DB capacity units?)
 
 <details>
     <summary>
@@ -165,7 +165,7 @@ Calculation:
 </details>
 <br>
 
-[//]:# (On-Demand Capacity vs Prosivioned Capacity?)
+[//]: # (On-Demand Capacity vs Prosivioned Capacity?)
 
 <details>
     <summary>
@@ -190,7 +190,7 @@ Provisioned Capacity
 </details>
 <br>
 
-[//]:# (What is dynamoDB Accelerator "DAX"?)
+[//]: # (What is dynamoDB Accelerator "DAX"?)
 
 <details>
     <summary>
@@ -212,7 +212,7 @@ Provisioned Capacity
 </details>
 <br>
 
-[//]:# (DynamoDb Stream?)
+[//]: # (DynamoDb Stream?)
 
 <details>
     <summary>
@@ -234,7 +234,7 @@ Use cases:
 </details>
 <br>
 
-[//]:# (What is the API call to retrieve multiple items from a DynamoDB table?)
+[//]: # (What is the API call to retrieve multiple items from a DynamoDB table?)
 
 <details>
     <summary>
@@ -249,7 +249,7 @@ more items from one or more tables
 </details>
 <br>
 
-[//]:# (In DynamoDB, a scan operation is used to:)
+[//]: # (In DynamoDB, a scan operation is used to:)
 
 <details>
     <summary>
@@ -268,7 +268,7 @@ Scan only returns some of the attributes, rather than all of them.
 </details>
 <br>
 
-[//]:# (In DynamoDB, a scan operation is used to:)
+[//]: # (In DynamoDB, a scan operation is used to:)
 
 <details>
     <summary>
@@ -287,7 +287,7 @@ Scan only returns some of the attributes, rather than all of them.
 </details>
 <br>
 
-[//]:# (Which service limits can you increase by raising a ticket to AWS support "according to dynamoDB")
+[//]: # (Which service limits can you increase by raising a ticket to AWS support "according to dynamoDB")
 
 <details>
     <summary>
@@ -306,7 +306,7 @@ Scan only returns some of the attributes, rather than all of them.
 </details>
 <br>
 
-[//]:# (What kind of query can I get only part of the fields from dynamo db?)
+[//]: # (What kind of query can I get only part of the fields from dynamo db?)
 
 <details>
     <summary>
@@ -323,7 +323,7 @@ of an element by default.
 </details>
 <br>
 
-[//]:# (What is ProvisionedThroughputExceeded error?)
+[//]: # (What is ProvisionedThroughputExceeded error?)
 
 <details>
     <summary>
@@ -339,7 +339,7 @@ Reduce the frequency of requests using Error Retries and Exponential Backoff.
 </details>
 <br>
 
-[//]:# (Best practices for querying and scanning data)
+[//]: # (Best practices for querying and scanning data)
 
 <details>
     <summary>
@@ -359,7 +359,7 @@ set the page size for your request.)
 </details>
 <br>
 
-[//]:# (What is exponential backoff algorithm?)
+[//]: # (What is exponential backoff algorithm?)
 
 <details>
     <summary>
@@ -373,7 +373,7 @@ set the page size for your request.)
 </details>
 <br>
 
-[//]:# (DynamoDB Streams vs CloudWatch?)
+[//]: # (DynamoDB Streams vs CloudWatch?)
 
 <details>
     <summary>
@@ -392,7 +392,7 @@ modifications that are made to items in a DynamoDB table.
 </details>
 <br>
 
-[//]:# (How we demonstrate the impact that a failed Availability Zone "AZ" will have on the database?)
+[//]: # (How we demonstrate the impact that a failed Availability Zone "AZ" will have on the database?)
 
 <details>
     <summary>
@@ -407,7 +407,7 @@ with forced failover on the RDS instance.
 </details>
 <br>
 
-[//]:# (What DynamoDB data types can the developer use for their index sort key?)
+[//]: # (What DynamoDB data types can the developer use for their index sort key?)
 
 <details>
     <summary>
@@ -423,7 +423,7 @@ with forced failover on the RDS instance.
 </details>
 <br>
 
-[//]:# (What is UnprocessedKeys value that returned from DynamoDB BatchGetItem?)
+[//]: # (What is UnprocessedKeys value that returned from DynamoDB BatchGetItem?)
 
 <details>
     <summary>
@@ -444,7 +444,7 @@ BatchGetItem returns a ValidationException with the message
 </details>
 <br>
 
-[//]:# (BatchGetItem vs Scan?)
+[//]: # (BatchGetItem vs Scan?)
 
 <details>
     <summary>
@@ -473,7 +473,7 @@ it’s recommended to use BatchGetItems over doing a scan.
 
 ---
 
-[//]:# (What we can do to get more items from BatchGetItem low-level API operation?)
+[//]: # (What we can do to get more items from BatchGetItem low-level API operation?)
 
 <details>
     <summary>

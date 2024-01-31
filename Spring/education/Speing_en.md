@@ -1,4 +1,4 @@
-[//]:# (SPRING)
+[//]: # (SPRING)
 
 <details>
     <summary>
@@ -7,7 +7,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (Spring pros and cons)
+[//]: # (Spring pros and cons)
 <br>
 <details>
     <summary>
@@ -29,7 +29,7 @@
 
 </details>
 
-[//]:# (What is IoC)
+[//]: # (What is IoC)
 <br>
 <details>
     <summary>
@@ -47,7 +47,7 @@ DL - getBean() when we can manually pick up this dependency for use
 
 </details>
 
-[//]:# (Bean types)
+[//]: # (Bean types)
 <br>
 <details>
      <summary>
@@ -65,7 +65,7 @@ Custom bean scope: implement Scope and control init and destroy flow
 
 </details>
 
-[//]:# (Bean life cycle)
+[//]: # (Bean life cycle)
 <br>
 <details>
      <summary>
@@ -88,7 +88,7 @@ example BeanNameAware, BeanFactoryAware)
 
 </details>
 
-[//]:# (What can be annotated)
+[//]: # (What can be annotated)
 <br>
 <details>
      <summary>
@@ -106,7 +106,7 @@ The @qulifier annotation will help solve the problem
 
 </details>
 
-[//]:# (How spring can be configured)
+[//]: # (How spring can be configured)
 <br>
 <details>
     <summary>
@@ -141,7 +141,7 @@ using the @Bean annotation
 
 </details>
 
-[//]:# (AOP)
+[//]: # (AOP)
 <br>
 <details>
     <summary>
@@ -176,7 +176,7 @@ necessary methods before or after their development
 
 </details>
 
-[//]:# (SPRING BOOT)
+[//]: # (SPRING BOOT)
 
 <details>
     <summary>
@@ -185,7 +185,7 @@ necessary methods before or after their development
         </big></big></big></b>
     </summary>
 
-[//]:# (What is Spring Boot?)
+[//]: # (What is Spring Boot?)
 <br>
 <details>
     <summary>
@@ -211,7 +211,7 @@ modules that you can use on the go.
 
 </details>
 
-[//]:# (What are Spring Boot starters?)
+[//]: # (What are Spring Boot starters?)
 <br>
 <details>
     <summary>

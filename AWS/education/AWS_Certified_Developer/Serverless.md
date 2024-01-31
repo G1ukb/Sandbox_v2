@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (Serverless consents pluses)
+[//]: # (Serverless consents pluses)
 
 <details>
     <summary>
@@ -21,7 +21,7 @@
 </details>
 <br>
 
-[//]:# (Serverless services)
+[//]: # (Serverless services)
 
 <details>
     <summary>
@@ -45,7 +45,7 @@
 </details>
 <br>
 
-[//]:# (How application sessions can be stored?)
+[//]: # (How application sessions can be stored?)
 
 <details>
     <summary>

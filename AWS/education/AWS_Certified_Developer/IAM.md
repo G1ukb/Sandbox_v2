@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is IAM?)
+[//]: # (What is IAM?)
 
 <details>
     <summary>
@@ -42,7 +42,7 @@ Data Security Standard (DSS).
 </details>
 <br>
 
-[//]:# (What is the allow/deny priority order when policies are configured on
+[//]: # (What is the allow/deny priority order when policies are configured on
         different levels [group, user,  etc.]?)
 
 <details>
@@ -89,7 +89,7 @@ Simplified:
 </details>
 <br>
 
-[//]:# (Programmatic access to AWS resources?)
+[//]: # (Programmatic access to AWS resources?)
 
 <details>
     <summary>
@@ -108,7 +108,7 @@ availability of a policy for the specified IAM profile.
 </details>
 <br>
 
-[//]:# (How you can test IAM policy?)
+[//]: # (How you can test IAM policy?)
 
 <details>
     <summary>
@@ -127,7 +127,7 @@ For:
 </details>
 <br>
 
-[//]:# (Best IAM practices?)
+[//]: # (Best IAM practices?)
 
 <details>
     <summary>
@@ -155,7 +155,7 @@ For:
 </details>
 <br>
 
-[//]:# (What is WIF Cognito "Web Identity federation Cognito" ?)
+[//]: # (What is WIF Cognito "Web Identity federation Cognito" ?)
 
 <details>
     <summary>
@@ -183,7 +183,7 @@ Consists of
 </details>
 <br>
 
-[//]:# (What API call can be used to enable a user authenticated by Facebook?)
+[//]: # (What API call can be used to enable a user authenticated by Facebook?)
 
 <details>
     <summary>
@@ -199,7 +199,7 @@ a web identity provider.
 </details>
 <br>
 
-[//]:# (Cognito user pool workflow?)
+[//]: # (Cognito user pool workflow?)
 
 <details>
     <summary>
@@ -220,7 +220,7 @@ in accordance with the role's security policy
 </details>
 <br>
 
-[//]:# (User Pool vs Identity Pool?)
+[//]: # (User Pool vs Identity Pool?)
 
 <details>
     <summary>
@@ -237,7 +237,7 @@ and enable access to AWS services like S3
 </details>
 <br>
 
-[//]:# (IAM Managed policies/Customer managed policies/ ?)
+[//]: # (IAM Managed policies/Customer managed policies/ ?)
 
 <details>
     <summary>
@@ -266,7 +266,7 @@ Inline Policies
 </details>
 <br>
 
-[//]:# (What is STS AssumeRoleWithWebIdentity?)
+[//]: # (What is STS AssumeRoleWithWebIdentity?)
 
 <details>
     <summary>
@@ -290,7 +290,7 @@ This service is referenced with temporary credentials, now with IAM role or user
 
 ---
 
-[//]:# (How we can ensure that user from identity pools can access only their own files in S3?)
+[//]: # (How we can ensure that user from identity pools can access only their own files in S3?)
 
 <details>
     <summary>

@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What are the SOLID principles for?)
+[//]: # (What are the SOLID principles for?)
 
 <details>
     <summary>

@@ -6,7 +6,7 @@
 </h4>
 
 
-[//]:# (What is CI? What is CD "delivery"? What is CD "deployment"?)
+[//]: # (What is CI? What is CD "delivery"? What is CD "deployment"?)
 
 <details>
     <summary>
@@ -30,7 +30,7 @@ https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.html
 </details>
 <br>
 
-[//]:# ( What is deployment configuration for the AWS CodeDeploy?)
+[//]: # ( What is deployment configuration for the AWS CodeDeploy?)
 
 <details>
     <summary>
@@ -74,7 +74,7 @@ if the application revision is not deployed to any of the instance
 </details>
 <br>
 
-[//]:# (What parts CodeDeploy consists off?)
+[//]: # (What parts CodeDeploy consists off?)
 
 <details>
     <summary>
@@ -91,7 +91,7 @@ if the application revision is not deployed to any of the instance
 </details>
 <br>
 
-[//]:# (What is deployment application specification for the AWS CodeDeploy? AppSpec) 
+[//]: # (What is deployment application specification for the AWS CodeDeploy? AppSpec) 
 
 <details>
     <summary>
@@ -117,7 +117,7 @@ and which lifecycle event hooks to run in response to deployment lifecycle event
 </details>
 <br>
 
-[//]:# (What are the key elements of an app spec "appSpec.yaml" in CodeDeploy?)
+[//]: # (What are the key elements of an app spec "appSpec.yaml" in CodeDeploy?)
 
 <details>
     <summary>
@@ -137,7 +137,7 @@ and which lifecycle event hooks to run in response to deployment lifecycle event
 </details>
 <br>
 
-[//]:# (What are hooks events that you can specify in "appSpec.yaml"?)
+[//]: # (What are hooks events that you can specify in "appSpec.yaml"?)
 
 <details>
     <summary>
@@ -161,7 +161,7 @@ They can be separated in 3 phases:
 </details>
 <br>
 
-[//]:# (What AWS CodeDeploy lifecycle hooks you know?)
+[//]: # (What AWS CodeDeploy lifecycle hooks you know?)
 
 <details>
     <summary>
@@ -179,7 +179,7 @@ They can be separated in 3 phases:
 </details>
 <br>
 
-[//]:# (What is code artifact?)
+[//]: # (What is code artifact?)
 
 <details>
     <summary>
@@ -193,7 +193,7 @@ Artifact repo makes easy for devs to find software packages
 </details>
 <br>
 
-[//]:# (CodePipeline workflow?)
+[//]: # (CodePipeline workflow?)
 
 <details>
     <summary>
@@ -210,7 +210,7 @@ Artifact repo makes easy for devs to find software packages
 </details>
 <br>
 
-[//]:# (How would you notificate users that code are pushed to CodeCommit repo?)
+[//]: # (How would you notificate users that code are pushed to CodeCommit repo?)
 
 <details>
     <summary>
@@ -232,7 +232,7 @@ notification rules.
 </details>
 <br>
 
-[//]:# (What are the key elements of a build spec in CodeBuild?)
+[//]: # (What are the key elements of a build spec in CodeBuild?)
 
 <details>
     <summary>
@@ -250,7 +250,7 @@ notification rules.
 </details>
 <br>
 
-[//]:# (What 3rd party tools and other AWS services may participate CodePipeline execution?)
+[//]: # (What 3rd party tools and other AWS services may participate CodePipeline execution?)
 
 <details>
     <summary>
@@ -272,7 +272,7 @@ notification rules.
 </details>
 <br>
 
-[//]:# (What is Elastic Container Service?)
+[//]: # (What is Elastic Container Service?)
 
 <details>
     <summary>
@@ -297,7 +297,7 @@ pluses:
 </details>
 <br>
 
-[//]:# (What is Elastic Container Registry?)
+[//]: # (What is Elastic Container Registry?)
 
 <details>
     <summary>
@@ -312,7 +312,7 @@ Docker or Windows Container.
 </details>
 <br>
 
-[//]:# (What is AWS CodeArtifact?)
+[//]: # (What is AWS CodeArtifact?)
 
 <details>
     <summary>
@@ -328,7 +328,7 @@ software packages used in their software development process
 </details>
 <br>
 
-[//]:# (Can public repository items be available in a CodeArtifact?)
+[//]: # (Can public repository items be available in a CodeArtifact?)
 
 <details>
     <summary>
@@ -350,7 +350,7 @@ used by your application.
 
 ---
 
-[//]:# (CodeCommit events: what is pullRequestSourceBranchUpdated, pullRequestCreated event?)
+[//]: # (CodeCommit events: what is pullRequestSourceBranchUpdated, pullRequestCreated event?)
 
 <details>
     <summary>

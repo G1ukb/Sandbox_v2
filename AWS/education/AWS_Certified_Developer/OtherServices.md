@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is CloudFront?)
+[//]: # (What is CloudFront?)
 
 <details>
     <summary>
@@ -25,7 +25,7 @@ network of data centers called edge locations.
 </details>
 <br>
 
-[//]:# (How you can ensure that all requests to CloudFront are encrypted using HTTPS?)
+[//]: # (How you can ensure that all requests to CloudFront are encrypted using HTTPS?)
 
 <details>
     <summary>
@@ -41,7 +41,7 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 </details>
 <br>
 
-[//]:# (CloudFront allowed HTTP methods?)
+[//]: # (CloudFront allowed HTTP methods?)
 
 <details>
     <summary>
@@ -57,7 +57,7 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 </details>
 <br>
 
-[//]:# (What is AWS WAF?)
+[//]: # (What is AWS WAF?)
 
 <details>
     <summary>
@@ -73,7 +73,7 @@ breach of security or use excessive amounts of resources.
 </details>
 <br>
 
-[//]:# (AWS Elastic Beanstalk?)
+[//]: # (AWS Elastic Beanstalk?)
 
 <details>
     <summary>
@@ -103,7 +103,7 @@ And you shall have all control
 </details>
 <br>
 
-[//]:# (AWS Elastic Beanstalk Options for deployment?)
+[//]: # (AWS Elastic Beanstalk Options for deployment?)
 
 <details>
     <summary>
@@ -157,7 +157,7 @@ Minuses:
 </details>
 <br>
 
-[//]:# (What is traffic splitting "canary testing"?)
+[//]: # (What is traffic splitting "canary testing"?)
 
 <details>
     <summary>
@@ -176,7 +176,7 @@ and the choice healthiest version
 </details>
 <br>
 
-[//]:# (AWS Elastic Beanstalk configurations files? "for pre-amazon linux2")
+[//]: # (AWS Elastic Beanstalk configurations files? "for pre-amazon linux2")
 
 <details>
     <summary>
@@ -210,7 +210,7 @@ For linux2 users recommended to use
 </details>
 <br>
 
-[//]:# (What possible solutions do we have in case we want launch RDS with Elastic Beanstalk?)
+[//]: # (What possible solutions do we have in case we want launch RDS with Elastic Beanstalk?)
 
 <details>
     <summary>
@@ -232,7 +232,7 @@ we can launch RDS outside Elastic beanstalk
 </details>
 <br>
 
-[//]:# (What we will use in case if we want to migrate legacy app to Elastic Beanstalk?)
+[//]: # (What we will use in case if we want to migrate legacy app to Elastic Beanstalk?)
 
 <details>
     <summary>
@@ -248,7 +248,7 @@ Windows Web App Migration Assistant
 </details>
 <br>
 
-[//]:# (AWS Athena?)
+[//]: # (AWS Athena?)
 
 <details>
     <summary>
@@ -263,7 +263,7 @@ makes it simple to analyze data directly in Amazon S3 using standard SQL.
 </details>
 <br>
 
-[//]:# (What is Kinesis?)
+[//]: # (What is Kinesis?)
 
 <details>
     <summary>
@@ -280,7 +280,7 @@ Allows you to build custom apps for your own business needs
 </details>
 <br>
 
-[//]:# (Kinesis core services?)
+[//]: # (Kinesis core services?)
 
 <details>
     <summary>
@@ -303,7 +303,7 @@ Kinesis Data Analytics
 </details>
 <br>
 
-[//]:# (Kinesis Consumers? and how thay work with Shards)
+[//]: # (Kinesis Consumers? and how thay work with Shards)
 
 <details>
     <summary>
@@ -326,7 +326,7 @@ on your consumers
 </details>
 <br>
 
-[//]:# (What is Amplify?)
+[//]: # (What is Amplify?)
 
 <details>
     <summary>
@@ -359,7 +359,7 @@ https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
 </details>
 <br>
 
-[//]:# (What is CloudWatch Evidently?)
+[//]: # (What is CloudWatch Evidently?)
 
 <details>
     <summary>
@@ -382,7 +382,7 @@ CloudWatch Evidently can be used for two similar but distinct use-cases:
 </details>
 <br>
 
-[//]:# (What is Amazon Macie?)
+[//]: # (What is Amazon Macie?)
 
 <details>
     <summary>
@@ -417,7 +417,7 @@ SensitiveData:S3Object/Personal - for personal data
 </details>
 <br>
 
-[//]:# (What is AWS Fargate?)
+[//]: # (What is AWS Fargate?)
 
 <details>
     <summary>

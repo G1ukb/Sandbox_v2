@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is VPC?)
+[//]: # (What is VPC?)
 
 <details>
     <summary>
@@ -22,7 +22,7 @@ with data isolation for private cloud computing.
 </details>
 <br>
 
-[//]:# (What is VPC?)
+[//]: # (What is VPC?)
 
 <details>
     <summary>
@@ -39,7 +39,7 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 </details>
 <br>
 
-[//]:# (What happens to different IP address types when an EC2 instance is rebooted, stopped, started?)
+[//]: # (What happens to different IP address types when an EC2 instance is rebooted, stopped, started?)
 
 <details>
     <summary>
@@ -54,7 +54,7 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 </details>
 <br>
 
-[//]:# (What is elastic IP?)
+[//]: # (What is elastic IP?)
 
 <details>
     <summary>
@@ -71,7 +71,7 @@ to release it.
 </details>
 <br>
 
-[//]:# (How many elastic IPs is it possible to create per account/region?)
+[//]: # (How many elastic IPs is it possible to create per account/region?)
 
 <details>
     <summary>
@@ -87,7 +87,7 @@ They can be changed for an additional fee.
 </details>
 <br>
 
-[//]:# (What is elastic network interface?)
+[//]: # (What is elastic network interface?)
 
 <details>
     <summary>
@@ -112,7 +112,7 @@ address range.
 </details>
 <br>
 
-[//]:# (What is CIDR?)
+[//]: # (What is CIDR?)
 
 <details>
     <summary>
@@ -131,7 +131,7 @@ of a given IP address are considered important for network routing.
 </details>
 <br>
 
-[//]:# (What is NAT?)
+[//]: # (What is NAT?)
 
 <details>
     <summary>
@@ -153,7 +153,7 @@ Instance IP addresses.
 </details>
 <br>
 
-[//]:# (NAT vs VPC vs Internet Gateway "IGW"?)
+[//]: # (NAT vs VPC vs Internet Gateway "IGW"?)
 
 <details>
     <summary>
@@ -178,7 +178,7 @@ but it prevents the internet from initiating connections with those instances
 </details>
 <br>
 
-[//]:# (What is difference between NAT Gateway and NAT Instance?)
+[//]: # (What is difference between NAT Gateway and NAT Instance?)
 
 <details>
     <summary>
@@ -203,7 +203,7 @@ subnets and outgoing traffic to the Internet.
 </details>
 <br>
 
-[//]:# (What is security groups?)
+[//]: # (What is security groups?)
 
 <details>
     <summary>
@@ -221,7 +221,7 @@ it controls the inbound and outbound traffic for the instance.
 </details>
 <br>
 
-[//]:# (What does "local” target mean in terms of an AWS routing table?)
+[//]: # (What does "local” target mean in terms of an AWS routing table?)
 
 <details>
     <summary>
@@ -238,7 +238,7 @@ specify the destination as "local")
 </details>
 <br>
 
-[//]:# (What is bastion in terms of networking?)
+[//]: # (What is bastion in terms of networking?)
 
 <details>
     <summary>

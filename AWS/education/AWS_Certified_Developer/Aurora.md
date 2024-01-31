@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (What is Amazon Aurora?)
+[//]: # (What is Amazon Aurora?)
 
 <details>
     <summary>
@@ -33,7 +33,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview
 </details>
 <br>
 
-[//]:# (What about Aurora Security?)
+[//]: # (What about Aurora Security?)
 
 <details>
     <summary>

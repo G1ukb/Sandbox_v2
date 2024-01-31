@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?)
+[//]: # (Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?)
 
 <details>
     <summary>
@@ -28,7 +28,7 @@ resolves as the region where the stack is created
 </details>
 <br>
 
-[//]:# (1.Commit code to a repository and invoke build, test and/or deployment actions)
+[//]: # (1.Commit code to a repository and invoke build, test and/or deployment actions)
 
 <details>
     <summary>
@@ -67,7 +67,7 @@ AWS documentation or consult with a DevOps professional for detailed guidance.
 </details>
 <br>
 
-[//]:# (2.Use labels and branches for version and release management)
+[//]: # (2.Use labels and branches for version and release management)
 
 <details>
     <summary>
@@ -99,7 +99,7 @@ When you create a version, you’ll include a label for that version.
 </details>
 <br>
 
-[//]:# (3.Use AWS CodePipeline to orchestrate workflows against different environments)
+[//]: # (3.Use AWS CodePipeline to orchestrate workflows against different environments)
 
 <details>
     <summary>
@@ -142,7 +142,7 @@ and troubleshoot any issues using AWS CloudWatch.
 </details>
 <br>
 
-[//]:# (4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, and AWS 
+[//]: # (4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, and AWS 
 CodeDeploy for CI/CD purposes)
 
 <details>
@@ -188,7 +188,7 @@ AWS services like AWS Fargate, Amazon EC2, AWS Lambda, and more.
 </details>
 <br>
 
-[//]:# (5.Perform a roll back plan based on application deployment policy)
+[//]: # (5.Perform a roll back plan based on application deployment policy)
 
 <details>
     <summary>

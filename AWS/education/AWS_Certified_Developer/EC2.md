@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (EC2 Instance Types?)
+[//]: # (EC2 Instance Types?)
 
 <details>
     <summary>
@@ -37,7 +37,7 @@ or data pattern matching, more efficiently than is possible in software running 
 </details>
 <br>
 
-[//]:# (What types of volumes are offered by EC2?)
+[//]: # (What types of volumes are offered by EC2?)
 
 <details>
     <summary>
@@ -69,7 +69,7 @@ throughput-intensive workloads with large datasets and large I/O sizes.
 </details>
 <br>
 
-[//]:# (What is the difference between AMI and snapshot in terms of EC2?)
+[//]: # (What is the difference between AMI and snapshot in terms of EC2?)
 
 <details>
     <summary>
@@ -99,7 +99,7 @@ a new instance launch.
 </details>
 <br>
 
-[//]:# (How is it possible to install/configure software on a EC2 instance?)
+[//]: # (How is it possible to install/configure software on a EC2 instance?)
 
 <details>
     <summary>
@@ -113,7 +113,7 @@ sudo yum install links
 </details>
 <br>
 
-[//]:# (What keys are created for each EC2 instance? What for?)
+[//]: # (What keys are created for each EC2 instance? What for?)
 
 <details>
     <summary>
@@ -135,7 +135,7 @@ so it’s important that you store your private key in a secure place
 </details>
 <br>
 
-[//]:# (What happens to EC2 instances when they are stopped and started vs re-started?)
+[//]: # (What happens to EC2 instances when they are stopped and started vs re-started?)
 
 <details>
     <summary>
@@ -172,7 +172,7 @@ stays running on the same hardware. Here are some key points to note:
 </details>
 <br>
 
-[//]:# (What is the difference between IAM roles and EC2 VPC security groups?)
+[//]: # (What is the difference between IAM roles and EC2 VPC security groups?)
 
 <details>
     <summary>
@@ -200,7 +200,7 @@ The security groups say nothing about which people can connect to your EC2 insta
 </details>
 <br>
 
-[//]:# (Is it possible to decrease the size of an existing EBS volume?)
+[//]: # (Is it possible to decrease the size of an existing EBS volume?)
 
 <details>
     <summary>
@@ -229,7 +229,7 @@ https://repost.aws/knowledge-center/ebs-increase-decrease-volume-size
 </details>
 <br>
 
-[//]:# (Is it possible to reuse a EBS volume for multiple instances?)
+[//]: # (Is it possible to reuse a EBS volume for multiple instances?)
 
 <details>
     <summary>
@@ -247,7 +247,7 @@ You can attach multiple Multi-Attach enabled volumes to an instance or set of in
 </details>
 <br>
 
-[//]:# (How is it possible to get such metadata as current region/AZ from within a running EC2 instance?)
+[//]: # (How is it possible to get such metadata as current region/AZ from within a running EC2 instance?)
 
 <details>
     <summary>
@@ -264,7 +264,7 @@ Java SDK static EC2Instance.getMetadata();
 </details>
 <br>
 
-[//]:# (What are the available elastic load balancer types? What is the key difference between them?)
+[//]: # (What are the available elastic load balancer types? What is the key difference between them?)
 
 <details>
     <summary>
@@ -291,7 +291,7 @@ Amazon EC2 instances and operate at both the request level and connection level.
 </details>
 <br>
 
-[//]:# (What are the key events in EC2 instance lifecycle?)
+[//]: # (What are the key events in EC2 instance lifecycle?)
 
 <details>
     <summary>
@@ -310,7 +310,7 @@ Amazon EC2 instances and operate at both the request level and connection level.
 </details>
 <br>
 
-[//]:# (EC2 Instance Pricing Options?)
+[//]: # (EC2 Instance Pricing Options?)
 
 <details>
     <summary>
@@ -327,7 +327,7 @@ Amazon EC2 instances and operate at both the request level and connection level.
 </details>
 <br>
 
-[//]:# (What is AMI?)
+[//]: # (What is AMI?)
 
 <details>
     <summary>
@@ -347,7 +347,7 @@ This is suitable in situation where you are not created previous ec2
 </details>
 <br>
 
-[//]:# (In order to enable encryption using EC2 and Elastic Block Store, you must?)
+[//]: # (In order to enable encryption using EC2 and Elastic Block Store, you must?)
 
 <details>
     <summary>
@@ -363,7 +363,7 @@ enabling encryption for the specific volume creation operation.
 </details>
 <br>
 
-[//]:# (How you can encrypt AMI if you already have unencrypted AMI?)
+[//]: # (How you can encrypt AMI if you already have unencrypted AMI?)
 
 <details>
     <summary>
@@ -378,7 +378,7 @@ You will need to create a copy of the AMI and add encryption for the copy.
 </details>
 <br>
 
-[//]:# (Where you can store user session state?)
+[//]: # (Where you can store user session state?)
 
 <details>
     <summary>

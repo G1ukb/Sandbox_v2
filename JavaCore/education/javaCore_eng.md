@@ -1,4 +1,4 @@
-[//]:# (Java Fundamentals)
+[//]: # (Java Fundamentals)
 
 <details>
     <summary>
@@ -7,7 +7,7 @@
         </big></big></big></b>
     </summary>
 
-[//]:# (Java OOP)
+[//]: # (Java OOP)
 
 <br>
 <details>
@@ -26,7 +26,7 @@
 </details>
 <br>
 
-[//]:# (Overloading and overriding)
+[//]: # (Overloading and overriding)
 
 <details>
     <summary>
@@ -48,7 +48,7 @@ but writes this methods own behavior
 </details>
 <br>
 
-[//]:# (Is Java Completely OOP)
+[//]: # (Is Java Completely OOP)
 
 <details>
      <summary>
@@ -62,7 +62,7 @@ No, because java contains primitives, and they, in turn, are not objects
 </details>
 <br>
 
-[//]:# (Primitives and Reference Data Types)
+[//]: # (Primitives and Reference Data Types)
 
 <details>
     <summary>
@@ -92,7 +92,7 @@ Primitive data types:
 </details>
 <br>
 
-[//]:# (Changing the value of a primitive, field, reference type when passing to a method)
+[//]: # (Changing the value of a primitive, field, reference type when passing to a method)
 
 <details>
     <summary>
@@ -108,7 +108,7 @@ the area in memory where this object is stored.
 </details>
 <br>
 
-[//]:# (Constructors + initialization blocks)
+[//]: # (Constructors + initialization blocks)
 
 <details>
     <summary>
@@ -133,7 +133,7 @@ constructor
 </details>
 <br>
 
-[//]:# (In what order are they initialized)
+[//]: # (In what order are they initialized)
 
 <details>
      <summary>
@@ -154,7 +154,7 @@ fields
 </details>
 <br>
 
-[//]:# (Can a static constructor initialize regular fields No)
+[//]: # (Can a static constructor initialize regular fields No)
 
 <details>
      <summary>
@@ -169,7 +169,7 @@ Yes, if you create an object with your hands
 </details>
 <br>
 
-[//]:# (Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
+[//]: # (Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
 
 <details>
      <summary>
@@ -184,7 +184,7 @@ For logging
 </details>
 <br>
 
-[//]:# (Java class types)
+[//]: # (Java class types)
 
 <details>
      <summary>
@@ -198,7 +198,7 @@ Interface - Abstract class - Ordinary class - Enum
 </details>
 <br>
 
-[//]:# (Class, method, field, access modifiers)
+[//]: # (Class, method, field, access modifiers)
 
 <details>
     <summary>
@@ -241,7 +241,7 @@ With the **volatile** modifier, things are a bit more complicated. Guaranteed va
 </details>
 <br>
 
-[//]:# (Object.class)
+[//]: # (Object.class)
 
 <details>
      <summary>
@@ -271,7 +271,7 @@ Multithreading
 </details>
 <br>
 
-[//]:# (How does clone work?)
+[//]: # (How does clone work?)
 
 <details>
      <summary>
@@ -289,7 +289,7 @@ therefore refers to the same object.
 </details>
 <br>
 
-[//]:# (Rules for redefining hashcode and equals)
+[//]: # (Rules for redefining hashcode and equals)
 
 <details>
     <summary>
@@ -316,7 +316,7 @@ For example, a.equals(null) should return false.
 </details>
 <br>
 
-[//]:# (Class.class)
+[//]: # (Class.class)
 
 <details>
     <summary>
@@ -350,7 +350,7 @@ methods are also provided for determining the class type
 </details>
 <br>
 
-[//]:# (Immutable object)
+[//]: # (Immutable object)
 
 <details>
     <summary>
@@ -381,7 +381,7 @@ What gives us Immutable object:
 </details>
 <br>
 
-[//]:# (String)
+[//]: # (String)
 
 <details>
     <summary>
@@ -424,7 +424,7 @@ At the same time, there are two of them for dividing into work in a multi-thread
 </details>
 <br>
 
-[//]:# (Nested classes)
+[//]: # (Nested classes)
 
 <details>
     <summary>
@@ -433,7 +433,7 @@ At the same time, there are two of them for dividing into work in a multi-thread
         </big></big></big></b>
     </summary>
 
-[//]:# (Nested class types)
+[//]: # (Nested class types)
 
 <br>
 <details>
@@ -459,7 +459,7 @@ Why do we need it:
 </details>
 <br>
 
-[//]:# (When to use which type of class)
+[//]: # (When to use which type of class)
 
 <details>
     <summary>
@@ -492,7 +492,7 @@ and you need access to local variables or parameters of the parent's class.
 </details>
 <br>
 
-[//]:# (Annotations)
+[//]: # (Annotations)
 
 <details>
     <summary>
@@ -501,7 +501,7 @@ and you need access to local variables or parameters of the parent's class.
         </big></big></big></b>
     </summary>
 
-[//]:# (What is and what is the main reason for using annotations?)
+[//]: # (What is and what is the main reason for using annotations?)
 
 <br>
 <details>
@@ -522,7 +522,7 @@ or for marking classes, fields, etc.
 </details>
 <br>
 
-[//]:# (Instructions to execute annotations by execution type?)
+[//]: # (Instructions to execute annotations by execution type?)
 
 <details>
      <summary>
@@ -541,7 +541,7 @@ Instruction at Runtime
 </details>
 <br>
 
-[//]:# (What types of objects can be returned from an annotation method declaration?)
+[//]: # (What types of objects can be returned from an annotation method declaration?)
 
 <details>
      <summary>
@@ -560,7 +560,7 @@ The return type must be
 </details>
 <br>
 
-[//]:# (How custom annotations can help improve code)
+[//]: # (How custom annotations can help improve code)
 
 <details>
      <summary>
@@ -576,7 +576,7 @@ The return type must be
 </details>
 <br>
 
-[//]:# (Short annotation template)
+[//]: # (Short annotation template)
 
 <details>
      <summary>
@@ -590,7 +590,7 @@ The return type must be
 </details>
 <br>
 
-[//]:# (What is meta annotation)
+[//]: # (What is meta annotation)
 
 <details>
      <summary>
@@ -608,7 +608,7 @@ added via @inherit annotation
 </details>
 <br>
 
-[//]:# (Exeptions)
+[//]: # (Exeptions)
 
 <details>
     <summary>
@@ -617,7 +617,7 @@ added via @inherit annotation
         </big></big></big></b>
     </summary>
 
-[//]:# (Best practices for using exceptions)
+[//]: # (Best practices for using exceptions)
 
 <br>
 <details>
@@ -646,7 +646,7 @@ added via @inherit annotation
 </details>
 <br>
 
-[//]:# (Generics)
+[//]: # (Generics)
 
 <details>
     <summary>
@@ -657,7 +657,7 @@ added via @inherit annotation
 
 [Usefully resource](https://convincedcoder.com/2018/09/29/Java-generics-wildcards-type-erasure/)
 
-[//]:# (What is type erasure and how does it work)
+[//]: # (What is type erasure and how does it work)
 
 <details>
     <summary>
@@ -680,7 +680,7 @@ The compiler converts the generic type to an object. This is called type erasure
 </details>
 <br>
 
-[//]:# (What is a bridge method)
+[//]: # (What is a bridge method)
 
 <details>
     <summary>
@@ -716,7 +716,7 @@ And for this it generates an additional method for working with wildcard methods
 </details>
 <br>
 
-[//]:# (Collections)
+[//]: # (Collections)
 
 <details>
     <summary>
@@ -727,7 +727,7 @@ And for this it generates an additional method for working with wildcard methods
 
 ![img](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/03/hierarchy-of-collection-framework-in-java.webp)
 
-[//]:# (Explore the basic principle of basic collections)
+[//]: # (Explore the basic principle of basic collections)
 
 <details>
     <summary>
@@ -839,7 +839,7 @@ stream, but still saved for reading.**
 </details>
 <br>
 
-[//]:# (Multithreading)
+[//]: # (Multithreading)
 
 <details>
     <summary>
@@ -848,7 +848,7 @@ stream, but still saved for reading.**
         </big></big></big></b>
     </summary>
 
-[//]:# (Basic concepts)
+[//]: # (Basic concepts)
 
 <br>
 <details>
@@ -925,7 +925,7 @@ control the number of constantly running threads.
 </details>
 <br>
 
-[//]:# (Happens before)
+[//]: # (Happens before)
 
 <details>
      <summary>
@@ -946,7 +946,7 @@ But worsens the performance due to the fact that the cache works much faster.
 </details>
 <br>
 
-[//]:# (PESC in multithreading)
+[//]: # (PESC in multithreading)
 
 <details>
      <summary>
@@ -960,7 +960,7 @@ But worsens the performance due to the fact that the cache works much faster.
 </details>
 <br>
 
-[//]:# (Locks/Atomics)
+[//]: # (Locks/Atomics)
 
 <details>
     <summary>
@@ -998,7 +998,7 @@ the fact that they are optimized for the CPU and work faster.
 </details>
 <br>
 
-[//]:# (Castles/Atoms)
+[//]: # (Castles/Atoms)
 
 <details>
       <summary>
@@ -1024,7 +1024,7 @@ cannot be judged by any progress.
 </details>
 <br>
 
-[//]:# (IO/NIO)
+[//]: # (IO/NIO)
 
 <details>
     <summary>
@@ -1079,7 +1079,7 @@ The difference between NIO's flexibility and speed and IO's performance guarante
 </details>
 <br>
 
-[//]:# (Serializations)
+[//]: # (Serializations)
 
 <details>
     <summary>
@@ -1131,7 +1131,7 @@ otherwise a NotSerializableException will be thrown
 </details>
 <br>
 
-[//]:# (Classloading)
+[//]: # (Classloading)
 
 <details>
     <summary>
@@ -1175,7 +1175,7 @@ use custom class loaders.
 </details>
 <br>
 
-[//]:# (Garbage collector)
+[//]: # (Garbage collector)
 
 <details>
     <summary>

@@ -1,4 +1,4 @@
-[//]:# (SQL questions)
+[//]: # (SQL questions)
 <br>
 <details>
     <summary>
@@ -60,7 +60,7 @@ Spring JDBC
 
 </details>
 
-[//]:# (NoSQL questions)
+[//]: # (NoSQL questions)
 <br>
 <details>
     <summary>

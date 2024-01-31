@@ -5,9 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Quick_cheat_sheet_en.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quick_cheat_sheet_ru.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/Architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/Architecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/CI_CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/CI_CD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/ProgrammingAchitecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingAchitecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Architecture/education/ProgrammingParadigms.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingParadigms.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPatterns/education/SOLID.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatterns/education/SOLID.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/education/javaCore_eng.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/javaCore_eng.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/education/javaCore_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/javaCore_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/education/questions_all_in_one.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/education/questions_all_in_one.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST/education/REST_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/REST/education/REST_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/education/SQL_NOSQL_en.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/education/SQL_NOSQL_en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/education/SQL_NOSQL_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/education/SQL_NOSQL_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/education/sql_questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/education/sql_questions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftProc/education/SoftSkills_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/SoftProc/education/SoftSkills_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftProc/education/questions_all_in_one.md" beforeDir="false" afterPath="$PROJECT_DIR$/SoftProc/education/questions_all_in_one.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/education/Speing_en.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/education/Speing_en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/education/Spring_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/education/Spring_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/education/testing_en.md" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/education/testing_en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/education/testing_questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/education/testing_questions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/education/testing_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/education/testing_ru.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +71,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -163,33 +198,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AddTwoNumbers.executor": "Run",
-    "Application.FindNum.executor": "Run",
-    "Application.LongestSubstringWithoutRepeatingCharacters.executor": "Run",
-    "Application.MedianOfTwoSortedArrays.executor": "Run",
-    "Application.TwoSum.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Hleb_Belski/Desktop/WorkProjects/Sandbox_v2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "spring.configuration.checksum": "50780f47f6839d47d60bc4555ee00c3f",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AddTwoNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindNum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LongestSubstringWithoutRepeatingCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MedianOfTwoSortedArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hleb_Belski/Desktop/WorkProjects/Sandbox_v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;50780f47f6839d47d60bc4555ee00c3f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hleb_Belski\Desktop\WorkProjects\Sandbox_v2\SQL\education" />

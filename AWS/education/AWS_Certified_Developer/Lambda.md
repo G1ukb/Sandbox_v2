@@ -5,7 +5,7 @@
 
 </h4>
 
-[//]:# (Lambdas vs. ec2)
+[//]: # (Lambdas vs. ec2)
 
 <details>
     <summary>
@@ -28,7 +28,7 @@ Virtual functions - no servers to manage!
 </details>
 <br>
 
-[//]:# (What ways of triggering a Lambda do you know?)
+[//]: # (What ways of triggering a Lambda do you know?)
 
 <details>
     <summary>
@@ -51,7 +51,7 @@ Lambda functions can be activated in different ways:
 </details>  
 <br>
 
-[//]:# (What is Lambda@Edge?)
+[//]: # (What is Lambda@Edge?)
 
 <details>
     <summary>
@@ -86,7 +86,7 @@ having to modify your application code on your origin.
 </details>
 <br>
 
-[//]:# (Lambda@Edge vs CloudFront Functions?)
+[//]: # (Lambda@Edge vs CloudFront Functions?)
 
 <details>
     <summary>
@@ -108,7 +108,7 @@ They are executed at Regional Edge Locations in major AWS Regions.
 </details>
 <br>
 
-[//]:# (What is Lambda – Event Source Mapping for SQS & SQS FIFO? Lambda event trigger)
+[//]: # (What is Lambda – Event Source Mapping for SQS & SQS FIFO? Lambda event trigger)
 
 <details>
     <summary>
@@ -134,7 +134,7 @@ Can be scaled:
 </details>  
 <br>
 
-[//]:# (What is Lambda - Directions?)
+[//]: # (What is Lambda - Directions?)
 
 <details>
     <summary>
@@ -157,7 +157,7 @@ You can choose the final exact one:
 </details>  
 <br>
 
-[//]:# (What is Lambda pricing?)
+[//]: # (What is Lambda pricing?)
 
 <details>
     <summary>
@@ -180,7 +180,7 @@ AWS Lambda is very cheap and very popular because of this
 </details>
 <br>
 
-[//]:# (How is it possible to test Lambda code without actually running it in AWS?)
+[//]: # (How is it possible to test Lambda code without actually running it in AWS?)
 
 <details>
     <summary>
@@ -196,7 +196,7 @@ your serverless applications before uploading them to the AWS cloud
 </details>
 <br>
 
-[//]:# (What is the difference between synchronous and asynchronous Lambda invocations?)
+[//]: # (What is the difference between synchronous and asynchronous Lambda invocations?)
 
 <details>
     <summary>
@@ -231,7 +231,7 @@ will process the request and (for example, send an SQS message that something we
 </details>
 <br>
 
-[//]:# (What is Lambda Environment Variables?)
+[//]: # (What is Lambda Environment Variables?)
 
 <details>
     <summary>
@@ -256,7 +256,7 @@ And work with keys, and the lambda will independently substitute the specified v
 </details>  
 <br>
 
-[//]:# (What is Lambda Logging & Monitoring? Tracing with x-ray?)
+[//]: # (What is Lambda Logging & Monitoring? Tracing with x-ray?)
 
 <details>
     <summary>
@@ -280,7 +280,7 @@ but are handy to know):
 </details>  
 <br>
 
-[//]:# (How Lambda can connet VPC & private subnet 
+[//]: # (How Lambda can connet VPC & private subnet 
 or If Lambda in VPC how it connect to public www?)
 
 <details>
@@ -319,7 +319,7 @@ it looks like this
 </details>  
 <br>
 
-[//]:# (Lambda Concurrency and Throttling? Cold Start?)
+[//]: # (Lambda Concurrency and Throttling? Cold Start?)
 
 <details>
     <summary>
@@ -357,7 +357,7 @@ All settings are done via **Application Auto Scaling**
 </details>  
 <br>
 
-[//]:# (Lambda limits?)
+[//]: # (Lambda limits?)
 
 <details>
     <summary>
@@ -519,7 +519,7 @@ Example of response
 </details>
 <br>
 
-[//]:# (How you can transform API requests and responses)
+[//]: # (How you can transform API requests and responses)
 
 <details>
     <summary>
@@ -760,7 +760,7 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 </details>
 <br>
 
-[//]:# (What is EventBridge?)
+[//]: # (What is EventBridge?)
 
 <details>
     <summary>
@@ -780,7 +780,7 @@ Part of Event-driven architecture
 
 ---
 
-[//]:# (What is Lambda event and context?)
+[//]: # (What is Lambda event and context?)
 
 <details>
     <summary>
@@ -808,7 +808,7 @@ Context's main role is to provide information about the current execution enviro
 </details>  
 <br>
 
-[//]:# (How we can control featute A/B testing in case if we have 2 features, but whant use only one?)
+[//]: # (How we can control featute A/B testing in case if we have 2 features, but whant use only one?)
 
 <details>
     <summary>
