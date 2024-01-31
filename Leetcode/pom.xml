@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>Sandbox_dr_main</groupId>
-        <artifactId>Sandbox_id_main</artifactId>
+        <artifactId>Sandbox_v2</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 

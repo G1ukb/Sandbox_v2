@@ -5,40 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1508b5e2-ac50-4e9a-b17b-2c06c316e88d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Architecture/Menu.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingAchitecture.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Architecture/education/ProgrammingParadigms.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatterns/DP_Menu.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatterns/education/SOLID.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/easy/FindNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/hard/MedianOfTwoSortedArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/medium/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leetcode/src/main/java/medium/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quick_cheat_sheet_en.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quick_cheat_sheet_ru.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Aurora.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CI-CD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CloudFormation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/CodePipeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/DynamoDB.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/EC2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElastiCache.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/ElasticLoadBalancing(ELB).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/IAM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Lambda.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Monitoring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/OtherServices.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/RDS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/S3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/SNS-SQS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Security.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/Serverless.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/education/AWS_Certified_Developer/VPC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS/education/Menu.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS/Menu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Architecture/education/CI_CD_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/CI_CD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Architecture/education/architecture_ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture/education/Architecture.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode/src/main/java/twoSum/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/src/main/java/easy/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode/target/classes/twoSum/TwoSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +124,9 @@
       <select />
     </treeState>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -205,7 +177,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Hleb_Belski/Desktop/WorkProjects/ICanCode",
+    "last_opened_file_path": "C:/Users/Hleb_Belski/Desktop/WorkProjects/Sandbox_v2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -425,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706348842454</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added menu for AWS and main repository menu&#10;started filling the architectural session with more questions">
+      <option name="closed" value="true" />
+      <created>1706626954505</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706626954505</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -519,7 +499,8 @@
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding REST api" />
     <MESSAGE value="Preparation for D3, actualize knowledge's regarding SOFT skills" />
     <MESSAGE value="Added menu for AWS and main repository menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added menu for AWS and main repository menu" />
+    <MESSAGE value="Added menu for AWS and main repository menu&#10;started filling the architectural session with more questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added menu for AWS and main repository menu&#10;started filling the architectural session with more questions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LocalSendbox/src/main/java/yieldCounter.java">
