@@ -17,9 +17,11 @@
         <module name="SQL" />
         <module name="REST" />
         <module name="GIT" />
+        <module name="Docker" />
         <module name="AWS" />
         <module name="LocalSandbox" />
         <module name="Testing" />
+        <module name="Kubernetes" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

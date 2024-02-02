@@ -23,6 +23,8 @@
         <module>Architecture</module>
         <module>Leadership</module>
         <module>Leetcode</module>
+        <module>Kubernetes</module>
+        <module>Docker</module>
     </modules>
 
     <build>

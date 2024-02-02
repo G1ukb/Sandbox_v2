@@ -28,6 +28,24 @@ Virtual functions - no servers to manage!
 </details>
 <br>
 
+[//]: # (What is under the hood of lambdas. 
+        Why are they fast and don't require any EC2 to run?)
+
+<details>
+    <summary>
+        <b><big><big>
+            What is under the hood of lambdas. 
+            Why are they fast and don't require any EC2 to run?
+        </big></big></b>
+    </summary>
+
+Each lambda represents an image and a container. 
+And Amazon takes over the work of all 
+containers and their management.
+
+</details>
+<br>
+
 [//]: # (What ways of triggering a Lambda do you know?)
 
 <details>
