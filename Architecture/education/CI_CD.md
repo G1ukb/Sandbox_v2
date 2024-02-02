@@ -1,65 +1,233 @@
-1. what is Ci-cd
-2. from what elements ci-cd consists of
-2. How would you set up a CI/CD pipeline for a Java-based microservices architecture? What tools would you use and why?
-2. Can you explain the role of Maven or Gradle in the CI/CD process for a Java project?
-3. How would you handle database schema changes in a CI/CD pipeline for a Java application?
-4. What strategies would you use to ensure zero-downtime deployments in a Java-based CI/CD pipeline?
-5. How can Docker be integrated into a Java CI/CD pipeline? What are the benefits and challenges?
-6. How would you manage environment-specific configurations (like database URLs, API keys, etc.) in a Java CI/CD pipeline?
-7. What are some best practices for managing dependencies in a Java project within a CI/CD context?
-8. How would you implement automated testing in a CI/CD pipeline for a Java project? What types of tests would you include?
-9. Can you describe a scenario where a CI/CD pipeline might fail for a Java project? How would you troubleshoot and resolve this issue?
-10. How would you ensure security in a Java-based CI/CD pipeline? What tools or practices would you recommend?
-11. How would you handle rollbacks in a Java-based CI/CD pipeline? What tools or strategies would you use?
-12. How would you manage version control in a CI/CD pipeline for a Java application?
-13. What are the key metrics you would track to measure the effectiveness of a CI/CD pipeline in a Java project?
-14. How can Kubernetes be used in a CI/CD pipeline for a Java application? What are the benefits and challenges?
-15. How would you handle secret management in a Java-based CI/CD pipeline?
-16. What strategies would you use to minimize build time in a CI/CD pipeline for a Java project?
-17. How would you incorporate code reviews and pull requests into a Java CI/CD pipeline?
-18. Can you describe how to set up a multi-stage build process in a CI/CD pipeline for a Java project?
-19. How would you handle failure notifications and alerts in a Java-based CI/CD pipeline? What tools or practices would you recommend?
+<h1>Architecture</h1> 
+<h4> 
 
+[Back to menu](..%2FMenu.md)
 
+</h4>
 
-[//]: # (Что подразумевается под CI-CD)
+[//]: # (What is CI/CD from Java perspective?)
 <br>
 <details>
     <summary>
         <b><big><big><big>
-            Что подразумевается под CI-CD
+            What is CI/CD from Java perspective?
         </big></big></big></b>
     </summary>
 
-CI/CD — это способ автоматизации доставки и внедрения новых версий продукта
+CI/CD, or Continuous Integration/Continuous Deployment,
+is a software development practice
+that improving the speed and reliability of software releases.
 
-**CI** позволяет обнаруживать ошибки на ранней стадии или при интеграции кода.
-**CD** обеспечивает автоматизацию доставки нового кода с минимальными усилиями.
-
-- Изменения кода имеют меньше непредвиденных последствий.
-- Выявление ошибок проще и быстрее.
-- Тестируемость улучшается за счет небольших конкретных изменений.
-- Обновления проще интегрировать в конечный продукт
-
-Инструменты CI/CD
-- Git используется как инструмент системы контроля версий
-- Jenkins используется как инструмент непрерывной интеграции
-- Selenium используется как инструмент непрерывного тестирования
-- Docker используется как инструмент контейнеризации0
+**Consists off:**
+- **Version Control:**
+  way of committing changes to shared repository.
+- **Continuous Integration:**
+  automated tools that build newly committed code
+  help find and address bugs quicker,
+  improve software quality.
+- **Continuous Delivery:**
+  This stage involves testing the code in a production-like environment,
+  which may include UI testing, load testing, integration testing, etc.
+  The goal is to ensure that we have a deployment-ready code
 
 </details>
 
-[//]: # (Как можно улучшить CI-CD)
+[//]: # (What tools plays a crucial role in the CI/CD pipeline?)
 <br>
 <details>
     <summary>
         <b><big><big><big>
-            Как можно улучшить CI-CD
+            What tools plays a crucial role in the CI/CD pipeline?
         </big></big></big></b>
     </summary>
 
-**Делайте коммиты рано и часто** - чем раньше найдется ошибка,
-тем меньше проблем возникнет с исправлением
-**Оптимизируйте тесты** - чем меньше мануальных тестов, тем проще обнаружить ошибку
+- **Git** allows efficient collaboration between developers
+
+
+- **Maven/Gradle** - for Build/Testing/Document creation
+
+
+- **Jenkins/Bamboo/TeamCity** automate the building and testing process,
+  helping to catch issues early
+
+
+- **JUnit/Mockito** ensure that your code is working as expected
+
+
+- **Docker** simplifies deployment by packaging your application
+  and its dependencies into a single object
+
+
+- **Kubernetes** helps manage your containers
+  and ensures that your application is highly available
+
+
+- **Jenkins/Spinnaker/GoCD** automate the deployment process,
+  reducing the risk of human error
+
+
+- **Prometheus/Grafana** provide insights into how your application
+  is performing in real-time
+
+</details>
+
+[//]: # (How can Docker be integrated into a Java CI/CD pipeline?
+        What are the benefits and challenges?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How can Docker be integrated into a Java CI/CD pipeline?
+            What are the benefits and challenges?
+        </big></big></big></b>
+    </summary>
+
+Docker can be integrated into a Java CI/CD pipeline in the following ways:
+* Build Docker Images
+* Run Tests in Docker Containers
+* Push Docker Images to a Registry
+* Deploy Docker Images
+
+Pluses:
+* Consistency — we have the same env during development
+* Isolation — containers are isolated from each other
+* Scalability — can be easily scaled up or down
+* Portability — run on any system
+
+Minuses:
+* Complexity of knowledge and integration: can be a problem for who are new to Docker
+* Security - Docker containers are isolated from each other, but still need security
+* Framework Dependency
+
+</details>
+
+[//]: # (How would you manage environment-specific configurations 
+        /like database URLs, API keys, etc./ in a Java CI/CD pipeline?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How would you manage environment-specific configurations 
+            /like database URLs, API keys, etc./ in a Java CI/CD pipeline?
+        </big></big></big></b>
+    </summary>
+
+* **Environment/System Variables:** that a stored in the env by itself
+* **Configuration Files:** files can be loaded at runtime based on the current environment
+* **Secrets Management Tools:** Vault, AWS Secrets Manager, or Azure Key Vault
+
+</details>
+
+[//]: # (Can you describe a scenario where a CI/CD pipeline 
+        might fail for a Java project? 
+        How would you troubleshoot and resolve this issue?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            Can you describe a scenario where a CI/CD pipeline 
+            might fail for a Java project? 
+            How would you troubleshoot and resolve this issue?
+        </big></big></big></b>
+    </summary>
+
+* Local Reproduction in case if it is not a local problem
+* Check the Error Message or Error log
+* various checks based on error message
+  * Check the pom.xml File
+  * Check the Dependency Repositories
+  * Check the Resources
+  * Check the Network
+
+</details>
+
+[//]: # (How would you ensure security in a Java-based CI/CD pipeline? 
+         What tools or practices would you recommend?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How would you ensure security in a Java-based CI/CD pipeline? 
+            What tools or practices would you recommend?
+        </big></big></big></b>
+    </summary>
+
+**Secure the Source Code**
+- Static Code Analysis
+- Dependency Check
+- Regularly Update Dependencies
+
+**Secure the Build Process**
+- Secrets Management
+- Build Isolation
+- Automated Security Testing
+
+**Secure the Deployment**
+- Immutable Infrastructure
+- Least Privilege Principle
+
+**Monitor and Respond**
+- Audit Logs
+
+</details>
+
+[//]: # (What are the key metrics you would track to measure 
+        the effectiveness of a CI/CD pipeline in a Java project?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What are the key metrics you would track to measure 
+            the effectiveness of a CI/CD pipeline in a Java project?
+        </big></big></big></b>
+    </summary>
+
+- Deployment Frequency
+- Failure Rate
+- Mean Time to Recovery
+- Test Automation Rate
+- Code Coverage
+
+</details>
+
+[//]: # (What strategies would you use to minimize build time in a 
+         CI/CD pipeline for a Java project?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What strategies would you use to minimize build time in a 
+            CI/CD pipeline for a Java project?
+        </big></big></big></b>
+    </summary>
+
+- Parallel Builds (main idea to split test and build processes)
+- CI/CD Branching (test new feature in lighter dev branch)
+- Performance, Accessibility Testing
+- Automated Security Testing
+- Optimize Dependencies (use only needed)
+- Incremental Builds (like in AWS CloudFront template)
+- Distributed Builds across multiple machines
+
+</details>
+
+
+[//]: # (How would you handle failure notifications and 
+        alerts in a Java-based CI/CD pipeline? 
+        What tools or practices would you recommend?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How would you handle failure notifications and 
+            alerts in a Java-based CI/CD pipeline? 
+            What tools or practices would you recommend?
+        </big></big></big></b>
+    </summary>
+
+- Alerting Tools
+  - via static content (splunk, logs, log dashboards) 
+  - via notifications (Slack, Email, SNS)
+- Error Handling Mechanisms - like event-bridge + SNS SQS + lambda
 
 </details>
