@@ -5,21 +5,6 @@
 
 </h4>
 
-* How docker reacts on changes in dockerfile / image / source code?
-* How do you run a Docker container from a Docker image?
-* What is Docker Hub and how is it used?
-* How do you push a Docker image to Docker Hub?
-* What is a Docker volume and what is it used for?
-* How do you use Docker Compose to manage multi-container applications?
-* How do you stop and remove Docker containers?
-* What is the purpose of the docker run command and how is it used?
-* How do you list all running Docker containers?
-* What is the purpose of Docker networking and how do you use it?
-* How do you share data between a Docker container and the host?
-* How do you update a Docker image with new changes?
-* What is the difference between Docker Swarm and Kubernetes?
-* How do you debug a running Docker container?
-
 [//]: # (What is Docker and what is it used for?)
 <br>
 <details>
@@ -71,10 +56,10 @@ it also has some limitations. Here are a few:
   can be a problem for who are new to Docker
 
 - **Framework Dependency.**
-  - **Missing Features:** Docker is still under active
-    development, and there are many feature requests in progress.
-  - **You can't switch quickly** to another framework
-    in case if you need additional features.
+    - **Missing Features:** Docker is still under active
+      development, and there are many feature requests in progress.
+    - **You can't switch quickly** to another framework
+      in case if you need additional features.
 
 - **Data Persistence:** If a container goes down,
   it needs a backup and recovery strategy.
@@ -166,20 +151,20 @@ Podman // Containerd // Rancher
 
 **Docker Image:**
 
-- A Docker image is an immutable (unchangeable) file 
-that contains the source code, libraries, dependencies, 
-tools, and other files needed for an application to run.
+- A Docker image is an immutable (unchangeable) file
+  that contains the source code, libraries, dependencies,
+  tools, and other files needed for an application to run.
 - Docker images are sometimes referred to as snapshots.
-- When you change the initial state of an image 
-and save the existing state, you create a new template 
-with an additional layer on top of it.
+- When you change the initial state of an image
+  and save the existing state, you create a new template
+  with an additional layer on top of it.
 
 Docker Container:
 
 - A Docker container is a virtualized run-time environment
-where users can isolate applications from the
-underlying system.
-- A container is a running instance of an image. 
+  where users can isolate applications from the
+  underlying system.
+- A container is a running instance of an image.
 
 </details>
 
@@ -192,8 +177,8 @@ underlying system.
         </big></big></big></b>
     </summary>
 
-A Dockerfile is a text document that contains all 
-the commands a user could call on the command 
+A Dockerfile is a text document that contains all
+the commands a user could call on the command
 line to assemble an image
 
 </details>
@@ -207,17 +192,240 @@ line to assemble an image
         </big></big></big></b>
     </summary>
 
-Docker uses the concept of “layers” to build images. 
-Each layer is a set of changes that have 
-been made to the file system. 
-When you create a Dockerfile and run it, 
+Docker uses the concept of “layers” to build images.
+Each layer is a set of changes that have
+been made to the file system.
+When you create a Dockerfile and run it,
 each command in the Dockerfile creates a new layer.
 
-These layers are stacked on top of each other 
-to create the final Docker image. 
-If you make changes to the Dockerfile, 
-Docker will rebuild only the changed layer 
+These layers are stacked on top of each other
+to create the final Docker image.
+If you make changes to the Dockerfile,
+Docker will rebuild only the changed layer
 and all layers after it. This is called layer caching.
+
+</details>
+
+[//]: # (How docker reacts on changes in dockerfile / image / source code?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How docker reacts on changes in dockerfile / image / source code?
+        </big></big></big></b>
+    </summary>
+
+- **Dockerfile:** When you make changes to a Dockerfile and then run docker build,
+  Docker starts building a new Docker image according to the instructions
+  in the Dockerfile.
+
+Docker uses a layered cache system, so if you change a line in your Dockerfile,
+all layers defined after that line will be built again.
+This is because the change might affect subsequent layers.
+
+- **Image**: If you pull a new version of an image from a Docker registry
+  (like Docker Hub), any containers that you start with docker run after that
+  will use the new image.
+
+However, any containers that were already running before you pulled
+the new image will continue to use the old image they were started with,
+unless you explicitly stop and remove the old container and start a new one.
+
+- **Source Code:** Docker itself does not automatically react to changes
+  in your source code.
+  If you change your source code, you need to rebuild your Docker image
+  (if your source code is part of the image) and restart your container to see the changes.
+
+However, during development, you can use Docker volumes to map a directory
+in your local file system (where your source code resides)
+to a directory in the Docker container.
+
+This way, changes to your local source code will immediately be reflected
+inside the container.
+
+</details>
+
+[//]: # (Docker container's lifecycle?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            Docker container's lifecycle?
+        </big></big></big></b>
+    </summary>
+
+The lifecycle of a Docker container consists of several stages:
+
+1. **Create**. docker creates command or the docker run
+2. **Start**. docker start command is used to start a created container.
+3. **Running**. After the container is started, it’s in the running state.
+4. **Stop**. The docker stop command is used to stop a running container.
+    1. sends a **SIGTERM** signal to the main process to shut down cleanly
+    2. If the process doesn’t stop after the period,
+       Docker sends a **SIGKILL** terminate it
+5. **Restart**. The docker restart command stops and then starts a container again.
+   (useful for applying new settings or recovering from issues)
+6. **Pause/Unpause**: The docker pause command pauses a running container,
+   freezing all its processes.
+   (useful for troubleshooting or system resource management)
+7. **Remove**. remove a stopped container
+
+</details>
+
+[//]: # (Docker volumes? Definition / Creation / Usage / Volume Drivers)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            Docker volumes? Definition / Creation / Usage / Volume Drivers
+        </big></big></big></b>
+    </summary>
+
+The lifecycle of a Docker container consists of several stages:
+
+Docker volumes are directory on the host machine that is controlled
+by Docker container.
+With the help of volumes, containers can backup, Restore, or Migrate Data
+
+Creation - docker volume create
+
+Usage: you can use the -v or --mount flag
+to attach a volume to the container
+
+Volumes can be shared and reused among containers.
+They are a good way to share data between containers and the host.
+
+Volume Drivers: Docker has a concept of volume drivers,
+which allow volumes to be hosted on remote hosts or cloud providers.
+
+</details>
+
+[//]: # (What is Docker Compose? 
+        And how do you use Docker Compose to manage multi-container applications?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What is Docker Compose? 
+            And how do you use Docker Compose to manage multi-container applications?
+        </big></big></big></b>
+    </summary>
+
+Docker Compose is a tool for defining and running multi-container Docker applications.
+With Compose, you use a YAML file to configure your application’s services.
+
+</details>
+
+[//]: # (What is the most popular commands in docker?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What is the most popular commands in docker?
+        </big></big></big></b>
+    </summary>
+
+- **docker run:** create and start a container from an image.
+- **docker ps:** list the running containers.
+- **docker stop**
+- **docker rm**
+- **docker images** lists the images.
+- **docker rmi** removes one or more images.
+- **docker pull** pulls an image
+- **docker build**
+- **docker login** logs in to a Docker registry.
+- **docker network create**
+- **docker volume create**
+
+</details>
+
+[//]: # (What is Docker registry?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What is Docker registry?
+        </big></big></big></b>
+    </summary>
+
+A Docker registry is a storage and distribution system for named Docker images.
+It’s where you push images for storage and
+pull them down when you need to run containers.
+
+Like git for code
+
+</details>
+
+[//]: # (What is the purpose of Docker networking and how do you use it?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What is the purpose of Docker networking and how do you use it?
+        </big></big></big></b>
+    </summary>
+
+**Docker networking** enables containers to connect to each other
+and to non-Docker workloads.
+
+It’s a crucial aspect of Docker as it allows for the communication
+and data sharing between multiple systems
+
+</details>
+
+[//]: # (What are the steps to connect Docker container to network?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            What are the steps to connect Docker container to network?
+        </big></big></big></b>
+    </summary>
+
+1. **Create a Network:**
+    -     docker network create
+2. Run/Connect running container in the Network
+    -     docker run --network=
+    -     docker network connect
+3. Inspect a Network to find details
+    -     docker network inspect
+
+</details>
+
+[//]: # (Docker Swarm vs Kubernetes?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            Docker Swarm vs Kubernetes?
+        </big></big></big></b>
+    </summary>
+
+Docker Swarm is a good choice for simpler applications 
+that are quick to deploy and easy to manage.
+- Docker Swarm is easier to install and configure
+- Docker Swarm is known for its simplicity. 
+In case if you’re already known with Docker commands.
+
+Kubernetes is better suited for complex, high-demand applications
+- Scalability features
+- Kubernetes has a larger community
+
+</details>
+
+[//]: # (How do you debug a running Docker container?)
+<br>
+<details>
+    <summary>
+        <b><big><big><big>
+            How do you debug a running Docker container?
+        </big></big></big></b>
+    </summary>
+
+* Docker Logs
+* Docker Exec to execute commands like "container /bin/bash"
+* Docker Exec to get detailed information about your container
+* Debugging Tools like an IntelliJ docker extension
 
 </details>
 
