@@ -5,9 +5,10 @@
 <h2>
 
 Topic list:
-* [Architecture.md](education%2FArchitecture.md)
-* [CI_CD.md](education%2FCI_CD.md)
-* [ProgrammingAchitecture.md](education%2FProgrammingAchitecture.md)
-* [ProgrammingParadigms.md](education%2FProgrammingParadigms.md)
+* [CI/CD.md](education%2FCI_CD.md)
+* [General Architecture Concepts](education%2FGeneralArchitectureConcepts.md)
+* [Java Programming Architecture](education%2FJavaProgrammingArchitecture.md)
+* [Programming Paradigms](education%2FProgrammingParadigms.md)
+* [Software Architectural Styles](education%2FSoftwareArchitecturalStyles.md)
 
 </h2>

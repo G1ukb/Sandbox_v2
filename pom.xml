@@ -25,6 +25,7 @@
         <module>Leetcode</module>
         <module>Kubernetes</module>
         <module>Docker</module>
+        <module>Kotlin</module>
     </modules>
 
     <build>

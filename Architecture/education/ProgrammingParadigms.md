@@ -9,4 +9,3 @@
 7. Generics: Can you explain the concept of type erasure in Java generics and why it’s important?
 8. Streams API: How has the Streams API influenced the paradigm of programming in Java?
 9. JVM Internals: How does understanding the working of JVM internals help in better programming in Java?
-10. 

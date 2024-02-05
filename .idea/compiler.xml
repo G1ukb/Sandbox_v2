@@ -15,6 +15,7 @@
         <module name="SoftProc" />
         <module name="Leetcode" />
         <module name="SQL" />
+        <module name="Kotlin" />
         <module name="REST" />
         <module name="GIT" />
         <module name="Docker" />
