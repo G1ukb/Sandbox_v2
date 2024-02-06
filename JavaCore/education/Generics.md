@@ -5,6 +5,28 @@
 
 </h4>
 
+* Can you explain what Java Generics are and why they are used?
+* How does type erasure work in Java Generics?
+* What is the difference between a List<Object> and a List<?>?
+* Can you explain the PECS (Producer Extends, Consumer Super) principle?
+* How would you implement a generic method in Java?
+* What is a bounded type parameter and how is it used in Java Generics?
+* Can you give an example of a generic class and explain its components?
+* How do Java Generics improve type safety?
+* What is a wildcard in Java Generics and when would you use one?
+* Can you explain type inference in the context of Java Generics?
+* How do you handle exceptions when working with Java Generics?
+* What is reification and how does it relate to Java Generics?
+* Can you explain the concept of type variance in Java Generics?
+* How would you design a data structure using Java Generics?
+* What are the limitations of Java Generics?
+* How do Java Generics interact with Java’s type system?
+* Can you explain the difference between raw types and parameterized types in Java Generics?
+* How would you use Java Generics to enforce rules at compile time?
+* Can you give an example of how Java Generics can be used with Java Streams?
+* How have Java Generics evolved in recent versions of Java?
+
+
 [//]: # (What is type erasure and how does it work)
 
 <details>

@@ -3,7 +3,11 @@
 */.idea/workspace.xml
 */.idea/tasks.xml
 */.idea/encodings.xml
+*/.idea/compiler.xml
+*/.idea/misc.xml
 *.iws
 
 # git update-index --assume-unchanged .idea/workspace.xml
+# git update-index --assume-unchanged .idea/encodings.xml
+# git update-index --assume-unchanged .idea/compiler.xml
 # git update-index --assume-unchanged .idea/encodings.xml

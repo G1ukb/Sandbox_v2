@@ -1,0 +1,67 @@
+Java Core
+is string is good
+raise conditions 
+good hash map key
+hash code and equals dependency (set of fields)
+stream vs foreach
+JDK // SDK // JRE
+Generics, main idea?
+How Java handles generics?
+
+Java 8
+Преимущество стрима
+
+Java 8> 
+LTS versions
+Records
+Invoke-dynamic
+
+Testing
+mock vs stub vs spy
+
+Spring:
+Spring jdbc
+Spring data
+Spring security
+@PreDestroy (not java)  @PreDestroy @PostConstruct
+Event listeners for App ready event class 
+@Autowired @Resources в каком порядке spring injects resource in @Autowired
+@primary annotation
+@DependOn @ConditionsOn
+Implement some pet projects with Spring Microservices
+
+DB
+Optimistic log
+план запроса
+индексацию таблиц (указатели) 
+
+NoSQL
+Investigate some NoSQL databases like Dynamo or ElasticSearch
+
+Контейнеры
+докер
+Tomcat - что это, является ли это контейнером
+Jetty
+
+SOFT
+code conflict resolution scenario
+как выбрать программные решения
+
+Design Patterns
+3 features inside liskov
+
+Security 
+Общее понимание безопасности
+Learn OAuth 2.0 & JWT for REST security
+
+REST
+SOAP как написать свой SOAP service
+Rest, RMM
+HATEOAS more deeply
+Как работают Cookie Http Session
+
+ORM
+Hibernate benefits
+Other ORM alternatives
+ORM JPA vs Hibernate 
+

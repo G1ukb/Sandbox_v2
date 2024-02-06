@@ -25,10 +25,6 @@ package hard;
 //Output: true
 //Explanation: ".*" means "zero or more (*) of any character (.)".
 
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
-
-import java.util.Arrays;
-
 public class RegularExpressionMatching {
 
     public static void main(String[] args) {
