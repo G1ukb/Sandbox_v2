@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Maven" />
-        <module name="Leadership" />
         <module name="Architecture" />
         <module name="JavaCore" />
         <module name="DesignPatterns" />
@@ -28,6 +27,7 @@
     <bytecodeTargetLevel>
       <module name="Angular" target="1.8" />
       <module name="Interview" target="1.8" />
+      <module name="Leadership" target="1.8" />
       <module name="LocalSendbox" target="1.8" />
     </bytecodeTargetLevel>
   </component>

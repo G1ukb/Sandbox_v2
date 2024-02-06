@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/Angular/pom.xml" />
         <option value="$PROJECT_DIR$/Interview/pom.xml" />
+        <option value="$PROJECT_DIR$/Leadership/pom.xml" />
         <option value="$PROJECT_DIR$/LocalSandbox/pom.xml" />
       </set>
     </option>

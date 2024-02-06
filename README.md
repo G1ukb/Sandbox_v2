@@ -9,10 +9,19 @@ read  information for yourself
 <h2>
 
 Topic list:
-* [Architecture questions](Architecture%2FMenu.md)
+* [Architecture questions](Architecture%2FMenu.md) (TBD)
 * [AWS](AWS%2FMenu.md)
-* [Docker](Docker%2FMenu.md)
-* [Kotlin](Kotlin%2FMenu.md)
-* [Kubernetes](Kubernetes%2FMenu.md)
+* [Docker](Docker%2FMenu.md) (TBD)
+* [Kotlin](Kotlin%2FMenu.md) (TBD)
+* [Kubernetes](Kubernetes%2FMenu.md) (TBD)
+* [SQL](SQL%2FMenu.md) (TBD)
+* [Testing](Testing%2FMenu.md) (TBD)
+* [Spring](Spring%2FMenu.md) (TBD)
+* [Soft Processes](SoftProc%2FMenu.md) (TBD)
+* [REST](REST%2FMenu.md) (TBD)
+* [Maven](Maven%2FMenu.md) (TBD)
+* [Leadership](Leadership%2FMenu.md) (TBD)
+* [Java Core](JavaCore%2FMenu.md) (TBD)
+* [Git](GIT%2FMenu.md) (TBD)
 
 </h2>
