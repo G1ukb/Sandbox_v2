@@ -10,9 +10,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Nested class types
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 * **Static nested** - static logic that does not depend on object initialization
@@ -35,9 +35,9 @@ Why do we need it:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
           When to use which type of class
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Local class:**

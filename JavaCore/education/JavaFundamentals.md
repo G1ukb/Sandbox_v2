@@ -10,9 +10,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             OOP principle
-        </big></big></b>
+        </big></big></big></b>
       </summary>
 
 - **Encapsulation** (Property of a single object of the system to build relationship
@@ -28,10 +28,10 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
               Overloading and overriding
               overload signature
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 When two or more methods in the same class have the same name,
@@ -50,9 +50,9 @@ but writes this methods own behavior
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Is Java Completely OOP
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 No, because java contains primitives, and they, in turn, are not objects
@@ -64,9 +64,9 @@ No, because java contains primitives, and they, in turn, are not objects
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Primitives and Reference Data Types
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Reference** data types we need as transfer objects they store and
@@ -94,9 +94,9 @@ Primitive data types:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Changing the value of a primitive, field, reference type when passing to a method
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Everything changes in value. Even when an object is passed,
@@ -110,9 +110,9 @@ the area in memory where this object is stored.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Constructors (+ initialization blocks)
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Constructor** is a method designed to initialize an instance of a class.
@@ -135,9 +135,9 @@ constructor
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           In what order are they initialized
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 Statics
@@ -156,9 +156,9 @@ fields
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Can a static constructor initialize regular fields (No)
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 No, directly
@@ -171,9 +171,9 @@ Yes, if you create an object with your hands
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 Yes
 
@@ -186,9 +186,9 @@ For logging
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Java class types
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 Interface - Abstract class - Ordinary class - Enum
 
@@ -200,9 +200,9 @@ Interface - Abstract class - Ordinary class - Enum
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Class, method, field, access modifiers
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Access**
@@ -243,9 +243,9 @@ With the **volatile** modifier, things are a bit more complicated. Guaranteed va
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Object class
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 In fact, all classes inherit from the Object class.
@@ -273,9 +273,9 @@ Multithreading
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           How does clone work?
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 The default implementation of the Object.clone() method **returns a Shallow Copy**.
@@ -291,9 +291,9 @@ therefore refers to the same object.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Hashcode and equals redefinition rules
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Reflexivity:** An object must equal itself.
@@ -318,9 +318,9 @@ For example, a.equals(null) should return false.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Class.class
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 The template initially described in the class, transforming into bytecode, looks like a set
@@ -352,9 +352,9 @@ methods are also provided for determining the class type
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          immutable object
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 An immutable object is an object that is internal
@@ -383,9 +383,9 @@ What gives us Immutable object:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          String
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A string object representing a set of char elements

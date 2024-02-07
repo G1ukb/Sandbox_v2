@@ -10,9 +10,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What is stage, action and transition in CodePipeline?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **Pipeline:** is how software changes go through a release process
@@ -34,9 +34,9 @@ https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.html
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
              What is deployment configuration for the AWS CodeDeploy?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 In AWS CodeDeploy,
@@ -78,9 +78,9 @@ if the application revision is not deployed to any of the instance
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
              What parts CodeDeploy consists off?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Code Commit - source and version control
@@ -95,9 +95,9 @@ if the application revision is not deployed to any of the instance
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is deployment application specification for the AWS CodeDeploy? "appSpec.yaml"
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 The application specification file, or appSpec.yaml, 
@@ -121,9 +121,9 @@ and which lifecycle event hooks to run in response to deployment lifecycle event
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What are the key elements of an app spec "appSpec.yaml" in CodeDeploy?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
     version: reserved for future use
@@ -141,9 +141,9 @@ and which lifecycle event hooks to run in response to deployment lifecycle event
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What are hooks events that you can specify in "appSpec.yaml"?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is special events that can be specified while code deploys.
@@ -165,9 +165,9 @@ They can be separated in 3 phases:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What AWS CodeDeploy lifecycle hooks you know?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - ApplicationStop
@@ -183,9 +183,9 @@ They can be separated in 3 phases:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What is code artifact?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Artifact repo makes easy for devs to find software packages
@@ -197,9 +197,9 @@ Artifact repo makes easy for devs to find software packages
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            CodePipeline workflow
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - CodePipeline — begins when there is a change detected in code
@@ -214,9 +214,9 @@ Artifact repo makes easy for devs to find software packages
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            How would you notificate users that code are pushed to CodeCommit repo?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 You can set up notification rules for a repository so that repository users 
@@ -236,9 +236,9 @@ notification rules.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What are the key elements of an app spec in CodeBild?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
     version: 0.2
@@ -254,9 +254,9 @@ notification rules.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What 3rd party tools and other AWS services may participate CodePipeline execution?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - AWS CodeCommit
@@ -276,9 +276,9 @@ notification rules.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What is Elastic Container Service?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Similar to virtual machine
@@ -301,9 +301,9 @@ pluses:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What is Elastic Container Registry?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is where you can store your container images.
@@ -316,9 +316,9 @@ Docker or Windows Container.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            What is AWS CodeArtifact?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS CodeArtifact is an artifact repository service that makes 
@@ -332,9 +332,9 @@ software packages used in their software development process
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            Can public repository items be available in a CodeArtifact?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 You can add a connection between a CodeArtifact repository and an external, 
@@ -354,9 +354,9 @@ used by your application.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            CodeCommit events: what is pullRequestSourceBranchUpdated, pullRequestCreated event?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 pullRequestSourceBranchUpdated: Event when user updated the source branch for a pull request.

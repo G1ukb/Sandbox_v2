@@ -10,9 +10,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Best practices for using exceptions
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **Be careful what you register**

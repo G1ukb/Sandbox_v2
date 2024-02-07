@@ -10,9 +10,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Basic concepts
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 **Thread daemons** - threads running in the background that terminate at
@@ -86,9 +86,9 @@ control the number of constantly running threads.
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
              Happens before
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 The JVM can change the order in which instructions are executed to optimize its own
@@ -107,9 +107,9 @@ But worsens the performance due to the fact that the cache works much faster.
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
              PESC in multithreading
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 ![](https://jenkov.com/images/java-concurrency/producer-consumer-2.png)
@@ -121,9 +121,9 @@ But worsens the performance due to the fact that the cache works much faster.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Locks/Atomics
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 Most collections and basic operations are not inherently atomic.
@@ -159,9 +159,9 @@ the fact that they are optimized for the CPU and work faster.
 
 <details>
       <summary>
-          <b><big><big>
+          <b><big><big><big>
               Starvation/DeadLock/LiveLock
-           </big></big></b>
+           </big></big></big></b>
        </summary>
 
 **Livelock** is a deadlock that processes are in

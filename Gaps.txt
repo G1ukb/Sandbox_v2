@@ -5,8 +5,8 @@ good hash map key
 hash code and equals dependency (set of fields)
 stream vs foreach
 JDK // SDK // JRE
-Generics, main idea?
-How Java handles generics?
+- Generics, main idea?
+- How Java handles generics?
 
 Java 8
 Преимущество стрима

@@ -8,9 +8,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          What are and which when to use
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 * Serial Garbage Collector

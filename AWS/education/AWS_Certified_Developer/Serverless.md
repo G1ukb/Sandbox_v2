@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Serverless consents pluses
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - you can scale your applications quickly without managing any servers
@@ -25,9 +25,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Serverless services
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - calculation
@@ -49,9 +49,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How application sessions can be stored?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 There are various ways to manage user sessions,

@@ -8,9 +8,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             IO vs NIO difference
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 * **Buffer** area to read data chunks at a time

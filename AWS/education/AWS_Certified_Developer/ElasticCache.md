@@ -1,4 +1,4 @@
-<h1>ElasticCache</h1>
+<h1>Elastic Cache</h1>
 <h4> 
 
 [Back to menu](..%2F..%2FMenu.md)
@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is ElasticCache?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon ElastiCache is a web service that simplifies the setup, 
@@ -32,9 +32,9 @@ to maximize resources and lower the total cost of ownership
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             ElasticCache – Redis vs Memcached?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Often, we think about caching to improve
@@ -75,9 +75,9 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/SelectEngine.html
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             ElasticCache – Cache Security
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon ElastiCache provides several security measures:
@@ -126,9 +126,9 @@ https://docs.aws.amazon.com/securityhub/latest/userguide/elasticache-controls.ht
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             ElasticCache Replication
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon ElastiCache implements replication in two ways:
@@ -176,9 +176,9 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Creating
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             ElasticCache Caching strategies
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 <h3>Lazy Loading / Cache-Aside / Lazy Population</h3>
@@ -222,9 +222,9 @@ different types of data should be written to cache under different circumstances
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             ElasticCache Cache Evictions and Time-to-live (TTL)
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Deleting the cache can occur in three ways:**

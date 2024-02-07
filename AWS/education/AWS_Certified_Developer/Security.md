@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is Systems Manager Parameter Store?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **store any secrets as a SecureString**
@@ -27,9 +27,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Secrets Manager vs Systems Manager Parameter Store?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Choosing between AWS Secrets Manager and
@@ -46,9 +46,9 @@ Systems Manager Parameter Store boils down to your specific needs:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is KMS?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 KMS - is a key management service
@@ -60,9 +60,9 @@ KMS - is a key management service
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is CMS?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 CMS — customer master key
@@ -80,9 +80,9 @@ CMS — customer master key
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Main cli KMS commands?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - kms encrypt (encrypt plain text)
@@ -98,9 +98,9 @@ CMS — customer master key
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is Envelope Encryption? data key
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is key that encrypt and decrypt data but encrypted one is stored
@@ -123,9 +123,9 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Why to use envelope encryption?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - network (availability) — when your data is stored with the key,
@@ -140,9 +140,9 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is KMS AWS managed keys? Can you rotate, manage them?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS managed keys are KMS keys in your account that are created,
@@ -163,9 +163,9 @@ but you cannot use them directly yourself.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is key rotation?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - This is an automatic encryption that is available in CMKs.
@@ -180,9 +180,9 @@ but you cannot use them directly yourself.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is key ACM?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS Certificate Manager - we can use/crate and manage SSL/TLS
@@ -199,9 +199,9 @@ This tool enables secure connections to your website using HTTPS
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How can we use client-side encryption to protect the files?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **AWS Encryption SDK**
@@ -219,9 +219,9 @@ You can do this in Lambda by using the AWS Encryption SDK.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How we can store and share access of the access token to AWS accounts?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Use AWS Secrets Manager with an AWS Key Management Service (AWS KMS)

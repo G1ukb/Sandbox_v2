@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is CloudFront?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon CloudFront is a web service that speeds up distribution 
@@ -29,9 +29,9 @@ network of data centers called edge locations.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How you can ensure that all requests to CloudFront are encrypted using HTTPS?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Set the **viewer** protocol policy to redirect HTTP to HTTPS.
@@ -45,9 +45,9 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             CloudFront allowed HTTP methods?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - CloudFront forwards only GET and HEAD requests.
@@ -61,9 +61,9 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is AWS WAF (Web Access Firewall)?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS WAF helps protect against common network exploits and bots,
@@ -77,9 +77,9 @@ breach of security or use excessive amounts of resources.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             AWS Elastic Beanstalk?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 With Elastic Beanstalk, you can quickly deploy and **manage applications 
@@ -107,9 +107,9 @@ And you shall have all control
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             AWS Elastic Beanstalk Options for deployment?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **All at once** (deploys all hosts concurrently)
@@ -161,9 +161,9 @@ Minuses:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is traffic splitting "canary testing"?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 in blue-green deployment we can split traffic to versions 
@@ -180,9 +180,9 @@ and the choice healthiest version
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             AWS Elastic Beanstalk configurations files for linux1? "for pre-amazon linux2"
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Configuration files can define packages to install, create linux users,
@@ -214,9 +214,9 @@ For linux2 users recommended to use
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What possible solutions do we have in case we want launch RDS with Elastic Beanstalk?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 we can deploy RDS with Elastic beanstalk
@@ -236,9 +236,9 @@ we can launch RDS outside Elastic beanstalk
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What we will use in case if we want to migrate legacy app to Elastic Beanstalk?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Windows Web App Migration Assistant
@@ -252,9 +252,9 @@ Windows Web App Migration Assistant
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             AWS Athena?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon Athena is an interactive query service that 
@@ -267,9 +267,9 @@ makes it simple to analyze data directly in Amazon S3 using standard SQL.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is Kinesis?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Kinesis is a family of services that enables you to collect process and
@@ -284,9 +284,9 @@ Allows you to build custom apps for your own business needs
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Kinesis core services
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Kinesis streams
@@ -307,9 +307,9 @@ Kinesis Data Analytics
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Kinesis Consumers? and how they work with Shards
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Kinesis Shards:
@@ -330,9 +330,9 @@ on your consumers
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is Amplify? Hosting vs Studio
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is a set of tools and services designed to male full-stack development
@@ -363,9 +363,9 @@ https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is CloudWatch Evidently?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon CloudWatch Evidently is a feature of Amazon CloudWatch 
@@ -386,9 +386,9 @@ CloudWatch Evidently can be used for two similar but distinct use-cases:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is Amazon Macie?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon Macie is a data security service provided by Amazon Web Services (AWS) 
@@ -421,9 +421,9 @@ SensitiveData:S3Object/Personal - for personal data
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is AWS Fargate?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS Fargate is a serverless compute engine offered by Amazon Web Services (AWS)

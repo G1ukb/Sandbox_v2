@@ -11,9 +11,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is and what is the main reason for using annotations?
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 Annotations are descriptors included in the text of the program,
@@ -31,9 +31,9 @@ or for marking classes, fields, etc.
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
              Annotation execution instructions (by execution type)?
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 Instructions for the compiler (Compiler)
@@ -50,9 +50,9 @@ Instruction at Runtime
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
              What types of objects can be returned from an annotation method declaration?
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 The return type must be
@@ -69,9 +69,9 @@ The return type must be
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
              How custom annotations can help improve code
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 * Reduce coding effort by adding default behavior to methods.
@@ -85,9 +85,9 @@ The return type must be
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           Brief annotation template
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 @Target (specify type)
@@ -99,9 +99,9 @@ The return type must be
 
 <details>
      <summary>
-         <b><big><big>
+         <b><big><big><big>
           What is meta annotation
-          </big></big></b>
+          </big></big></big></b>
       </summary>
 
 Meta annotations are annotations that extend the behavior of already

@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is RDS?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 RDS stands for Relational Database Service. (Relational Database Service)
@@ -67,9 +67,9 @@ Supported languages include:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is RDS Read replicas? Read replicas vs Multi AZ?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon RDS Read Replicas provide enhanced performance and durability 
@@ -103,9 +103,9 @@ https://aws.amazon.com/rds/features/read-replicas/?nc1=h_ls
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is RDS pricing?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon charges for RDS hours
@@ -125,9 +125,9 @@ If **data goes to different regions, AWS will charge a fee**
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What RDS operational (maintenance, monitoring) practices do you know?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon describes the following use cases:
@@ -148,9 +148,9 @@ Amazon describes the following use cases:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What about RDS Encryption? How we can get encrypted DB from decrypted?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **RDS encryption:**
@@ -189,9 +189,9 @@ choose whether to encrypt or not)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What about RDS Security – Network & IAM?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **Network Security**
@@ -222,9 +222,9 @@ choose whether to encrypt or not)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is difference between OLTP and OLAP?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 OLTP - Online Transaction Processing - processes data from
@@ -240,9 +240,9 @@ OLAP - Online Analytics Processing - process queries to analuze
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Is RDS suitable for OLTP and OLAP?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Yes for OLTP (because of transactions processing)
@@ -256,9 +256,9 @@ No for OLAP (there are another services for processing data analysis (RedShift))
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is RDS Proxy? How we can increase ab availability?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 RDS Proxy have these pluses: 
@@ -274,9 +274,9 @@ RDS Proxy have these pluses:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is MemoryDB? (Used in redis) ElastiCache vs MemoryDB
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 1. In-Memory Database
@@ -292,9 +292,9 @@ RDS Proxy have these pluses:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How RDS DB snapshot works?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 1. User initiated
@@ -310,9 +310,9 @@ RDS Proxy have these pluses:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What two steps should you take to reduce the RDS CPU utilization?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 1. Create an ElastiCache cluster and use this to cache your most
@@ -336,9 +336,9 @@ Amazon RDS Read Replicas make it easy to elastically scale out beyond
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Can we encrypt an existing AMI that is unencrypted? what we should do?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 You cannot add encryption to an existing AMI. 
@@ -351,9 +351,9 @@ Instead, you will need to create a copy and specify that the copy has encryption
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How we improve performance of RDS DB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - ElastiCache for **Memcached** can be used to improve read performance of databases;
@@ -371,9 +371,9 @@ to an RDS database.)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             RDS vs DynamoDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 RDS is relative db like MySQL, postgresSQl
@@ -395,9 +395,9 @@ https://cloudacademy.com/blog/amazon-rds-vs-dynamodb-12-differences/
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             S3 vs DynamoDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 S3 is a storage solution suitable for images, 

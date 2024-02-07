@@ -8,9 +8,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Classloader and in what situations it can be useful for us
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Class loaders are responsible for **dynamically loading Java classes in the JVM**

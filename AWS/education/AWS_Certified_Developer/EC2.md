@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             EC2 Instance Types?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 * **General Purpose Instances:** These instances provide a balance of compute,
@@ -41,9 +41,9 @@ or data pattern matching, more efficiently than is possible in software running 
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What types of volumes are offered by EC2?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **General Purpose SSD (gp2 and gp3):** These are suitable for a broad 
@@ -73,9 +73,9 @@ throughput-intensive workloads with large datasets and large I/O sizes.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is the difference between AMI and snapshot in terms of EC2?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **Amazon Machine Image (AMI):** An AMI is a template that contains 
@@ -103,9 +103,9 @@ a new instance launch.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How is it possible to install/configure software on a EC2 instance?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 sudo yum install links
@@ -117,9 +117,9 @@ sudo yum install links
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What keys are created for each EC2 instance? What for?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 * **The public key** is stored on your EC2 instance, 
@@ -139,9 +139,9 @@ so it’s important that you store your private key in a secure place
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What happens to EC2 instances when they are stopped and started vs re-started?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 When you stop and start an Amazon EC2 instance, 
@@ -176,9 +176,9 @@ stays running on the same hardware. Here are some key points to note:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is the difference between IAM roles and EC2 VPC security groups?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **IAM Roles:** An IAM role is an identity within your AWS account that
@@ -204,9 +204,9 @@ The security groups say nothing about which people can connect to your EC2 insta
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Is it possible to decrease the size of an existing EBS volume?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 No, it is not possible to directly decrease the size of an existing Amazon EBS volume.
@@ -233,9 +233,9 @@ https://repost.aws/knowledge-center/ebs-increase-decrease-volume-size
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Is it possible to reuse a EBS volume for multiple instances?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Yes, it is possible to reuse an EBS volume for multiple instances using
@@ -251,9 +251,9 @@ You can attach multiple Multi-Attach enabled volumes to an instance or set of in
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How is it possible to get such metadata as current region/AZ from within a running EC2 instance?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AWS API Url get
@@ -268,9 +268,9 @@ Java SDK static EC2Instance.getMetadata();
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What are the available elastic load balancer types? What is the key difference between them?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - **Application Load Balancers:** These are used to route HTTP/HTTPS (or Layer 7) traffic. 
@@ -295,9 +295,9 @@ Amazon EC2 instances and operate at both the request level and connection level.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What are the key events in EC2 instance lifecycle?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 
@@ -314,9 +314,9 @@ Amazon EC2 instances and operate at both the request level and connection level.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             EC2 Instance Pricing Options? (On Demand/Reserved/Spot/Dedicated)
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - On Demand - pay the hour or the second
@@ -331,9 +331,9 @@ Amazon EC2 instances and operate at both the request level and connection level.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is AMI? What is EC2 Image builder?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 AMI (Amazon Machine Images) - is configuration of setup EC2 env.
@@ -351,9 +351,9 @@ This is suitable in situation where you are not created previous ec2
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             In order to enable encryption using EC2 and Elastic Block Store, you must?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Configure encryption when creating the EBS volume -
@@ -367,9 +367,9 @@ enabling encryption for the specific volume creation operation.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How you can encrypt AMI if you already have unencrypted AMI?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 It is not possible to encrypt an AMI after it has been created. 
@@ -382,9 +382,9 @@ You will need to create a copy of the AMI and add encryption for the copy.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Where you can store user session state?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Store session state in DynamoDB (preferred)

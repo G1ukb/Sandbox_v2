@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
            Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Use the AWS::Region pseudo parameter.
@@ -32,9 +32,9 @@ resolves as the region where the stack is created
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             1.Commit code to a repository and invoke build, test and/or deployment actions
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 [ORIGINAL](https://aws.amazon.com/blogs/devops/complete-ci-cd-with-aws-codecommit-aws-codebuild-aws-codedeploy-and-aws-codepipeline)
@@ -71,9 +71,9 @@ AWS documentation or consult with a DevOps professional for detailed guidance.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             2.Use labels and branches for version and release management
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 [ORIGINAL](https://aws.amazon.com/blogs/devops/implementing-gitflow-using-aws-codepipeline-aws-codecommit-aws-codebuild-and-aws-codedeploy/)
@@ -103,9 +103,9 @@ When you create a version, you’ll include a label for that version.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             3.Use AWS CodePipeline to orchestrate workflows against different environments
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 [ORIGINAL](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
@@ -147,10 +147,10 @@ CodeDeploy for CI/CD purposes)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, 
             and AWS CodeDeploy for CI/CD purposes
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 [Pinned Guidelines](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials.html)
@@ -192,9 +192,9 @@ AWS services like AWS Fargate, Amazon EC2, AWS Lambda, and more.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             5. Perform a roll back plan based on application deployment policy
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Sure, here’s a high-level overview of how you can perform a

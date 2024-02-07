@@ -8,9 +8,9 @@
 <br>
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          Ways to Serialize an Object
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 2 ways to serialize an object
@@ -30,9 +30,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
          How descendants and base classes behave when deserialized
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 When a class implements the java.io.Serializable interface,

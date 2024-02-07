@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is VPC?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Virtual Private Cloud (VPC) -
@@ -26,9 +26,9 @@ with data isolation for private cloud computing.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What kinds of IP addresses does AWS VPC offer?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon VPC currently supports five (5) IP address ranges,
@@ -43,9 +43,9 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What happens to different IP address types when an EC2 instance is rebooted, stopped, started?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - private ip does not change
@@ -58,9 +58,9 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is elastic IP?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 An elastic IP address is a reserved public IP address 
@@ -75,9 +75,9 @@ to release it.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How many elastic IPs is it possible to create per account/region?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 All AWS accounts are limited to five elastic 
@@ -91,9 +91,9 @@ They can be changed for an additional fee.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is elastic network interface?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Elastic Network Interface is a logical network component in a VPC,
@@ -116,9 +116,9 @@ address range.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is CIDR?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 CIDR was developed as an alternative to traditional subnetting.
@@ -135,9 +135,9 @@ of a given IP address are considered important for network routing.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is NAT?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Network Address Translation (NAT) devices,
@@ -157,9 +157,9 @@ Instance IP addresses.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             NAT vs VPC?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A Virtual Private Cloud (VPC) and a Network Address Translation (NAT) 
@@ -182,9 +182,9 @@ but it prevents the internet from initiating connections with those instances
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is difference between NAT Gateway and NAT Instance?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 The significant difference is that GateWay -
@@ -207,9 +207,9 @@ subnets and outgoing traffic to the Internet.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is security groups?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A security group controls the traffic allowed 
@@ -225,9 +225,9 @@ it controls the inbound and outbound traffic for the instance.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What does "local” target mean in terms of an AWS routing table?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Target => Where you want to send traffic for 
@@ -242,9 +242,9 @@ specify the destination as "local")
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is bastion in terms of networking?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A bastion host is a special computer on a network specifically

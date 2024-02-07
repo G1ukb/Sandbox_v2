@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is IAM?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **AWS Identity and Access Management (IAM)** is a service that provides
@@ -47,10 +47,10 @@ Data Security Standard (DSS).
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is the allow/deny priority order when 
             policies are configured on different levels (group, user,  etc.)?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 ![Image alt](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/PolicyEvaluationHorizontal.png)
@@ -93,9 +93,9 @@ Simplified:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Programmatic access to AWS resources?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Access can also be achieved through the console.
@@ -112,9 +112,9 @@ availability of a policy for the specified IAM profile.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How you can test IAM policy?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 IAM Policy Simulator
@@ -131,9 +131,9 @@ For:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Best IAM practices?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Lock the root user's access keys to your AWS account
@@ -159,9 +159,9 @@ For:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is WIF Cognito "Web Identity federation Cognito" ?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is an authentication broker that allows you
@@ -187,9 +187,9 @@ Consists of
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What API call can be used to enable a user authenticated by Facebook?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **assume-role-with-web-identity** returns a set of temporary security credentials 
@@ -203,9 +203,9 @@ a web identity provider.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Cognito user pool workflow?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 The user needs to authenticate with Facebook first, 
@@ -224,9 +224,9 @@ in accordance with the role's security policy
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             User Pool vs Identity Pool?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 User pool used to managed sign-up and sign-in functionality
@@ -241,9 +241,9 @@ and enable access to AWS services like S3
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             User Pool vs Identity Pool?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Managed policies — created and administered by AWS
@@ -270,9 +270,9 @@ Inline Policies
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is STS AssumeRoleWithWebIdentity?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 This is security token service api call.
@@ -294,9 +294,9 @@ This service is referenced with temporary credentials, now with IAM role or user
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How we can ensure that user from identity pools can access only their own files in S3?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Use an IAM policy within the Amazon Cognito identity prefix 

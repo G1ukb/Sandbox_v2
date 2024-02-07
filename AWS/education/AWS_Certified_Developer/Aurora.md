@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is RDS Aurora?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Amazon Aurora is a fully managed relational database engine that’s
@@ -37,9 +37,9 @@ https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What about Aurora Security?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Security for Amazon Aurora is managed at three levels:

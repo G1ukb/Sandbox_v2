@@ -9,9 +9,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is DynamoDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 DynamoDB is a low latency NoSQL database
@@ -23,9 +23,9 @@ DynamoDB is a low latency NoSQL database
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What data models are supported in DynamoDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - document
@@ -41,9 +41,9 @@ DynamoDB is a low latency NoSQL database
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Consistency models?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Eventually consistent
@@ -57,9 +57,9 @@ DynamoDB is a low latency NoSQL database
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Types of PK in dynDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Partition Key (Ключ на поле)
@@ -72,9 +72,9 @@ DynamoDB is a low latency NoSQL database
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How we can control access to dunDB?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - IAM condition parameter
@@ -88,9 +88,9 @@ where the partition key value matches their id)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What indexes we have in dynDb? and what is the main difference?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Local Secondary Index
@@ -108,9 +108,9 @@ Global Secondary Index
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What we can you to find data on tables?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Use query expression (default)
@@ -123,9 +123,9 @@ Global Secondary Index
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Scan vs query
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A Query request is generally more efficient than a Scan operation. 
@@ -139,9 +139,9 @@ units than strongly consistent reads.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Dynamo DB capacity units?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Dynamo DB capacity units.
@@ -169,9 +169,9 @@ Calculation:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             On-Demand Capacity vs Provisioned Capacity?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 On-Demand Capacity
@@ -194,9 +194,9 @@ Provisioned Capacity
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is dynamoDB Accelerator "DAX"?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Простыми словами это прослойка которая кеширует часть запросов
@@ -216,9 +216,9 @@ Provisioned Capacity
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             DynamoDb Stream?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Time ordered Sequence of item (insert, update, delete)
@@ -238,9 +238,9 @@ Use cases:
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is the API call to retrieve multiple items from a DynamoDB table?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 The BatchGetItem operation returns the attributes of one or
@@ -253,9 +253,9 @@ more items from one or more tables
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             In DynamoDB, a scan operation is used to?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A Scan operation in Amazon DynamoDB reads every item in a table 
@@ -272,9 +272,9 @@ Scan only returns some of the attributes, rather than all of them.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             In DynamoDB, a scan operation is used to?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 A Scan operation in Amazon DynamoDB reads every item in a table
@@ -291,9 +291,9 @@ Scan only returns some of the attributes, rather than all of them.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Which service limits can you increase by raising a ticket to AWS support "according to dynamoDB"
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Read/write capacity mode and throughput
@@ -310,9 +310,9 @@ Scan only returns some of the attributes, rather than all of them.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What kind of query can I get only part of the fields from dynamo db?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 To get only some attributes rather than all, use a **projection expression**.
@@ -327,9 +327,9 @@ of an element by default.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is ProvisionedThroughputExceeded error?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 ProvisionedThroughputExceeded means that your request rate is too high.
@@ -343,9 +343,9 @@ Reduce the frequency of requests using Error Retries and Exponential Backoff.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Best practices for querying and scanning data
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Reduce page size
@@ -363,9 +363,9 @@ set the page size for your request.)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What is exponential backoff algorithm?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 ![img](https://docs.aws.amazon.com/images/prescriptive-guidance/latest/cloud-design-patterns/images/retry-backoff-2.png)
@@ -377,9 +377,9 @@ set the page size for your request.)
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             DynamoDB Streams vs CloudWatch?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 CloudWatch is used to monitor performance metrics 
@@ -396,9 +396,9 @@ modifications that are made to items in a DynamoDB table.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             How we demonstrate the impact that a failed Availability Zone "AZ" will have on the database?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 Simulate an AZ failure by performing a reboot 
@@ -411,9 +411,9 @@ with forced failover on the RDS instance.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What DynamoDB data types can the developer use for their index sort key?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 - Number
@@ -427,9 +427,9 @@ with forced failover on the RDS instance.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What DynamoDB data types can the developer use for their index sort key?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 If a partial result is returned, the operation returns a value for UnprocessedKeys.
@@ -448,9 +448,9 @@ BatchGetItem returns a ValidationException with the message
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             BatchGetItem vs Scan?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 **BatchGetItem**: This operation is used when you know the primary keys 
@@ -477,9 +477,9 @@ it’s recommended to use BatchGetItems over doing a scan.
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             What we can do to get more items from BatchGetItem low-level API operation?
-        </big></big></b>
+        </big></big></big></b>
     </summary>
 
 We have 2 possible options:

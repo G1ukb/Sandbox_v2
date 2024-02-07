@@ -12,9 +12,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Reveal the basic principle of how basic collections work
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 * **List**
@@ -49,9 +49,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             В какой момент, какую использовать
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 ![](https://i.stack.imgur.com/aSDsG.png)
@@ -85,9 +85,9 @@
 
 <details>
     <summary>
-        <b><big><big>
+        <b><big><big><big>
             Collections
-         </big></big></b>
+         </big></big></big></b>
      </summary>
 
 Core collections other than HashTable are non-thread safe, which means
