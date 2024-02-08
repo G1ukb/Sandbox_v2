@@ -7,11 +7,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Ways to Serialize an Object
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 2 ways to serialize an object
 
@@ -29,11 +30,12 @@
 <br>
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          How descendants and base classes behave when deserialized
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 When a class implements the java.io.Serializable interface,
 all its subclasses are also serializable.

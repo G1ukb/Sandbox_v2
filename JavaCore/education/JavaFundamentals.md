@@ -9,11 +9,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             OOP principle
-        </big></big></big></b>
-      </summary>
+        </b>
+    </summary>
+<br>
 
 - **Encapsulation** (Property of a single object of the system to build relationship
   with another objects' of the system)
@@ -27,12 +28,13 @@
 [//]: # (Overloading and overriding)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
               Overloading and overriding
               overload signature
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 When two or more methods in the same class have the same name,
 but different parameters, this is called overload.
@@ -49,11 +51,12 @@ but writes this methods own behavior
 [//]: # (Is Java Completely OOP)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           Is Java Completely OOP
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 No, because java contains primitives, and they, in turn, are not objects
 
@@ -63,11 +66,12 @@ No, because java contains primitives, and they, in turn, are not objects
 [//]: # (Primitives and Reference Data Types)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Primitives and Reference Data Types
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Reference** data types we need as transfer objects they store and
 exchange value
@@ -93,11 +97,12 @@ Primitive data types:
 [//]: # (Changing the value of a primitive, field, reference type when passing to a method)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Changing the value of a primitive, field, reference type when passing to a method
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Everything changes in value. Even when an object is passed,
 actually passing the value of the reference to
@@ -109,11 +114,12 @@ the area in memory where this object is stored.
 [//]: # (Constructors + initialization blocks)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Constructors (+ initialization blocks)
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Constructor** is a method designed to initialize an instance of a class.
 There is a constructor in every class! If it is not explicitly declared,
@@ -134,11 +140,12 @@ constructor
 [//]: # (In what order are they initialized)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           In what order are they initialized
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Statics
 Static init block
@@ -155,11 +162,12 @@ fields
 [//]: # (Can a static constructor initialize regular fields No)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           Can a static constructor initialize regular fields (No)
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 No, directly
 Yes, if you create an object with your hands
@@ -170,11 +178,12 @@ Yes, if you create an object with your hands
 [//]: # (Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 Yes
 
 (Why?)
@@ -185,11 +194,12 @@ For logging
 [//]: # (Java class types)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           Java class types
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 Interface - Abstract class - Ordinary class - Enum
 
 ![img](https://dan-it.gitlab.io/fs-book/java-basic/collections/img/inner_classes.png)
@@ -199,11 +209,12 @@ Interface - Abstract class - Ordinary class - Enum
 [//]: # (Class, method, field, access modifiers)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Class, method, field, access modifiers
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Access**
 Java uses the following access modifiers:
@@ -242,11 +253,12 @@ With the **volatile** modifier, things are a bit more complicated. Guaranteed va
 [//]: # (Object.class)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           Object class
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 In fact, all classes inherit from the Object class.
 And the Object class is necessary in order to be able to work with these objects.
@@ -272,11 +284,12 @@ Multithreading
 [//]: # (How does clone work?)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           How does clone work?
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 The default implementation of the Object.clone() method **returns a Shallow Copy**.
 
@@ -290,11 +303,12 @@ therefore refers to the same object.
 [//]: # (Rules for redefining hashcode and equals)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Hashcode and equals redefinition rules
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Reflexivity:** An object must equal itself.
 
@@ -317,11 +331,12 @@ For example, a.equals(null) should return false.
 [//]: # (Class.class)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Class.class
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The template initially described in the class, transforming into bytecode, looks like a set
 arrays that contain a large amount of data.
@@ -351,11 +366,12 @@ methods are also provided for determining the class type
 [//]: # (Immutable object)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          immutable object
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 An immutable object is an object that is internal
 whose state remains constant after it has been fully created.
@@ -382,11 +398,12 @@ What gives us Immutable object:
 [//]: # (String)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          String
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A string object representing a set of char elements
 

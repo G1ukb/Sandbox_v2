@@ -24,12 +24,13 @@
         languages and their advantages and disadvantages?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are compiled and interpreted programming 
             languages and their advantages and disadvantages?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Compiled languages** are translated into machine code,
 which can be executed by the processor.
@@ -54,11 +55,12 @@ which can be executed by the processor.
 [//]: # (Is Java compiled or interpreted?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Is Java compiled or interpreted?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Java is both compiled and interpreted. Here’s how it works:
 

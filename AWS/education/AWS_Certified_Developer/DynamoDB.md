@@ -8,11 +8,12 @@
 [//]: # (What is DynamoDB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is DynamoDB?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 DynamoDB is a low latency NoSQL database
 
@@ -22,11 +23,12 @@ DynamoDB is a low latency NoSQL database
 [//]: # (What data models are supported in DynamoDB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What data models are supported in DynamoDB?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - document
 - key-value data model
@@ -40,11 +42,12 @@ DynamoDB is a low latency NoSQL database
 [//]: # (Consistency models?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Consistency models?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Eventually consistent
 - Strongly consistent
@@ -56,11 +59,12 @@ DynamoDB is a low latency NoSQL database
 [//]: # (Types of PK in dynDB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Types of PK in dynDB?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Partition Key (Ключ на поле)
 - Composite key (partition key + sort key)
@@ -71,11 +75,12 @@ DynamoDB is a low latency NoSQL database
 [//]: # (How we can control access to dunDB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can control access to dunDB?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - IAM condition parameter
 - dynamodb:LeadingKeys (allow user to access only the items 
@@ -87,11 +92,12 @@ where the partition key value matches their id)
 [//]: # (What is flexible querying?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What indexes we have in dynDb? and what is the main difference?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Local Secondary Index
     - must be created when you create table
@@ -107,11 +113,12 @@ Global Secondary Index
 [//]: # (What we can you to find data on tables?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What we can you to find data on tables?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Use query expression (default)
 - Use AWS scan (Scan will form a query for you)
@@ -122,11 +129,12 @@ Global Secondary Index
 [//]: # (Scan vs query?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Scan vs query
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Query request is generally more efficient than a Scan operation. 
 Eventual consistency reads use up fewer read capacity 
@@ -138,11 +146,12 @@ units than strongly consistent reads.
 [//]: # (Dynamo DB capacity units?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Dynamo DB capacity units?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Dynamo DB capacity units.
 Each capacity gives you opportunity to read or write KB transactions per second
@@ -168,11 +177,12 @@ Calculation:
 [//]: # (On-Demand Capacity vs Prosivioned Capacity?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             On-Demand Capacity vs Provisioned Capacity?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 On-Demand Capacity
 - For unknown workloads
@@ -193,11 +203,12 @@ Provisioned Capacity
 [//]: # (What is dynamoDB Accelerator "DAX"?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is dynamoDB Accelerator "DAX"?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Простыми словами это прослойка которая кеширует часть запросов
 И любой API Call идет сначала в DAX и ищет значение в кэше и возвращает
@@ -215,11 +226,12 @@ Provisioned Capacity
 [//]: # (DynamoDb Stream?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             DynamoDb Stream?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Time ordered Sequence of item (insert, update, delete)
 - Logs (encrypted at rest for 24 hours)
@@ -237,11 +249,12 @@ Use cases:
 [//]: # (What is the API call to retrieve multiple items from a DynamoDB table?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the API call to retrieve multiple items from a DynamoDB table?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The BatchGetItem operation returns the attributes of one or
 more items from one or more tables
@@ -252,11 +265,12 @@ more items from one or more tables
 [//]: # (In DynamoDB, a scan operation is used to:)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             In DynamoDB, a scan operation is used to?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Scan operation in Amazon DynamoDB reads every item in a table 
 or a secondary index. 
@@ -271,11 +285,12 @@ Scan only returns some of the attributes, rather than all of them.
 [//]: # (In DynamoDB, a scan operation is used to:)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             In DynamoDB, a scan operation is used to?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Scan operation in Amazon DynamoDB reads every item in a table
 or a secondary index.
@@ -290,11 +305,12 @@ Scan only returns some of the attributes, rather than all of them.
 [//]: # (Which service limits can you increase by raising a ticket to AWS support "according to dynamoDB")
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Which service limits can you increase by raising a ticket to AWS support "according to dynamoDB"
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Read/write capacity mode and throughput
 - Reserved Capacity
@@ -309,11 +325,12 @@ Scan only returns some of the attributes, rather than all of them.
 [//]: # (What kind of query can I get only part of the fields from dynamo db?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What kind of query can I get only part of the fields from dynamo db?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 To get only some attributes rather than all, use a **projection expression**.
 
@@ -326,11 +343,12 @@ of an element by default.
 [//]: # (What is ProvisionedThroughputExceeded error?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is ProvisionedThroughputExceeded error?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ProvisionedThroughputExceeded means that your request rate is too high.
 
@@ -342,11 +360,12 @@ Reduce the frequency of requests using Error Retries and Exponential Backoff.
 [//]: # (Best practices for querying and scanning data)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Best practices for querying and scanning data
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Reduce page size
 (Because a Scan operation reads an entire page (by default, 1 MB),
@@ -362,11 +381,12 @@ set the page size for your request.)
 [//]: # (What is exponential backoff algorithm?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is exponential backoff algorithm?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ![img](https://docs.aws.amazon.com/images/prescriptive-guidance/latest/cloud-design-patterns/images/retry-backoff-2.png)
 
@@ -376,11 +396,12 @@ set the page size for your request.)
 [//]: # (DynamoDB Streams vs CloudWatch?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             DynamoDB Streams vs CloudWatch?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CloudWatch is used to monitor performance metrics 
 and collect logs in your AWS environment.
@@ -395,11 +416,12 @@ modifications that are made to items in a DynamoDB table.
 [//]: # (How we demonstrate the impact that a failed Availability Zone "AZ" will have on the database?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we demonstrate the impact that a failed Availability Zone "AZ" will have on the database?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Simulate an AZ failure by performing a reboot 
 with forced failover on the RDS instance.
@@ -410,11 +432,12 @@ with forced failover on the RDS instance.
 [//]: # (What DynamoDB data types can the developer use for their index sort key?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What DynamoDB data types can the developer use for their index sort key?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Number
 - Binary
@@ -426,11 +449,12 @@ with forced failover on the RDS instance.
 [//]: # (What is UnprocessedKeys value that returned from DynamoDB BatchGetItem?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What DynamoDB data types can the developer use for their index sort key?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 If a partial result is returned, the operation returns a value for UnprocessedKeys.
 You can use this value to retry the operation starting with the next item to get.
@@ -447,11 +471,12 @@ BatchGetItem returns a ValidationException with the message
 [//]: # (BatchGetItem vs Scan?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             BatchGetItem vs Scan?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **BatchGetItem**: This operation is used when you know the primary keys 
 (partition key and sort key, if applicable) for the items you want to retrieve. 
@@ -476,11 +501,12 @@ it’s recommended to use BatchGetItems over doing a scan.
 [//]: # (What we can do to get more items from BatchGetItem low-level API operation?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What we can do to get more items from BatchGetItem low-level API operation?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 We have 2 possible options:
 

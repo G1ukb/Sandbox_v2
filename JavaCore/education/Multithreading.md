@@ -9,11 +9,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Basic concepts
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 **Thread daemons** - threads running in the background that terminate at
 automatic mode when the main stream is closed.
@@ -85,11 +86,12 @@ control the number of constantly running threads.
 [//]: # (Happens before)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              Happens before
-          </big></big></big></b>
-      </summary>
+        </b>
+    </summary>
+<br>
 
 The JVM can change the order in which instructions are executed to optimize its own
 work. If he considers that these instructions are not interconnected.
@@ -106,11 +108,12 @@ But worsens the performance due to the fact that the cache works much faster.
 [//]: # (PESC in multithreading)
 
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              PESC in multithreading
-          </big></big></big></b>
-      </summary>
+        </b>
+    </summary>
+<br>
 
 ![](https://jenkov.com/images/java-concurrency/producer-consumer-2.png)
 
@@ -120,11 +123,12 @@ But worsens the performance due to the fact that the cache works much faster.
 [//]: # (Locks/Atomics)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Locks/Atomics
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Most collections and basic operations are not inherently atomic.
 They work in several stages, which creates dirty read problems in multi-threaded
@@ -158,11 +162,12 @@ the fact that they are optimized for the CPU and work faster.
 [//]: # (Castles/Atoms)
 
 <details>
-      <summary>
-          <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
               Starvation/DeadLock/LiveLock
-           </big></big></big></b>
-       </summary>
+        </b>
+    </summary>
+<br>
 
 **Livelock** is a deadlock that processes are in
 block each other with a repeated state change,

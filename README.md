@@ -25,13 +25,3 @@ Topic list:
 * [Git](GIT%2FMenu.md) (TBD)
 
 </h2>
-
-//TODO: Detailed java topics map
-![](https://miro.medium.com/v2/resize:fit:828/format:webp/1*5g3CbARjXEbPhAlopaDdng.png)
-
-//TODO: General topics map - 
-![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*MnRuypbbL52u53tdoGCGqg.png)
-
-//Full carrier path map
-![](https://gist.githubusercontent.com/m-a-n-a-v/fe7529ec99321ec6e43e1923f4381aa4/raw/0c15bd31bafcdef076ad405502979d963f2e875f/java-roadmap-2023.svg)
-

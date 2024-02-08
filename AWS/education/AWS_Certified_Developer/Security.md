@@ -8,11 +8,12 @@
 [//]: # (What is Systems Manager Parameter Store?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Systems Manager Parameter Store?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **store any secrets as a SecureString**
   (store passwords, db connections, license codes)
@@ -26,11 +27,12 @@
 [//]: # (Secrets Manager vs Systems Manager Parameter Store?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Secrets Manager vs Systems Manager Parameter Store?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Choosing between AWS Secrets Manager and
 Systems Manager Parameter Store boils down to your specific needs:
@@ -45,11 +47,12 @@ Systems Manager Parameter Store boils down to your specific needs:
 [//]: # (What is KMS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is KMS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 KMS - is a key management service
 
@@ -59,11 +62,12 @@ KMS - is a key management service
 [//]: # (What is CMS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CMS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CMS — customer master key
 
@@ -79,11 +83,12 @@ CMS — customer master key
 [//]: # (Main cli KMS commands?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Main cli KMS commands?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - kms encrypt (encrypt plain text)
 - kms decrypt
@@ -97,11 +102,12 @@ CMS — customer master key
 [//]: # (What is Envelope Encryption? data key)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Envelope Encryption? data key
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is key that encrypt and decrypt data but encrypted one is stored
 with the data
@@ -122,11 +128,12 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 [//]: # (Why to use envelope encryption?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Why to use envelope encryption?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - network (availability) — when your data is stored with the key,
   you also can transfer it over networks
@@ -139,11 +146,12 @@ encrypted envelope key -> call kms api -> decrypts envelope key
 [//]: # (What is KMS AWS managed keys? Can you rotate, manage them?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is KMS AWS managed keys? Can you rotate, manage them?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS managed keys are KMS keys in your account that are created,
 managed, and used by AWS
@@ -162,11 +170,12 @@ but you cannot use them directly yourself.
 [//]: # (What is key rotation?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is key rotation?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - This is an automatic encryption that is available in CMKs.
 - KMS will rotate the cryptographic material on a yearly basis
@@ -179,11 +188,12 @@ but you cannot use them directly yourself.
 [//]: # (What is key ACM?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is key ACM?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS Certificate Manager - we can use/crate and manage SSL/TLS
 certificates for securing your website
@@ -198,11 +208,12 @@ This tool enables secure connections to your website using HTTPS
 [//]: # (How can we use client-side encryption to protect the files?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How can we use client-side encryption to protect the files?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **AWS Encryption SDK**
 
@@ -218,11 +229,12 @@ You can do this in Lambda by using the AWS Encryption SDK.
 [//]: # (How we can store and share accesse of the access token to AWS account?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can store and share access of the access token to AWS accounts?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Use AWS Secrets Manager with an AWS Key Management Service (AWS KMS)
   customer managed key to store the access token.

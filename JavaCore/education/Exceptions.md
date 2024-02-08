@@ -9,11 +9,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Best practices for using exceptions
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Be careful what you register**
   Error result logs should not contain private information

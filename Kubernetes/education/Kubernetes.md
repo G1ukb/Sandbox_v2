@@ -10,12 +10,13 @@
          of Java applications, and what benefits does it provide?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How can containerization be used in the deployment 
             of Java applications, and what benefits does it provide?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Isolation:** Each container runs in isolation
 - **Scalability** easily scaled up or down based on the demand

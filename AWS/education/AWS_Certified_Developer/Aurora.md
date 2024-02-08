@@ -8,11 +8,12 @@
 [//]: # (What is Amazon Aurora?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is RDS Aurora?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon Aurora is a fully managed relational database engine that’s
 compatible with MySQL and PostgreSQL. 
@@ -36,11 +37,12 @@ https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview
 [//]: # (What about Aurora Security?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What about Aurora Security?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Security for Amazon Aurora is managed at three levels:
 

@@ -8,11 +8,12 @@
 [//]: # (What is IAM?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is IAM?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **AWS Identity and Access Management (IAM)** is a service that provides
 capabilities to securely control access to AWS services and resources.
@@ -46,12 +47,13 @@ Data Security Standard (DSS).
         different levels [group, user,  etc.]?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the allow/deny priority order when 
             policies are configured on different levels (group, user,  etc.)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ![Image alt](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/PolicyEvaluationHorizontal.png)
 
@@ -92,11 +94,12 @@ Simplified:
 [//]: # (Programmatic access to AWS resources?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Programmatic access to AWS resources?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Access can also be achieved through the console.
 All credentials of a particular user are stored in the ~/.aws/credentials folder
@@ -111,11 +114,12 @@ availability of a policy for the specified IAM profile.
 [//]: # (How you can test IAM policy?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How you can test IAM policy?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 IAM Policy Simulator
 
@@ -130,11 +134,12 @@ For:
 [//]: # (Best IAM practices?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Best IAM practices?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Lock the root user's access keys to your AWS account
 - Create individual IAM users
@@ -158,11 +163,12 @@ For:
 [//]: # (What is WIF Cognito "Web Identity federation Cognito" ?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is WIF Cognito "Web Identity federation Cognito" ?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is an authentication broker that allows you
  to connect to resources using your facebook, Google, amazon credentials
@@ -186,11 +192,12 @@ Consists of
 [//]: # (What API call can be used to enable a user authenticated by Facebook?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What API call can be used to enable a user authenticated by Facebook?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **assume-role-with-web-identity** returns a set of temporary security credentials 
 for users who have been authenticated in a mobile or web application with 
@@ -202,11 +209,12 @@ a web identity provider.
 [//]: # (Cognito user pool workflow?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Cognito user pool workflow?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The user needs to authenticate with Facebook first, 
 that will return a web identity token. 
@@ -223,11 +231,12 @@ in accordance with the role's security policy
 [//]: # (User Pool vs Identity Pool?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             User Pool vs Identity Pool?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 User pool used to managed sign-up and sign-in functionality
 
@@ -240,11 +249,12 @@ and enable access to AWS services like S3
 [//]: # (IAM Managed policies/Customer managed policies/ ?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             User Pool vs Identity Pool?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Managed policies — created and administered by AWS
 AmazonDynamoDBFullAccess
@@ -269,11 +279,12 @@ Inline Policies
 [//]: # (What is STS AssumeRoleWithWebIdentity?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is STS AssumeRoleWithWebIdentity?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is security token service api call.
 This service is referenced with temporary credentials, now with IAM role or user
@@ -293,11 +304,12 @@ This service is referenced with temporary credentials, now with IAM role or user
 [//]: # (How we can ensure that user from identity pools can access only their own files in S3?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can ensure that user from identity pools can access only their own files in S3?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Use an IAM policy within the Amazon Cognito identity prefix 
 to restrict users to use their own folders in Amazon S3.

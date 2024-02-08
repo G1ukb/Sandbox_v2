@@ -7,11 +7,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          What are and which when to use
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * Serial Garbage Collector
 * Parallel Garbage Collector

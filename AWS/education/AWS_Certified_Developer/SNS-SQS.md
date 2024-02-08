@@ -8,11 +8,12 @@
 [//]: # (What is Amazon Simple Notification Service "Amazon SNS"?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Amazon Simple Notification Service "Amazon SNS"?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon Simple Notification Service (Amazon SNS) -
 is a web service for sending notifications from the cloud.
@@ -26,11 +27,12 @@ or other applications.
 [//]: # (What messaging patterns do SNS and SQS implement? Какие шаблоны обмена сообщениями реализуют SNS и SQS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What messaging patterns do SNS and SQS implement? Какие шаблоны обмена сообщениями реализуют SNS и SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon SNS allows apps to send urgent messages
 to several subscribers using the “push” mechanism,
@@ -47,11 +49,12 @@ and can be used to separate sending and receiving components.
 [//]: # (What delivery protocols does SNS support?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What delivery protocols does SNS support?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Messages are sent using transport protocols
 HTTP, HTTPS, Email-JSON and SQS,
@@ -64,11 +67,12 @@ which will include the attached information
 [//]: # (How large SQS messages can be? What happens when that limit is exceeded?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How large SQS messages can be? What happens when that limit is exceeded?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The maximum size is 262,144 bytes (256 KB).
 
@@ -87,11 +91,12 @@ If exceeded, aws will split the messages and send
 [//]: # (What are the typical scenarios for using SQS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the typical scenarios for using SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The best mechanism for using queues is the actual queue mechanism
 when something simultaneously receives a huge number of messages and these
@@ -107,11 +112,12 @@ without the risk of slowing down the entire system
 [//]: # (What’s the difference between standard and FIFO queues in SQS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What’s the difference between standard and FIFO queues in SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Standard queues
 
@@ -148,11 +154,12 @@ FIFO (First in First out) queues
 [//]: # (What is SNS pricing?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is SNS pricing?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Depending on the type of message transmission, the price is based on the number of messages
 as an example
@@ -164,11 +171,12 @@ Mobile Push Notifications $0.50 per million notifications
 [//]: # (What is SQS pricing?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is SNS pricing?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Depending on the type of message transmission, the price is based on the number of messages
 and type of selected processing (Standard \\ FIFO)
@@ -181,11 +189,12 @@ From 1 Million to 100 Billion Requests/Month (ST)$0.40 (FIFO)$0.50
 [//]: # (What are SNS security best practices?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are SNS security best practices?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Tips from aws:
 - Make sure that topics (sns) are not public
@@ -200,11 +209,12 @@ Tips from aws:
 [//]: # (What are the security features supported by SNS/SQS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the security features supported by SNS/SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon SNS provides a full range of security features
 to protect your data from unauthorized and anonymous access,
@@ -223,11 +233,12 @@ to install end-to-end encryption in your messaging scripts.
 [//]: # (What is the anatomy of an SNS message?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the anatomy of an SNS message?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Name - the name of the message attribute.
 The name must not begin or end with a period,
@@ -247,11 +258,12 @@ the same content as the body of the message.
 [//]: # (What can SNS do in case of failing messages?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What can SNS do in case of failing messages?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 If the message cannot be successfully delivered on the first try,
 Amazon SNS enforces a four-step retry policy:
@@ -270,11 +282,12 @@ messages (DLQ).
 [//]: # (What is Amazon SNS dead-letter queues DLQs?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Amazon SNS dead-letter queues (DLQs)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The dead letter queue is an Amazon SQS queue.
 that your Amazon SNS subscription can use for messages
@@ -289,11 +302,12 @@ for further analysis or reprocessing.
 [//]: # (What is SNS message filtering?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is SNS message filtering?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 By default, an Amazon SNS topic subscriber receives every message
 published in the topic.
@@ -318,11 +332,12 @@ every message posted in her thread.
 [//]: # (How is it possible to monitor SNS delivery process?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How is it possible to monitor SNS delivery process?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - aws CloudWatch console,
 - CloudWatch's own command line interface (CLI)
@@ -334,11 +349,12 @@ every message posted in her thread.
 [//]: # (How is it possible to monitor SNS delivery process?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is message lifecycle in SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ![img](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png)
 
@@ -353,11 +369,12 @@ it remains in the queue and is not returned for subsequent receive requests)
 [//]: # (What’s the difference between short and long polling in SQS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What’s the difference between short and long polling in SQS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ![img](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-message-lifecycle-diagram.png)
 
@@ -377,11 +394,12 @@ long polling time.
 [//]: # (What is SQS Delay Queues?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is SQS Delay Queues?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is a special type of messages that you can use to
 - postpone delivery of new messages
@@ -395,11 +413,12 @@ This is a special type of messages that you can use to
 [//]: # (How you can manage large SQS messages in S3?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How you can manage large SQS messages in S3
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 to store large messages 256KB - 2GB you need following
 - use S3
@@ -413,11 +432,12 @@ to store large messages 256KB - 2GB you need following
 [//]: # (What is SES "Simple Email Service"? SES vs SNS)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is SES "Simple Email Service"
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 When you want to send automated emails
 
@@ -440,11 +460,12 @@ SNS:
 [//]: # (What you should do to prevent duplicate messages from being processed?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What you should do to prevent duplicate messages from being processed?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Create a DynamoDB table to store the SQS message IDs 
 of the messages that have been successfully processed. 

@@ -8,11 +8,12 @@
 [//]: # (What is ElasticCache?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is ElasticCache?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon ElastiCache is a web service that simplifies the setup, 
 operation, and scaling of a distributed cache in the cloud. 
@@ -31,11 +32,12 @@ to maximize resources and lower the total cost of ownership
 [//]: # (ElasticCache – Redis vs Memcached)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             ElasticCache – Redis vs Memcached?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Often, we think about caching to improve
 performance while processing a large amount of data.
@@ -74,11 +76,12 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/SelectEngine.html
 [//]: # (ElastiCache – Cache Security)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             ElasticCache – Cache Security
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon ElastiCache provides several security measures:
 
@@ -125,11 +128,12 @@ https://docs.aws.amazon.com/securityhub/latest/userguide/elasticache-controls.ht
 [//]: # (ElastiCache Replication)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             ElasticCache Replication
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon ElastiCache implements replication in two ways:
 
@@ -175,11 +179,12 @@ https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Creating
 [//]: # (ElastiCache Caching strategies)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             ElasticCache Caching strategies
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 <h3>Lazy Loading / Cache-Aside / Lazy Population</h3>
 
@@ -221,11 +226,12 @@ different types of data should be written to cache under different circumstances
 [//]: # (ElastiCache сache Evictions and Time-to-live [TTL])
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             ElasticCache Cache Evictions and Time-to-live (TTL)
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Deleting the cache can occur in three ways:**
 

@@ -7,11 +7,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Classloader and in what situations it can be useful for us
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Class loaders are responsible for **dynamically loading Java classes in the JVM**
 during execution.

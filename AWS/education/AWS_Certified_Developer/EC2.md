@@ -8,11 +8,12 @@
 [//]: # (EC2 Instance Types?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             EC2 Instance Types?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * **General Purpose Instances:** These instances provide a balance of compute,
 memory, and networking resources, and can be used for a variety of diverse workloads.
@@ -40,11 +41,12 @@ or data pattern matching, more efficiently than is possible in software running 
 [//]: # (What types of volumes are offered by EC2?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What types of volumes are offered by EC2?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **General Purpose SSD (gp2 and gp3):** These are suitable for a broad 
 range of workloads, including virtual desktops,
@@ -72,11 +74,12 @@ throughput-intensive workloads with large datasets and large I/O sizes.
 [//]: # (What is the difference between AMI and snapshot in terms of EC2?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between AMI and snapshot in terms of EC2?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Amazon Machine Image (AMI):** An AMI is a template that contains 
 a software configuration (for example, an operating system, an application server,
@@ -102,11 +105,12 @@ a new instance launch.
 [//]: # (How is it possible to install/configure software on a EC2 instance?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How is it possible to install/configure software on a EC2 instance?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 sudo yum install links
 
@@ -116,11 +120,12 @@ sudo yum install links
 [//]: # (What keys are created for each EC2 instance? What for?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What keys are created for each EC2 instance? What for?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * **The public key** is stored on your EC2 instance, 
 and it is placed in an entry within ~/.ssh/authorized_keys
@@ -138,11 +143,12 @@ so it’s important that you store your private key in a secure place
 [//]: # (What happens to EC2 instances when they are stopped and started vs re-started?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What happens to EC2 instances when they are stopped and started vs re-started?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 When you stop and start an Amazon EC2 instance, 
 it involves giving up the physical hardware that the server was running 
@@ -175,11 +181,12 @@ stays running on the same hardware. Here are some key points to note:
 [//]: # (What is the difference between IAM roles and EC2 VPC security groups?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between IAM roles and EC2 VPC security groups?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **IAM Roles:** An IAM role is an identity within your AWS account that
 has specific permissions. It is similar to an IAM user, 
@@ -203,11 +210,12 @@ The security groups say nothing about which people can connect to your EC2 insta
 [//]: # (Is it possible to decrease the size of an existing EBS volume?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Is it possible to decrease the size of an existing EBS volume?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 No, it is not possible to directly decrease the size of an existing Amazon EBS volume.
 The size of an EBS volume can only be increased, not decreased.
@@ -232,11 +240,12 @@ https://repost.aws/knowledge-center/ebs-increase-decrease-volume-size
 [//]: # (Is it possible to reuse a EBS volume for multiple instances?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Is it possible to reuse a EBS volume for multiple instances?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Yes, it is possible to reuse an EBS volume for multiple instances using
 a feature called Amazon EBS Multi-Attach. 
@@ -250,11 +259,12 @@ You can attach multiple Multi-Attach enabled volumes to an instance or set of in
 [//]: # (How is it possible to get such metadata as current region/AZ from within a running EC2 instance?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How is it possible to get such metadata as current region/AZ from within a running EC2 instance?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS API Url get
 http://169.254.169.254/latest/meta-data/
@@ -267,11 +277,12 @@ Java SDK static EC2Instance.getMetadata();
 [//]: # (What are the available elastic load balancer types? What is the key difference between them?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the available elastic load balancer types? What is the key difference between them?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Application Load Balancers:** These are used to route HTTP/HTTPS (or Layer 7) traffic. 
 An Application Load Balancer makes routing decisions at the application 
@@ -294,11 +305,12 @@ Amazon EC2 instances and operate at both the request level and connection level.
 [//]: # (What are the key events in EC2 instance lifecycle?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the key events in EC2 instance lifecycle?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 
 * Start -> Pending -> Running -> Rebooting 
@@ -313,11 +325,12 @@ Amazon EC2 instances and operate at both the request level and connection level.
 [//]: # (EC2 Instance Pricing Options?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             EC2 Instance Pricing Options? (On Demand/Reserved/Spot/Dedicated)
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - On Demand - pay the hour or the second
 - Reserved - reserved capacity for one or three years. Up to 72% discount
@@ -330,11 +343,12 @@ Amazon EC2 instances and operate at both the request level and connection level.
 [//]: # (What is AMI?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is AMI? What is EC2 Image builder?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AMI (Amazon Machine Images) - is configuration of setup EC2 env.
 
@@ -350,11 +364,12 @@ This is suitable in situation where you are not created previous ec2
 [//]: # (In order to enable encryption using EC2 and Elastic Block Store, you must?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             In order to enable encryption using EC2 and Elastic Block Store, you must?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Configure encryption when creating the EBS volume -
 When you create a new, empty EBS volume, you can encrypt it by
@@ -366,11 +381,12 @@ enabling encryption for the specific volume creation operation.
 [//]: # (How you can encrypt AMI if you already have unencrypted AMI?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How you can encrypt AMI if you already have unencrypted AMI?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 It is not possible to encrypt an AMI after it has been created. 
 You will need to create a copy of the AMI and add encryption for the copy.
@@ -381,11 +397,12 @@ You will need to create a copy of the AMI and add encryption for the copy.
 [//]: # (Where you can store user session state?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Where you can store user session state?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Store session state in DynamoDB (preferred)
 - Use an ElastiCache cluster

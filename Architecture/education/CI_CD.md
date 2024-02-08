@@ -8,11 +8,12 @@
 [//]: # (What is CI/CD from Java perspective?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CI/CD from Java perspective?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CI/CD, or Continuous Integration/Continuous Deployment,
 is a software development practice
@@ -35,11 +36,12 @@ that improving the speed and reliability of software releases.
 [//]: # (What tools plays a crucial role in the CI/CD pipeline?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What tools plays a crucial role in the CI/CD pipeline?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Git** allows efficient collaboration between developers
 
@@ -75,12 +77,13 @@ that improving the speed and reliability of software releases.
         What are the benefits and challenges?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How can Docker be integrated into a Java CI/CD pipeline?
             What are the benefits and challenges?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Docker can be integrated into a Java CI/CD pipeline in the following ways:
 * Build Docker Images
@@ -105,12 +108,13 @@ Minuses:
         /like database URLs, API keys, etc./ in a Java CI/CD pipeline?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you manage environment-specific configurations 
             /like database URLs, API keys, etc./ in a Java CI/CD pipeline?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * **Environment/System Variables:** that a stored in the env by itself
 * **Configuration Files:** files can be loaded at runtime based on the current environment
@@ -123,13 +127,14 @@ Minuses:
         How would you troubleshoot and resolve this issue?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you describe a scenario where a CI/CD pipeline 
             might fail for a Java project? 
             How would you troubleshoot and resolve this issue?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * Local Reproduction in case if it is not a local problem
 * Check the Error Message or Error log
@@ -145,12 +150,13 @@ Minuses:
          What tools or practices would you recommend?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you ensure security in a Java-based CI/CD pipeline? 
             What tools or practices would you recommend?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Secure the Source Code**
 - Static Code Analysis
@@ -175,12 +181,13 @@ Minuses:
         the effectiveness of a CI/CD pipeline in a Java project?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the key metrics you would track to measure 
             the effectiveness of a CI/CD pipeline in a Java project?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Deployment Frequency
 - Failure Rate
@@ -194,12 +201,13 @@ Minuses:
          CI/CD pipeline for a Java project?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What strategies would you use to minimize build time in a 
             CI/CD pipeline for a Java project?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Parallel Builds (main idea to split test and build processes)
 - CI/CD Branching (test new feature in lighter dev branch)
@@ -217,13 +225,14 @@ Minuses:
         What tools or practices would you recommend?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you handle failure notifications and 
             alerts in a Java-based CI/CD pipeline? 
             What tools or practices would you recommend?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Alerting Tools
   - via static content (splunk, logs, log dashboards) 

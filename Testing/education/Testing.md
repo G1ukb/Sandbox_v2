@@ -8,11 +8,12 @@
 [//]: # (What is divided into, what happens)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is divided into, what happens
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 ![](https://elearn.epam.com/assets/courseware/v1/410860fdf29f9661f24af61a730de38d/asset-v1:EPAM+EngXBootcamp+2020+type@asset+block/The_High_Cost_of_Bugs_Tools_1.png)
 
@@ -53,11 +54,12 @@
 [//]: # (Auto tests vs manual tests)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Auto Tests vs. Manual Tests
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Automatic testing**
   (The automatic code checking software checks the source code
@@ -98,11 +100,12 @@
 [//]: # (Automation Metrics vs Manual Testing)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Automation Metrics vs Manual Testing
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Test automation is an important part of the software development lifecycle
 
@@ -128,11 +131,12 @@ the right balance between manual and automated testing.
 [//]: # (Test levels)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Test levels
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Module / Unit-testing** - checking the correct operation of individual modules of the project.
   This type of testing can be performed by the developers themselves.
@@ -157,11 +161,12 @@ the right balance between manual and automated testing.
 [//]: # (Unit testing)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             unit testing
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Checking that the code is working properly.
 Some of the important features of a unit test include:
@@ -201,11 +206,12 @@ They are described by the rule **F.I.R.S.T.**
 [//]: # (Integration testing)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Integration testing
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Integration Testing** is one of the testing phases where
 **individual software modules are combined and tested as a group**.
@@ -234,11 +240,12 @@ Advantages:
 [//]: # (System testing/Functional testing/Smoke testing)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             System testing/Functional test/Smoke testing
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 
 **System testing**
@@ -272,11 +279,12 @@ if, after applying power, smoke and a burning smell appear, then the equipment i
 [//]: # (Regression/Penetration test/Fuzzing/Acceptance tests)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Regression/Penetration test/Fuzzing/Acceptance tests
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 
 **Regression test**
@@ -315,11 +323,12 @@ end user requirements.
 [//]: # (Test pyramid)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Testing Pyramid
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 
 "Test Pyramid" is an abstraction that means grouping tests into different levels of detail.
@@ -356,11 +365,12 @@ Two **principles** follow from this pyramid:
 [//]: # (Test Driven Development)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Test Driven Development
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 1. In test-driven development, every new feature **begins with writing a test**.
    To write a test, a developer must clearly understand the specifications and requirements of a feature.

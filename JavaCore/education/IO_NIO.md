@@ -7,11 +7,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             IO vs NIO difference
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 * **Buffer** area to read data chunks at a time
 * **Channel** is used to communicate with the buffer

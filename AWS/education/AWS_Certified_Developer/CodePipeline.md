@@ -8,11 +8,12 @@
 [//]: # (Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            Deploy written code in AWS using existing CI/CD pipelines, processes, and patterns?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Use the AWS::Region pseudo parameter.
 
@@ -31,11 +32,12 @@ resolves as the region where the stack is created
 [//]: # (1.Commit code to a repository and invoke build, test and/or deployment actions)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             1.Commit code to a repository and invoke build, test and/or deployment actions
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 [ORIGINAL](https://aws.amazon.com/blogs/devops/complete-ci-cd-with-aws-codecommit-aws-codebuild-aws-codedeploy-and-aws-codepipeline)
 
@@ -70,11 +72,12 @@ AWS documentation or consult with a DevOps professional for detailed guidance.
 [//]: # (2.Use labels and branches for version and release management)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             2.Use labels and branches for version and release management
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 [ORIGINAL](https://aws.amazon.com/blogs/devops/implementing-gitflow-using-aws-codepipeline-aws-codecommit-aws-codebuild-and-aws-codedeploy/)
 
@@ -102,11 +105,12 @@ When you create a version, you’ll include a label for that version.
 [//]: # (3.Use AWS CodePipeline to orchestrate workflows against different environments)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             3.Use AWS CodePipeline to orchestrate workflows against different environments
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 [ORIGINAL](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
 
@@ -146,12 +150,13 @@ and troubleshoot any issues using AWS CloudWatch.
 CodeDeploy for CI/CD purposes)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             4.Apply AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS CodeStar, 
             and AWS CodeDeploy for CI/CD purposes
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 [Pinned Guidelines](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials.html)
 
@@ -191,11 +196,12 @@ AWS services like AWS Fargate, Amazon EC2, AWS Lambda, and more.
 [//]: # (5.Perform a roll back plan based on application deployment policy)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             5. Perform a roll back plan based on application deployment policy
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Sure, here’s a high-level overview of how you can perform a
 rollback based on your application deployment policy using AWS services:

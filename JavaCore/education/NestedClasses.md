@@ -9,11 +9,12 @@
 
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
          Nested class types
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * **Static nested** - static logic that does not depend on object initialization
 * **Local internal** - logic that depends on object initialization.
@@ -34,11 +35,12 @@ Why do we need it:
 [//]: # (When to use which type of class)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
           When to use which type of class
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Local class:**
 

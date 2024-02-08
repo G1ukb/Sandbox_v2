@@ -8,11 +8,12 @@
 [//]: # (Serverless consents pluses)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Serverless consents pluses
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - you can scale your applications quickly without managing any servers
 - Low Cost (charged when code is executed)
@@ -24,11 +25,12 @@
 [//]: # (Serverless services)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Serverless services
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - calculation
   - Lambda
@@ -48,11 +50,12 @@
 [//]: # (How application sessions can be stored?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How application sessions can be stored?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 There are various ways to manage user sessions,
 including storing those sessions locally to the node 

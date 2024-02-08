@@ -11,11 +11,12 @@
 [//]: # (Explore the basic principle of basic collections)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Reveal the basic principle of how basic collections work
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 * **List**
 * **ArrayList** - Classic storage model where memory cells are allocated
@@ -48,11 +49,12 @@
 <br>
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             В какой момент, какую использовать
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 ![](https://i.stack.imgur.com/aSDsG.png)
 
@@ -84,11 +86,12 @@
 <br>
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Collections
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Core collections other than HashTable are non-thread safe, which means
 what i.e. when multiple parallel threads save and retrieve

@@ -8,11 +8,12 @@
 [//]: # (What is CloudFornmation?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudFormation?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS CloudFormation is a service that helps you model
 and set up your AWS resources so that you can spend
@@ -33,11 +34,12 @@ Workflow:
 [//]: # (What are the benefits of AWS Cloud Formation?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Serverless Application Model "SAM"?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **AWS CloudFormation offers several benefits:**
 Infrastructure as Code: AWS CloudFormation is essentially **infrastructure as code**,
@@ -79,11 +81,12 @@ https://www.gangboard.com/blog/aws-cloudformation/
 [//]: # (AWS Cloud Formation use cases?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AWS Cloud Formation use cases?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS CloudFormation can be used in a variety of scenarios, including but not limited to:
 
@@ -123,11 +126,12 @@ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
 [//]: # (What happens when a CF stack is updated?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What happens when a CF stack is updated?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 When a CloudFormation (CF) stack is updated, the following steps occur:
 
@@ -156,11 +160,12 @@ AWS CloudFormation сравнивает отправляемые вами изм
 [//]: # (What is Serverless Application Model "SAM"?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Serverless Application Model "SAM"?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Define and provision serverless applications using CloudFormation
 
@@ -177,11 +182,12 @@ consists of
 [//]: # (What "SAM" template tags you know?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What "SAM" template tags you know?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
     AWSTemplateFormatVersion: '2010-09-09'
     Transform: 'AWS::Serverless-2016-10-31'
@@ -201,11 +207,12 @@ consists of
 [//]: # (What is Nested stack?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Nested stack?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Nested Stack in AWS CloudFormation is a stack created as part of another stack.
 You create a nested stack within another stack by using 
@@ -236,11 +243,12 @@ components and create dedicated templates for them.
 [//]: # (What happens with the resources created within a CF stack when that stack is deleted?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What happens with the resources created within a CF stack when that stack is deleted?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 When a CloudFormation (CF) stack is deleted, 
 AWS CloudFormation deletes all the resources 
@@ -275,11 +283,12 @@ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html
 [//]: # (Is it possible to test CF templates before creating any resources with them?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            Is it possible to test CF templates before creating any resources with them?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Yes, it is possible to test AWS CloudFormation (CF) templates 
 before creating any resources with them. 
@@ -311,11 +320,12 @@ stacks once you’re done testing to avoid unnecessary charges.
 [//]: # (Cloud Formation Template anatomy?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            Cloud Formation Template anatomy?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
     ---
     AWSTemplateFormatVersion: "version date"
@@ -368,11 +378,12 @@ stacks once you’re done testing to avoid unnecessary charges.
 [//]: # (What is CF Transform?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is CF Transform?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The optional Transform section specifies one or more macros 
 that AWS CloudFormation uses to process your template. 
@@ -391,11 +402,12 @@ declarative language of AWS CloudFormation with a powerful macro system.
 [//]: # (What is CF Resources?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is CF Resources?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The Resources section defines the resources you are provisioning. 
 Outputs are used to output user defined data relating to the resources 
@@ -414,11 +426,12 @@ Transforms are used to reference code located in S3.
 [//]: # (What is CF Outputs?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is CF Resources?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The Resources section defines the resources you are provisioning.
 Outputs are used to output user defined data relating to the resources
@@ -437,11 +450,12 @@ Transforms are used to reference code located in S3.
 [//]: # (What is happened with CF in case of exception during deployment?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is happened with CF in case of exception during deployment?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The Outputs section is used to output user-defined data relating 
 to the resources you have built. 
@@ -462,11 +476,12 @@ to export values to be used as input for another CloudFormation stack.
 [//]: # (What we can do to prevent AWS from deleting successfully provisioned resourced during automatic rollback?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What we can do to prevent AWS from deleting successfully provisioned resourced during automatic rollback?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - In the CloudFormation console, for Stack failure options, 
 select "Preserve successfully provisioned resources"
@@ -478,11 +493,12 @@ select "Preserve successfully provisioned resources"
 [//]: # (Cloud Formation vs Step Functions?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            Cloud Formation vs Step Functions
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Cloud Formation** -  deploy AWS resources using an
 infrastructure-as-code (IaC) approach
@@ -494,11 +510,12 @@ infrastructure-as-code (IaC) approach
 [//]: # (Lambda vs Step Functions?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            Lambda vs Step Functions?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Lambda allows developers to run code in the cloud without requiring 
 them to configure the underlying infrastructure,
@@ -518,11 +535,12 @@ so your application executes in order and as expected.
 [//]: # (what is create-stack-set command in AWS CloudFormation template?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is create-stack-set command in AWS CloudFormation template?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Use the AWS CLI create-stack-set command to create a stack set 
 in the desired Regions. 
@@ -545,11 +563,12 @@ https://aws.amazon.com/ru/about-aws/whats-new/2021/04/deploy-cloudformation-stac
 [//]: # (How do I prevent the resources in my CloudFormation stack from getting deleted or updated?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            How do I prevent the resources in my CloudFormation stack from getting deleted or updated?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 To prevent deletion or updates to resources in a CloudFormation stack, you can:
 
@@ -567,11 +586,12 @@ the stack from the AWS CloudFormation console
 [//]: # (You have SAM and lambda inside, how you can test lambda locally?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            You have SAM and lambda inside, how you can test lambda locally?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The developer can test a specific Lambda function locally by choosing option:
 Run the cdk synth and sam local invoke commands with 
@@ -590,11 +610,12 @@ Lambda functions locally for testing.
 [//]: # (What is the MOST operationally efficient way to determine the Region in which the template is being deployed?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
            What is the MOST operationally efficient way to determine the Region in which the template is being deployed?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Use the AWS::Region pseudo parameter.
 

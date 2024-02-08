@@ -1,12 +1,9 @@
 Java Core
-is string is good
 raise conditions 
 good hash map key
 hash code and equals dependency (set of fields)
 stream vs foreach
 JDK // SDK // JRE
-- Generics, main idea?
-- How Java handles generics?
 
 Java 8
 Преимущество стрима

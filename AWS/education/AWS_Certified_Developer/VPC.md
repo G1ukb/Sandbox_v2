@@ -8,11 +8,12 @@
 [//]: # (What is VPC?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is VPC?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Virtual Private Cloud (VPC) -
 it is a secure, isolated private cloud hosted on a public cloud.
@@ -25,11 +26,12 @@ with data isolation for private cloud computing.
 [//]: # (What is VPC?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What kinds of IP addresses does AWS VPC offer?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon VPC currently supports five (5) IP address ranges,
 one (1) primary and four (4)
@@ -42,11 +44,12 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 [//]: # (What happens to different IP address types when an EC2 instance is rebooted, stopped, started?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What happens to different IP address types when an EC2 instance is rebooted, stopped, started?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - private ip does not change
 - public ip and dns will change
@@ -57,11 +60,12 @@ Each of these ranges can range in size from /28 (in CIDR notation) to /16.
 [//]: # (What is elastic IP?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is elastic IP?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 An elastic IP address is a reserved public IP address 
 that you can assign
@@ -74,11 +78,12 @@ to release it.
 [//]: # (How many elastic IPs is it possible to create per account/region?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How many elastic IPs is it possible to create per account/region?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 All AWS accounts are limited to five elastic 
 IP addresses per region.
@@ -90,11 +95,12 @@ They can be changed for an additional fee.
 [//]: # (What is elastic network interface?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is elastic network interface?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Elastic Network Interface is a logical network component in a VPC,
 representing a virtual network card. It may include the following attributes:
@@ -115,11 +121,12 @@ address range.
 [//]: # (What is CIDR?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CIDR?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CIDR was developed as an alternative to traditional subnetting.
 The idea is that you can add to the IP address 
@@ -134,11 +141,12 @@ of a given IP address are considered important for network routing.
 [//]: # (What is NAT?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is NAT?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Network Address Translation (NAT) devices,
 running on a public subnet, allow instances on a private
@@ -156,11 +164,12 @@ Instance IP addresses.
 [//]: # (NAT vs VPC vs Internet Gateway "IGW"?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             NAT vs VPC?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Virtual Private Cloud (VPC) and a Network Address Translation (NAT) 
 gateway are both components of a network infrastructure, 
@@ -181,11 +190,12 @@ but it prevents the internet from initiating connections with those instances
 [//]: # (What is difference between NAT Gateway and NAT Instance?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is difference between NAT Gateway and NAT Instance?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The significant difference is that GateWay -
 automated system controlled by Amazon
@@ -206,11 +216,12 @@ subnets and outgoing traffic to the Internet.
 [//]: # (What is security groups?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is security groups?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A security group controls the traffic allowed 
 to reach and leave the resources that it is associated with. 
@@ -224,11 +235,12 @@ it controls the inbound and outbound traffic for the instance.
 [//]: # (What does "local” target mean in terms of an AWS routing table?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What does "local” target mean in terms of an AWS routing table?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Target => Where you want to send traffic for 
 the specified destination
@@ -241,11 +253,12 @@ specify the destination as "local")
 [//]: # (What is bastion in terms of networking?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is bastion in terms of networking?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A bastion host is a special computer on a network specifically
 designed and configured to protect against attacks.

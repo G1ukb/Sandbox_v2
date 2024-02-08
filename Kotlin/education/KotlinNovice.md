@@ -20,11 +20,12 @@
 [//]: # (What is Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Kotlin is an Object-oriented and Functional programming
 language developed by JetBrains.
@@ -49,11 +50,12 @@ more efficient and productive than Java
 [//]: # (What is the difference between val and var in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between val and var in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 var (Variable): It is a mutable variable, meaning its value can
 be changed anytime throughout the program
@@ -65,11 +67,12 @@ val (Value): It is an immutable variable, similar to a final variable in Java
 [//]: # (How do you define a function in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How do you define a function in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
     fun functionName(parameter1: Type1, parameter2: Type2, ...): ReturnType {
     // function body
@@ -81,11 +84,12 @@ val (Value): It is an immutable variable, similar to a final variable in Java
 [//]: # (What are Kotlin coroutines and how are they used?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are Kotlin coroutines and how are they used?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Kotlin's coroutines are a design pattern that you can use to simplify code
 that executes asynchronously
@@ -99,11 +103,12 @@ the main thread and cause your app to become unresponsive
 [//]: # (How does null safety work in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How does null safety work in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Nullable and Non-Nullable Types:** in Kotlin all types are non-null by design.
   But i can create nullable value
@@ -123,11 +128,12 @@ the main thread and cause your app to become unresponsive
 [//]: # (What is the difference between List and MutableList in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between List and MutableList in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **List:** This is an interface which provides read-only access to the list
 - **MutableList:** This is an interface that supports adding and removing elements
@@ -137,11 +143,12 @@ the main thread and cause your app to become unresponsive
 [//]: # (What are data classes in Kotlin and how do they differ from regular classes?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are data classes in Kotlin and how do they differ from regular classes?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 In Kotlin, a data class is a special kind of class that is primarily used to hold data
 
@@ -162,11 +169,12 @@ The key differences between data classes and regular classes are
 [//]: # (What are sealed classes in Kotlin and what are they used for?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are sealed classes in Kotlin and what are they used for?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Sealed classes in Kotlin are used to represent restricted class 
 hierarchies that provide more control over inheritance
@@ -191,11 +199,12 @@ and Pattern Matching.
 [//]: # (What is the purpose of the companion object in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the purpose of the companion object in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 In Kotlin, the companion object is a design pattern that allows you
 to create methods and variables associated with a class rather
@@ -206,11 +215,12 @@ than instances of it. This is similar to the static keyword in Java.
 [//]: # (How do you use lambda expressions in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How do you use lambda expressions in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda expressions in Kotlin are anonymous functions;
 that is, functions that are not declared,
@@ -230,11 +240,12 @@ that isn’t going to be used elsewhere.
 [//]: # (What are extension functions in Kotlin and how do you define them?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are extension functions in Kotlin and how do you define them?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Extension functions in Kotlin allow you to extend a class with new functionality
 without having to inherit from the class or use any type of design pattern
@@ -258,11 +269,12 @@ Kotlin supports extension functions and extension properties.
 [//]: # (How do you use the when expression in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How do you use the when expression in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is a switch case
 
@@ -288,11 +300,12 @@ This is a switch case
 [//]: # (What is the difference between == and === in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between == and === in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 In Kotlin, there are two types of equality:
 Structural equality and Referential equality.
@@ -305,12 +318,13 @@ Structural equality and Referential equality.
 [//]: # (What is the difference between apply and with in Kotlin?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between apply() / with() /
             let() / run() / also() in Kotlin?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - With: used for simple object clone (return some other object)
 - Let: used in null check/non obj state change operations

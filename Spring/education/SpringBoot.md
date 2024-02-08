@@ -8,11 +8,12 @@
 [//]: # (What is Spring Boot?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Spring Boot?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Spring Boot is a Spring module that provides a RAD feature
 (Rapid Application Development) for the Spring framework.
@@ -34,11 +35,12 @@ modules that you can use on the go.
 [//]: # (What are Spring Boot starters?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are Spring Boot starters?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Starters are a set of handy dependency descriptors,
 which we can include in our application.

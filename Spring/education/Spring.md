@@ -8,11 +8,12 @@
 [//]: # (Spring pros and cons)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Spring pros and cons
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 **pros**
 + many components
@@ -30,11 +31,12 @@
 [//]: # (What is IoC)
 <br>
 <details>
-    <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              What is IoC
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 IoC is an architectural solution that uses the Spring Container 
 that implements the principles
@@ -48,11 +50,12 @@ DL - getBean() when we can manually pick up this dependency for use
 [//]: # (Bean types)
 <br>
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              Bean types
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Singleton: The scope of a bean when using this will be one instance per IoC container.
 Prototype: Here, the scope of a single component can be any number of object instances.
@@ -66,11 +69,12 @@ Custom bean scope: implement Scope and control init and destroy flow
 [//]: # (Bean life cycle)
 <br>
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              bean life cycle
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 - object constructor
 - dependency injection 
@@ -89,11 +93,12 @@ example BeanNameAware, BeanFactoryAware)
 [//]: # (What can be annotated)
 <br>
 <details>
-     <summary>
-         <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
              What can be annotated / What happens if several components fit
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 - field
 - method
@@ -107,11 +112,12 @@ The @qulifier annotation will help solve the problem
 [//]: # (How spring can be configured)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How can you configure a spring
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 XML based configuration:
 + the oldest method that has many examples and some tricky cases
@@ -142,11 +148,12 @@ using the @Bean annotation
 [//]: # (AOP)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AOP
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **AOP** provides the ability to dynamically add end-to-end logic before, after, or around the actual logic
 with simple plug-in functions.

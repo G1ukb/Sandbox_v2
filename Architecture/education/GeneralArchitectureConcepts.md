@@ -10,13 +10,14 @@
         in the context of Java applications?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain the difference between monolithic,
                 microservices, and serverless architectures
                 in the context of Java applications?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 1. **Monolithic Architecture:** In a monolithic architecture, 
 an application is developed as a single, self-contained entity. 
@@ -83,11 +84,12 @@ who dynamically manage the allocation of machine resources
 [//]: # (In what situations, what type you will choose?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             In what situations, what type you will choose?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Monolithic Architecture:**
  - app is relatively small, and the team is not large enough
@@ -110,12 +112,13 @@ who dynamically manage the allocation of machine resources
          the scalability and resilience of a Java application?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How does the choice of architecture impact 
             the scalability and resilience of a Java application?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Monolithic Architecture:**
 - **Scalability**: the entire application needs to be scaled even 
@@ -139,12 +142,13 @@ they are isolated from each other
          in a Java-based microservices architecture?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you handle data consistency across microservices
             in a Java-based microservices architecture?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Eventual Consistency:** - the change is added to other services over time.
    , System may be in an inconsistent state for a short period
@@ -168,13 +172,14 @@ a separate service layer is used to handle data consistency
          in a distributed Java application?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are some of the trade-offs to consider when choosing between 
             synchronous and asynchronous communication 
             in a distributed Java application?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Synchronous**
 - Latency: can lead to increased latency
@@ -196,12 +201,13 @@ a separate service layer is used to handle data consistency
          of Java applications, and what benefits does it provide?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How can containerization be used in the deployment 
             of Java applications, and what benefits does it provide?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Isolation:** Each container runs in isolation
 - **Scalability** easily scaled up or down based on the demand
@@ -216,13 +222,14 @@ they can run on any system that supports containerization
          tolerance and failover in a distributed Java application?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you discuss some strategies for handling fault 
             tolerance and failover and for high availability
             in a distributed Java application?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Load Balancing (traffic balancing)
 - Auto-scaling (perf balancing)
@@ -239,12 +246,13 @@ they can run on any system that supports containerization
          impact the architecture of a Java application?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How does the choice of database /SQL vs NoSQL/
             impact the architecture of a Java application?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 SQL:
 - Scalability realization: SQL databases are typically scaled vertically 
@@ -269,14 +277,15 @@ NoSQL:
          need to be taken into account?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you approach designing a Java application
             for a cloud-native environment, 
             and what architectural considerations 
             need to be taken into account?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Microservices Architecture
 - Containerization
@@ -293,12 +302,13 @@ NoSQL:
          in a Java-based microservices architecture?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How would you implement security measures 
             in a Java-based microservices architecture?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Authentication and Authorization
 - API Gateway (that acts as a single entry point into your system)
@@ -316,13 +326,14 @@ NoSQL:
          and how they influence the overall architecture?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain the role of APIs 
             in a distributed Java application 
             and how they influence the overall architecture?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Standardization 
 - Data Exchange

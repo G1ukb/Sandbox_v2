@@ -8,11 +8,12 @@
 [//]: # (What is required in order to get X-Ray working?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is required in order to get X-Ray working?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Both the X-Ray SDK and X-Ray Daemon,
 - and you need to Instrument your application
@@ -23,11 +24,12 @@
 [//]: # (What is X-Ray SDK and X-Ray Daemon?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is X-Ray SDK and X-Ray Daemon?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 X-Ray SDK - is a WHAT application code is used to call x-ray demon
 
@@ -46,11 +48,12 @@ and must be running so that data sent by the SDKs can reach the X-Ray service.
 [//]: # (Can X-Ray deamon work with Docker? How?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can X-Ray deamon work with Docker? How?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Yes
 
@@ -63,11 +66,12 @@ that you can deploy alongside your application.
 [//]: # (Which of the following services does X-Ray integrate with?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Which of the following services does X-Ray integrate with?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Yes
 
@@ -84,11 +88,12 @@ and Amazon Simple Queue Service.
 [//]: # (What is CloudWatch Monitor?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Monitor?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is AWS tool that can monitor:
 
@@ -127,11 +132,12 @@ Other
 [//]: # (What is CloudWatch Logs?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Logs?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon CloudWatch Logs allows you to collect and store resource logs,
 applications and services in near real time.
@@ -155,11 +161,12 @@ There are three main categories of magazines.
 [//]: # (How CloudWatch can watch to EC2?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How CloudWatch can watch to EC2?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 By default ec2 does not send operating system-level metrics
 - you need to create CloudWatch Agent on ec2 instance
@@ -176,11 +183,12 @@ and then CloudWatch will see metrics:
 [//]: # (What is CloudWatch Agent?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Agent?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CloudWatch Agent is a software package 
 that autonomously and continuously runs on your servers.
@@ -191,11 +199,12 @@ that autonomously and continuously runs on your servers.
 [//]: # (CloudWatch metric frequency?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             CloudWatch metric frequency?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 By default 5 min intervals
 in addition charge - 1-min intervals
@@ -209,11 +218,12 @@ and in addition 1 sec interval
 [//]: # (What is CloudWatch Alarm?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Alarm?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 You can set alarms for Ec2 CPU, ELB latency, overcharges
 
@@ -225,11 +235,12 @@ You can set appropriate thresholds to trigger the alarms
 [//]: # (What is CloudWatch Actions?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Actions?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is cloud watch api that supports a long list of
 different actions
@@ -249,11 +260,12 @@ putMetricAlarm - creates alarm associated with a metric for alerting
 [//]: # (What is CloudWatch Dashboard?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Dashboard?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is a custom view of your monitors, metrics,
 conditions that are meaningful for you
@@ -268,11 +280,12 @@ Remember to save (CloudWatch doesn't automatically save your dashboard)
 [//]: # (What is CloudWatch Metrics?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Metrics?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A metric is a **variable** to monitor.
 Metrics are uniquely defined by a name, a namespace, and zero dimensions
@@ -285,11 +298,12 @@ namespace: container for metrics
 [//]: # (What is CloudWatch Dimension?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Dimension?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Dimension is like a filter.
 
@@ -304,11 +318,12 @@ a specific EC2 Instance
 [//]: # (How CloudTrail works?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How CloudTrail works?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CloudTrail records user activity in your AWS account.
 
@@ -322,11 +337,12 @@ Athena is a service that can be used to run SQL queries on data stored in S3.
 [//]: # (What is CloudTrail? CloudTrail vs CloudWatch)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudTrail? CloudTrail vs CloudWatch
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 CloudTrail records user activity in your AWS account.
 
@@ -348,11 +364,12 @@ CloudTrail is about Audit trail
 [//]: # (X-Ray vs CloudWatch)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             X-Ray vs CloudWatch
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS X-Ray and CloudWatch are both monitoring tools,
 but they have different functionalities and use cases.
@@ -377,11 +394,12 @@ Use Cases for CloudWatch:
 [//]: # (What is CloudWatch Logs Insights?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Logs Insights?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 With CloudWatch Logs Insights, you can interactively
 search and analyze your log data in Amazon CloudWatch Logs.
@@ -397,11 +415,12 @@ causes and validate deployed fixes.
 [//]: # (What is EventBridge?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is EventBridge?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Event Bridge - event-driven architecture. Is a change of state
 
@@ -414,11 +433,12 @@ We can create a schedule event with Event Bridge.
 [//]: # (What is event bus?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is event bus?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 An event bus is a router that receives events 
 and delivers them to zero or more destinations, or targets. 
@@ -435,11 +455,12 @@ of events prior to delivery to a target.
 [//]: # (How EC2 instances in multiple AWS accounts can store lifecycle events in a single SQS main AWS account?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How EC2 instances in multiple AWS accounts can store lifecycle events in a single SQS main AWS account?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Configure the permissions on the main account event bus to receive events
   from all accounts.

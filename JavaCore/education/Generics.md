@@ -12,6 +12,7 @@
             For what proposes generics were added into Java?
         </b>
     </summary>
+<br>
 
 **The main reason** for adding generics was to provide stronger type checks
 at compile time.
@@ -37,11 +38,12 @@ making the code more robust and less prone to runtime errors.
 
 [//]: # (Advantages of using generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Advantages of using generics?
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 - **Type Safety:** Generics provide compile-time type safety.
   This means that if you try to use the wrong type of object,
@@ -67,11 +69,12 @@ making the code more robust and less prone to runtime errors.
 
 [//]: # (Are there any disadvantages of generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Are there any disadvantages of generics?
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 - **Type Erasure:** Generics in Java use type erasure,
   which means the type information is not available at runtime.
@@ -98,11 +101,12 @@ making the code more robust and less prone to runtime errors.
 
 [//]: # (Can you explain the concept of type erasure in Java Generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain the concept of type erasure in Java Generics?
-         </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Type erasure is a process by which the Java compiler enforces
 type checking at compile time and then removes, or "erases",
@@ -129,12 +133,13 @@ After erasure:
 [//]: # (What is the difference between a wildcard 
          and a type parameter in Java Generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between a wildcard 
             and a type parameter in Java Generics?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 Wildcard and type param have logically differences
 
@@ -147,12 +152,13 @@ will be determined later
 
 [//]: # (Can you explain the difference between <? extends T> and <? super T>?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain the difference between
             < ? extends T> and < ? super T>?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 **This is bounded wildcards**:
 
@@ -195,13 +201,14 @@ will be determined later
 [//]: # (Can you explain the PECS 
         "Producer Extends, Consumer Super" principle?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain the PECS 
             (Producer Extends, Consumer Super) principle?
             What means by "Consumer" and "Producer"
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 It is a principle in Java Generics that helps to decide
 when to use a wildcard and what type of wildcard to use.
@@ -238,11 +245,12 @@ range of data structures.
 
 [//]: # (How do you handle exceptions when working with Java Generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How do you handle exceptions when working with Java Generics?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 * Generic classes cannot extend Throwable
 * Cannot be thrown
@@ -259,11 +267,12 @@ But as Producers can handle exceptions for read state
 
 [//]: # (What is reification and how does it relate to Java Generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is reification and how does it relate to Java Generics?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 **Reification** is the process by which an abstract idea about
 a program feature becomes an explicit part of a program's structure.
@@ -279,11 +288,12 @@ meaning that they do not have a distinct representation at runtime.
 
 [//]: # (Can you explain how to use multiple bounds in Java Generics?)
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Can you explain how to use multiple bounds in Java Generics?
-        </big></big></big></b>
-     </summary>
+        </b>
+    </summary>
+<br>
 
 In Java Generics,
 you can use multiple bounds to restrict a type parameter

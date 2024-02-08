@@ -8,11 +8,12 @@
 [//]: # (Lambdas vs. ec2)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambdas vs. ec2?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Virtual functions - no servers to manage!
 - Time limited - short executions
@@ -32,12 +33,13 @@ Virtual functions - no servers to manage!
         Why are they fast and don't require any EC2 to run?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is under the hood of lambdas. 
             Why are they fast and don't require any EC2 to run?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Each lambda represents an image and a container. 
 And Amazon takes over the work of all 
@@ -49,11 +51,12 @@ containers and their management.
 [//]: # (What ways of triggering a Lambda do you know?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What ways of triggering a Lambda do you know?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda functions can be activated in different ways:
 - HTTP request
@@ -72,11 +75,12 @@ Lambda functions can be activated in different ways:
 [//]: # (What is Lambda@Edge?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda@Edge?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda@Edge is a feature of Amazon CloudFront that allows you 
 to run code closer to users of your application, 
@@ -107,11 +111,12 @@ having to modify your application code on your origin.
 [//]: # (Lambda@Edge vs CloudFront Functions?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda@Edge vs CloudFront Functions
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 In summary, CloudFront Functions are ideal for lightweight, 
 short-running functions and are executed at the edge locations closest to the user. 
@@ -129,11 +134,12 @@ They are executed at Regional Edge Locations in major AWS Regions.
 [//]: # (What is Lambda – Event Source Mapping for SQS & SQS FIFO? Lambda event trigger)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda – Event Source Mapping for SQS & SQS FIFO?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda allows you to automatically process a certain number of messages from SQS queues
 and SQS FIFO.
@@ -155,11 +161,12 @@ Can be scaled:
 [//]: # (What is Lambda - Directions?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda - Directions?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda offers the ability to configure the direction (endpoints) for the function to work
 (before sending the rest result to the client)
@@ -178,11 +185,12 @@ You can choose the final exact one:
 [//]: # (What is Lambda pricing?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda pricing?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Payment for requests:
 - The first million requests are free
@@ -201,11 +209,12 @@ AWS Lambda is very cheap and very popular because of this
 [//]: # (How is it possible to test Lambda code without actually running it in AWS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How is it possible to test Lambda code without actually running it in AWS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Using the AWS SAM Command Line Interface (CLI)
 you can test locally and debug "step by step"
@@ -217,11 +226,12 @@ your serverless applications before uploading them to the AWS cloud
 [//]: # (What is the difference between synchronous and asynchronous Lambda invocations?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the difference between synchronous and asynchronous Lambda invocations?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **With a synchronous** call, you wait for the function to process the event
 and will return the response.
@@ -252,11 +262,12 @@ will process the request and (for example, send an SQS message that something we
 [//]: # (What is Lambda Environment Variables?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda Environment Variables?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda offers the ability to configure environment settings 
 similar to the Postman implementation
@@ -277,11 +288,12 @@ And work with keys, and the lambda will independently substitute the specified v
 [//]: # (What is Lambda Logging & Monitoring? Tracing with x-ray?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda Logging & Monitoring? Tracing with x-ray?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda allows you to track all your actions using monitors/logging/AWS X-Ray
 - Calls, duration, concurrent executions
@@ -302,12 +314,13 @@ but are handy to know):
 or If Lambda in VPC how it connect to public www?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How Lambda can connet VPC & private subnet 
             or If Lambda in VPC how it connect to public www?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **If the lambda is outside the vpc (virtual private connection)**
 - **She has access to the Internet, but does not have direct access to the VPC**
@@ -340,11 +353,12 @@ it looks like this
 [//]: # (Lambda Concurrency and Throttling? Cold Start?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda Concurrency and Throttling?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda allows you to call lambda processing for up to 1000 simultaneous executions.
 - Each lambda function can limit the maximum number of treatments (=limit)
@@ -378,11 +392,12 @@ All settings are done via **Application Auto Scaling**
 [//]: # (Lambda limits?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda limits?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Performance:
 - Memory distribution: 128 MB – 10 GB (in 1 MB increments)
@@ -403,11 +418,12 @@ Deployment:
 [//]:<>(What kinds of Lambda concurrency allocations are there?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What kinds of Lambda concurrency allocations are there?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Two types of concurrency control are available:
 
@@ -426,11 +442,12 @@ so that they are ready to immediately respond to calls to your function.
 [//]:<>(What resources trigger Lambda? How?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What resources trigger Lambda? How?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Lambda, Api Gateway, DynamoDB, S3, SNS, SQS
 
@@ -442,11 +459,12 @@ By event
 [//]:<>(What AWS resources can Lambda access? How?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What kinds of Lambda concurrency allocations are there?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Your Lambda functions can now access databases
 Amazon RDS, Amazon Redshift data warehouses,
@@ -463,11 +481,12 @@ to allow Lambda functions to access resources in your Amazon VPC.
 [//]:<>(What are the advantages of API Gateway endpoints over traditional web applications?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the advantages of API Gateway endpoints over traditional web applications?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Gateway API allows you to perform common API management tasks,
 such as security, caching, throttling and monitoring.
@@ -480,11 +499,12 @@ Gateway API provides endpoints to your AWS applications
 [//]:<>(What is API Gateway mock endpoints?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is API Gateway mock endpoints?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Creation of mock endpoints for mock not crated rests
 
@@ -494,11 +514,12 @@ Creation of mock endpoints for mock not crated rests
 [//]:<>(What is API Gateway Stage?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is API Gateway Stage?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 stage -> этап
 
@@ -513,11 +534,12 @@ This stage vars can be used to ref a specific backend endpoint
 [//]:<>(What is API Request Transformation?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is API Request Transformation?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 We can dynamically transform request and response params by adding new params
 
@@ -540,11 +562,12 @@ Example of response
 [//]: # (How you can transform API requests and responses)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How you can transform API requests and responses?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Using Request Transformation
 - Parameter mapping
@@ -556,11 +579,12 @@ Example of response
 [//]:<>(What is $Latest on lambda?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is $Latest on lambda?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is alias for latest version on lambda code.
 You also can use previous lambda version by using create alias function
@@ -571,11 +595,12 @@ You also can use previous lambda version by using create alias function
 [//]:<>(What is lambda alias? version? alias vs version)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is lambda alias? version? alias vs version
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A lambda version is a snapshot of your Lambda function.
 When you create a new lambda function, it is named as $LATEST.
@@ -592,11 +617,12 @@ Aliases will not be updated automatically**
 [//]:<>(Lambda alias vs env variables?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda alias vs env variables?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Lambda** allows you to create aliases that are associated 
 with a specific version of a function. 
@@ -611,11 +637,12 @@ function without requiring you to update code and re-deploy the function.
 [//]:<>(What is step functions in lambda?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is step functions in lambda? Pros?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is a chain of lambda functions that work in queue order.
 It can be chained. But each step can consists of parallel steps
@@ -633,11 +660,12 @@ Pluses
 [//]:<>(What is step functions workflows? what type do you know?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is step functions workflows? what type do you know?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Standard workflow
 - Long-Running (may run for up to a year)
@@ -665,11 +693,12 @@ Express can be
 [//]:<>(Lambda storages?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda storages? 
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 |                | Native within lambda              |                           | External Storage Options     |                                     |
 |----------------|-----------------------------------|---------------------------|------------------------------|-------------------------------------|
@@ -688,11 +717,12 @@ Express can be
 [//]:<>(Error handling in lambda?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Error handling in lambda?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Auto retried system (2 times)
 - Dead-letter queues (Lambda -> SQS or Lambda -> SNS)
@@ -707,11 +737,12 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 [//]:<>(How we can deploy Lambda code?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can deploy Lambda code?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - by console
 - .zip file achieve
@@ -733,11 +764,12 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 [//]:<>(Lambda performance best practices?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda performance best practices?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - See your memory and CPU
 - Dependencies
@@ -749,11 +781,12 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 [//]:<>(How we can improve Lambda performance?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Lambda performance best practices?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Increase the function memory allocation, 
   that will also increase the CPU allocation.
@@ -765,11 +798,12 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 [//]:<>(How we can transfer existing external RESTs into AWS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can transfer existing external RESTs into AWS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - create API Gateway (supports OpenAPI v2-v3)
 - create lambdas
@@ -781,11 +815,12 @@ can be found in json (param: responsePayload:/errorMessage: "test")
 [//]: # (What is EventBridge?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is EventBridge?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 EventBridge is a serverless service that uses events 
 to connect application components together, 
@@ -801,11 +836,12 @@ Part of Event-driven architecture
 [//]: # (What is Lambda event and context?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Lambda event and context?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Event is the data that's passed to the function upon execution.
 - path
@@ -829,11 +865,12 @@ Context's main role is to provide information about the current execution enviro
 [//]: # (How we can control featute A/B testing in case if we have 2 features, but whant use only one?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How we can control feature A/B testing in case if we have two features, but want to use only one?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 By adding an override to the feature and setting the identifier 
 of the override to the engineer’s user ID, 

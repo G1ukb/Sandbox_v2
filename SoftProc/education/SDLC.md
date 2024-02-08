@@ -8,11 +8,12 @@
 [//]: # (Что такое Software development process)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Что такое Software development process
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Процесс разработки программного обеспечения,
 или жизненный цикл разработки программного обеспечения (SDLC),
@@ -45,11 +46,12 @@
 [//]: # (Шаги SDLC)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Шаги SDLC
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **1. Анализ и планирование**
 
@@ -134,11 +136,12 @@
 [//]: # (Лучшие практики SDP)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Лучшие практики SDP
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Waterfall**
 
@@ -257,11 +260,12 @@
 [//]: # (Code review)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Code review
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Проверка кода - это деятельность по обеспечению качества кода,
 при которой один или несколько человек проверяют код путем
@@ -281,11 +285,12 @@
 [//]: # (Эстимации)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Эстимации
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Оценка определяет**, сколько денег, усилий, ресурсов и времени
 потребуется для создания/реализации конкретной задачи.
@@ -306,11 +311,12 @@
 [//]: # (Виды эстимации задач)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Виды эстимации задач
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **T-Shirt Sizes (Размеры футболки)**
 
@@ -410,11 +416,12 @@ Cамые мелкие задачи принимаются за XS .
 [//]: # (Стратегии ветвления)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Стратегии ветвления
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Branching strategy описывает общие сценарии создания новых веток и связанные с ними необходимые действия.
 

@@ -8,11 +8,12 @@
 [//]: # (What is CloudFront?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudFront?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon CloudFront is a web service that speeds up distribution 
 of your static and dynamic web content, 
@@ -28,11 +29,12 @@ network of data centers called edge locations.
 [//]: # (How you can ensure that all requests to CloudFront are encrypted using HTTPS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How you can ensure that all requests to CloudFront are encrypted using HTTPS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 
@@ -44,11 +46,12 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 [//]: # (CloudFront allowed HTTP methods?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             CloudFront allowed HTTP methods?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - CloudFront forwards only GET and HEAD requests.
 - CloudFront forwards only GET, HEAD, and OPTIONS requests.
@@ -60,11 +63,12 @@ Set the **viewer** protocol policy to redirect HTTP to HTTPS.
 [//]: # (What is AWS WAF?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is AWS WAF (Web Access Firewall)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS WAF helps protect against common network exploits and bots,
 that could affect the availability of products, lead to
@@ -76,11 +80,12 @@ breach of security or use excessive amounts of resources.
 [//]: # (AWS Elastic Beanstalk?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AWS Elastic Beanstalk?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 With Elastic Beanstalk, you can quickly deploy and **manage applications 
 in the AWS** Cloud without having to learn about the infrastructure 
@@ -106,11 +111,12 @@ And you shall have all control
 [//]: # (AWS Elastic Beanstalk Options for deployment?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AWS Elastic Beanstalk Options for deployment?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **All at once** (deploys all hosts concurrently)
 in case you have four ec2 batches with code v1
@@ -160,11 +166,12 @@ Minuses:
 [//]: # (What is traffic splitting "canary testing"?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is traffic splitting "canary testing"?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 in blue-green deployment we can split traffic to versions 
 and the choice healthiest version
@@ -179,11 +186,12 @@ and the choice healthiest version
 [//]: # (AWS Elastic Beanstalk configurations files? "for pre-amazon linux2")
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AWS Elastic Beanstalk configurations files for linux1? "for pre-amazon linux2"
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Configuration files can define packages to install, create linux users,
 groups, run shell commands, enable services
@@ -213,11 +221,12 @@ For linux2 users recommended to use
 [//]: # (What possible solutions do we have in case we want launch RDS with Elastic Beanstalk?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What possible solutions do we have in case we want launch RDS with Elastic Beanstalk?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 we can deploy RDS with Elastic beanstalk
   - but if the environment is terminated, RDS will also be terminated
@@ -235,11 +244,12 @@ we can launch RDS outside Elastic beanstalk
 [//]: # (What we will use in case if we want to migrate legacy app to Elastic Beanstalk?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What we will use in case if we want to migrate legacy app to Elastic Beanstalk?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Windows Web App Migration Assistant
   - .Net migration Assistant
@@ -251,11 +261,12 @@ Windows Web App Migration Assistant
 [//]: # (AWS Athena?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             AWS Athena?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon Athena is an interactive query service that 
 makes it simple to analyze data directly in Amazon S3 using standard SQL.
@@ -266,11 +277,12 @@ makes it simple to analyze data directly in Amazon S3 using standard SQL.
 [//]: # (What is Kinesis?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Kinesis?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Kinesis is a family of services that enables you to collect process and
 analyze streaming data in real time
@@ -283,11 +295,12 @@ Allows you to build custom apps for your own business needs
 [//]: # (Kinesis core services?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Kinesis core services
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Kinesis streams
 (consume data to the shards (коробка))
@@ -306,11 +319,12 @@ Kinesis Data Analytics
 [//]: # (Kinesis Consumers? and how thay work with Shards)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Kinesis Consumers? and how they work with Shards
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Kinesis Shards:
 - The Kinesis Client lib running on your consumers creates a record processor
@@ -329,11 +343,12 @@ on your consumers
 [//]: # (What is Amplify?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Amplify? Hosting vs Studio
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 This is a set of tools and services designed to male full-stack development
 easy. 
@@ -362,11 +377,12 @@ https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
 [//]: # (What is CloudWatch Evidently?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is CloudWatch Evidently?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon CloudWatch Evidently is a feature of Amazon CloudWatch 
 that allows developers to safely validate new features by serving 
@@ -385,11 +401,12 @@ CloudWatch Evidently can be used for two similar but distinct use-cases:
 [//]: # (What is Amazon Macie?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Amazon Macie?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Amazon Macie is a data security service provided by Amazon Web Services (AWS) 
 that uses machine learning and pattern matching to 
@@ -420,11 +437,12 @@ SensitiveData:S3Object/Personal - for personal data
 [//]: # (What is AWS Fargate?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is AWS Fargate?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS Fargate is a serverless compute engine offered by Amazon Web Services (AWS)
 for running containerized applications. 

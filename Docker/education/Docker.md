@@ -8,11 +8,12 @@
 [//]: # (What is Docker and what is it used for?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Docker and what is it used for?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The main idea behind Docker is to create
 independent and isolated lightweight and fast
@@ -43,11 +44,12 @@ in order to put it online1.
 [//]: # (What are some disadvantages of using Docker?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are some disadvantages of using Docker?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 While Docker has many advantages,
 it also has some limitations. Here are a few:
@@ -80,11 +82,12 @@ it also has some limitations. Here are a few:
 [//]: # (What docker alternatives you know?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What docker alternatives you know?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Podman // Containerd // Rancher
 
@@ -94,12 +97,13 @@ Podman // Containerd // Rancher
         and recover strategies?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Main docker container backup 
             and recover strategies?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Committing Containers to an Image:**
   // docker container commit // command
@@ -116,12 +120,13 @@ Podman // Containerd // Rancher
         or hosted envs or virtual envs?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Why docker is better then EC2 
             or hosted envs or virtual envs?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - Docker is a part of machine that uses reserved resources
   (in that concept on one ec2 can be stored lots of containers)
@@ -142,12 +147,13 @@ Podman // Containerd // Rancher
         how does it differ from a Docker container?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is a Docker image and 
             how does it differ from a Docker container?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Docker Image:**
 
@@ -171,11 +177,12 @@ Docker Container:
 [//]: # (What is Dockerfile?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Dockerfile?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Dockerfile is a text document that contains all
 the commands a user could call on the command
@@ -186,11 +193,12 @@ line to assemble an image
 [//]: # (What is Docker Layers?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Docker Layers?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Docker uses the concept of “layers” to build images.
 Each layer is a set of changes that have
@@ -209,11 +217,12 @@ and all layers after it. This is called layer caching.
 [//]: # (How docker reacts on changes in dockerfile / image / source code?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How docker reacts on changes in dockerfile / image / source code?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **Dockerfile:** When you make changes to a Dockerfile and then run docker build,
   Docker starts building a new Docker image according to the instructions
@@ -248,11 +257,12 @@ inside the container.
 [//]: # (Docker container's lifecycle?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Docker container's lifecycle?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The lifecycle of a Docker container consists of several stages:
 
@@ -275,11 +285,12 @@ The lifecycle of a Docker container consists of several stages:
 [//]: # (Docker volumes? Definition / Creation / Usage / Volume Drivers)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Docker volumes? Definition / Creation / Usage / Volume Drivers
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 The lifecycle of a Docker container consists of several stages:
 
@@ -304,12 +315,13 @@ which allow volumes to be hosted on remote hosts or cloud providers.
         And how do you use Docker Compose to manage multi-container applications?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Docker Compose? 
             And how do you use Docker Compose to manage multi-container applications?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Docker Compose is a tool for defining and running multi-container Docker applications.
 With Compose, you use a YAML file to configure your application’s services.
@@ -319,11 +331,12 @@ With Compose, you use a YAML file to configure your application’s services.
 [//]: # (What is the most popular commands in docker?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the most popular commands in docker?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 - **docker run:** create and start a container from an image.
 - **docker ps:** list the running containers.
@@ -342,11 +355,12 @@ With Compose, you use a YAML file to configure your application’s services.
 [//]: # (What is Docker registry?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Docker registry?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 A Docker registry is a storage and distribution system for named Docker images.
 It’s where you push images for storage and
@@ -359,11 +373,12 @@ Like git for code
 [//]: # (What is the purpose of Docker networking and how do you use it?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is the purpose of Docker networking and how do you use it?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Docker networking** enables containers to connect to each other
 and to non-Docker workloads.
@@ -376,11 +391,12 @@ and data sharing between multiple systems
 [//]: # (What are the steps to connect Docker container to network?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What are the steps to connect Docker container to network?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 1. **Create a Network:**
     -     docker network create
@@ -395,11 +411,12 @@ and data sharing between multiple systems
 [//]: # (Docker Swarm vs Kubernetes?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Docker Swarm vs Kubernetes?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Docker Swarm is a good choice for simpler applications 
 that are quick to deploy and easy to manage.
@@ -416,11 +433,12 @@ Kubernetes is better suited for complex, high-demand applications
 [//]: # (How do you debug a running Docker container?)
 <br>
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             How do you debug a running Docker container?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 * Docker Logs
 * Docker Exec to execute commands like "container /bin/bash"

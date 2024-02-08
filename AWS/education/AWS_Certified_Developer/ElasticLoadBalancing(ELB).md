@@ -8,11 +8,12 @@
 [//]: # (What is Elastic load balancing [ELB]?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Elastic load balancing [ELB]? Why use a load balancer?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Elastic Load Balancer is a managed load balancer.
 It helps balance traffic between several downstream instances (for example EC2)
@@ -32,11 +33,12 @@ It helps balance traffic between several downstream instances (for example EC2)
 [//]: # (What is Health Checks in ELB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Health Checks in ELB?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Health checks are critical for load balancers.
 They allow the load balancer to know which instances it is forwarding traffic to.
@@ -51,11 +53,12 @@ And the traffic stops for this instance and is distributed further
 [//]: # (Types of load balancer on AWS?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Types of load balancer on AWS?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **There are 4 types of load balancers**
 
@@ -77,11 +80,12 @@ And the traffic stops for this instance and is distributed further
 [//]: # (Explain work of the ALB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Explain work of the Application Load balancer (ALB)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Application Load Balancer (v2)
 
@@ -112,11 +116,12 @@ request
 [//]: # (Explain work of the NLB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Explain work of the Network Load Balancer (NLB)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Network load balancers (layer 4) allow you to:
 - Redirect TCP and UDP traffic to your instances.
@@ -141,11 +146,12 @@ NLB also connects to groups waiting for it, namely:
 [//]: # (Explain work of the GWLB?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             Explain work of the Gateway Load Balancer (GWLB)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 GWLB is useful to us if we need it before the end point (Ec2)
 will receive a request from the user, additionally pass it through third-party
@@ -159,11 +165,12 @@ proxy instances (ec2). This could be a security check, targetint, security, etc.
 [//]: # (What is Sticky Sessions [Session Affinity]?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Sticky Sessions (Session Affinity)?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 AWS ELB offers the ability to implement stickiness so that
 the same client is always redirected to the same
@@ -193,11 +200,12 @@ instance** behind load balancer
 [//]: # (What is Cross-Zone Load Balancing?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is Cross-Zone Load Balancing?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **With Cross-zone load balancing:**
 - each load balancer instance is distributed evenly
@@ -219,11 +227,12 @@ instance** behind load balancer
 [//]: # (What is ELB SSL Certificates?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is ELB SSL (TLS) Certificates?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **The SSL certificate allows traffic between your clients and the load balancer
 be encrypted during transmission (in-flight encryption)**
@@ -256,11 +265,12 @@ Therefore, if we need multi-certificates to access several resources
 [//]: # (What is ELB Connection Draining?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is ELB Connection Draining?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Titles:
 - Connection Draining - if it is a CLB
@@ -282,11 +292,12 @@ If the site requires a fast response, the threshold is set to a low value
 [//]: # (What is an ELB Auto Scaling Group?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is an ELB Auto Scaling Group?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 **Auto Scaling Group (ASG) Goal:**
 - Scaling up (adding EC2 instances) to accommodate increased workload.
@@ -309,11 +320,12 @@ If the site requires a fast response, the threshold is set to a low value
 [//]: # (What is an ELB Auto Scaling Group?)
 
 <details>
-    <summary>
-        <b><big><big><big>
+    <summary style="font-size: 25px;">
+        <b>
             What is an ELB ASG Dynamic Scaling Policies?
-        </big></big></big></b>
+        </b>
     </summary>
+<br>
 
 Auto Scaling Groups - **Dynamic Scaling Policies**
 - The simplest and easiest to configure instance expansion policies for ASG
