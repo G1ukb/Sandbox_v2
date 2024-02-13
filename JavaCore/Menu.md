@@ -13,9 +13,9 @@ Topic list:
 * [Generics](education%2FGenerics.md)
 * [Immutability](education%2FImmutability.md) (TBD)
 * [IO_NIO](education%2FIO_NIO.md) (TBD)
-* [Java String](education%2FJavaString.md) (TBD)
+* [Java String](education%2FJavaString.md)
 * [JavaFundamentals](education%2FJavaFundamentals.md) (TBD)
-* [Multithreading](education%2FMultithreading.md) (TBD)
+* [Multithreading](education%2FMultithreading.md)
 * [NestedClasses](education%2FNestedClasses.md) (TBD)
 * [Serialization](education%2FSerialization.md) (TBD)
 

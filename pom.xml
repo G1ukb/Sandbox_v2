@@ -26,6 +26,7 @@
         <module>Kubernetes</module>
         <module>Docker</module>
         <module>Kotlin</module>
+        <module>SoftSkills</module>
     </modules>
 
     <build>

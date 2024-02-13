@@ -1,11 +1,10 @@
 Java Core
-raise conditions 
 good hash map key
 hash code and equals dependency (set of fields)
-stream vs foreach
 JDK // SDK // JRE
 
 Java 8
+stream vs foreach
 Преимущество стрима
 
 Java 8> 
@@ -28,7 +27,6 @@ Event listeners for App ready event class
 Implement some pet projects with Spring Microservices
 
 DB
-Optimistic log
 план запроса
 индексацию таблиц (указатели) 
 
