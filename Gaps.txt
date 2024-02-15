@@ -1,19 +1,4 @@
-Java Core
-good hash map key
-hash code and equals dependency (set of fields)
-JDK // SDK // JRE
-
-Java 8
-stream vs foreach
-Преимущество стрима
-
-Java 8> 
-LTS versions
-Records
-Invoke-dynamic
-
-Testing
-mock vs stub vs spy
+Theory gaps:
 
 Spring:
 Spring jdbc
@@ -24,7 +9,6 @@ Event listeners for App ready event class
 @Autowired @Resources в каком порядке spring injects resource in @Autowired
 @primary annotation
 @DependOn @ConditionsOn
-Implement some pet projects with Spring Microservices
 
 DB
 план запроса
@@ -60,3 +44,7 @@ Hibernate benefits
 Other ORM alternatives
 ORM JPA vs Hibernate 
 
+Practice gaps:
+Multi-threading and parallel programming
+Custom Class Loader
+Implement some pet projects with Spring Microservices

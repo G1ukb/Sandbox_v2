@@ -7,8 +7,7 @@
 Topic list:
 * [CI/CD.md](education%2FCI_CD.md)
 * [General Architecture Concepts](education%2FGeneralArchitectureConcepts.md)
-* [Java Programming Architecture](education%2FJavaProgrammingArchitecture.md)
-* [Programming Paradigms](education%2FProgrammingParadigms.md)
-* [Software Architectural Styles](education%2FSoftwareArchitecturalStyles.md)
+* [Java Programming Architecture](education%2FJavaProgrammingArchitecture.md) (TBD)
+* [Programming Paradigms](education%2FProgrammingParadigms.md) (TBD)
 
 </h2>

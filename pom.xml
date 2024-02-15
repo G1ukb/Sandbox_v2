@@ -26,7 +26,8 @@
         <module>Kubernetes</module>
         <module>Docker</module>
         <module>Kotlin</module>
-        <module>SoftSkills</module>
+        <module>JavaVersions</module>
+        <module>Kafka</module>
     </modules>
 
     <build>

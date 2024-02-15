@@ -22,6 +22,8 @@ Topic list:
 * [Maven](Maven%2FMenu.md) (TBD)
 * [Leadership](Leadership%2FMenu.md) (TBD)
 * [Java Core](JavaCore%2FMenu.md) (TBD)
+* [Java Versions](JavaVersions%2FMenu.md) (TBD)
+* [Kafka](Kafka%2FMenu.md) (TBD)
 * [Git](GIT%2FMenu.md) (TBD)
 
 </h2>
