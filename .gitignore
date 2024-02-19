@@ -10,4 +10,4 @@
 # git update-index --assume-unchanged .idea/workspace.xml
 # git update-index --assume-unchanged .idea/encodings.xml
 # git update-index --assume-unchanged .idea/compiler.xml
-# git update-index --assume-unchanged .idea/encodings.xml
+# git update-index --assume-unchanged .idea/misc.xml

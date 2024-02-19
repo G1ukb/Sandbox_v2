@@ -42,9 +42,9 @@ public class DFS {
     private void dfsRecursiveForGraph(int current, boolean[] isVisited, Graph graph) {
         isVisited[current] = true;
         anyBusinessLogic(current);
-        for (int dest : graph.getNodeList().get(current)) {
-            if (!isVisited[dest])
-                dfsRecursiveForGraph(dest, isVisited, graph);
+        for (int nextValue : graph.getNodeList().get(current)) {
+            if (!isVisited[nextValue])
+                dfsRecursiveForGraph(nextValue, isVisited, graph);
         }
     }
 
