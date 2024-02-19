@@ -10,6 +10,7 @@ read  information for yourself
 
 Topic list:
 * [Architecture questions](Architecture%2FMenu.md) (TBD)
+* [Algorithms](Leetcode%2Feducation%2FAlgorithms.md) (TBD)
 * [AWS](AWS%2FMenu.md)
 * [Docker](Docker%2FMenu.md) (TBD)
 * [Kotlin](Kotlin%2FMenu.md) (TBD)
