@@ -20,34 +20,22 @@ flowchart TD
     isConnectivity -->|No| isBruteForce
     isBruteForce -->|No| BFS
     isBruteForce -->|Yes| DFS/Backtracking
-    IsTree[Is it a tree?
-Maximum Depth of Binary Tree
-Minimum Height Trees
-Subtree of Another Tree]
+    IsTree[Is it a tree?]
 
-isAcyclicGraphs[Is problem related to directed or acyclic graphs?
-Course Schedule
-Network Delay Time
-All Ancestors of a Node in a Directed Acyclic Graph
-Alien Dictionary]
+isAcyclicGraphs[Is problem related to 
+directed or acyclic graphs?]
 
-isShortestPathProblem[Is the problem related to shortest path?
-Shortest Path in Binary Matrix
-Cheapest Flight Within K Stops]
+isShortestPathProblem[Is the problem related 
+to shortest path?]
 
-isWeighed[Is the graph Weighted? Cost between nodes
-Minimum Cost to Reach Destination in Time
-Path with Maximum Probability]
+isWeighed[Is the graph Weighted? 
+Cost between nodes]
 
-isConnectivity[Does the problem involve connectivity
-Accounts Merge
-Redundant Connection
-Number of Operations to Make Network Connected]
+isConnectivity[Does the problem 
+involve connectivity?]
 
-isBruteForce[Does the problem have small constraints?
-Word Search
-All Paths From Source to target
-Couple Holding Hands]
+isBruteForce[Does the problem have 
+small constraints?]
 ```
 
 ```mermaid
@@ -84,40 +72,21 @@ flowchart TD
     indices -->|No| O1[O1 memory required?]
     O1 -->|Yes| isMonotonicCondition
 
-isSmallest[Need to solve for kth smallest/largest?
-Top K Frequent Elements
-Kth Smallest Element in a Sorted Matrix
-Top K Frequent Words
-Find K Closest Elements]
+isSmallest[Need to solve for 
+kth smallest/largest?]
 
-isLinkedList[Involves Linked Lists?
-Merge Two Sorted Lists
-Odd Even Linked List
-Partition List
-Remove Duplicates from Sorted List]
+isLinkedList[Involves Linked Lists?]
 
-isSmallConstraints[Small constraints bounds?
-Minimum Falling Path Sum
-Unique Paths 1 <= m n <= 100
-N-Queens 1 <= n <= 9
-Count Square 1 <= arr.length <= 300]
+isSmallConstraints[Small constraints bounds?]
 
 isBruteForceEnough[Is brute force fast enough?
 On! N<=20 On^2]
 
-dealsWithSumsOrAdditive[Deals with sums or additive
-Max Sum of Rectangle No Larger Than K
-Continuous Sub-array Sum
-Sub-array Sum Equals K]
+dealsWithSumsOrAdditive[Deals with sums or additive?]
 
-calculating[Calculating max/min of something?
-Minimum Path Sum
-Maximize Sum Of Array
-Maximum Length of Repeated Sub-array]
+calculating[Calculating max/min of something?]
 
-isMonotonic[Monotonic condition?
-non-increasing or entirely non-decreasing
-Find Minimum in Rotated Sorted Array]
+isMonotonic[Monotonic condition?]
 
 numberOfWays[Asking for number of ways?
 Combinations]
