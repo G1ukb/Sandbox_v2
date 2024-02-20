@@ -20,7 +20,38 @@ flowchart TD
     isConnectivity -->|No| isBruteForce
     isBruteForce -->|No| BFS
     isBruteForce -->|Yes| DFS/Backtracking
-    isGraph[Is it a graph?] -->|No| isSmallest
+    IsTree[Is it a tree?
+Maximum Depth of Binary Tree
+Minimum Height Trees
+Subtree of Another Tree]
+
+isAcyclicGraphs[Is problem related to directed or acyclic graphs?
+Course Schedule
+Network Delay Time
+All Ancestors of a Node in a Directed Acyclic Graph
+Alien Dictionary]
+
+isShortestPathProblem[Is the problem related to shortest path?
+Shortest Path in Binary Matrix
+Cheapest Flight Within K Stops]
+
+isWeighed[Is the graph Weighted? Cost between nodes
+Minimum Cost to Reach Destination in Time
+Path with Maximum Probability]
+
+isConnectivity[Does the problem involve connectivity
+Accounts Merge
+Redundant Connection
+Number of Operations to Make Network Connected]
+
+isBruteForce[Does the problem have small constraints?
+Word Search
+All Paths From Source to target
+Couple Holding Hands]
+```
+
+```mermaid
+flowchart TD
     isSmallest -->|Yes| Heap/Sorting
     isSmallest -->|No| isLinkedList
     isLinkedList -->|Yes| TwoPointers
@@ -52,34 +83,6 @@ flowchart TD
     isMonotonicCondition -->|Yes| TwoPointers
     indices -->|No| O1[O1 memory required?]
     O1 -->|Yes| isMonotonicCondition
-    IsTree[Is it a tree?
-Maximum Depth of Binary Tree
-Minimum Height Trees
-Subtree of Another Tree]
-
-isAcyclicGraphs[Is problem related to directed or acyclic graphs?
-Course Schedule
-Network Delay Time
-All Ancestors of a Node in a Directed Acyclic Graph
-Alien Dictionary]
-
-isShortestPathProblem[Is the problem related to shortest path?
-Shortest Path in Binary Matrix
-Cheapest Flight Within K Stops]
-
-isWeighed[Is the graph Weighted? Cost between nodes
-Minimum Cost to Reach Destination in Time
-Path with Maximum Probability]
-
-isConnectivity[Does the problem involve connectivity
-Accounts Merge
-Redundant Connection
-Number of Operations to Make Network Connected]
-
-isBruteForce[Does the problem have small constraints?
-Word Search
-All Paths From Source to target
-Couple Holding Hands]
 
 isSmallest[Need to solve for kth smallest/largest?
 Top K Frequent Elements
@@ -119,6 +122,7 @@ Find Minimum in Rotated Sorted Array]
 numberOfWays[Asking for number of ways?
 Combinations]
 ```
+
 <h2>
 
 [Link to original chart](https://algo.monster/flowchart)
