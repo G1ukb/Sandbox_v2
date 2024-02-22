@@ -15,7 +15,7 @@
                     - |Yes| [Dijkstra](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDijkstra.java)
                     - |No| [BFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FBFS.java)
                 - |No| Does the problem involve connectivity?
-                    - |Yes| Disjoint Set Union
+                    - |Yes| [Disjoint](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDisjoint.java)
                     - |No| Does the problem have small constraints?
                         - |No| [BFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FBFS.java)
                         - |Yes| [DFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDFS.java)/Backtracking
