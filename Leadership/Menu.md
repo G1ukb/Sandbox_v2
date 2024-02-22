@@ -5,8 +5,8 @@
 <h2>
 
 Topic list:
-* [ConflictManagement](education%2FConflictManagement.md)
-* [ConstructiveFeedback](education%2FConstructiveFeedback.md)
-* [HowToMotivatePeople](education%2FHowToMotivatePeople.md)
+* [ConflictManagement](education%2FConflictManagement.md) (TBD)
+* [ConstructiveFeedback](education%2FConstructiveFeedback.md) (TBD)
+* [HowToMotivatePeople](education%2FHowToMotivatePeople.md) (TBD)
 
 </h2>

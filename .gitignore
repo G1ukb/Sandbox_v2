@@ -6,6 +6,7 @@
 */.idea/compiler.xml
 */.idea/misc.xml
 *.iws
+*.class
 
 # git update-index --assume-unchanged .idea/workspace.xml
 # git update-index --assume-unchanged .idea/encodings.xml

@@ -10,14 +10,19 @@
 <details>
     <summary style="font-size: 25px;">
         <b>
-              What is SQL
+              What is SQL?
         </b>
     </summary>
 <br>
 
-SQL (Structured Query Language) is a special language designed to work with databases.
-Using the SQL database, you can set the structure, organize data sampling.
-according to some specific criteria, deleting and changing data.
+Structured Query Language is a programming language used to
+communicate with and manipulate databases.
+It is particularly useful in handling structured data, i.e.,
+data incorporating relations among entities and variables.
+
+SQL provides commands for a variety of tasks,
+including querying data, creating tables, defining relationships,
+and ensuring data integrity.
 
 </details>
 
@@ -26,22 +31,24 @@ according to some specific criteria, deleting and changing data.
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is a DBMS + main functions
+            What is a DBMS? Can you add main functions of DBMS?
         </b>
     </summary>
 <br>
 
-DBMS (Database Management System) - software that communicates
-with the user, applications and the database itself for data collection and analysis.
-The DBMS allows the user to interact with the database.
-The data stored in the database can be changed, retrieved and deleted.
+A Database Management System (DBMS) is software that interacts with end users,
+applications, and the database itself to capture and analyze data.
+A DBMS allows a user to interact with the database.
 
-DBMS == SQL Server
+MsSQL Server is DBMS
 
-- database data management;
-- logging of changes;
-- backup and recovery of the database after failures;
-- support for database languages.
+There are several main functions of a DBMS:
+
+- Data Storage and Independence
+- Efficient Data Access
+- Data Integrity and Security
+- Data Administration
+- Concurrent Access and Crash Recovery
 
 </details>
 
@@ -50,18 +57,18 @@ DBMS == SQL Server
 <details>
     <summary style="font-size: 25px;">
         <b>
-              Types of DBMS
+            What are the different types of Database Management Systems (DBMS)?
         </b>
     </summary>
 <br>
 
-**Relational (RSQL)** - supports SQL.
-Relationships between objects look like tables that
-are related to each other by PK and FK relations
+**Relational (RDBSQL)** - supports SQL.
+RDBMS does not support many-to-many relationships.
+Defines database relationships as relations
 
 **Non-relational (NoSQL)** - partially supports SQL (not all types)
-Relations between objects are represented as non-relational, it can be
-tables, a single document (json) or described by xml and so on
+Relations between objects are represented as non-relational,
+it can be tables, a single document (json) or described by xml and so on
 
 </details>
 
@@ -70,71 +77,56 @@ tables, a single document (json) or described by xml and so on
 <details>
     <summary style="font-size: 25px;">
         <b>
-             SQL vs NoSQL
+            What are the differences between SQL and NoSQL databases?
         </b>
     </summary>
 <br>
 
-- **Вертикальное масштабирование** — заменять в существующей вычислительной
-  системе компоненты более мощными и быстрыми
-- **Горизонтальное масштабирование** - разбиение системы на более мелкие структурные компоненты и
-  разнесение их по отдельным физическим машинам (увеличение количества серверов)
+According to the CAP theorem, SQL is CA type,
+so SQL is consistent (all clients have the same view of data)
+and available (All clients can read and write) databases
 
-SQL:
+noSQl is CP type, they are
+consistent (all clients have the same view of data)
+and Partition tolerant (Fail tolerant)
 
-Плюсы:
-+ Структурированность хранения данных
-+ SQL стандартный язык запросов (при переходе от одной SQL БД к другой, изменения будут минимальны)
-+ Хорошая вертикальная масштабируемость
-+ Они надежны
-+ Имеют хорошую поддержку из-за того что существуют достаточно давно
-+ Позволяют решать достаточно сложные задачи
-
-Минусы:
-- Плохая горизонтальная масштабируемость
-- Из-за того что данные распределены по таблицам, может проседать скорость работы
-- Достаточно сложная работа с большой базой
-
-NoSQL: подходят для многих мобильных, игровых, интернет‑приложений,
-когда **требуются гибкие масштабируемые** базы данных **с высокой производительностью**
-и широкими функциональными возможностями, способные обеспечивать **максимальное удобство использования.**
-
-Плюсы:
-+ Отличная масштабируемость как вертикально так и горизонтально
-+ Гибкая разработка (проходит быстрее)
-+ Высокая производительность
-+ Широкие функциональные возможности
-
-Минусы:
-- Неструктурное хранение данных
-- Каждая NoSQL база имеет свой способ работы с данными
-- Плохая надежность
-- Не очень хорошая поддержка из-за того что некоторые NoSQL еще молодые
-- Сложно решать сложные задачи
+Main differences:
+Data Structure: SQL table-based, NoSQL various of data structures
+Scalability: SQL hard to scale horizontally, NoSQL designed for horizontal scaling
+ACID Properties: SQL Full ACID, NoSQL non-full support
 
 </details>
 
-[//]: # (Из каких подмножеств состоит SQL DDL/DML/DCL/TCL)
+[//]: # (What are the subsets of SQL: DDL/DML/DCL/TCL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-             Из каких подмножеств состоит SQL (DDL/DML/DCL/TCL)
+            What are the subsets of SQL (DDL/DML/DCL/TCL)?
         </b>
     </summary>
 <br>
 
-- DDL (Data Definition Language, язык описания данных)
-  позволяет выполнять различные операции с базой данных,
-  такие как CREATE (создание), ALTER (изменение) и DROP (удаление объектов).
-- DML (Data Manipulation Language, язык управления данными)
-  позволяет получать доступ к данным и манипулировать ими,
-  например, вставлять, обновлять, удалять и извлекать данные из базы данных.
-- DCL (Data Control Language, язык контролирования данных)
-  позволяет контролировать доступ к базе данных.
-  Пример — GRANT (предоставить права), REVOKE (отозвать права).
-- TCL (Transaction Control Language) - контроль над DML командами
-  Пример - СOMMIT/ROLLBACK
+SQL (Structured Query Language) is divided into several subsets, 
+each is serving a different purpose:
+
+1. DDL (Data Definition Language): This subset of SQL is used for 
+defining and managing all the objects in an SQL database. 
+It includes commands like CREATE, ALTER, DROP, TRUNCATE, COMMENT, and RENAME.
+
+2. DML (Data Manipulation Language): This subset is used for 
+managing data within schema objects. 
+It includes commands like SELECT, INSERT, UPDATE, DELETE, and MERGE.
+
+3. DCL (Data Control Language): 
+This subset is used for controlling the permissions and access 
+to the database. 
+It includes commands like GRANT and REVOKE.
+
+4. TCL (Transaction Control Language): 
+This subset is used for managing different 
+transactions occurring within a database. 
+It includes commands like COMMIT, ROLLBACK, and SAVEPOINT.
 
 </details>
 
@@ -143,256 +135,275 @@ NoSQL: подходят для многих мобильных, игровых, 
 <details>
     <summary style="font-size: 25px;">
         <b>
-             Materialized View vs View
+             What is the difference between a Materialized View and a View in SQL?
         </b>
     </summary>
 <br>
 
-View:
-- View таблицы никогда не сохраняются, только отображается.
-- Представление - это виртуальная таблица,
-  сформированная из одной или нескольких базовых таблиц или представлений
+**View** is a virtual table based on the result-set of an SQL statement.
+Every time a view is queried, the database must run 
+the underlying query to produce the result set.
 
-+ Представление обновляется каждый раз, когда используется виртуальная таблица
-+ Не требует дискового пространства для хранения
-- (Главное) Медленная обработка
+**if you need real-time data and are working with simple queries 
+or small datasets, a view can be a good choice.**
 
-Materialized View:
-- Материализованное представление хранится на диске.
-- Материализованное представление является физической копией базовой таблицы (На момент создания)
-- Материализованное представление должно обновляться вручную или с использованием триггеров.
+**Materialized View** is a physical copy, 
+snapshot or a representation of the base table.
+Not need to run the underlying query every time the view is accessed.
+You need to refresh the materialized view periodically to ensure 
+that the data is up-to-date.
+Also, materialized views take up storage space.
 
-+ Быстрая обработка
-+ Материализованный вид использует пространство памяти.
+**If you have complex queries or large datasets and need 
+to improve query performance, and can tolerate some data latency, 
+a materialized view can be a better choice.**
 
 </details>
 
-[//]: # (Понятие целостности данных)
+[//]: # (What is column indexing in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-             Понятие целостности данных
+            What is column indexing in SQL?
         </b>
     </summary>
 <br>
 
-Целостность данных – это полнота, точность и единообразие данных.
-Для поддержания целостности данных в реляционных БД используется ряд инструментов.
-Целостность данных обеспечивается при помощи constraint.
-Эти ограничения целостности позволяют применять практические правила к данным в таблицах
-и гарантировать точность и надежность данных.
+An index is a data structure 
+that improves the speed of data retrieval operations on a database table.
+
+When you create an index on a column or set of columns, 
+the database creates a data structure that allows it to 
+find the data associated with a specific column value 
+(or set of values for multiple columns) more quickly. 
+
+This can significantly speed up queries that search or sort on these columns.
 
 </details>
 
-[//]: # (Ограничения constraints)
+[//]: # (What are the different types of indexes in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Ограничения (constraints)
+            What are the different types of indexes in SQL?
         </b>
     </summary>
 <br>
 
-Ограничения (constraints) используются для указания ограничения на тип данных таблицы. 
-Они могут быть указаны при создании или изменении таблицы. Пример ограничений:
+**Clustered Index:** This type of index determines the physical order 
+data in a table. 
+Because of this, a table can have only one clustered index. 
+It is automatically created when a primary key is defined.
 
-- NOT NULL      - гарантирует, что столбец не может иметь значение NULL
-- UNIQUE        - гарантирует, что все значения в столбце разные
-- PRIMARY KEY   - комбинация NOT NULL и UNIQUE. Уникально идентифицирует каждую строку в таблице
-- FOREIGN KEY   - уникально идентифицирует строку / запись в другой таблице
-- CHECK         - Гарантирует, что все значения в столбце удовлетворяют определенному условию
-- DEFAULT       - устанавливает значение по умолчанию для столбца, если значение не указано
-- INDEX         - используется для очень быстрого создания и извлечения данных из базы данных
-- AUTO_INCREMENT- позволяет автоматически генерировать уникальный номер
-  при добавлении новой записи в таблицу.
+**Non-Clustered Index:** This type of index doesn't determine 
+the physical order of data, but it creates a logical order 
+that is stored separately from the table. 
+A table can have multiple non-clustered indexes.
+
+**Composite Index:** This type of index includes 
+more than one column in the index key. 
+It can be useful when you frequently run queries 
+that involve multiple columns in the WHERE clause.
+
+**Bitmap Index:** for each record in a table, 
+a Bitmap Index uses a bit (0 or 1) 
+to represent whether a condition is true or false.
+This makes it rapid and efficient to find records 
+that meet certain conditions, especially in large databases.
+
+**Full-Text Index:** This type of index is used for full-text searches. 
+It can be used to search words, phrases, 
+or multiple forms of a word or phrase.
+
+**Spatial Index:** This type of index is used for spatial data types, i.e., 
+data that represents geometric shapes and structures.
 
 </details>
 
-[//]: # (Индексирование колонок)
+[//]: # (What does ACID stand for in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Индексирование колонок
+            What does ACID stand for in SQL?
         </b>
     </summary>
 <br>
 
-Индексы являются методами повышения производительности, позволяя извлекать
-информацию из базы данных с более высокой скоростью и производительностью.
+ACID is an acronym in computer science that stands for Atomicity, 
+Consistency, Isolation, and Durability. 
+These are a set of properties that guarantee 
+that database transactions are processed reliably.
 
-Индекс базы данных во многом сходен с индексом (алфавитным указателем) книги.
-Когда нам нужно быстро найти какую-либо тему в книге, мы сначала смотрим в индексе,
-на каких страницах книги эта тема рассматривается, а потом сразу же открываем нужную страницу.
-Подобным образом, при поиске определенной строки таблицы компонент
-Database Engine обращается к индексу, чтобы узнать ее физическое местонахождение.
+1. Atomicity: This property ensures that 
+a transaction is treated as a single, indivisible unit, 
+which either succeeds completely, or fails completely. 
+If any part of the transaction fails, 
+the entire transaction fails, and the database state is left unchanged.
 
-Индексы имеют две особенности
-- Пользователь БД не имеет возможности выбирать поиск по индексу или нет
-  Для него система индексирования скрыта, а ей занимается система оптимизирования щапросов
+2. Consistency: This property ensures that a transaction 
+brings the database from one valid state to another.
+The database should satisfy a certain set of constraints, 
+and any transaction carried out on the 
+database should maintain these constraints.
 
-- Индекс базы данных могут меняться при каждом изменении соответствующих данных.
+3. Isolation: This property ensures that concurrent 
+execution of transactions leaves the database in the same state 
+that would have been obtained if the transactions were executed sequentially.
 
-Индекс помогает ускорить запросы на получение данных (SELECT [WHERE]),
-но замедляет процесс добавления и изменения записей (INSERT, UPDATE) поскольку таблица при добавлении
-так же обновляет индексы.
+4. Durability: This property ensures that once 
+a transaction has been committed,
+it will remain committed even in the case of a system failure.
+This is usually achieved by storing the transaction into 
+a transaction log that can be reprocessed to recreate 
+the system state right before any later failure.
 
 </details>
 
-[//]: # (Полное сканирование vs Индексирование)
+[//]: # (What are the isolation levels in SQL and what problems can occur?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Полное сканирование vs Индексирование
+            What are the isolation levels in SQL and what problems can occur?
         </b>
     </summary>
 <br>
 
-Если для таблицы отсутствует подходящий индекс, для выборки строк система использует
-метод полного сканирования таблицы.
-Система последовательно извлекает и исследует каждую строку таблицы
-(от первой до последней), и помещает строку в результирующий набор,
-если для нее удовлетворяется условие поиска в предложении WHERE.
-Таким образом, все строки извлекаются в соответствии с их физическим расположением в памяти.
-Этот метод менее эффективен, чем доступ с использованием индексов
+**Read Uncommitted:** This is the lowest level of isolation. 
+In this level, one transaction may read not yet 
+committed changes made by another transaction, 
+leading to `dirty reads`. 
+This can lead to inconsistencies in the database.
 
-Индексы сохраняются в дополнительных структурах базы данных, называющихся страницами индексов.
-Для каждой индексируемой строки имеется элемент индекса (index entry),
-который сохраняется на странице индексов.
-Каждый элемент индекса состоит из ключа индекса и указателя.
+**Read Committed:** One transaction may not read changes 
+made by another transaction until the other transaction is committed. 
+However, it can lead to "non-repeatable reads", 
+where a single transaction reads the same row twice
+but gets different data each time.
 
-Поиск же записей по индексированной таблице осуществляется по сбалансированному АВЛ дереву.
+**Repeatable Read:** 
+Once a transaction reads a row, no other transactions can modify 
+it until the first transaction is finished. 
+However, it can lead to "phantom reads", 
+where a transaction re-executes a query and gets a different set of rows.
 
-(У каждого узла такого дерева не больше двух узлов, максимум левый и правый
-правила которого звучак как Не меньше и Не больше а каждая ветвь дерева
-ниже составляет собственное дерево)
-
-Главное отличие полного сканирования от индексирования в том
-Что поиск полного сканирования составляет N
-Сложность сканирования по дерева стремиться к LogN и зависит от высоты дерева
+Serializable: This is the highest level of isolation. 
+It prevents dirty reads, non-repeatable reads, and phantom reads. 
+It achieves this by performing a full transaction lock, 
+so no other transactions can read, insert, update, or delete.
 
 </details>
 
-[//]: # (Типы индексов)
+[//]: # (What is database normalization and what are its advantages?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Типы индексов
+            What is database normalization and what are its advantages?
         </b>
     </summary>
 <br>
 
-Всего существует два типа индексов – кластеризованные, некластеризованные.
+1. First Normal Form (1NF): Each table cell should contain a single value, 
+and each record needs to be unique.
 
-- **Кластеризованный** индекс говорит нам о том, что записи физическии
-  (на диске) будут храниться рядом друг с другом.
-  Кластеризованный индекс может быть только один
-  и создается по умолчанию для каждой таблицы, которая имеет первичный ключ.
+2. Second Normal Form (2NF): 
+all non-key attributes should be fully functionally dependent 
+on the primary key.
 
-Кластеризованный индекс хранит реальные строки данных в листьях индекса.
+3. Third Normal Form (3NF): all non-key attributes should not depend 
+on other non-key attributes. 
 
-- **Некластеризованного** индекс содержит только те столбцы,
-  по которым определен данный индекс,
-  а также содержит указатель на кластерный индекс если он есть или на номер строки.
+4. Boyce-Codd Normal Form (BCNF): It is a stronger version of 3NF. 
+for any dependency A → B, A should be a super key. 
+It means that dependency should uniquely identify each record in the table.
 
-- **Составной индекс** Такой индекс может содержать более одного столбца.
-  Вы можете включить до 16 столбцов в индекс, но их общая длина ограничена 900 байтами.
-  Как кластеризованный, так и некластеризованный индексы могут быть составными.
+5. Fourth Normal Form (4NF): it mandates that a table 
+should not have multivalued dependencies.
+A multivalued dependency occurs in a database when the value of a column 
+(or set of columns) depends on another column (or set of columns), 
+but not on the whole key.
 
-- **Уникальный индекс** Уникальный индекс автоматически создается когда вы
-  определяете ограничения столбца: первичный ключ или ограничение на уникальность значений
+```
+If we have tables: 
+ID COURCE TEXTBOOK
+1  MATH   Algebra
+2  MATH   Geometria
 
+It need to be separeted to:
+ID COURCE - COURCE TEXTBOOK tables
+1  MATH     MATH   ALGEBRA
+            MATH   GEOMETRIA
+```
+
+6. Fifth Normal Form (5NF): the candidate keys should imply every join dependency
+that if a table can be decomposed 
+into multiple smaller tables and then joined back together 
+without loss of data, then the columns used for the join 
+should be a candidate key of the original table.
+
+**Eliminates Redundant Data:** In normalization, data is stored only once, 
+reducing the duplication of data. 
+This not only saves storage space but also makes the database more efficient.
+
+**Data Consistency:** Because data is not duplicated, 
+anomalies are avoided. Any additions, deletions, 
+or modifications to the data are carried out in one place only, 
+ensuring consistency.
+
+**Database Structure Flexibility:** Normalized databases can easily be changed,
+and they are more flexible for querying and reporting.
+
+**Improved Database Performance:** Normalization simplifies indexes 
+and constraints, which leads to more efficient database performance.
+
+**Easier to Maintain:** Normalized databases are generally 
+easier to maintain due to their simplified 
+structure and reduced data redundancy.
 
 </details>
 
-[//]: # (Свойство ACID)
+[//]: # (What is a SQL execution plan? )
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Свойство ACID
+            What is a SQL execution plan? 
         </b>
     </summary>
 <br>
 
-Для целостности данных все транзакции в БД должны соответствовать требованиям ACID, т.е.:
-- Atomicity (Атомарность)
-- Consistency (Консистентность)
-- Isolation (Изоляция)
-- Durability (Надежность)
+It is a kind of map that outlines how the
+SQL query will be executed by the database system.
 
-Подробнее:
+Database's query optimizer examines different ways to execute the query
+and chooses the most efficient one based on factors
+like the structure of the tables, the available indexes,
+the data distribution statistics, and the database's performance
+tuning parameters.
 
-- Атомарность   – Либо транзакция проходит целиком, либо отменяется целиком
-  в случае ошибки в цепи операций
-  (перфоманс: )
-- Consistency   - Все данные, записываемые в БД в рамках транзакции, должны соответствовать
-  всем правилам и ограничениям, включая ограничения целостности, каскады и триггеры.
-  (перфоманс: валидации)
-- Isolation     - Во время выполнения транзакции параллельные транзакции не должны оказывать
-  влияние на её результат.
-  (перфоманс: сложно реализации изоляции сами по себе бьют по перфомансу)
-- Durability    - Если транзакция отработала полностью и завершилась, то все ее изменения
-  должны быть сохранены и считаются постоянными
-  (перфоманс: проблема оптимизации запросов)
+The query plan includes operations like table scans,
+index scans, sorts, joins, and other database operations.
+It provides detailed information about
+how the database will execute the SQL query,
+including the order of the operations,
+the tables involved in each operation,
+the type of each operation, and the estimated cost of each operation.
 
-</details>я
+In case we will have this operation
+```
+SELECT * FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders WHERE OrderAmount > 100);
+```
 
-[//]: # (Уровни изолированности добавить проблемы)
-<br>
-<details>
-    <summary style="font-size: 25px;">
-        <b>
-            Уровни изолированности (добавить проблемы)
-        </b>
-    </summary>
-<br>
+It will be divided into
+1. SELECT WHERE > 100
+2. Get WHERE attribute (CustomerID) from first select
+3. Perform scan operation
+4. Return all values
 
-- Read uncommitted
-  Самая плохая согласованность данных (самая высокая скорость)
-  каждая транзакция видит незафиксированные изменения другой транзакции (феномен грязного чтения)
-
-- Read committed
-  Для этого уровня параллельно исполняющиеся транзакции видят только
-  зафиксированные изменения из других транзакций
-  (работа с разными данными)
-
-- Repeatable read
-  мы не видим в исполняющейся транзакции измененные и удаленные записи другой транзакцией.
-  Но все еще видим вставленные записи из другой транзакции
-  (фантомные строки)
-
-- Serializable
-  Уровень, при котором транзакции ведут себя как будто ничего более не существует,
-  никакого влияния друг на друга нет.
-
-</details>
-
-[//]: # (Что такое нормализация БД и каковы ее приемущества)
-<br>
-<details>
-    <summary style="font-size: 25px;">
-        <b>
-            Что такое нормализация БД и каковы ее приемущества
-        </b>
-    </summary>
-<br>
-
-Плюсы:
-+ Нормализация нужна для борьбы с избыточностью
-+ Как следствие, повышается читаемость самой базы и интуитивность
-+ Упрощение расширения и маштабирования
-+ Упрощение применения процедур целостности (constraint)
-+ Проецирование на языки программирования
-
-Минусы:
-
-- Множество таблиц влияют на производительность всей системы
-- Возростает сложность запросов, поскольку надо объединять таблицы
 </details>
 
 [//]: # (HAVING vs WHERE)
@@ -400,93 +411,93 @@ Database Engine обращается к индексу, чтобы узнать 
 <details>
     <summary style="font-size: 25px;">
         <b>
-            HAVING vs WHERE
+            What is the difference between HAVING and WHERE in SQL?
         </b>
     </summary>
 <br>
 
-Having и Where по сути выполняют одно и тоже действие - поиск
+The WHERE clause in SQL is used to filter records before grouping, 
+while the HAVING clause is used to filter records after grouping.
 
-Having:
-- Having может использоваться на первом месте запроса вместо where
-  даже в группе запросов (having A > 0 and B < 0)
-- Having может использовать агрегатные функции having max(A) > 1;
+```
+SELECT * FROM Students WHERE Age > 20;
 
-Но есть очень важный момент использования Having.
-При запросе с группировкой, мы можем использовать дополнительное условие выборки
-после группировки только при помощи having
+SELECT COUNT(StudentID), Country FROM Students 
+GROUP BY Country HAVING COUNT(StudentID) > 5
+```
+
 </details>
 
-[//]: # (GROUP BY vs DISTINCT vs ORDER BY)
+[//]: # (What is the difference between GROUP BY, DISTINCT, and ORDER BY in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            GROUP BY vs DISTINCT vs ORDER BY
+            What is the difference between GROUP BY, DISTINCT, and ORDER BY in SQL?
         </b>
     </summary>
 <br>
 
-GROUP BY -> группирует значения
-DISTINCT -> выводит уникальные неповторяющиеся значения
-ORDER BY -> выводит в порядке (деф возрастания) значения в таблице
+**GROUP BY** statement is used with aggregate functions
+(COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
 
-Главное различие GROUP BY и DISTINCT, в синтаксисе описания
+```
+SELECT ItemID, SUM(Quantity) FROM Sales GROUP BY ItemID;
+```
 
-Пример для DISTINCT:
+**DISTINCT:** The DISTINCT keyword is used to return only distinct (unique) values.
 
-    SELECT DISTINCT A, B
-    FROM Table
-    ORDER BY A;
+```
+SELECT DISTINCT ItemID FROM Sales;
+```
 
-Пример для GROUP BY:
+**The ORDER BY** keyword is used to sort the result-set 
+in ascending or descending order.
 
-    SELECT *
-    FROM Table
-    GROUP BY A, B;
-
-(+ GROUP BY может работать с атомарными операторами из-за
-того что находится в последней части запроса)
-
-Когда нужен вывод чего-то одного без каких-то дополнительных полей - юзай DISTINCT
-Нужна группировка значений воедино, но при этом оставить все левые - юзай GROUP BY
+```
+SELECT * FROM Sales ORDER BY ItemID;
+SELECT * FROM Sales ORDER BY ItemID DESC;
+```
 
 </details>
 
-[//]: # (PRIMARY vs UNIQUE)
+////////////////////////////////////////////////////
+
+[//]: # (Функции ранжирования/Выбор четных нечетных записей)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            PRIMARY vs UNIQUE
+            Функции ранжирования/Выбор четных нечетных записей
         </b>
     </summary>
 <br>
 
-PRIMARY:
-- В таблице может быть только одно поле с первичным ключом
-- В некоторых СУБД оно не может быть NULL - например, MySQL добавляет NOT NULL
-- Первичный ключ - это уникальный идентификатор ключа записи
+**Ранжирующие функции** — это функции, которые возвращают значение для каждой строки группы в
+результирующем наборе данных.
+На практике они могут быть использованы, например, для простой нумерации списка,
+составления рейтинга или постраничной выборки.
 
-UNIQUE:
-- Может быть более одного уникального ключа в одной таблице
-- Уникальный ключ может иметь значения NULL
-- Нулл значения между собой не равны, потому UNIQUE может иметь много NULL полей
-</details>
+Результирующие функции:
 
-[//]: # (DELETE vs TRUNCATE vs DROP)
-<br>
-<details>
-    <summary style="font-size: 25px;">
-        <b>
-            DELETE vs TRUNCATE vs DROP
-        </b>
-    </summary>
-<br>
+- **ROW_NUMBER**() OVER ([ORDER BY столбы группировки]) as [Имя полученной колонки]
+  Выводит номер получившейся стоки
+- **RANK**() OVER (order by column) [RANK]
+  возвращает ранг каждой строки. В отличие от row_number(),
+  идет уже анализ значений и в случае нахождения одинаковых, функция возвращает одинаковый ранг
+  с пропуском следующего.
+  (Если найдет одинаковые значения то выведет 1.2.2.2.5.6.7)
+- **DENSE_RANK** over (order by column) [DENSE_RANK]
+  возвращает ранг каждой строки, но в отличие от rank,
+  в случае нахождения одинаковых значений, возвращает ранг без пропуска следующего.
+  (Если найдет одинаковые значения то выведет 1.2.2.2.3.4.4)
+- **NTILE**(3)over (order by price desc) [NTILE]
+  функция Transact-SQL, которая делит результирующий набор
+  на группы по определенному столбцу. Количество групп указывается в качестве параметра.
 
-DROP        - удаляет таблицы (удаление таблицы базы данных)
-DELETE      - для удаления одной или нескольких строк в таблице (с применением условия)
-TRUNCATE    - удаляет все строки из таблицы (работает быстрее чем DELETE, но нельзя вешать условия)
+Используя функцию mod
+
+SELECT * FROM Persons WHERE MOD(PersonId, 2) = 1
 
 </details>
 
@@ -517,46 +528,11 @@ TRUNCATE    - удаляет все строки из таблицы (работ
 SQL подзапрос — это запрос, вложенный в другой запрос;
 
 По типам запросы используются в:
+
 - В инструкции SELECT;
 - В инструкции FROM;
 - В условии WHERE.
-- 
-</details>
-
-[//]: # (Функции ранжирования/Выбор четных нечетных записей)
-<br>
-<details>
-    <summary style="font-size: 25px;">
-        <b>
-            Функции ранжирования/Выбор четных нечетных записей
-        </b>
-    </summary>
-<br>
-
-**Ранжирующие функции** — это функции, которые возвращают значение для каждой строки группы в
-результирующем наборе данных.
-На практике они могут быть использованы, например, для простой нумерации списка,
-составления рейтинга или постраничной выборки.
-
-Результирующие функции:
-- **ROW_NUMBER**() OVER ([ORDER BY столбы группировки]) as [Имя полученной колонки]
-  Выводит номер получившейся стоки
-- **RANK**() OVER (order by column) [RANK]
-  возвращает ранг каждой строки. В отличие от row_number(),
-  идет уже анализ значений и в случае нахождения одинаковых, функция возвращает одинаковый ранг
-  с пропуском следующего.
-  (Если найдет одинаковые значения то выведет 1.2.2.2.5.6.7)
-- **DENSE_RANK** over (order by column) [DENSE_RANK]
-  возвращает ранг каждой строки, но в отличие от rank,
-  в случае нахождения одинаковых значений, возвращает ранг без пропуска следующего.
-  (Если найдет одинаковые значения то выведет 1.2.2.2.3.4.4)
-- **NTILE**(3)over (order by price desc) [NTILE]
-  функция Transact-SQL, которая делит результирующий набор
-  на группы по определенному столбцу. Количество групп указывается в качестве параметра.
-
-Используя функцию mod
-
-SELECT * FROM Persons WHERE MOD(PersonId, 2) = 1
+-
 
 </details>
 
@@ -621,8 +597,10 @@ SELECT * FROM Persons WHERE MOD(PersonId, 2) = 1
 (В mySQL есть before но нет INSTEAD OF)
 
 Использование:
+
 - добавление процента на товар
 - валидация
+
 </details>
 
 [//]: # (Курсоры)
@@ -657,4 +635,5 @@ SELECT * FROM Persons WHERE MOD(PersonId, 2) = 1
     END
     --закрываем курсор
     CLOSE my_cur
+
 </details>

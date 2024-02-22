@@ -4,21 +4,10 @@ Spring:
 Spring jdbc
 Spring data
 Spring security
-@PreDestroy (not java)  @PreDestroy @PostConstruct
-Event listeners for App ready event class 
-@Autowired @Resources в каком порядке spring injects resource in @Autowired
-@primary annotation
-@DependOn @ConditionsOn
 
-DB
-план запроса
-индексацию таблиц (указатели) 
-
-NoSQL
-Investigate some NoSQL databases like Dynamo or ElasticSearch
+Event listeners for App ready event class
 
 Контейнеры
-докер
 Tomcat - что это, является ли это контейнером
 Jetty
 
@@ -45,6 +34,16 @@ Other ORM alternatives
 ORM JPA vs Hibernate 
 
 Practice gaps:
+
+Java
 Multi-threading and parallel programming
 Custom Class Loader
+
+Spring
 Implement some pet projects with Spring Microservices
+
+NoSQL
+Investigate some NoSQL databases like Dynamo or ElasticSearch
+
+Containerization
+докер

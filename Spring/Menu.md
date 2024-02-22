@@ -5,7 +5,7 @@
 <h2>
 
 Topic list:
-* [Spring](education%2FSpring.md)
-* [SpringBoot](education%2FSpringBoot.md)
+* [Spring](education%2FSpring.md) (TBD)
+* [SpringBoot](education%2FSpringBoot.md) (TBD)
 
 </h2>

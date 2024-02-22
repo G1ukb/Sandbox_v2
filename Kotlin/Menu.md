@@ -5,6 +5,6 @@
 <h2>
 
 Topic list:
-* [Kotlin Novice Questions](education%2FKotlinNovice.md)
+* [Kotlin Novice Questions](education%2FKotlinNovice.md) (TBD)
 
 </h2>

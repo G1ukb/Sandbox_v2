@@ -5,8 +5,8 @@
 <h2>
 
 Topic list:
-* [CodeQuality](education%2FCodeQuality.md)
-* [SDLC](education%2FSDLC.md)
-* [TeamWork](education%2FTeamWork.md)
+* [CodeQuality](education%2FCodeQuality.md) (TBD)
+* [SDLC](education%2FSDLC.md) (TBD)
+* [TeamWork](education%2FTeamWork.md) (TBD)
 
 </h2>

@@ -5,7 +5,7 @@
 <h2>
 
 Topic list:
-* [NoSQL](education%2FNoSQL.md)
-* [SQL](education%2FSQL.md)
+* [NoSQL](education%2FNoSQL.md) (TBD)
+* [SQL](education%2FSQL.md) (TBD)
 
 </h2>
