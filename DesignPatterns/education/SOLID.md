@@ -5,6 +5,31 @@
 
 </h4>
 
+[//]: # (What are the three key features of the Liskov Substitution Principle in SOLID?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What are the three key features of the Liskov Substitution Principle in SOLID?
+        </b>
+    </summary>
+<br>
+
+**Subtype Requirement:** if a program is using a base class, 
+it should be able to use any of its subclasses without the program knowing
+
+**Method Signature:** Subclasses must follow the method 
+signature of the base class.
+(same name, return type, and parameters)
+
+**No New Exceptions:** Subclasses should not throw exceptions 
+that are not thrown by the methods of the superclass
+
+</details>
+
+
+///////////////////////////////////////
+
 #SOLID
 
 ## Для чего нужны принципы SOLID
@@ -44,10 +69,10 @@
 
 **Типовые примеры нарушения**:
 - смешивание слоев архитектуры приложения
-    - Слой представления (UI или Web page)
-    - Сервисный слой (контроллеры, веб-сервисы и слушатели очередей)
-    - Слой бизнес-логики (обрабатывают запросы сервисного слоя и используют слой доступа к данным)
-    - Слой доступа к данным (доступа к хранимым данным)
+  - Слой представления (UI или Web page)
+  - Сервисный слой (контроллеры, веб-сервисы и слушатели очередей)
+  - Слой бизнес-логики (обрабатывают запросы сервисного слоя и используют слой доступа к данным)
+  - Слой доступа к данным (доступа к хранимым данным)
 
 ### Open Close Principle  (Принцип открытости/закрытости)
 

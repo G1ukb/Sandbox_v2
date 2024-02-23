@@ -5,6 +5,40 @@
 
 </h4>
 
+[//]: # (What is Event-Driven Architecture?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is Event-Driven Architecture?
+        </b>
+    </summary>
+<br>
+
+Event-Driven Architecture - architecture paradigm in with an event
+can be defined as the main element of the system,
+it transports data and influence on the system behavior.
+
+* Event Producers: components of the system that generate events
+* Event Channels: through which the events are transported
+* Event Consumers: components that react to the events
+
+Pluses:
++ Good scalability
++ Real-Time Processing
++ Flexibility
++ Responsiveness (immediate feedback)
+
+(In Internet of Things (IoT) systems, User Interfaces)
+
+Minuses: 
+- Complexity
+- Debugging and Monitoring
+- Data Consistency (Data-Intensive Systems)
+
+(Data-Intensive Systems, Debugging and Monitoringd)
+
+</details>
 
 3. Какие парадигмы существуют
 2. Какие парадигмы поддерживает java

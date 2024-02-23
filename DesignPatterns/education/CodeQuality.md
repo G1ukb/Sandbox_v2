@@ -5,6 +5,87 @@
 
 </h4>
 
+[//]: # (What are the clean code principles in Java?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What are the clean code principles in Java?
+        </b>
+    </summary>
+<br>
+
+Clean code principles are a set of guidelines used to easily produce,  
+understand and maintain code.
+
+Here are some of the key principles:
+
+1. **Meaningful Names**: Use clear and meaningful names for variables, 
+methods, and classes. 
+The name should describe the purpose of the entity it represents.
+
+2. **Functions Should Do One Thing**: 
+Each function or method should perform one task. 
+This makes the code easier to read, test, and debug.
+
+3. **Short Functions**: Functions should be short and concise. 
+A function that is too long can be difficult to understand and maintain.
+
+4. **Function Arguments**: The fewer arguments a function has, 
+the easier it is to understand and use. 
+Aim for zero or one arguments if possible.
+
+5. **No Side Effects:** Functions should not have side effects. 
+They should only do what they are supposed 
+to do based on their name and inputs.
+
+6. **Use Exceptions Rather Than Return Codes:** 
+Using exceptions for error handling makes 
+the code cleaner and easier to understand than using return codes.
+
+7. **Keep Configurable Data at High Levels:** 
+If you have data that is likely to change, 
+keep it at a high level in your code to make it easier to modify.
+
+8. **Do Not Use Magic Numbers or Strings:** 
+Replace magic numbers or strings with named constants 
+to make your code easier to understand and maintain.
+
+9. **Comments:** Comments should be used to explain why something is done, 
+not what is being done. 
+The code itself should be self-explanatory.
+
+10. **Code Formatting:** Consistent code formatting makes 
+your code easier to read. 
+This includes consistent indentation, spacing, and bracket placement.
+
+</details>
+
+[//]: # (What are some standard refactoring techniques?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What are some standard refactoring techniques?
+        </b>
+    </summary>
+<br>
+
+Refactoring is the process of improving 
+the design of existing code without changing its external behavior.
+
+- Method decomposition to avoid god classes
+- Method composition to avoid code duplication
+- Put hard expression result into self-descriptive local variables
+- Hard expression decomposition for code readability
+- Replace temporary vars to expressions for better maintainability
+- Rename magic vars and methods
+- SOLID, DRY, KISS, Patterns
+
+</details>
+
+///////////////////////////////
+
 [//]: # (Контроль качества кода)
 <br>
 <details>

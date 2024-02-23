@@ -1,3 +1,10 @@
+<h1>Soft skills Questions</h1> 
+<h4> 
+
+[Back to menu](..%2FMenu.md)
+
+</h4>
+
 * You should remember that most candidates act differently during interviews. Either because they are nervous or because they are purposely trying to deceive. Here are some questions that will help you to check the candidate’s soft skills. You can choose the most suitable for you and use them during technical interviews. But you should also understand that each candidate requires an individual approach to check soft skills. That’s why it’s not recommended to use the same questions for each candidate.
 * 
 * Tell me about your professional accomplishments (some specific tasks or features) you are proud of?
@@ -18,4 +25,4 @@
 * 
 * If you were given complete freedom of choice how would your ideal project/team look like?
 * Humble, hungry, and smart concept
-* 
+

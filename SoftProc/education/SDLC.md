@@ -5,6 +5,32 @@
 
 </h4>
 
+[//]: # (What is the action plan in case of a production Java error?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is the action plan in case of a production Java error?
+        </b>
+    </summary>
+<br>
+
+Error Identification: (checking the error logs, monitoring systems,
+or user reports)
+Replicate the Error: (understand the conditions under which the error occurs)
+Analyze the Error: to understand what is causing the error
+Research: Deep investigation
+Fix the Error:
+Test:
+Deploy:
+Document:
+Agile Retro, what we can do not to have this problem in future
+
+</details>
+
+////////////////////////////
+
+
 [//]: # (Что такое Software development process)
 <br>
 <details>

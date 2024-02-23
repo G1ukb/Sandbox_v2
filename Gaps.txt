@@ -4,19 +4,11 @@ Spring:
 Spring jdbc
 Spring data
 Spring security
-
 Event listeners for App ready event class
 
 Контейнеры
 Tomcat - что это, является ли это контейнером
 Jetty
-
-SOFT
-code conflict resolution scenario
-как выбрать программные решения
-
-Design Patterns
-3 features inside liskov
 
 Security 
 Общее понимание безопасности

@@ -19,21 +19,21 @@
     </summary>
 <br>
 
-1. **Monolithic Architecture:** In a monolithic architecture, 
-an application is developed as a single, self-contained entity. 
+1. **Monolithic Architecture:** In a monolithic architecture,
+   an application is developed as a single, self-contained entity.
 
-    All components of the application, such as the user interface, 
-    business logic, and data access layer, are closely coupled and deployed as a single unit.
-    
-    **Advantages**: 
+   All components of the application, such as the user interface,
+   business logic, and data access layer, are closely coupled and deployed as a single unit.
+
+   **Advantages**:
     - Simpler to Develop
     - Easier to Test
-    - Efficient Communication Between Components 
-    (you can speed up the process and improve performance)
+    - Efficient Communication Between Components
+      (you can speed up the process and improve performance)
     - Single Deployment Unit
     - Shared Memory Access
 
-    **Disadvantages**:
+   **Disadvantages**:
     - Difficult to Maintain: (all the components are interlinked)
     - In big monolith needed understanding of the entire system. (Bus factor increases)
     - Limited Scalability
@@ -43,13 +43,13 @@ an application is developed as a single, self-contained entity.
       the entire system can be affected
 
 
-2. **Microservices Architecture:** Microservice architecture breaks down 
-an application into a collection of small, loosely coupled services. 
-Each service focuses on a distinct business feature and is capable of 
-independent development, deployment, and scaling
+2. **Microservices Architecture:** Microservice architecture breaks down
+   an application into a collection of small, loosely coupled services.
+   Each service focuses on a distinct business feature and is capable of
+   independent development, deployment, and scaling
 
-    **Advantages**: 
-    - Scalability 
+   **Advantages**:
+    - Scalability
     - Improved Fault Isolation
     - Enhanced Team Productivity (decreased team communication)
     - Quicker Deployment Time (of a single unit)
@@ -57,19 +57,19 @@ independent development, deployment, and scaling
 
    **Disadvantages**:
     - Operational Complexity (you need to manage and orchestrate multiple services)
-    - Distributed System (higher chance of failure during communication, 
-   services need exactly know all business contracts 
-   around all upstreams and downstreams)
+    - Distributed System (higher chance of failure during communication,
+      services need exactly know all business contracts
+      around all upstreams and downstreams)
     - Resource Consumption: (every single unit needs to have runtime environment,
-   data storage or other resources)
+      data storage or other resources)
     - Management of Services (need of complex Orchestration Frameworks)
 
 
 3. **Serverless Architecture:** Serverless architecture is a design pattern
-where applications are hosted by third-party service providers,
-who dynamically manage the allocation of machine resources
+   where applications are hosted by third-party service providers,
+   who dynamically manage the allocation of machine resources
 
-    **Advantages**: 
+   **Advantages**:
     - No Server Management
     - Cost-Efficiency (In perspective that code only runs when backend functions are needed)
     - Automatic Scaling
@@ -92,16 +92,19 @@ who dynamically manage the allocation of machine resources
 <br>
 
 **Monolithic Architecture:**
- - app is relatively small, and the team is not large enough
- - when app doesn’t require separate scaling
- - when rush development is required
+
+- app is relatively small, and the team is not large enough
+- when app doesn’t require separate scaling
+- when rush development is required
 
 **Microservices Architecture:**
+
 - application is large and complex
 - different teams are working on different parts
 - when you want to use different technologies for different services
 
 **Serverless Architecture:**
+
 - When the workload is unpredictable
 - When you want to reduce operational costs
 - When you want to benefit from potentially infinite scalability
@@ -121,18 +124,21 @@ who dynamically manage the allocation of machine resources
 <br>
 
 **Monolithic Architecture:**
-- **Scalability**: the entire application needs to be scaled even 
-if only one function is experiencing increased demand, 
-This may result in additional costs.
+
+- **Scalability**: the entire application needs to be scaled even
+  if only one function is experiencing increased demand,
+  This may result in additional costs.
 - **Resilience**: less resilient because if one part of the application fails,
-the entire system can be affected
+  the entire system can be affected
 
 **Microservices Architecture:**
+
 - **Scalability**: Microservices can be individually scaled
-- **Resilience**: Microservices are more resilient because 
-they are isolated from each other
+- **Resilience**: Microservices are more resilient because
+  they are isolated from each other
 
 **Serverless Architecture:**
+
 - **Scalability**: automatically scale
 - **Resilience**: highly available by design.
 
@@ -151,7 +157,7 @@ they are isolated from each other
 <br>
 
 **Eventual Consistency:** - the change is added to other services over time.
-   , System may be in an inconsistent state for a short period
+, System may be in an inconsistent state for a short period
 
 **Distributed Transactions:** - complex and can impact performance, but
 Spring can be used for distributed transactions
@@ -162,7 +168,7 @@ And revert all changes in case of fail transaction.
 **Event-Driven Architecture** - events that represent state changes.
 Other micros can be subscribed and listen for updates
 
-**API Composition** - microservice managing its own database, 
+**API Composition** - microservice managing its own database,
 a separate service layer is used to handle data consistency
 
 </details>
@@ -182,6 +188,7 @@ a separate service layer is used to handle data consistency
 <br>
 
 **Synchronous**
+
 - Latency: can lead to increased latency
 - Complexity: generally easier to implement
 - Resource: increased resource cost
@@ -189,6 +196,7 @@ a separate service layer is used to handle data consistency
 - Ordering: guarantee the order of messages
 
 **Asynchronous**
+
 - Latency: reducing latency
 - Complexity: can be more complex to implement correctly
 - Resources: better resource optimization
@@ -212,9 +220,9 @@ a separate service layer is used to handle data consistency
 - **Isolation:** Each container runs in isolation
 - **Scalability** easily scaled up or down based on the demand
 - **CI/CD** be built, tested, and deployed into a container
-- **Resource Efficiency** 
+- **Resource Efficiency**
 - **Portability** containers include all of their dependencies,
-they can run on any system that supports containerization
+  they can run on any system that supports containerization
 
 </details>
 
@@ -255,17 +263,19 @@ they can run on any system that supports containerization
 <br>
 
 SQL:
-- Scalability realization: SQL databases are typically scaled vertically 
+
+- Scalability realization: SQL databases are typically scaled vertically
 - ACID realization: influence the design to ensure data consistency
-- Development Speed and Flexibility: 
+- Development Speed and Flexibility:
   Changes in SQL database require altering the schema
 - Object Mapping realization: Object-Relational Mapping (ORM)
 
 NoSQL:
+
 - Scalability realization: NoSQL databases are designed to scale horizontally
 - ACID realization: handle eventual consistency and relax about acid rules
-- Development Speed and Flexibility: 
-  can store different types of data in different ways, 
+- Development Speed and Flexibility:
+  can store different types of data in different ways,
   So NoSQL is more flexible
 - Object Mapping realization: Object-Document Mapper
 
@@ -335,9 +345,115 @@ NoSQL:
     </summary>
 <br>
 
-- Standardization 
+- Standardization
 - Data Exchange
 - Versioning
 - Security
+
+</details>
+
+[//]: # (What is the difference between a communication type 
+        and a communication protocol?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is the difference between a communication type 
+            and a communication protocol?
+        </b>
+    </summary>
+<br>
+
+**Communication Type:** refers to the method or mode of communication
+(Point-to-Point, Point-to-Multipoint)
+
+**Communication protocol:** refers set of rules of
+how data is transmitted and received
+(HTTP, HTTPS, TSP)
+
+</details>
+
+[//]: # (What types of protocol do you know?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What types of protocol do you know?
+        </b>
+    </summary>
+<br>
+
+* HTTP (Hypertext Transfer Protocol): This is a request-response protocol
+* HTTPS (Hypertext Transfer Protocol Secure): This is a secure version of HTTP
+  uses SSL/TLS protocol to encrypt the data communication.
+  This includes the exchange of digital certificates
+  to verify the identity of the server (and sometimes the client),
+  and the negotiation of a shared secret key to encrypt the data.
+* FTP (File Transfer Protocol): transferring files from
+  one host to another over a TCP-based network
+* TCP (Transmission Control Protocol): connection-oriented protocol
+* UDP (User Datagram Protocol): connectionless protocol that
+  does not guarantee delivery but faster
+* SMTP (Simple Mail Transfer Protocol):
+  This is a communication protocol for electronic mail transmission.
+* IMAP / POP3 / MQTT protocols to retrieve messages from a server.
+* WebSockets: full-duplex communication channels over a single TCP connection.
+
+</details>
+
+[//]: # (What are the steps to choose software solutions for a project?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What are the steps to choose software solutions for a project?
+        </b>
+    </summary>
+<br>
+
+Choosing the right software solutions for a project is a critical task 
+that can significantly impact the success of the project. 
+Here are some steps you can follow:
+
+1. Define Your Requirements: 
+Start by clearly defining what you need the software to do. 
+This should include both functional requirements 
+(what tasks the software needs to perform) 
+and non-functional requirements 
+(such as performance, security, and usability).
+
+2. Research Available Solutions: 
+Once you know what you need, 
+start researching what software solutions are available that meet those needs.
+This could include commercial off-the-shelf software, 
+open-source software, or custom-built software.
+
+3. Think about Each Solution: For each potential solution, 
+evaluate how well it meets your requirements. 
+Consider factors such as features, ease of use, 
+scalability, reliability, and cost.
+
+4. Test the Software: 
+If possible, test each solution under conditions that are as close 
+as possible to how you will be using the software. 
+This could involve using a demo or trial version of the software,
+or requesting a proof of concept.
+
+5. Check Compatibility: Ensure that the software is compatible 
+with your existing systems and workflows. 
+This includes technical compatibility 
+(such as operating system and hardware requirements) 
+and process compatibility 
+(how well the software fits into your existing processes).
+
+6. Make a Decision: Based on your evaluation and testing, 
+choose the software solution that best meets your needs. 
+Remember that no solution is likely to be perfect, 
+so focus on what is most important for your project.
+
+7. Implement the Software: Once you've chosen a software solution, 
+plan and execute its implementation. 
+This should include installing and configuring the software, 
+integrating it with your existing systems, and training users.
 
 </details>
