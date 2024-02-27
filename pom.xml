@@ -28,6 +28,7 @@
         <module>Kotlin</module>
         <module>JavaVersions</module>
         <module>Kafka</module>
+        <module>Security</module>
     </modules>
 
     <build>

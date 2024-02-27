@@ -1,5 +1,10 @@
 Theory gaps:
 
+Architecture:
+Decomposition of microservices
+Practical use cases in the decomposition of microservices
+Microservices patterns
+
 Spring:
 Spring jdbc
 Spring data
@@ -10,20 +15,21 @@ Event listeners for App ready event class
 Tomcat - что это, является ли это контейнером
 Jetty
 
-Security 
-Общее понимание безопасности
-Learn OAuth 2.0 & JWT for REST security
-
 REST
 SOAP как написать свой SOAP service
 Rest, RMM
 HATEOAS more deeply
 Как работают Cookie Http Session
+Richardson Maturity Model
 
 ORM
 Hibernate benefits
 Other ORM alternatives
-ORM JPA vs Hibernate 
+ORM JPA vs Hibernate
+
+DevOps
+Kafka
+K8s
 
 Practice gaps:
 
