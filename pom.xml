@@ -10,25 +10,39 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>AWS</module>
-        <module>DesignPatterns</module>
-        <module>GIT</module>
-        <module>JavaCore</module>
-        <module>Maven</module>
-        <module>REST</module>
-        <module>SoftProc</module>
-        <module>Spring</module>
-        <module>SQL</module>
-        <module>Testing</module>
-        <module>Architecture</module>
-        <module>Leadership</module>
-        <module>Leetcode</module>
-        <module>Kubernetes</module>
-        <module>Docker</module>
-        <module>Kotlin</module>
-        <module>JavaVersions</module>
-        <module>Kafka</module>
-        <module>Security</module>
+        <module>database/NoSQL</module>
+        <module>database/SQL</module>
+
+        <module>devOps/Artifactory</module>
+        <module>devOps/AWS</module>
+        <module>devOps/DevOpsCore</module>
+        <module>devOps/Docker</module>
+        <module>devOps/JenkinsCI</module>
+        <module>devOps/Kubernetes</module>
+        <module>devOps/ShellScript</module>
+        <module>devOps/Terraform</module>
+
+        <module>general/Architecture</module>
+        <module>general/Security</module>
+
+        <module>java/BuildTools</module>
+        <module>java/CodeQuality</module>
+        <module>java/DesignPatterns</module>
+        <module>java/GIT</module>
+        <module>java/JavaCore</module>
+        <module>java/JavaVersions</module>
+        <module>java/Leetcode</module>
+        <module>java/MQ</module>
+        <module>java/ORM</module>
+        <module>java/REST</module>
+        <module>java/Spring</module>
+        <module>java/Testing</module>
+        <module>java/WebServer</module>
+
+        <module>other/Kotlin</module>
+
+        <module>softSkill/Leadership</module>
+        <module>softSkill/SoftProc</module>
     </modules>
 
     <build>
