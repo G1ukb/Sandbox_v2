@@ -5,6 +5,6 @@
 <h2>
 
 Topic list:
-* [NoSQL](education%2FNoSQL.md) (TBD)
+* [General](education%2FGeneral.md)
 
 </h2>

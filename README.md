@@ -11,7 +11,7 @@ read  information for yourself
 Topic list:
 
 Database:
-* [NoSQL](database%2FNoSQL%2FMenu.md) (TBD)
+* [NoSQL](database%2FNoSQL%2FMenu.md)
 * [SQL](database%2FSQL%2FMenu.md) (TBD)
 
 DevOps:
