@@ -12,7 +12,7 @@ Topic list:
 
 Database:
 * [NoSQL](database%2FNoSQL%2FMenu.md)
-* [SQL](database%2FSQL%2FMenu.md) (TBD)
+* [SQL](database%2FSQL%2FMenu.md)
 
 DevOps:
 * [Artifactory](devOps%2FArtifactory%2FMenu.md) (TBD)

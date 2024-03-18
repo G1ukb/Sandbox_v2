@@ -5,12 +5,12 @@
 
 </h4>
 
-[//]: # (What is SQL)
+[//]: # (Could you explain what SQL is?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-              What is SQL?
+            Could you explain what SQL is?
         </b>
     </summary>
 <br>
@@ -26,12 +26,12 @@ and ensuring data integrity.
 
 </details>
 
-[//]: # (What is a DBMS)
+[//]: # (Can you provide a definition of a DBMS?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is a DBMS? Can you add main functions of DBMS?
+            Can you provide a definition of a DBMS?
         </b>
     </summary>
 <br>
@@ -52,12 +52,12 @@ There are several main functions of a DBMS:
 
 </details>
 
-[//]: # (DBMS types)
+[//]: # (What are the different types of DBMS?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What are the different types of Database Management Systems (DBMS)?
+            What are the different types of DBMS?
         </b>
     </summary>
 <br>
@@ -72,12 +72,12 @@ it can be tables, a single document (json) or described by xml and so on
 
 </details>
 
-[//]: # (SQL vs NoSQL)
+[//]: # (Can you draw a comparison between SQL and NoSQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What are the differences between SQL and NoSQL databases?
+            Can you draw a comparison between SQL and NoSQL?
         </b>
     </summary>
 <br>
@@ -97,12 +97,12 @@ ACID Properties: SQL Full ACID, NoSQL non-full support
 
 </details>
 
-[//]: # (What are the subsets of SQL: DDL/DML/DCL/TCL?)
+[//]: # (What are the various subsets of SQL such as DDL, DML, DCL, and TCL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What are the subsets of SQL (DDL/DML/DCL/TCL)?
+            What are the various subsets of SQL such as DDL, DML, DCL, and TCL?
         </b>
     </summary>
 <br>
@@ -130,12 +130,12 @@ each is serving a different purpose:
 
 </details>
 
-[//]: # (Materialized View vs View)
+[//]: # (Could you differentiate between a Materialized View and View in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-             What is the difference between a Materialized View and a View in SQL?
+             Could you differentiate between a Materialized View and View in SQL?
         </b>
     </summary>
 <br>
@@ -160,12 +160,12 @@ a materialized view can be a better choice.**
 
 </details>
 
-[//]: # (What is column indexing in SQL?)
+[//]: # (What does column indexing mean in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is column indexing in SQL?
+            What does column indexing mean in SQL?
         </b>
     </summary>
 <br>
@@ -222,12 +222,12 @@ data that represents geometric shapes and structures.
 
 </details>
 
-[//]: # (What does ACID stand for in SQL?)
+[//]: # (In the context of SQL, what does ACID stand for?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What does ACID stand for in SQL?
+            In the context of SQL, what does ACID stand for?
         </b>
     </summary>
 <br>
@@ -262,12 +262,14 @@ that database transactions are processed reliably.
 
 </details>
 
-[//]: # (What are the isolation levels in SQL and what problems can occur?)
+[//]: # (What are the different isolation levels 
+        in SQL and what issues might arise with each?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What are the isolation levels in SQL and what problems can occur?
+            What are the different isolation levels
+            in SQL and what issues might arise with each?
         </b>
     </summary>
 <br>
@@ -297,12 +299,12 @@ so no other transactions can read, insert, update, or delete.
 
 </details>
 
-[//]: # (What is database normalization and what are its advantages?)
+[//]: # (Can you explain database normalization and its benefits?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is database normalization and what are its advantages?
+            Can you explain database normalization and its benefits?
         </b>
     </summary>
 <br>
@@ -327,17 +329,17 @@ so no other transactions can read, insert, update, or delete.
    (or set of columns) depends on another column (or set of columns),
    but not on the whole key.
 
-```
-If we have tables: 
-ID COURCE TEXTBOOK
-1  MATH   Algebra
-2  MATH   Geometria
-
-It need to be separeted to:
-ID COURCE - COURCE TEXTBOOK tables
-1  MATH     MATH   ALGEBRA
-            MATH   GEOMETRIA
-```
+    ```
+    If we have tables: 
+    ID COURCE TEXTBOOK
+    1  MATH   Algebra
+    2  MATH   Geometria
+    
+    It need to be separeted to:
+    ID COURCE - COURCE TEXTBOOK tables
+    1  MATH     MATH   ALGEBRA
+                MATH   GEOMETRIA
+    ```
 
 6. Fifth Normal Form (5NF): the candidate keys should imply every join dependency
    that if a table can be decomposed
@@ -408,12 +410,12 @@ It will be divided into
 
 </details>
 
-[//]: # (HAVING vs WHERE)
+[//]: # (What's the difference between HAVING and WHERE clauses in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is the difference between HAVING and WHERE in SQL?
+            What's the difference between HAVING and WHERE clauses in SQL?
         </b>
     </summary>
 <br>
@@ -430,12 +432,14 @@ GROUP BY Country HAVING COUNT(StudentID) > 5
 
 </details>
 
-[//]: # (What is the difference between GROUP BY, DISTINCT, and ORDER BY in SQL?)
+[//]: # (Can you detail the distinctions between 
+        the GROUP BY, DISTINCT, and ORDER BY clauses in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is the difference between GROUP BY, DISTINCT, and ORDER BY in SQL?
+            Can you detail the distinctions between 
+            the GROUP BY, DISTINCT, and ORDER BY clauses in SQL?
         </b>
     </summary>
 <br>
@@ -463,18 +467,18 @@ SELECT * FROM Sales ORDER BY ItemID DESC;
 
 </details>
 
-[//]: # (What is the issue related to toast spaces in PostgreSQL?)
+[//]: # (What issues are related to toast spaces in PostgreSQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            What is the issue related to toast spaces in PostgresSQL?
+            What issues are related to toast spaces in PostgresSQL?
         </b>
     </summary>
 <br>
 
-TOAST (The Oversized-Attribute Storage Technique) is a mechanism
-in PostgreSQL that allows it to handle large data values.
+TOAST (The Oversize-Attribute Storage Technique) is a mechanism
+in PostgresSQL that allows it to handle large data values.
 
 When a row contains large data types such as TEXT or BYTEA
 and the total row size exceeds a certain limit (around 8KB).
@@ -517,9 +521,9 @@ Mechanism of work:
     </summary>
 <br>
 
-- **Schema, Constraints and Data Type Incompatibilities:** 
-Different databases may use different data types 
-or maintain different constraints
+- **Schema, Constraints and Data Type Incompatibilities:**
+  Different databases may use different data types
+  or maintain different constraints
 - **Large Data Volume:** time-consuming
 - **Data Consistency**
 - **Code Conversion:** in case if back application has quite specific calls
@@ -538,187 +542,419 @@ or maintain different constraints
     </summary>
 <br>
 
-Database schema evolution in application can be effectively managed 
-using database migration tools such as Flyway or Liquibase. 
-These tools allow for version-controlled, 
-ordered changes to your database schema, 
+Database schema evolution in application can be effectively managed
+using database migration tools such as Flyway or Liquibase.
+These tools allow for version-controlled,
+ordered changes to your database schema,
 maintaining data integrity throughout the evolution process.
 
 </details>
 
-////////////////////////////////////////////////////
-
-[//]: # (Функции ранжирования/Выбор четных нечетных записей)
+[//]: # (Can you describe the use of ranking functions 
+        in SQL and explain how one could select even and odd records?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Функции ранжирования/Выбор четных нечетных записей
+            Can you describe the use of ranking functions 
+            in SQL and explain how one could select even and odd records?
         </b>
     </summary>
 <br>
 
-**Ранжирующие функции** — это функции, которые возвращают значение для каждой строки группы в
-результирующем наборе данных.
-На практике они могут быть использованы, например, для простой нумерации списка,
-составления рейтинга или постраничной выборки.
+ROW_NUMBER(), RANK(), and DENSE_RANK() are window functions
+in SQL that assign a unique ranking to each row
+within a partition of a result set.
 
-Результирующие функции:
+1. ROW_NUMBER(): This function assigns a unique row number
+   to each row within the partition of a result set,
+   Duplicated values work as common values.
 
-- **ROW_NUMBER**() OVER ([ORDER BY столбы группировки]) as [Имя полученной колонки]
-  Выводит номер получившейся стоки
-- **RANK**() OVER (order by column) [RANK]
-  возвращает ранг каждой строки. В отличие от row_number(),
-  идет уже анализ значений и в случае нахождения одинаковых, функция возвращает одинаковый ранг
-  с пропуском следующего.
-  (Если найдет одинаковые значения то выведет 1.2.2.2.5.6.7)
-- **DENSE_RANK** over (order by column) [DENSE_RANK]
-  возвращает ранг каждой строки, но в отличие от rank,
-  в случае нахождения одинаковых значений, возвращает ранг без пропуска следующего.
-  (Если найдет одинаковые значения то выведет 1.2.2.2.3.4.4)
-- **NTILE**(3)over (order by price desc) [NTILE]
-  функция Transact-SQL, которая делит результирующий набор
-  на группы по определенному столбцу. Количество групп указывается в качестве параметра.
+    ```sql
+    SELECT Name, Score, ROW_NUMBER() OVER (ORDER BY Score DESC) AS Row_Number
+    FROM student_scores;
+    ```
+    
+    ```
+    | Name  | Grade | row_number() |
+    | Maria | 5     | 1
+    | Maria | 4     | 2
+    | Maria | 3     | 3
+    | Maria | 3     | 4
+    ```
 
-Используя функцию mod
+2. RANK(): This function assigns a unique rank to
+   each distinct row within a partition of a result set,
+   but for rows with equal values, it assigns them the same rank,
+   leaving a gap for the later ranks.
 
-SELECT * FROM Persons WHERE MOD(PersonId, 2) = 1
+    ```sql
+    SELECT Name, Score, RANK() OVER (ORDER BY Score DESC) AS Rank
+    FROM student_scores;
+    ```
+    
+    ```
+    | Name  | Grade | rank() |
+    | Maria | 5     | 1
+    | Maria | 4     | 2
+    | Maria | 3     | 3
+    | Maria | 3     | 3
+    | Maria | 1     | 5
+    ```
+
+3. DENSE_RANK(): This function acts exactly as the RANK()
+   function but does not skip ranks for the rows with equal values.
+
+```sql
+SELECT Name,  Score, DENSE_RANK() OVER (ORDER BY Score DESC) AS Dense_Rank
+FROM student_scores;
+```
+
+```
+| Name  | Grade | DENSE_RANK() |
+| Maria | 5     | 1
+| Maria | 4     | 2
+| Maria | 3     | 3
+| Maria | 3     | 3
+| Maria | 1     | 4
+```
 
 </details>
 
-[//]: # (Типы JOIN'ов)
+[//]: # (Can you provide detailed information 
+         about the distinct types of JOINs in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Типы JOIN'ов
+            Can you provide detailed information 
+            about the distinct types of JOINs in SQL?
         </b>
     </summary>
 <br>
 
-![atler-text](https://www.techagilist.com/wp-content/uploads/2018/07/sql-joins.png)
+In SQL, a JOIN operation retrieves related columns
+or rows from multiple tables.
+
+In total, there are four types of JOIN operations:
+
+1. INNER JOIN: This returns records or rows that have matching values
+   in both tables involved in the operation.
+   It is often used when you want to combine rows
+   from two or more tables where there
+   is a relationship between the data in the columns.
+
+   Example:
+
+   ```sql
+   SELECT Orders.order_id, Customers.customer_name
+   FROM Orders
+   INNER JOIN Customers
+   ON Orders.customer_id = Customers.customer_id;
+   ```
+
+2. LEFT JOIN (or LEFT OUTER JOIN):
+   This returns all rows from the left table (the 'Orders' table in this example),
+   and the matched rows from the right table (the 'Customers' table in this example).
+   If no match is found, the result is NULL on the right side.
+
+   Example:
+
+   ```sql
+   SELECT Orders.order_id, Customers.customer_name
+   FROM Orders
+   LEFT JOIN Customers
+   ON Orders.customer_id = Customers.customer_id;
+   ```
+
+3. RIGHT JOIN (or RIGHT OUTER JOIN): This is the opposite of a LEFT JOIN.
+   It returns all rows from the right table, and
+   matching rows from the left table.
+
+   Example:
+
+   ```sql
+   SELECT Orders.order_id, Customers.customer_name
+   FROM Orders
+   RIGHT JOIN Customers
+   ON Orders.customer_id = Customers.customer_id;
+   ```
+
+4. FULL JOIN (or FULL OUTER JOIN):
+   This combines the results of both left and right outer joins,
+   and returns all records
+   when there is a match in either the left or the right table.
+
+   Example:
+
+   ```sql
+   SELECT Orders.order_id, Customers.customer_name
+   FROM Orders
+   FULL OUTER JOIN Customers
+   ON Orders.customer_id = Customers.customer_id;
+   ```
+
+In what situation must use: Which JOIN to use
+depends on the relationship between your datasets
+and the information you require.
+
+INNER JOINs are the most common, and are often used
+when records must be present in both tables.
+
+OUTER JOINs help retrieve more inclusive data
+when matching records may not be present in one or both tables.
 
 </details>
 
-[//]: # (Подзапрос / Типы подзапросов)
+[//]: # (Can you provide an overview of sub-queries in SQL 
+        and the various types of sub-queries?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Подзапрос / Типы подзапросов
+            Can you provide an overview of sub-queries in SQL 
+            and the various types of sub-queries?
         </b>
     </summary>
 <br>
 
-SQL подзапрос — это запрос, вложенный в другой запрос;
+In SQL, a subquery, also known as a nested query or inner query,
+is a query that is embedded within the WHERE or HAVING
+clause of another SQL query.
 
-По типам запросы используются в:
+Subqueries help in dividing complex queries into simpler,
+more manageable parts;
 
-- В инструкции SELECT;
-- В инструкции FROM;
-- В условии WHERE.
--
+this improves readability and facilitates debugging.
+
+1. Single-row Subquery:
+   This is a subquery that returns only one row
+   and can use operators like =, >, <, >=, <=, and <> in the WHERE clause.
+
+   Example:
+   ```sql
+   SELECT EmployeeName, Age 
+   FROM Employees 
+   WHERE Age > (SELECT AVG(Age) FROM Employees);
+   ```
+
+2. Multiple-column Subquery: This subquery returns multiple columns and
+   is used in the FROM clause.
+
+   Example:
+
+   ```sql
+   SELECT MAX(TotalOrder) AS LargestOrder
+   FROM (SELECT SUM(Amount) AS TotalOrder FROM Orders GROUP BY CustomerID) AS sub;
+   ```
+
+3. Correlated Subquery: A type of subquery that uses values
+   from the outer query in it's WHERE clause.
+
+Example:
+
+```sql
+SELECT CustomerName
+FROM Customers c
+WHERE EXISTS (SELECT * FROM Orders o WHERE c.CustomerID = o.CustomerID);
+```
 
 </details>
 
-[//]: # (Хранимые процедуры)
+[//]: # (Can you provide a detailed explanation of
+         what stored procedures are and how they are used?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Хранимые процедуры
+            Can you provide a detailed explanation of 
+            what stored procedures are and how they are used?
         </b>
     </summary>
 <br>
 
-Хранимые процедуры представляет набор инструкций, которые выполняются как единое целое.
-Тем самым хранимые процедуры позволяют упростить комплексные операции
-и вынести их в единый объект.
+In a database context, a stored procedure is a set
+of SQL statements with an assigned name,
+which are stored in the database data dictionary.
 
-Каждая процедура описывается с помощью BEGIN и END
+A stored procedure can be invoked by triggers,
+other stored procedures, or applications such as Java, Python, PHP.
 
-Пример:
+```sql
+CREATE PROCEDURE procedure_name
+AS
+sql_statement
+GO;
+```
 
-    CREATE PROCEDURE procedure AS
-    BEGIN
-        SELECT *
-        FROM table
-    END;
+Once a procedure is created, it can be executed as follows:
 
-Чтобы вызвать хранимую процедуру используется команда **EXEC** или **EXECUTE**
+```sql
+EXEC procedure_name;
+```
 
-+ Скорость
-+ Логика
-+ Код проще
-+ Безопасность (она уже скомпилирована)
-+ Защита приложния от изменения структуры
-+ Процедуры не наш скоуп ответсвеннсти
+Stored procedures can also take in parameters allowing them to be more flexible.
 
-- Сложность переезда
-- Проблема SQL (жесткая привязанность)
+```sql
+CREATE PROCEDURE GetSales (@Year INT)
+AS
+SELECT SUM(Amount) AS TotalSales FROM Sales WHERE OrderYear = @Year;
+GO;
+```
+
+In what situation must use:
+Stored procedures are useful when you have complex SQL run frequently,
+when you need to enhance security,
+or when you want to reduce network traffic.
+
+Pros:
+
+1. Improved performance.
+2. Code reusability.
+3. Reduced network usage.
+4. Enhanced security control.
+
+Cons:
+
+1. Can be database-specific.
+2. Handling of errors can be challenging.
+3. Debugging can be complex.
 
 </details>
 
-[//]: # (Триггеры)
+[//]: # (Can you provide a detailed explanation 
+         and examples of triggers in databases?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Триггеры
+            Can you provide a detailed explanation 
+            and examples of triggers in databases?
         </b>
     </summary>
 <br>
 
-Триггеры представляют специальный тип хранимой процедуры,
-которая вызывается автоматически при выполнении определенного действия над таблицей
-или представлением, в частности, при добавлении, изменении или удалении данных,
-то есть при выполнении команд INSERT, UPDATE, DELETE.
+A trigger is a procedural code automatically executed
+in response to certain events.
 
-    CREATE TRIGGER имя_триггера
-    ON {имя_таблицы | имя_представления}
-    {AFTER | INSTEAD OF} [INSERT | UPDATE | DELETE]
-    AS выражения_sql
+Triggers can be used to maintain integrity rules,
+log changes, or replicate data.
 
-(В mySQL есть before но нет INSTEAD OF)
+There are mainly two types of triggers based on triggering event:
 
-Использование:
+1. Data Modification Language Triggers (DML Triggers)
+   which include INSERT, UPDATE, and DELETE triggers.
+   These get executed when data is modified.
 
-- добавление процента на товар
-- валидация
+2. Data Definition Language Triggers (DDL Triggers)
+   which include CREATE, ALTER, and DROP triggers.
+   These get invoked when a structure of a database object changes.
+
+Additionally, each of these triggers can be defined
+to fire before/after the event, leading to "BEFORE" or "AFTER" triggers.
+Some databases also support "INSTEAD OF" triggers
+which replace the triggering event with actions defined within the trigger.
+
+```sql
+CREATE OR REPLACE FUNCTION log_order_update() RETURNS TRIGGER AS $$
+BEGIN
+   INSERT INTO order_update_log (order_id, updated_at) 
+   VALUES (OLD.order_id, now());
+   RETURN NEW;
+END;
+$$ language 'plpgsql';
+
+CREATE TRIGGER order_update_trigger
+AFTER UPDATE ON orders
+FOR EACH ROW
+EXECUTE FUNCTION log_order_update();
+```
+
+In what situation must use: Triggers are useful when you need
+to automate a response to a change or event occurring in
+the database, such as changes in data or schema,
+or during certain database operations.
+
+Pros:
+
+1. They can enforce complex business rules at the database level.
+2. They encapsulate logic in the database, improving efficiency.
+3. They maintain data integrity and validity
+   by automatically checking or changing data.
+
+Cons:
+
+1. It Can lead to unexpected results if not properly managed.
+2. It Can negatively impact performance, as they run every
+   time the triggering event occurs.
+3. It Can be hard to debug and troubleshoot due to their automatic nature.
 
 </details>
 
-[//]: # (Курсоры)
+[//]: # (Can you provide a detailed explanation 
+         and examples of cursors in SQL?)
 <br>
 <details>
     <summary style="font-size: 25px;">
         <b>
-            Курсоры
+            Can you provide a detailed explanation 
+            and examples of cursors in SQL?
         </b>
     </summary>
 <br>
 
-Простыми словами курсоры это forEach по результату выборки
+A cursor in SQL is a database object used to retrieve rows
+from a result set one at a time,
+instead of the batch operations performed by typical SQL queries.
 
-Для того чтобы использовать курсор его надо определить
+Think of a cursor as a pointer to a row in a result set.
+The cursor can only reference one row at a time,
+but can move to other rows of the result set as needed.
 
-    --объявляем курсор
-    DECLARE my_cur CURSOR FOR 
-     SELECT number, pole1, pole2 
-     FROM test_table_vrem 
-   
-    --открываем курсор
-    OPEN my_cur
-    --считываем данные первой строки в наши переменные
-    FETCH NEXT FROM my_cur INTO @number, @pole1, @pole2   
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        --на каждую итерацию цикла запускаем нашу основную процедуру с нужными параметрами   
-        exec dbo.my_proc_test @number, @pole1, @pole2
-        --считываем следующую строку курсора
-        FETCH NEXT FROM my_cur INTO @number, @pole1, @pole2
-    END
-    --закрываем курсор
-    CLOSE my_cur
+```sql
+DECLARE @name VARCHAR(50);
+DECLARE sample_cursor CURSOR FOR
+SELECT name
+FROM students;
+
+OPEN sample_cursor;
+FETCH NEXT FROM sample_cursor INTO @name;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+   PRINT @name;
+   FETCH NEXT FROM sample_cursor INTO @name;
+END;
+
+CLOSE sample_cursor;
+DEALLOCATE sample_cursor;
+```
+
+Here are key points in defining and using a cursor:
+
+- DECLARE: the cursor is declared and the SQL query for the cursor is defined,
+- OPEN: the cursor is opened, and the query is executed,
+- FETCH NEXT: retrieves the next row present in the cursor,
+- @@FETCH_STATUS: global variable set by SQL server
+  to 0 if the last fetch retrieved a row, or to -1
+  if no more rows are available,
+- CLOSE: close the cursor,
+- DEALLOCATE: deallocates memory that cursor was using.
+
+When to Use Cursors: Cursors could be useful when you need to operate
+on each row individually rather than applying an
+operation to the entire set of data
+(like updating based on previous rows data).
+
+Pros:
+
+1. Ability to perform complex logic on a row-by-row basis.
+2. Useful for calculations that reference previous or next rows.
+
+Cons:
+
+1. Generally slower and require more resources than SQL set operations.
+2. Risk of excessive server load if used unwisely.
+3. Requires explicit cursor management (OPEN, FETCH, CLOSE).
 
 </details>
