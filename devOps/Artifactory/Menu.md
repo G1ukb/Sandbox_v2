@@ -5,6 +5,6 @@
 <h2>
 
 Topic list:
-* [Artifactory](education%2FArtifactory.md) (TBD)
+* [Artifactory](education%2FArtifactory.md)
 
 </h2>

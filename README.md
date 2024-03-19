@@ -15,7 +15,7 @@ Database:
 * [SQL](database%2FSQL%2FMenu.md)
 
 DevOps:
-* [Artifactory](devOps%2FArtifactory%2FMenu.md) (TBD)
+* [Artifactory](devOps%2FArtifactory%2FMenu.md)
 * [AWS](devOps%2FAWS%2FMenu.md)
 * [DevOps Core](devOps%2FDevOpsCore%2FMenu.md) (TBD)
 * [Docker](devOps%2FDocker%2FMenu.md) (TBD)
