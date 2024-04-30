@@ -5,6 +5,7 @@
 <h2>
 
 Topic list:
-* [Algorithms](education%2FAlgorithms.md)
+* [Algorithms](education%2FAlgorithms.md) (TBD)
+* [Algo Types And Complexities](education%2FAlgoTypesAndComplexities.md) (TBD)
 
 </h2>

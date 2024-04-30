@@ -5,320 +5,368 @@
 
 </h4>
 
-### Что такое VCS
+[//]: # (What is VCS?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is VCS?
+        </b>
+    </summary>
+<br>
 
-Система контроля версий (Version Control System) - это система, регистрирующая изменения
-в одном или нескольких файлах с тем, чтобы в дальнейшем была возможность вернуться к
-определённым старым версиям этих файлов.
+VCS stands for Version Control System.
+It is a system that tracks changes to a file or set of files over time.
+This allows you to revert to previous versions of the file,
+see who made changes, and collaborate with others on the same file.
 
-### Что Такое Git?
+There are many different VCSs available,
+each with its own strengths and weaknesses.
+Some popular VCSs include Git, SVN, and Mercurial.
 
-Git — это технология системы контроля версий, 
-условно это журнал изменений компьютерных файлов любого типа.
+</details>
+<br>
 
-### Каковы преимущества использования GIT?
+[//]: # (What is Git?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is Git?
+        </b>
+    </summary>
+<br>
 
-1) избавляет проект от избыточности данных и репликация
-2) высокая доступность проекта
-3) только один каталог .git на репозиторий
-4) предназначен для общей работы
-5) любые проекты могут использовать GIT
+Git is a popular and widely used version control system (VCS).
+It is a distributed system, meaning that each developer
+has a complete copy of the repository on their local machine.
 
-### Минусы использования
+This allows developers to work offline and commit changes later.
+Git is also known for its speed and efficiency.
 
-1) Высоковатый порог входа
-2) Занудная техническая документация
+**Why better than analogs:**
 
-### Что такое .git (Репозиторий)
+Git has several advantages over other VCSs, such as SVN and Mercurial.
+These advantages include:
 
-**Репозиторий Git** представляет собой каталог файловой системы, в котором находятся 
-файлы конфигурации репозитория, файлы журналов, хранящие операции, 
-выполняемые над репозиторием, индекс, описывающий расположение файлов, и хранилище, содержащее собственно файлы.
+* **Speed and efficiency:** Git is known for its speed and efficiency,
+  making it ideal for large projects with many developers.
 
-Проект может в целом состоять из отдельных репозиториев
-В каждом репозитории есть master -> head ветка от которой при необходимости можно
-вычленять отдельные ветки
 
-По умолчанию репозиторий хранится в подкаталоге с названием **«.git»** в корневом каталоге рабочей копии дерева файлов
+* **Distributed nature:** Git's distributed nature allows developers
+  to work offline and commit changes later,
+  making it a good choice for teams that are spread across different locations.
 
-### Что такое конфиг гит
 
-Git использует набор конфигурационных файлов для изменения стандартного поведения, если это необходимо. 
-Вначале, Git ищет настройки в файле /etc/gitconfig, который содержит настройки для всех пользователей в 
-системе и всех репозиториев.
-**git config --system** чтобы использовать этот уровень конфига
+* **Branching and merging:** Git makes it easy to create and merge branches,
+  making it a good choice for projects that require frequent collaboration.
 
-Следующее место, куда смотрит Git — это файл ~/.gitconfig (C:/restMain.user.User/.gitconfig), 
-который хранит настройки конкретного пользователя. 
-Вы можете указать Git читать и писать в него, используя опцию **--global**.
 
-Наконец, Git ищет параметры конфигурации в файле настроек в директории Git (.git/config)
-используемого в данный момент репозитория.
-Эти значения относятся только к текущему репозиторию и доступны при передаче параметра **--local** команде git config.
-! Если другой уровень конфигурации не выбран явно, то используется --local
+* **Large community and support:** Git has a large and active community,
+  which means that there is a lot of support available if you need help.
 
-### Разделы гита
+</details>
+<br>
 
-- [Working directory]   Рабочая директория      - слепок репозитория
-- [Staging Area]        Промежуточная область   - это файл, обычно содержащийся в вашем каталоге Git, 
-в котором хранится информация о том, что войдет в ваш следующий коммит.
-- [Git directory]       В каталоге Git.         - Общий репозиторий с которым мы работаем
+[//]: # (What is a .git repository?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is a .git repository?
+        </b>
+    </summary>
+<br>
 
-### Основные состояния файлов git
+A .git repository is a hidden folder created
+when you initialize a Git repository.
+This folder contains all the information that Git needs to track changes
+to your project.
 
-- Modified  - Изменено означает, что вы изменили файл, но еще не зафиксировали его в своей базе данных.
-- Staged    - Этап означает, что вы пометили измененный файл в его текущей версии, чтобы перейти к следующему коммиту.
-- Commited  - Хранящийся как часть существующего коммита
+It includes the following files and folders:
 
-#### Как гит понимает что файл был изменен
+* **Objects:** This folder stores all of the Git objects, such as commits, blobs, and trees.
+* **Refs:** This folder stores the references to the Git objects.
+* **HEAD:** This file points to the current branch.
+* **config:** This file stores the Git configuration settings.
+* **description:** This file contains a description of the repository.
+* **hooks:** This folder contains scripts that can be run at different stages of the Git workflow.
+* **index:** This file stores the current state of the working directory.
 
-Git не хранит и не обрабатывает данные способом сохранения промежуточных файлов. 
-Вместо этого, подход Git к хранению данных больше похож на набор снимков миниатюрной файловой системы. 
-Каждый раз, когда вы делаете коммит, то есть сохраняете состояние своего проекта в Git, 
-система запоминает, как выглядит каждый файл в этот момент, и сохраняет ссылку на этот снимок. 
-Для увеличения эффективности, если файлы не были изменены, Git не запоминает эти файлы вновь, 
-а только создаёт ссылку на предыдущую версию идентичного файла, который уже сохранён. 
-Git представляет свои данные как, скажем, поток снимков.
+</details>
+<br>
+
+[//]: # (What is a Git config?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is a Git config?
+        </b>
+    </summary>
+<br>
+
+A Git config is a file that stores configuration settings for Git.
+These settings control how Git behaves on your system.
+There are two main types of Git config files:
+
+* **Global config:** This file stores settings that apply
+  to all Git repositories on your system.
+  It is located at `~/.gitconfig` on Unix-like systems
+  and `C:\Users\<username>\.gitconfig` on Windows.
+
+
+* **Local config:** This file stores settings that apply to a specific
+  Git repository.
+  It is located in the `.git` folder of the repository.
+
+You can use the `git config` command to view,
+edit, and delete settings in the Git config file.
+For example, the following command will show you all the settings
+in the global config file:
+
+```
+git config --global --list
+```
+
+</details>
+<br>
+
+[//]: # (What are the sections of Git and the main states of Git files?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What are the sections of Git and the main states of Git files?
+        </b>
+    </summary>
+<br>
+
+**Sections of Git:**
+
+Git is divided into three main sections:
+
+* **Working directory:** This is the directory where you
+  work on your project files.
+* **Staging area:** This is a temporary area where
+  you can stage files before committing them to the repository.
+* **Repository:** This is where the history of your project is stored.
+  It includes all of the commits, branches, and tags.
+
+**Main states of Git files:**
+
+There are four main states that a Git file can be in:
+
+* **Untracked:** This means that the file is not yet under Git control.
+* **Unmodified:** This means that the file is under Git control,
+  but it has not been changed since the last commit.
+* **Modified:** This means that the file has been changed since the last commit,
+  but the changes have not yet been staged.
+* **Staged:** This means that the file has been changed
+  and the changes have been staged.
+  The changes will be included in the next commit.
+
+</details>
+<br>
+
+[//]: # (How does Git know that a file has been changed?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            How does Git know that a file has been changed?
+        </b>
+    </summary>
+<br>
+
+Git uses a system called **content-addressable storage**
+to track changes to files.
+
+This means that Git stores a unique identifier for each version of a file.
+When a file is changed, Git creates a new version of the file
+and stores a new identifier for it.
+
+This allows Git to track changes to files even if
+the file name or contents have changed.
+
+Git uses a **hashing algorithm** to create unique identifiers for files.
+A hashing algorithm is a function that takes an input
+(in this case, the contents of a file)
+and produces a unique output (the hash).
+The hash is a fixed-length string of characters
+that is always the same for a given input.
+
+When Git creates a new version of a file,
+it calculates the hash of the file's contents.
+This hash is then stored in the Git repository.
+When you want to view a previous version of the file,
+Git can use the hash to retrieve the correct version of the file.
 
 ![alt-text](https://git-scm.com/book/en/v2/images/deltas.png)
 
-### Что такое «head», «master» в git и сколько голов можно создать в хранилище
+</details>
+<br>
 
-«head» - это просто ссылка на бранчу в которой мы находимся в данный момент.
-«master» В каждом репозитории есть заголовок по умолчанию, являющийся корнем всех изменений.
+[//]: # (What is the difference between fetch and pull in Git?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is the difference between fetch and pull in Git?
+        </b>
+    </summary>
+<br>
 
-### Каков паттерн ветвления в GIT?
-    
-Распространенный способ создания ветки в GIT - поддерживать ее как «Main».
+Both `fetch` and `pull` are Git commands used
+to update your local repository with changes from a remote repository.
+However, they differ in how they handle the updated information.
 
-Для реализации новых функций делаются ответвления, которые мержутся в основную ветку после
-заключительного этапа разработки.
+**Fetch:**
 
-### Что такое «Staging Area» или «Индекс» в GIT?
+* **Function:** `fetch` downloads the latest changes from the remote repository
+  and stores them in your local repository.
+  However, it does not automatically merge them into your current branch.
+* **Use case:** Use `fetch` when you want to check for updates
+  on the remote repository without affecting your local working directory.
 
-Все модифичированные файлы перед отправкой репозиториев в удаленный репозиторий
-помечаются и находятся в промежуточной зоне и открыты для форматирования или отката
+**Pull:**
 
-### Что такое git stash
+* **Function:** `pull` is a combination of `fetch` and `merge`.
+  It downloads the latest changes from the remote
+  repository, stores them in your local repository,
+  and then merges them into your current branch.
 
-Операция stash берет изменённое состояние вашей рабочей директории, 
-то есть изменённые отслеживаемые файлы и проиндексированные изменения, 
-и сохраняет их в хранилище незавершённых изменений, 
-которые вы можете в любое время применить обратно.
+</details>
+<br>
 
-### Fetch vs Pull
+[//]: # (What is the difference between fetch and pull in Git?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is the difference between fetch and pull in Git?
+        </b>
+    </summary>
+<br>
 
-git pull — это, по сути, git fetch, после которого сразу же следует git merge. 
+Both `fetch` and `pull` are Git commands used
+to update your local repository with changes from a remote repository.
+However, they differ in how they handle the updated information.
 
-git fetch получает изменения с сервера и сохраняет их в refs/remotes/. 
-Это никак не влияет на локальные ветки и текущие изменения. 
+**Fetch:**
 
-А git pull вливает все эти изменения в локальную копию.
+* **Function:** `fetch` downloads the latest changes from the remote repository
+  and stores them in your local repository.
+  However, it does not automatically merge them into your current branch.
+* **Use case:** Use `fetch` when you want to check for updates
+  on the remote repository without affecting your local working directory.
 
-### Merge vs Rebase
+**Pull:**
 
-**Git Merge**
+* **Function:** `pull` is a combination of `fetch` and `merge`.
+  It downloads the latest changes from the remote
+  repository, stores them in your local repository,
+  and then merges them into your current branch.
 
-Merge — обычная практика для разработчиков, использующих системы контроля версий. 
-Слияние принимает содержимое ветки источника и объединяет их с целевой веткой. 
-В этом процессе изменяется только целевая ветка. 
-История исходных веток остается неизменной.
+</details>
+<br>
+
+[//]: # (What is the difference between merge and rebase in Git?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            What is the difference between merge and rebase in Git?
+        </b>
+    </summary>
+<br>
+
+Both `merge` and `rebase` are Git commands used to integrate changes
+from one branch into another.
+However, they differ in how they achieve this integration
+and the resulting history.
+
+**Merge:**
+
+* **Function:** `merge` creates a new commit that combines the changes
+  from two branches.
+  This creates a "merge commit" in the history of your project.
+* **Use case:** Use `merge` when you want to preserve the history
+  of both branches and clearly show when they were merged.
+  This is often preferred when collaborating with others,
+  as it provides a clear audit trail of changes.
 
 ![alt text](http://blog.alvarezp.org/wp-content/uploads/2019/02/git-merge-commit.jpg)
 
-**Git Rebase**
+**Rebase:**
 
-Команда, которая позволяет разработчикам интегрировать изменения из одной ветви в другую.
-Git rebase сжимает все изменения в один «патч». 
-Затем он интегрирует патч на целевую ветвь. 
-В отличие от слияния, перебазировка сглаживает историю. 
-Он передает выполненную работу из одной ветки в другую. 
-В процессе, нежелательная история устранена.
+* **Function:** `rebase` replays the commits from one branch on top
+  of another branch.
+  This rewrites the history of the branch being rebased,
+  making it appear as if the commits were made on the target branch
+  from the beginning.
+* **Use case:** Use `rebase` when you want to clean up the history
+  of your project and avoid merge commits.
+  This can be useful for personal projects
+  or when working with a team that has agreed on a rebasing workflow.
 
 ![alt text](http://blog.alvarezp.org/wp-content/uploads/2019/02/git-rebase.jpg)
 
-#### Плюсы и минусы Merge vs Rebase 
+**In what situation must use:**
 
-**Rebase**
-+   Оптимизирует потенциально сложную историю.
-+   Очищает промежуточные коммиты, делая их единым коммитом, что может быть полезно для команд DevOps.
-+   Упрощает процесс их рассмотрения.
+* Use `merge` when you want to preserve the history
+  of both branches and clearly show when they were merged.
 
--   История теряется
--   Если над веткой трудится несколько человек, их тоже перетрет
--   Нет возможности восстановления
+* Use `rebase` when you want to clean up the history
+  of your project and avoid merge commits.
 
-**Merge**
-+   Просто и знакомо.
-+   Сохраняет полную историю и хронологический порядок.
-+   Поддерживает контекст ветви.
+</details>
+<br>
 
--   Из-за большого содержания веток и другого <Мусора> можно потеряться?
+[//]: # (What is the difference between forks and branches in Git?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+           What is the difference between forks and branches in Git?
+        </b>
+    </summary>
+<br>
 
-#### Когда использовать Merge, когда Rebase
+Both forks and branches are tools used in Git for creating
+and managing different versions of a project.
+However, they differ in their ownership, purpose, and relationship
+to the original repository.
 
-Если вы работаете один или в небольшой команде, 
-используйте rebase. Если вы работаете с большой командой, используйте merge
-(Если над какой-то фичей работает только один человек, возможно rebase прекрасно подойдет
-В остальном случае merge)
+**Forks:**
 
-#### Push vs ForcePush
+* **Ownership:** A fork is a copy of a repository that is owned
+  by a different user or organization than the original repository.
 
-Пуш отправляет staged коммиты в global git репозиторий
 
-ForcePush тоже отправляет коммиты но перетирает коммиты выше заменяя коммиты на те которые отправляются
-(Опасность в том, что пользователь может перетереть коммиты в случае если в момент его форспуша были
-добавлены коммиты от других пользователей)
+* **Purpose:** Forks are used to create a personal copy of a repository
+  where you can make changes without affecting the original repository.
+  This is useful for experimenting with new features,
+  fixing bugs, or creating your own version of the project.
 
-![atl-text](https://images.thoughtbot.com/git-push-force-with-lease/XEDULrg2QsnzIGytOMfh_XFQLB.jpg)
 
-#### Как вы узнаете в GIT, что ветка уже объединена с мастер веткой
+* **Relationship:** Forks are independent of the original repository.
+  Changes made in a fork do not automatically affect
+  the original repository, and vice versa.
+  You can choose to submit your changes back to the original repository as a
+  pull request, but this is not required.
 
-- git branch --merged <ветка> - Список веток которые были смержены с текущей
-- git branch --no-merged <ветка> - Список веток которые не были смержены с текущей
+**Branches:**
 
-Этот шаблон особенно полезен, когда над одним проектом работают несколько разработчиков.
+* **Ownership:** A branch is a separate line of development within the same repository. It is owned by the same user or
+  organization as the original repository.
 
-### Что такое «конфликт» в git?
-    
-«Конфликт» возникает, изменения в одном месте проекта вносятся сразу с нескольких коммитов.
-Git не сможет предсказать, какое изменение должно иметь приоритет.
 
-#### Как разрешить конфликт в git?
-    
-Чтобы разрешить конфликт в git, отредактируйте файлы, чтобы исправить конфликтующие изменения,
-а затем добавьте разрешенные файлы, запустив после этого «git add», 
-чтобы зафиксировать исправленное слияние, запустить «git commit». 
+* **Purpose:** Branches are used to isolate different lines of development within a project. This is useful for working
+  on a new feature, fixing a bug, or preparing a release.
 
-Git помнит, что вы находитесь в процессе слияния, поэтому он правильно устанавливает родителей коммитов.
 
-### В Чём Различие Между Форками и Ветками?
+* **Relationship:** Branches are connected to the main branch (usually called "master") of the repository. Changes made
+  in a branch can be merged back into the main branch, or they can be discarded.
 
-В Git форк является копией репозитория, которая отличается от оригинала. 
-Ветка (branch), используется для изменения определённых частей репозитория 
-, чтобы затем объединиться с мастер веткой.
+**In what situation must use:**
 
-#### Forks vs Branches
+* Use a fork when you want to create a personal copy of a repository
+  and make changes without affecting the original repository.
 
-**Forks**
 
-Плюсы:
- - Сохраняет ветви, созданные пользователем
- - Уменьшает беспорядок в основном хранилище (за счет беспорядка в форке)
- - Ваш командный процесс отражает процесс внешнего участника
- 
-Минусы:
-- Труднее следить за открытыми ветками (потому что они могут находится на отдельных форках команды)
-- Совместная работа над веткой сложнее (владелец ветки должен добавить человека в качестве соавтора)
-- Вам нужно понять концепцию общения между форками в Git
-- Требуются знания концепций гит (Сложность работы новечку)
+* Use a branch when you want to create a separate line of development
+  within the same repository.
 
-**Branches**
-
-Плюсы:
-- Хранят всю работу, выполняемую вокруг проекта, в одном месте.
-- Все соавторы могут перейти в одну ветку для совместной работы над ней.
-- Есть только один пульт Git для работы
-
-Минусы:
-- Заброшенные ветки могут накапливаться легче
-- Ошибки человеческого фактора, могут быть фатальны
-
-### Основные команды и определения
-
-===== Базовая настройка =====
-- git init                      - инициализация git репозитория в фолдере в котором находится cd
-- git help                      - отображает доступные команды (-a все доступные 
-                                / -с все доступные настройки конфига / git откроет помощник в браузере)
-- git config --list             - Отображаем все настройки которые используются в конфиг файле 
-                                (--local/global/system --list)
-- git config --list [p]         - Чтобы внести настройки в конкретный файл конфигурации
-
-===== Работа с коммитами файлов =====
-- git add file                  - Чтобы добавить файл в коммит
-- git rm --cached file          - Чтобы убрать файл из коммита
-- git commit -m "msg"           - Чтобы сделать коммит файлов
-- git log                       - Чтобы посмотреть все коммиты в ветке
-- git log -p -1                 - Посмотреть изменения в последнем коммите
-- git diff                      - показывает файлы которые претерпели изменения
-- git commit --amend -m "msg"   - Исправить сообщение коммита
-
-===== Работа с репозиторием =====
-- git remote                    - Команда работы с репозиториями
-- get remote -v                 - Для просмотра текущих репозиториев
-- git remote add pb <name>      - Добавление репозиториев
-
-===== Получение данных ======
-- git fetch [remote-name]       - Получение данных из репозитория
-- git pull --allow-unrelated-histories https://github.com/G1ukb/Sandbox.git 
-                                - заберет все изменения с ремоута для принудительного мержа
-                                
-===== Слияние одной ветки с другой =====
-
-- git merge <master>            - Смержить текущую ветку с мастер веткой 
-(мастер не меняется но все его изменения уходят в head ветку)      
-- git rebase <master>           - Команда, которая позволяет разработчикам интегрировать 
-изменения из одной ветви в другую.
-    git rebase --continue       - Чтобы подтвердить rebase
-    git rebase --abort          - Чтобы отклонить                         
-
-===== Отправка данных ======
-- git push <remote> <branch>    - Чтобы запушить изменения на гит репозиторий
-- git push <remote> --force     - Force пуш ветки 
-- git reset --soft <fe613aa1>   - Чтобы веруться в этот коммит и подобрать все изменения при возврате
-
-===== Работа с ветками =====
-- git branches -v               - Чтобы посмотреть все ветки
-- git branches -d имя           - удалить ветку
-- git checkout имя              - переключение между ветками
-- git checkout -b имя           - создание ветки
-- git branch --merged <ветка>   - Список веток которые были смержены с текущей
-- git branch --no-merged <ветка>- Список веток которые не были смержены с текущей
-
-git pull request - запрос на внесение изменений 
-git get - скачивание без слияния
-git force push - пуш коммитов с перезаписыванием изменений на сервере
-
-## Practice ##
-
-### @ Инициализация локального репозитория гит + коммит файлов
-
-Для того чтобы инициализировать репозиторий гит нужно дойти до необходимой директории и прописать
-git init
-После этого будет создан локальный репозиторий
-Чтобы закомитить файлы, для начала их нужно добавить используя команду 
-git add
-Если в прекоммит попал файл который нам не нужен, можно воспользоваться командой
-git rm --cached file
-
-#### Как вы можете исправить неправильно написанное сообщение коммита
-
-Чтобы исправить любое неправильно подписанное сообщение коммита, вы будете использовать команду 
-«git commit --amend -m "msg"». 
-Запустив эту команду, вы можете исправить сообщение об ошибке в редакторе.
-
-#### Как можно откатить коммит
-
-**Если изменения не закоммичены**
-
-Чтобы откатить коммит есть два варианта
-сделать git **reset --soft branchHash**
-Эта команда отменит последний коммит (но не изменения, которые вы внесли, они сохранятся).
-
-Если последний коммит отвратителен, то можно вообще его удалить
-**git reset --hard branchHash**
-(но ВСЕ правки, которые не были закоммиченны тоже удаляться)
-
-**git cherry-pick**
-Команда используется для того чтобы взять изменения, 
-внесённые каким-либо коммитом, и попытаться применить их заново в виде нового коммита наверху текущей ветки.
-Это может оказаться полезным чтобы забрать парочку коммитов из другой ветки без полного слияния с той веткой.
-
-**Если изменения закоммичены**
-
-git revert commit-sha1
-
-#### Как можно переключаться между коммитами
-
-Команда git checkout позваляет переключаться не только между ветками.
-Но и между коммитами
+</details>
+<br>

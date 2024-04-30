@@ -10,7 +10,6 @@ Topic list:
 * [Collections](education%2FCollections.md) (TBD) 
 * [Exceptions](education%2FExceptions.md) (TBD)
 * [Generics](education%2FGenerics.md)
-* [Immutability](education%2FImmutability.md) (TBD)
 * [IO NIO](education%2FIO_NIO.md) (TBD)
 * [Java String](education%2FJavaString.md)
 * [JVM JMM GC](education%2FJVM_JMM_GC.md) (TBD)

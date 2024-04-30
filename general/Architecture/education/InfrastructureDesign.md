@@ -173,6 +173,79 @@ NoSQL:
 
 </details>
 
+[//]: # (How would you handle data consistency across microservices
+         in a Java-based microservices architecture?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            How would you handle data consistency across microservices
+            in a Java-based microservices architecture?
+        </b>
+    </summary>
+<br>
+
+**Eventual Consistency:** - the change is added to other services over time.
+, System may be in an inconsistent state for a short period
+
+**Distributed Transactions:** - complex and can impact performance, but
+Spring can be used for distributed transactions
+
+**Saga Pattern:** - sequence transactions within a single service.
+And revert all changes in case of fail transaction.
+
+**Event-Driven Architecture** - events that represent state changes.
+Other micros can be subscribed and listen for updates
+
+**API Composition** - microservice managing its own database,
+a separate service layer is used to handle data consistency
+
+</details>
+
+[//]: # (How would you implement security measures 
+         in a Java-based microservices architecture?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            How would you implement security measures 
+            in a Java-based microservices architecture?
+        </b>
+    </summary>
+<br>
+
+- Authentication and Authorization
+- API Gateway (that acts as a single entry point into your system)
+- HTTPS
+- Service-to-Service Communication
+- Dependency Management
+- Secrets Management
+- Security Headers
+- Logging and Monitoring
+
+</details>
+
+[//]: # (Can you explain the role of APIs 
+         in a distributed Java application 
+         and how they influence the overall architecture?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            Can you explain the role of APIs 
+            in a distributed Java application 
+            and how they influence the overall architecture?
+        </b>
+    </summary>
+<br>
+
+- Standardization
+- Data Exchange
+- Versioning
+- Security
+
+</details>
+
 /////////
 
 [//]: # ()

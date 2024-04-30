@@ -75,6 +75,20 @@ DL - getBean() when we can manually pick up this dependency for use
 
 </details>
 
+[//]: # (What is the default scope of a Spring bean?)
+<br>
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+             What is the default scope of a Spring bean?
+        </b>
+    </summary>
+<br>
+
+The default scope of a Spring bean is singleton.
+
+</details>
+
 [//]: # (Bean life cycle)
 <br>
 <details>

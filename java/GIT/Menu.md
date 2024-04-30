@@ -5,6 +5,7 @@
 <h2>
 
 Topic list:
-* [Git](education%2FGit.md) (TBD)
+* [Git](education%2FGit.md)
+* [Git Commands](education%2FGitCommands.md) (TBD)
 
 </h2>

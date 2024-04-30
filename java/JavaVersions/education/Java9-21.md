@@ -86,6 +86,49 @@ of `equals()`, `hashCode()`, and `toString()`.
 </details>
 <br>
 
+[//]: # (Can you provide a detailed explanation of the intern
+        method in Java and its usage with an example?)
+
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            Can you provide a detailed explanation of the intern
+            method in Java and its usage with an example?
+        </b>
+    </summary>
+<br>
+
+The intern() method in Java is a method of the String class 
+that returns a canonical representation of the string object. 
+
+A canonical representation is a single instance of the string 
+that is shared by all other strings with the same content.
+
+When you create a string literal in Java, a new String object is created. 
+However, if you use the intern() method, 
+the Java Virtual Machine (JVM) will check if a String object 
+with the same content already exists in the string pool. 
+
+If so, it will return the existing String object instead of creating a new one.
+
+```
+String s1 = "Hello";
+String s2 = "Hello";
+String s3 = s1.intern();
+
+System.out.println(s1 == s2); // true
+System.out.println(s1 == s3); // true
+```
+
+In what situation must use: 
+The intern() method should be used when you need to ensure 
+that all references are to a particular string value point to the same object. 
+This can be useful for performance optimization 
+and for maintaining consistency and avoiding errors.
+
+</details>
+<br>
+
 
 2. How do Java Records differ from traditional Java classes?
 4. What are the limitations of Java Records compared to regular classes?

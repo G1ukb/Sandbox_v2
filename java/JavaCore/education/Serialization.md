@@ -5,7 +5,7 @@
 
 </h4>
 
-<br>
+[//]: # (Ways to Serialize an Object?)
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -29,6 +29,7 @@
 </details>
 <br>
 
+[//]: # (How descendants and base classes behave when deserialized)
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -42,7 +43,7 @@ all its subclasses are also serializable.
 
 Conversely, when an object has a reference to another object,
 these objects must implement the Serializable interface separately,
-otherwise a NotSerializableException will be thrown
+otherwise a NotSerializableException will be thrown 
 
 </details>
 <br>

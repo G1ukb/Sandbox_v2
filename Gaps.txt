@@ -1,2 +1,17 @@
 ﻿Theory gaps:
 
+Spring
+Controller Advise -> Exception handler in MVC -> responce body
+Handler interceptor
+Project reactor / starter Spring
+JPA приложение и словить бит Дата Сорс и попытаться обвернуться в прокси
+Пост контракт
+Более подробно разобраться с темой жизненного цикла в спринг
+
+Spring Boot
+@enableAutoConfiguration
+activator
+rest template topic in spring
+
+Web
+WebFlux

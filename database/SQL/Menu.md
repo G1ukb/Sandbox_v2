@@ -5,6 +5,7 @@
 <h2>
 
 Topic list:
+* [RDBMS](education%2FRDBMS.md)
 * [SQL](education%2FSQL.md)
 
 </h2>

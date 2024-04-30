@@ -34,10 +34,11 @@
         <module>java/Leetcode</module>
         <module>java/MQ</module>
         <module>java/ORM</module>
-        <module>java/REST</module>
+        <module>java/MessagingProtocols</module>
         <module>java/Spring</module>
         <module>java/Testing</module>
         <module>java/WebServer</module>
+        <module>java/ClassLoader</module>
 
         <module>other/Kotlin</module>
 

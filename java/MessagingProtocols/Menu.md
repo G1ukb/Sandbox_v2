@@ -7,5 +7,6 @@
 Topic list:
 * [API Management and Design](education%2FAPIManagementAndDesign.md) (TBD)
 * [REST](education%2FREST.md) (TBD)
+* [SOAP](education%2FSOAP.md) (TBD)
 
 </h2>

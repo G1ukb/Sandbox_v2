@@ -29,7 +29,6 @@ or for marking classes, fields, etc.
 <br>
 
 [//]: # (Instructions to execute annotations by execution type?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>

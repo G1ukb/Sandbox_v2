@@ -8,7 +8,6 @@
 ![img](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/03/hierarchy-of-collection-framework-in-java.webp)
 
 [//]: # (Can you explain what makes a good key for a HashMap in Java?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -50,7 +49,6 @@ the `HashMap` works correctly and efficiently:
 <br>
 
 [//]: # (How does the hashCode method contribute to a good HashMap key?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -91,7 +89,6 @@ which slows down access times.
 
 [//]: # (Can you explain the role of the equals 
          method in the context of a HashMap key?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -109,7 +106,6 @@ and to find the correct entry when multiple entries have the same hash code.
 
 [//]: # (How does the choice of a HashMap key 
         affect the performance of the HashMap?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -128,14 +124,7 @@ this will greatly harm the performance
 </details>
 <br>
 
-
-
-
-
-
-
 [//]: # (Explore the basic principle of basic collections)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -173,6 +162,8 @@ this will greatly harm the performance
 
 </details>
 <br>
+
+/////////////////////////////////////////////////////////////
 
 <details>
     <summary style="font-size: 25px;">

@@ -6,8 +6,6 @@
 </h4>
 
 [//]: # (Java OOP)
-
-<br>
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -21,6 +19,38 @@
 - **Inheritance** (Property of expand (base) class by children)
 - **Polymorphism** (The property of the same objects performs the functionality in different ways)
 - **Abstraction** (Property of extraction from an object only to us parameters)
+
+Additional:
+
+**Composition**
+
+* Objects can be composed of other objects.
+* Composition allows objects to be created from other objects.
+* Objects can delegate behavior to their component objects.
+
+**Aggregation**
+
+* Objects can have references to other objects.
+* Aggregation is a weaker form of composition
+  where objects are not dependent on each other.
+* Objects can be associated with each other
+  without being composed of each other.
+
+Other OOP principles
+
+* **Modularity**: Classes should be designed to be independent and reusable.
+* **Loose coupling**: Classes should be loosely coupled to each other
+  to reduce dependencies.
+* **High cohesion:** Classes should have a single, well-defined purpose.
+* **Single responsibility principle:** Classes should have a single,
+  well-defined responsibility.
+* **Interface segregation principle:** Interfaces should be small and specific.
+* **Dependency inversion principle:** Classes should depend on abstractions,
+  not on concrete implementations.
+* **Liskov substitution principle:** Subclasses should be substitutable
+  for their superclasses.
+* **Open/closed principle:** Classes should be open for extension
+  but closed for modification.
 
 </details>
 <br>
@@ -435,3 +465,172 @@ At the same time, there are two of them for dividing into work in a multi-thread
 
 </details>
 <br> 
+
+[//]: # (Java Comparable vs Comparator)
+
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+          Java Comparable vs Comparator
+        </b>
+    </summary>
+<br>
+
+Both `Comparable` and `Comparator` are interfaces in Java
+that are used to compare objects.
+However, they differ in their purpose and implementation:
+
+**Comparable:**
+
+* Defines a single method, `compareTo(T o)`,
+  which compares the current object with another object of the same type.
+* The object itself implements the `compareTo` method.
+* Useful when you want to sort objects
+  of the same type using the `Collections.sort()` method
+  or the `Arrays.sort()` method.
+* Provides a natural ordering for the objects.
+
+**Comparator:**
+
+* Defines a single method, `compare(T o1, T o2)`,
+  which compares two objects of the same type.
+* The `compare` method is implemented in a separate class.
+* Useful when you want to sort objects
+  of the same type using a custom comparison logic.
+* Allows for more flexible and customizable sorting.
+* Used with `Collections.sort()` and `Arrays.sort()` with a custom Comparator
+
+**Example:**
+
+```java
+// Comparable example
+public class Person implements Comparable<Person> {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return this.name.compareTo(o.name);
+    }
+}
+
+// Comparator example
+public class AgeComparator implements Comparator<Person> {
+    @Override
+    public int compare(Person o1, Person o2) {
+        return o1.age - o2.age;
+    }
+}
+```
+
+**When to use which:**
+
+* Use `Comparable` when you want a simple, natural ordering for your objects.
+* Use `Comparator` when you need a more flexible and customizable sorting logic.
+
+**Additional Notes:**
+
+* You can implement both `Comparable` and `Comparator` for the same class.
+* The `Comparator` interface is often used with the `Collections.sort()` method and the `Arrays.sort()` method to
+  provide a custom comparison logic.
+* You can also use a lambda expression to create a `Comparator`.
+
+**Summary:**
+
+`Comparable` and `Comparator` are interfaces in Java
+that are used to compare objects.
+`Comparable` defines a natural ordering for objects,
+while `Comparator` allows for a custom comparison logic.
+Use `Comparable` when you want a simple, natural ordering for your objects.
+Use `Comparator` when you need a more flexible and customizable sorting logic.
+
+</details>
+<br>
+
+[//]: # (What are Immutable Classes?)
+
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+          What are Immutable Classes?
+        </b>
+    </summary>
+<br>
+
+Immutable classes are classes whose objects cannot be modified
+after they are created.
+
+This means that once an object of an immutable class is created,
+its state cannot be changed.
+
+This is in contrast to mutable classes,
+whose objects can be modified after they are created.
+
+**Why use Immutable Classes?**
+
+There are several reasons to use immutable classes:
+
+* **Thread safety:** Immutable classes are inherently thread-safe,
+  as their state cannot be changed by multiple threads simultaneously.
+* **Immutability simplifies reasoning about code:**
+  It is easier to reason about the behavior of code
+  that uses immutable objects, as you know that
+  the state of the objects will not change.
+* **Immutability can improve performance:**
+  Immutable objects can be cached and reused, as their state will not change.
+* **Immutability can make code more maintainable:**
+  Immutable objects are less likely to be accidentally modified,
+  which can make code more maintainable.
+
+**How to Create Immutable Classes in Java?**
+
+There are several ways to create immutable classes in Java:
+
+* **Make all fields final:** Declare all fields of the class as `final`.
+  This will prevent them from being modified after the object is created.
+* **Make the constructor private:** Make the constructor of the class private.
+  This will prevent other classes from creating instances of the class.
+* **Provide methods to create new objects:**
+  Provide methods that return new instances of the class with the desired
+  state.
+* **Return defensive copies:**
+  When returning objects from methods, return defensive copies.
+  This will prevent other classes from modifying the original objects.
+
+**Example:**
+
+```java
+public final class Person {
+    private final String name;
+    private final int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Person withName(String newName) {
+        return new Person(newName, age);
+    }
+
+    public Person withAge(int newAge) {
+        return new Person(name, newAge);
+    }
+}
+```
+
+</details>
+<br>
