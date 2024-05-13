@@ -33,7 +33,7 @@ Java:
 * [BuildTools](java%2FBuildTools%2FMenu.md) (TBD)
 * [ClassLoader](java%2FClassLoader%2FMenu.md) (TBD)
 * [DesignPatterns](java%2FDesignPatterns%2FMenu.md) (TBD)
-* [Git](java%2FGIT%2FMenu.md) (TBD)
+* [Git](java%2FGIT%2FMenu.md)
 * [Java Core](java%2FJavaCore%2FMenu.md) (TBD)
 * [Java Versions](java%2FJavaVersions%2FMenu.md) (TBD)
 * [Messaging Protocols](java%2FMessagingProtocols%2FMenu.md) (TBD)

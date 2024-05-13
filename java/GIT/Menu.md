@@ -6,6 +6,6 @@
 
 Topic list:
 * [Git](education%2FGit.md)
-* [Git Commands](education%2FGitCommands.md) (TBD)
+* [Git Commands](education%2FGitCommands.md)
 
 </h2>

@@ -5,6 +5,57 @@
 
 </h4>
 
+[//]: # (How do you know in Git that a branch 
+        has already been merged into the master branch?)
+<details>
+    <summary style="font-size: 25px;">
+        <b>
+            How do you know in Git that a branch 
+            has already been merged into the master branch?
+        </b>
+    </summary>
+<br>
+
+There are several ways to check 
+if a branch has been merged into the master branch in Git:
+
+**1. Using the `git branch --merged master` command:**
+
+This command lists all branches that have been merged into the current branch. 
+If the branch you are interested in is listed, 
+it means it has been merged into the master branch.
+
+**2. Using the `git log` command:**
+
+This command shows the commit history of a branch. If the last commit of the branch you are interested in is also present in the master branch, it means the branch has been merged.
+
+```
+git log branch_name..master
+```
+
+**3. Using the GitHub web interface:**
+
+If you are using GitHub, you can check the "Branches" tab of the repository. Merged branches will have a green checkmark next to them.
+
+**4. Using the `git show-branch` command:**
+
+This command shows the relationship between branches. If the branch you are interested in is listed under "merged", it means it has been merged into the master branch.
+
+```
+git show-branch master
+```
+
+**5. Using the `git branch -vv` command:**
+
+This command shows the relationship between branches, including the number of commits ahead or behind the master branch. If the branch you are interested in is listed as "up to date" with the master branch, it means it has been merged.
+
+```
+git branch -vv
+```
+
+</details>
+<br>
+
 
 #### Как вы узнаете в GIT, что ветка уже объединена с мастер веткой
 
