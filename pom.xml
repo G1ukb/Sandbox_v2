@@ -31,7 +31,7 @@
         <module>java/GIT</module>
         <module>java/JavaCore</module>
         <module>java/JavaVersions</module>
-        <module>java/Leetcode</module>
+        <module>java/Algorithms</module>
         <module>java/MQ</module>
         <module>java/ORM</module>
         <module>java/MessagingProtocols</module>

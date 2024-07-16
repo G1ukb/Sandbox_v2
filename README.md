@@ -29,7 +29,7 @@ General:
 * [Security](general%2FSecurity%2FMenu.md) (TBD)
 
 Java:
-* [Algorithms](java%2FLeetcode%2FMenu.md) (TBD)
+* [Algorithms](java%2FAlgorithms%2FMenu.md) (TBD)
 * [BuildTools](java%2FBuildTools%2FMenu.md) (TBD)
 * [ClassLoader](java%2FClassLoader%2FMenu.md) (TBD)
 * [DesignPatterns](java%2FDesignPatterns%2FMenu.md) (TBD)

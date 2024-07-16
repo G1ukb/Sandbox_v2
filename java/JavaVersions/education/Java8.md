@@ -143,7 +143,7 @@ Choose Loop if:
 <br>
 
 [//]: # (Can you explain the purpose and usage of the Predicate 
-[//]: # (interface in Java with an example?)
+         interface in Java with an example?)
 
 <details>
     <summary style="font-size: 25px;">
