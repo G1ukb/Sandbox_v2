@@ -1,10 +1,10 @@
 <H1>Shell Script</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Terraform](education%2FTerraform.md) (TBD)
+* [Terraform](education/Terraform.md) (TBD)
 
 </h2>

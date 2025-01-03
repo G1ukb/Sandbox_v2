@@ -1,7 +1,7 @@
 <h1>SQL</h1> 
 <h4> 
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](../Menu.md)
 
 </h4>
 
@@ -145,7 +145,7 @@ within a partition of a result set.
    to each row within the partition of a result set,
    Duplicated values work as common values.
 
-    ```sql
+    ```
     SELECT Name, Score, ROW_NUMBER() OVER (ORDER BY Score DESC) AS Row_Number
     FROM student_scores;
     ```
@@ -163,7 +163,7 @@ within a partition of a result set.
    but for rows with equal values, it assigns them the same rank,
    leaving a gap for the later ranks.
 
-    ```sql
+    ```
     SELECT Name, Score, RANK() OVER (ORDER BY Score DESC) AS Rank
     FROM student_scores;
     ```
@@ -180,7 +180,7 @@ within a partition of a result set.
 3. DENSE_RANK(): This function acts exactly as the RANK()
    function but does not skip ranks for the rows with equal values.
 
-```sql
+```
 SELECT Name,  Score, DENSE_RANK() OVER (ORDER BY Score DESC) AS Dense_Rank
 FROM student_scores;
 ```
@@ -221,7 +221,7 @@ In total, there are four types of JOIN operations:
 
    Example:
 
-   ```sql
+   ```
    SELECT Orders.order_id, Customers.customer_name
    FROM Orders
    INNER JOIN Customers
@@ -235,7 +235,7 @@ In total, there are four types of JOIN operations:
 
    Example:
 
-   ```sql
+   ```
    SELECT Orders.order_id, Customers.customer_name
    FROM Orders
    LEFT JOIN Customers
@@ -248,7 +248,7 @@ In total, there are four types of JOIN operations:
 
    Example:
 
-   ```sql
+   ```
    SELECT Orders.order_id, Customers.customer_name
    FROM Orders
    RIGHT JOIN Customers
@@ -262,7 +262,7 @@ In total, there are four types of JOIN operations:
 
    Example:
 
-   ```sql
+   ```
    SELECT Orders.order_id, Customers.customer_name
    FROM Orders
    FULL OUTER JOIN Customers
@@ -307,7 +307,7 @@ this improves readability and facilitates debugging.
    and can use operators like =, >, <, >=, <=, and <> in the WHERE clause.
 
    Example:
-   ```sql
+   ```
    SELECT EmployeeName, Age 
    FROM Employees 
    WHERE Age > (SELECT AVG(Age) FROM Employees);
@@ -318,7 +318,7 @@ this improves readability and facilitates debugging.
 
    Example:
 
-   ```sql
+   ```
    SELECT MAX(TotalOrder) AS LargestOrder
    FROM (SELECT SUM(Amount) AS TotalOrder FROM Orders GROUP BY CustomerID) AS sub;
    ```
@@ -328,7 +328,7 @@ this improves readability and facilitates debugging.
 
 Example:
 
-```sql
+```
 SELECT CustomerName
 FROM Customers c
 WHERE EXISTS (SELECT * FROM Orders o WHERE c.CustomerID = o.CustomerID);
@@ -355,7 +355,7 @@ which are stored in the database data dictionary.
 A stored procedure can be invoked by triggers,
 other stored procedures, or applications such as Java, Python, PHP.
 
-```sql
+```
 CREATE PROCEDURE procedure_name
 AS
 sql_statement
@@ -364,13 +364,13 @@ GO;
 
 Once a procedure is created, it can be executed as follows:
 
-```sql
+```
 EXEC procedure_name;
 ```
 
 Stored procedures can also take in parameters allowing them to be more flexible.
 
-```sql
+```
 CREATE PROCEDURE GetSales (@Year INT)
 AS
 SELECT SUM(Amount) AS TotalSales FROM Sales WHERE OrderYear = @Year;
@@ -430,7 +430,7 @@ to fire before/after the event, leading to "BEFORE" or "AFTER" triggers.
 Some databases also support "INSTEAD OF" triggers
 which replace the triggering event with actions defined within the trigger.
 
-```sql
+```
 CREATE OR REPLACE FUNCTION log_order_update() RETURNS TRIGGER AS $$
 BEGIN
    INSERT INTO order_update_log (order_id, updated_at) 
@@ -486,7 +486,7 @@ Think of a cursor as a pointer to a row in a result set.
 The cursor can only reference one row at a time,
 but can move to other rows of the result set as needed.
 
-```sql
+```
 DECLARE @name VARCHAR(50);
 DECLARE sample_cursor CURSOR FOR
 SELECT name

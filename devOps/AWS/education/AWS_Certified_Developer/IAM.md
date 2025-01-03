@@ -1,7 +1,7 @@
 <h1> IAM </h1>
 <h4> 
 
-[Back to menu](..%2F..%2FMenu.md)
+[Back to menu](../../Menu.md)
 
 </h4>
 
@@ -223,7 +223,7 @@ AWS STS authorizes the call and provides temporary AWS access credentials.
 The user is allowed to assume an IAM role and access AWS resources 
 in accordance with the role's security policy
 
-![UserPoolWorkflow.png](..%2Fimg%2FUserPoolWorkflow.png)
+![UserPoolWorkflow.png](../img/UserPoolWorkflow.png)
 
 </details>
 <br>

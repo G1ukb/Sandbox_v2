@@ -1,13 +1,13 @@
 <H1>Testing MENU</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Junit](education%2FJunit.md) (TBD)
-* [Mock](education%2FMock.md) (TBD)
-* [Other Testing Tools](education%2FOtherTestingTools.md) (TBD)
-* [Testing](education%2FTesting.md) (TBD)
+* [Junit](education/Junit.md) (TBD)
+* [Mock](education/Mock.md) (TBD)
+* [Other Testing Tools](education/OtherTestingTools.md) (TBD)
+* [Testing](education/Testing.md) (TBD)
 
 </h2>

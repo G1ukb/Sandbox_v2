@@ -1,7 +1,7 @@
 <h1>Spring Security</h1> 
 <h4> 
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](../Menu.md)
 
 </h4>
 
@@ -53,7 +53,7 @@ Key elements and purposes of Spring Security include:
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
-    public void configure(HttpSecurity http) throws Exception {
+    public void configure(HttpSecurity http) {
         http
             .authorizeRequests()
             .anyRequest().authenticated()
@@ -63,8 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth)
-        throws Exception {
+    public void configureGlobal(AuthenticationManagerBuilder auth) {
         auth
             .inMemoryAuthentication()
             .withUser("user").password(passwordEncoder().encode("password")).roles("USER");
@@ -111,7 +110,7 @@ Spring Security has two main areas of focus: authentication and authorization.
    public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
        @Autowired
-       public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+       public void configureGlobal(AuthenticationManagerBuilder auth) {
            auth
                .inMemoryAuthentication()
                .withUser("user").password(passwordEncoder().encode("password")).roles("USER");
@@ -143,7 +142,7 @@ Spring Security has two main areas of focus: authentication and authorization.
        // ... other configurations
 
        @Override
-       protected void configure(HttpSecurity http) throws Exception {
+       protected void configure(HttpSecurity http) {
            http
                .authorizeRequests()
                    .antMatchers("/admin/**").hasRole("ADMIN") // only admin can access /admin/**
@@ -251,7 +250,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    public void configureGlobal(AuthenticationManagerBuilder auth) {
         auth
             .inMemoryAuthentication()
             .passwordEncoder(passwordEncoder())
@@ -381,7 +380,7 @@ session timeout settings, and "remember-me" functionality.
     @EnableWebSecurity
     public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         @Override
-        protected void configure(HttpSecurity http) throws Exception {
+        protected void configure(HttpSecurity http) {
             http
                 .authorizeRequests()
                     .anyRequest().authenticated()
@@ -398,7 +397,7 @@ session timeout settings, and "remember-me" functionality.
 Remember that these configurations only make sense
 in a stateful application where the HTTP session is used.
 
-For stateless applications, like RESTful services,
+For stateless applications, like Restfull services,
 the best practice is to use stateless authentication strategies, like
 OIDC or JWT tokens.
 
@@ -487,7 +486,7 @@ Implementing OAuth2 authentication in Spring Security involves several steps:
     public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) {
       http.authorizeRequests()
           .antMatchers("/", "/login**", "/error**").permitAll()
           .anyRequest().authenticated()
@@ -532,8 +531,7 @@ for REST APIs, where the token is sent with each request.
 
        @Override
        protected void doFilterInternal(HttpServletRequest request, 
-                                       HttpServletResponse response, FilterChain filterChain)
-               throws ServletException, IOException {
+                                       HttpServletResponse response, FilterChain filterChain) {
            
            String token = request.getHeader("Authorization");
          
@@ -567,7 +565,7 @@ for REST APIs, where the token is sent with each request.
     public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         @Override
-        protected void configure(HttpSecurity http) throws Exception {
+        protected void configure(HttpSecurity http) {
             http
                 .csrf().disable()
                 .authorizeRequests().anyRequest().authenticated()
@@ -689,7 +687,7 @@ in a Spring Security application typically comes down to several steps:
    saves it to the database and invalidates the token.
 
 
-2. Generate Reset Token:
+- Generate Reset Token:
 
 ```java
 public void createPasswordResetToken(User user) {
@@ -699,7 +697,7 @@ public void createPasswordResetToken(User user) {
 }
 ```
 
-4. User Clicks the Link:
+- User Clicks the Link:
 
 ```java
 
@@ -726,7 +724,7 @@ public class ResetPasswordController {
 }
 ```
 
-5. User Resets Password:
+- User Resets Password:
 
 ```java
 

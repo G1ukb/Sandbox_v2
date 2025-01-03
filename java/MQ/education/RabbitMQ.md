@@ -1,7 +1,7 @@
 <h1>RabbitMQ</h1> 
 <h4> 
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](../Menu.md)
 
 </h4>
 

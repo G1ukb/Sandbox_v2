@@ -1,27 +1,27 @@
 <H1>AWS MENU</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Aurora](education%2FAWS_Certified_Developer%2FAurora.md)
-* [CI-CD](education%2FAWS_Certified_Developer%2FCI-CD.md)
-* [CloudFormation](education%2FAWS_Certified_Developer%2FCloudFormation.md)
-* [CodePipeline](education%2FAWS_Certified_Developer%2FCodePipeline.md)
-* [DynamoDB](education%2FAWS_Certified_Developer%2FDynamoDB.md)
-* [EC2](education%2FAWS_Certified_Developer%2FEC2.md)
-* [Elastic Cache](education%2FAWS_Certified_Developer%2FElasticCache.md)
-* [Elastic Load Balancing (ELB)](education%2FAWS_Certified_Developer%2FElasticLoadBalancing%28ELB%29.md)
-* [IAM](education%2FAWS_Certified_Developer%2FIAM.md)
-* [Lambda](education%2FAWS_Certified_Developer%2FLambda.md)
-* [Monitoring](education%2FAWS_Certified_Developer%2FMonitoring.md)
-* [OtherServices](education%2FAWS_Certified_Developer%2FOtherServices.md)
-* [RDS](education%2FAWS_Certified_Developer%2FRDS.md)
-* [S3](education%2FAWS_Certified_Developer%2FS3.md)
-* [Security](education%2FAWS_Certified_Developer%2FSecurity.md)
-* [Serverless](education%2FAWS_Certified_Developer%2FServerless.md)
-* [SNS-SQL](education%2FAWS_Certified_Developer%2FSNS-SQL.md)
-* [VPC](education%2FAWS_Certified_Developer%2FVPC.md)
+* [Aurora](education/AWS_Certified_Developer/Aurora.md)
+* [CI-CD](education/AWS_Certified_Developer/CI-CD.md)
+* [CloudFormation](education/AWS_Certified_Developer/CloudFormation.md)
+* [CodePipeline](education/AWS_Certified_Developer/CodePipeline.md)
+* [DynamoDB](education/AWS_Certified_Developer/DynamoDB.md)
+* [EC2](education/AWS_Certified_Developer/EC2.md)
+* [Elastic Cache](education/AWS_Certified_Developer/ElasticCache.md)
+* [Elastic Load Balancing (ELB)](education/AWS_Certified_Developer/ElasticLoadBalancing%28ELB%29.md)
+* [IAM](education/AWS_Certified_Developer/IAM.md)
+* [Lambda](education/AWS_Certified_Developer/Lambda.md)
+* [Monitoring](education/AWS_Certified_Developer/Monitoring.md)
+* [OtherServices](education/AWS_Certified_Developer/OtherServices.md)
+* [RDS](education/AWS_Certified_Developer/RDS.md)
+* [S3](education/AWS_Certified_Developer/S3.md)
+* [Security](education/AWS_Certified_Developer/Security.md)
+* [Serverless](education/AWS_Certified_Developer/Serverless.md)
+* [SNS-SQS](education/AWS_Certified_Developer/SNS-SQS.md)
+* [VPC](education/AWS_Certified_Developer/VPC.md)
 
 </h2>

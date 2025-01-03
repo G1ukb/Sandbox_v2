@@ -1,12 +1,12 @@
 <H1>Rest</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [API Management and Design](education%2FAPIManagementAndDesign.md) (TBD)
-* [REST](education%2FREST.md) (TBD)
-* [SOAP](education%2FSOAP.md) (TBD)
+* [API Management and Design](education/APIManagementAndDesign.md) (TBD)
+* [REST](education/REST.md) (TBD)
+* [SOAP](education/SOAP.md) (TBD)
 
 </h2>

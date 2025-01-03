@@ -11,43 +11,43 @@ read  information for yourself
 Topic list:
 
 Database:
-* [NoSQL](database%2FNoSQL%2FMenu.md)
-* [SQL](database%2FSQL%2FMenu.md)
+* [NoSQL](database/NoSQL/Menu.md) (TBD)
+* [SQL](database/SQL/Menu.md) (TBD)
 
 DevOps:
-* [Artifactory](devOps%2FArtifactory%2FMenu.md)
-* [AWS](devOps%2FAWS%2FMenu.md)
-* [DevOps Core](devOps%2FDevOpsCore%2FMenu.md) (TBD)
-* [Docker](devOps%2FDocker%2FMenu.md) (TBD)
-* [Jenkins CI](devOps%2FJenkinsCI%2FMenu.md) (TBD)
-* [Kubernetes](devOps%2FKubernetes%2FMenu.md) (TBD)
-* [ShellScript](devOps%2FShellScript%2FMenu.md) (TBD)
-* [Terraform](devOps%2FTerraform%2FMenu.md) (TBD)
+* [Artifactory](devOps/Artifactory/Menu.md) (TBD)
+* [AWS](devOps/AWS/Menu.md) (TBD)
+* [DevOps Core](devOps/DevOpsCore/Menu.md) (TBD)
+* [Docker](devOps/Docker/Menu.md) (TBD)
+* [Jenkins CI](devOps/JenkinsCI/Menu.md) (TBD)
+* [Kubernetes](devOps/Kubernetes/Menu.md) (TBD)
+* [ShellScript](devOps/ShellScript/Menu.md) (TBD)
+* [Terraform](devOps/Terraform/Menu.md) (TBD)
 
 General:
-* [Architecture](general%2FArchitecture%2FMenu.md) (TBD)
-* [Security](general%2FSecurity%2FMenu.md) (TBD)
+* [Architecture](general/Architecture/Menu.md) (TBD)
+* [Security](general/Security/Menu.md) (TBD)
 
 Java:
-* [Algorithms](java%2FAlgorithms%2FMenu.md) (TBD)
-* [BuildTools](java%2FBuildTools%2FMenu.md) (TBD)
-* [ClassLoader](java%2FClassLoader%2FMenu.md) (TBD)
-* [DesignPatterns](java%2FDesignPatterns%2FMenu.md) (TBD)
-* [Git](java%2FGIT%2FMenu.md)
-* [Java Core](java%2FJavaCore%2FMenu.md) (TBD)
-* [Java Versions](java%2FJavaVersions%2FMenu.md) (TBD)
-* [Messaging Protocols](java%2FMessagingProtocols%2FMenu.md) (TBD)
-* [MQ](java%2FMQ%2FMenu.md) (TBD)
-* [ORM](java%2FORM%2FMenu.md) (TBD)
-* [Spring](java%2FSpring%2FMenu.md) (TBD)
-* [Testing](java%2FTesting%2FMenu.md) (TBD)
-* [WebServer](java%2FWebServer%2FMenu.md) (TBD)
+* [Algorithms](java/Algorithms/Menu.md) (TBD)
+* [BuildTools](java/BuildTools/Menu.md) (TBD)
+* [ClassLoader](java/ClassLoader/Menu.md) (TBD)
+* [DesignPatterns](java/DesignPatterns/Menu.md) (TBD)
+* [Git](java/GIT/Menu.md) (TBD)
+* [Java Core](java/JavaCore/Menu.md) (TBD)
+* [Java Versions](java/JavaVersions/Menu.md) (TBD)
+* [Messaging Protocols](java/MessagingProtocols/Menu.md) (TBD)
+* [MQ](java/MQ/Menu.md) (TBD)
+* [ORM](java/ORM/Menu.md) (TBD)
+* [Spring](java/Spring/Menu.md) (TBD)
+* [Testing](java/Testing/Menu.md) (TBD)
+* [WebServer](java/WebServer/Menu.md) (TBD)
 
 Other:
-* [Kotlin](other%2FKotlin%2FMenu.md) (TBD)
+* [Kotlin](other/Kotlin/Menu.md) (TBD)
 
 Soft Skills:
-* [Leadership](softSkill%2FLeadership%2FMenu.md) (TBD)
-* [SoftProc](softSkill%2FSoftProc%2FMenu.md) (TBD)
+* [Leadership](softSkill/Leadership/Menu.md) (TBD)
+* [SoftProc](softSkill/SoftProc/Menu.md) (TBD)
 
 </h2>

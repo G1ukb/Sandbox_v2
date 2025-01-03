@@ -1,11 +1,11 @@
 <H1>SQl menu</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [RDBMS](education%2FRDBMS.md)
-* [SQL](education%2FSQL.md)
+* [RDBMS](education/RDBMS.md)
+* [SQL](education/SQL.md)
 
 </h2>

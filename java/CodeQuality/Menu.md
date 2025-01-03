@@ -3,7 +3,7 @@
 <h2>
 
 Topic list:
-* [Code Quality](education%2FCodeQuality.md)
-* [SonarQube](education%2FSonarQube.md)
+* [Code Quality](education/CodeQuality.md)
+* [SonarQube](education/SonarQube.md)
 
 </h2>

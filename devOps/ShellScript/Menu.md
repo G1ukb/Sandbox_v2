@@ -1,10 +1,10 @@
 <H1>Shell Script</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Shell Script Core](education%2FShellScriptCore.md) (TBD)
+* [Shell Script Core](education/ShellScriptCore.md) (TBD)
 
 </h2>

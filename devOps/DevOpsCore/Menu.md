@@ -3,6 +3,6 @@
 <h2>
 
 Topic list:
-* [DevOps Core](education%2FDevOpsCore.md) (TBD)
+* [DevOps Core](education/DevOpsCore.md) (TBD)
 
 </h2>

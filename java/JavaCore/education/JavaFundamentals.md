@@ -1,7 +1,7 @@
 <h1>Java Fundamentals</h1> 
 <h4> 
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](../Menu.md)
 
 </h4>
 
@@ -56,7 +56,6 @@ Other OOP principles
 <br>
 
 [//]: # (Overloading and overriding)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -79,7 +78,6 @@ but writes this methods own behavior
 <br>
 
 [//]: # (Is Java Completely OOP)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -94,7 +92,6 @@ No, because java contains primitives, and they, in turn, are not objects
 <br>
 
 [//]: # (Primitives and Reference Data Types)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -125,7 +122,6 @@ Primitive data types:
 <br>
 
 [//]: # (Changing the value of a primitive, field, reference type when passing to a method)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -142,7 +138,6 @@ the area in memory where this object is stored.
 <br>
 
 [//]: # (Constructors + initialization blocks)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -168,7 +163,6 @@ constructor
 <br>
 
 [//]: # (In what order are they initialized)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -190,7 +184,6 @@ fields
 <br>
 
 [//]: # (Can a static constructor initialize regular fields No)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -206,7 +199,6 @@ Yes, if you create an object with your hands
 <br>
 
 [//]: # (Can an initialization block be described if there is nothing at all in the class except the constructor (Why?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -222,7 +214,6 @@ For logging
 <br>
 
 [//]: # (Java class types)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -237,7 +228,6 @@ Interface - Abstract class - Ordinary class - Enum
 <br>
 
 [//]: # (Class, method, field, access modifiers)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -281,7 +271,6 @@ With the **volatile** modifier, things are a bit more complicated. Guaranteed va
 <br>
 
 [//]: # (Object.class)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -312,7 +301,6 @@ Multithreading
 <br>
 
 [//]: # (How does clone work?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -331,7 +319,6 @@ therefore refers to the same object.
 <br>
 
 [//]: # (Rules for redefining hashcode and equals)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -359,7 +346,6 @@ For example, a.equals(null) should return false.
 <br>
 
 [//]: # (Class.class)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -394,7 +380,6 @@ methods are also provided for determining the class type
 <br>
 
 [//]: # (Immutable object)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -426,7 +411,6 @@ What gives us Immutable object:
 <br>
 
 [//]: # (String)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -467,7 +451,6 @@ At the same time, there are two of them for dividing into work in a multi-thread
 <br> 
 
 [//]: # (Java Comparable vs Comparator)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -553,7 +536,6 @@ Use `Comparator` when you need a more flexible and customizable sorting logic.
 <br>
 
 [//]: # (What are Immutable Classes?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
@@ -634,3 +616,16 @@ public final class Person {
 
 </details>
 <br>
+
+Примитивы против объектов 
+Почему язык Java
+Основные особенности языка java
+package private vs protected
+can class be private / inner class
+interface vs abc
+dynamic polymorfism in java
+How do Java classes and object interract
+what are the benefits of using interfaces in java
+how do constructors diff from methods
+how do java packages organise code
+what are the diff between shallow and deep cloning

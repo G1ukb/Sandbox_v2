@@ -1,22 +1,22 @@
 <H1>Java Core</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Annotations](education%2FAnnotations.md) (TBD)
-* [Classloading](education%2FClassloading.md) (TBD)
-* [Collections](education%2FCollections.md) (TBD) 
-* [Exceptions](education%2FExceptions.md) (TBD)
-* [Generics](education%2FGenerics.md)
-* [IO NIO](education%2FIO_NIO.md) (TBD)
-* [Java String](education%2FJavaString.md)
-* [JVM JMM GC](education%2FJVM_JMM_GC.md) (TBD)
-* [JavaFundamentals](education%2FJavaFundamentals.md) (TBD)
-* [Multithreading](education%2FMultithreading.md)
-* [NestedClasses](education%2FNestedClasses.md) (TBD)
-* [Reflection](education%2FReflection.md) (TBD)
-* [Serialization](education%2FSerialization.md) (TBD)
+* [Annotations](education/Annotations.md)
+* [Classloading](education/Classloading.md)
+* [Collections](education/Collections.md) (TBD) 
+* [Exceptions](education/Exceptions.md) (TBD)
+* [Generics](education/Generics.md) (TBD)
+* [IO NIO](education/IO_NIO.md) (TBD)
+* [Java String](education/JavaString.md)
+* [JVM JMM GC](education/JVM_JMM_GC.md) (TBD)
+* [JavaFundamentals](education/JavaFundamentals.md) (TBD)
+* [Multithreading](education/Multithreading.md)
+* [NestedClasses](education/NestedClasses.md) (TBD)
+* [Reflection](education/Reflection.md) (TBD)
+* [Serialization](education/Serialization.md) (TBD)
 
 </h2>

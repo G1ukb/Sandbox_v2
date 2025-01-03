@@ -1,11 +1,11 @@
 <H1>Soft Processes</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [SoftSkillsQuestions](education%2FSoftSkillsQuestions.md) (TBD)
-* [TeamWork](education%2FTeamWork.md) (TBD)
+* [SoftSkillsQuestions](education/SoftSkillsQuestions.md) (TBD)
+* [TeamWork](education/TeamWork.md) (TBD)
 
 </h2>

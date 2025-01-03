@@ -1,24 +1,24 @@
 <h1>Algorithm</h1> 
 <h4>
 
-[Back to menu](..%2FMenu.md)
+[Back to menu](../Menu.md)
 
 </h4>
 
 - Is it a graph?
     - |Yes| Is it a binary or graph tree?
-        - |Yes| [DFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDFS.java)
+        - |Yes| [DFS](../src/main/java/algorithm/DFS.java)
         - |No| Is a problem related to directed or acyclic graphs?
-            - |Yes| [TopologicalSort](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FTopologicalSort.java)
+            - |Yes| [TopologicalSort](../src/main/java/algorithm/TopologicalSort.java)
             - |No| Is the problem related to the shortest path?
                 - |Yes| Is the graph Weighted? Cost between nodes
-                    - |Yes| [Dijkstra](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDijkstra.java)
-                    - |No| [BFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FBFS.java)
+                    - |Yes| [Dijkstra](../src/main/java/algorithm/Dijkstra.java)
+                    - |No| [BFS](../src/main/java/algorithm/BFS.java)
                 - |No| Does the problem involve connectivity?
-                    - |Yes| [Disjoint](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDisjoint.java)
+                    - |Yes| [Disjoint](../src/main/java/algorithm/Disjoint.java)
                     - |No| Does the problem have small constraints?
-                        - |No| [BFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FBFS.java)
-                        - |Yes| [DFS](..%2Fsrc%2Fmain%2Fjava%2Falgorithm%2FDFS.java)/Backtracking
+                        - |No| [BFS](../src/main/java/algorithm/BFS.java)
+                        - |Yes| [DFS](../src/main/java/algorithm/DFS.java)/Backtracking
 
     - |No| Need to solve for the smallest / largest?
         - |Yes| Heap/Sorting

@@ -1,10 +1,10 @@
 <H1>Kotlin</h1>
 
-[Back to main menu](..%2F..%2FREADME.md)
+[Back to main menu](../../README.md)
 
 <h2>
 
 Topic list:
-* [Kotlin Novice Questions](education%2FKotlinNovice.md) (TBD)
+* [Kotlin Novice Questions](education/KotlinNovice.md) (TBD)
 
 </h2>
