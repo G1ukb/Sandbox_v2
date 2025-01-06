@@ -13,9 +13,9 @@ Topic list:
 * [IO NIO](education/IO_NIO.md) (TBD)
 * [Java String](education/JavaString.md)
 * [JVM JMM GC](education/JVM_JMM_GC.md) (TBD)
-* [JavaFundamentals](education/JavaFundamentals.md) (TBD)
+* [Java Fundamentals](education/JavaFundamentals.md)
 * [Multithreading](education/Multithreading.md)
-* [NestedClasses](education/NestedClasses.md) (TBD)
+* [Nested Classes](education/NestedClasses.md) (TBD)
 * [Reflection](education/Reflection.md) (TBD)
 * [Serialization](education/Serialization.md) (TBD)
 

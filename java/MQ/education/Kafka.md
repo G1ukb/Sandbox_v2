@@ -7,7 +7,6 @@
 
 [//]: # (What is Kafka, why is it important, 
         and what are the basic commands for interacting with Kafka?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>

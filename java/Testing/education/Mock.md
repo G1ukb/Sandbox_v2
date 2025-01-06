@@ -12,7 +12,6 @@
 
 [//]: # (Can you explain the difference between a mock, 
         a stub, and a spy in testing?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>

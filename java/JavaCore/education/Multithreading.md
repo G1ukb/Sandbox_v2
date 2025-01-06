@@ -6,7 +6,6 @@
 </h4>
 
 [//]: # (Can you explain what multithreading is in the context of Java?)
-
 <br>
 <details>
     <summary style="font-size: 25px;">
@@ -48,7 +47,6 @@ and passing an instance to a new Thread.
 <br>
 
 [//]: # (All possible ways to create a thread in Java?)
-
 <details>
     <summary style="font-size: 25px;">
         <b>
