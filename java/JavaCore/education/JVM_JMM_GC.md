@@ -5,6 +5,38 @@
 
 </h4>
 
+- What is the JVM and what is its primary role in the Java ecosystem?
+- What are the main components of the JVM?
+- Explain the structure of JVM memory (Heap, Stack, Metaspace, etc.).
+- What is garbage collection in Java and why is it important?
+- When is an object eligible for garbage collection?
+- How can you explicitly suggest garbage collection to the JVM?
+
+- Describe how class loading works in the JVM.
+- What are the different reference types in Java: strong, soft, weak, and phantom?
+- What are the main phases of garbage collection?
+- What is the difference between minor GC and major GC?
+- How do volatile and synchronized keywords relate to the Java Memory Model?
+- What is a data race and how does JMM prevent it?
+- Explain the happens-before relationship in the Java Memory Model.
+- What tools can be used to monitor JVM memory and GC activity (e.g., VisualVM, JConsole, jstat)?
+
+- What is the difference between Parallel GC, CMS (Concurrent Mark Sweep), G1, and ZGC?
+- When would you choose G1 GC over CMS or Parallel GC?
+- How does stop-the-world event impact application performance, and how do collectors handle it?
+- What are GC roots and how are they used during garbage collection?
+- How does the JVM ensure visibility and atomicity in a concurrent environment?
+- Explain how the JVM uses JIT compilation and how it impacts memory usage.
+
+- How would you select a GC strategy for a low-latency versus high-throughput system?
+- How do you debug and resolve memory leaks in a large Java application?
+- What steps do you take to diagnose OutOfMemoryError in production?
+
+- How does the JVM perform memory management differently on different platforms (Linux vs. Windows)?
+- Would you ever implement your own memory management layer in Java? When and why?
+- How does the JMM interact with CPU-level memory models and multi-core hardware?
+- What strategies do you use to model and predict JVM memory usage under stress?
+
 [//]: # (Can you explain the different types of Garbage Collectors in Java 
         and in what situations to use them?)
 <details>

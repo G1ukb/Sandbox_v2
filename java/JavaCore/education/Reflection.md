@@ -5,6 +5,26 @@
 
 </h4>
 
+- What is reflection in Java? In what package is it provided?
+- Why would a developer use Java reflection?
+- What is the difference between getDeclaredMethods() and getMethods()?
+- Can reflection be used to access private fields or methods? How?
+- What are the limitations or downsides of using reflection in Java?
+- Does reflection work with generic types? Why or why not?
+
+- What are the performance implications of using reflection?
+- How do annotations relate to reflection in Java?
+- What are some real-world use cases where Java reflection is commonly applied?
+
+- How does Java reflection enable dependency injection frameworks like Spring?
+- Describe a situation where misuse of reflection caused a bug or maintenance issue.
+- How does reflection affect testability and code readability?
+
+- How do modern frameworks (Spring, Hibernate) abstract and encapsulate reflection safely?
+- Would you design a critical system (e.g., financial transaction processing) with reflection-heavy logic? Why or why not?
+- What are the security implications of allowing reflection in untrusted environments like scripting APIs or web plugins?
+- What changes would you anticipate in Java reflection with the evolution of Project Valhalla, Panama, or Loom? *
+
 [//]: # (What is Java Reflection and what are its pros and cons?)
 <br>
 <details>

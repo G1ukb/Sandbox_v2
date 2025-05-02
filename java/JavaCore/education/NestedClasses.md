@@ -5,6 +5,37 @@
 
 </h4>
 
+- What is a nested class in Java? Why would you use one?
+- What are the different types of nested classes in Java?
+- What is the difference between a static nested class and a non-static (inner) class?
+- How do you create an instance of a non-static inner class from outside its outer class?
+- Can a nested class access private members of its enclosing class?
+- What is an anonymous inner class? When is it typically used?
+- Can a nested class have static members?
+
+- How does the memory model differ between static nested classes and non-static inner classes?
+- How does an anonymous inner class handle method overriding?
+- How do you pass parameters to an anonymous inner class?
+- What are some common use cases for static nested classes versus inner classes?
+- How do nested classes affect encapsulation and code readability?
+- Can an inner class extend another class or implement an interface?
+
+- What are the class file naming conventions for nested classes when compiled?
+- What are the implications of using nested classes in serialization?
+- Describe a real-world scenario where using a local inner class helped structure code better.
+- Can an inner class be declared abstract?
+- How can nested classes introduce memory leaks if not used carefully?
+- In terms of testability, what challenges do nested classes introduce, and how do you mitigate them?
+
+- How can nested classes impact modularity and separation of concerns?
+- Would you recommend the use of nested classes in a plugin-based architecture?
+
+- How do nested classes align with object-oriented principles like cohesion and coupling?
+- Would you use nested classes in domain models (e.g., in DDD)? Why or why not?
+- How do nested classes compare to Java’s record classes or sealed classes in Java 17+?
+- What serialization and deserialization challenges exist with nested and anonymous classes?
+- With the rise of modern frameworks and dependency injection, are nested classes still relevant for complex systems?
+
 [//]: # (Nested class types)
 
 <br>
