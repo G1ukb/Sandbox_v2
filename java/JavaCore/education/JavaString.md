@@ -5,6 +5,20 @@
 
 </h4>
 
+- What is a String in Java and how is it represented internally?
+- What does it mean that String is immutable in Java?
+- How do you create a String in Java? What is the difference between using a string literal and the new keyword?
+- What is the String pool and how does it affect memory usage?
+- What is the difference between == and .equals() when comparing strings?
+- Can you change the contents of a string after it is created? Why or why not?
+- How do StringBuilder and StringBuffer differ from String
+
+- Why is String used in hash-based collections like HashMap?
+- How does immutability of String make it suitable for security-sensitive contexts (e.g., keys, passwords)?
+- What does the intern() method do? When and why would you use it?
+- Why is concatenation inside a loop using + discouraged for large strings?
+- How is the hashCode() of a string calculated? Why is it cached? Can two different String objects have the same hash code?
+
 [//]: # (Can you explain the concept of String immutability in Java?)
 <details>
     <summary style="font-size: 25px;">

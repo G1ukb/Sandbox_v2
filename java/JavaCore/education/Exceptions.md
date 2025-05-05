@@ -5,6 +5,22 @@
 
 </h4>
 
+- What is an exception in Java? How is it different from an error?
+- What is the difference between checked and unchecked exceptions?
+- What is the parent class of all exceptions in Java?
+- What is the syntax of a try-catch block in Java?
+- How does the finally block work? Will it always execute? What happens if an exception is thrown in the finally block?
+- What happens if an exception is thrown but not caught?
+- How do you create and throw a custom exception in Java?
+- What is the purpose of the throw and throws keywords?
+- Can you catch multiple exceptions in a single catch block? How?
+- What is exception chaining and why would you use it?
+
+- When should you create a custom exception class?
+- What is a multi-catch block and what are its limitations?
+- How does exception handling work with try-with-resources?
+- Why can’t you catch Error or Throwable in most cases?
+
 [//]: # (Best practices for using exceptions)
 
 <br>

@@ -5,6 +5,28 @@
 
 </h4>
 
+- What are generics in Java and why are they used?
+- What problem do generics solve compared to using Object?
+- What is type inference in generics? How does the compiler infer types in generic methods?
+- What is the syntax for creating a List of Strings using generics?
+- What happens if you try to add an Integer to a List<String>?
+- What are the benefits of using generics in collections?
+- What is a raw type? Why should raw types be avoided?
+
+- What is a wildcard (?) in generics and when would you use it?
+- What does "producer extends, consumer super" (PECS) mean in the context of generics?
+- What is the difference between <? extends T> and <? super T>? Why can’t you add elements to a collection declared as List<? extends Number>?
+- Why can't you create generic arrays in Java?
+- What is the diamond operator <> and when can you use it?
+- How does generics work with Comparable and Comparator interfaces?
+
+- What are bridge methods and how do they relate to generics and polymorphism?
+- How do you decide when to use generics versus inheritance or interfaces in API design?
+- How do generics support type safety in domain-driven design (DDD)?
+
+- What improvements would you want to see in Java generics (e.g., specialization, type functions)?
+
+
 [//]: # (For what proposes generics was added into Java? )
 <details>
     <summary style="font-size: 25px;">

@@ -7,33 +7,51 @@
 
 ![img](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/03/hierarchy-of-collection-framework-in-java.webp)
 
-Что такое коллекции в Java?
-Что такое Collections Class и какие утилиты он предоставляет?
-Почему коллекции пришли на замену массивам?
-В какой ситуации использование массивов приоритетнее чем использование лист?
-Какие основные интерфейсы коллекций существуют в Java?
-Что такое Queue и какие его реализации существуют в Java?
-Какие есть различия между ArrayList и LinkedList?
-В чем особенности использования EnumSet?
-Какие проблемы могут возникнуть при использовании коллекций и как их решать?
-Какие есть способы оптимизации работы с коллекциями?
-Что такое Stream API и как он связан с коллекциями?
-Как можно перевернуть список в Java?
-Как проверить, является ли коллекция пустой?
-Как можно объединить две коллекции в одну?
-Как работает HashMap в Java?
-Что такое итератор и как он используется в коллекциях Java?
-В чем разница между fail-fast и fail-safe итераторами?
-Как можно синхронизировать коллекции в многопоточной среде?
-Что такое ConcurrentHashMap и в чем его особенности?
-Какие методы коллекций чаще всего используются и для чего?
-Как работает метод sort в Collections?
-Что такое компаратор и компербл?
-Как реализовать собственный компаратор для сортировки коллекций?
-Что такое Vector и в чем его отличия от других реализаций List?
-Что такое immutable коллекции и как их создать?
-Какие есть специфические коллекции для работы с примитивными типами данных?
+- What is the Java Collections Framework? Why is it important? 
+- Почему коллекции пришли на замену массивам?
+- В какой ситуации использование массивов приоритетнее чем использование лист?
+- What are the main interfaces in the Java Collections API?
+- What is the difference between List, Set, and Map?
+- В чем особенности использования EnumSet?
+- Что такое Queue и какие его реализации существуют в Java?
+- What is the difference between ArrayList and LinkedList?
+- How does a HashSet ensure uniqueness of elements?
+- How do you iterate over a List using a for-each loop?
+- В чем разница между fail-fast и fail-safe итераторами?
+- What is the difference between HashMap and TreeMap?
+- What happens when you insert a duplicate key in a HashMap?
+- What is the default capacity of an ArrayList and how does it grow?
+- How do you sort a List of strings alphabetically using Collections.sort()?
+- Какие проблемы могут возникнуть при использовании коллекций и как их решать?
+- Какие есть способы оптимизации работы с коллекциями?
+- Что такое Stream API и как он связан с коллекциями?
+- Как можно перевернуть список в Java?
+- Как проверить, является ли коллекция пустой?
+- Как можно объединить две коллекции в одну?
+- Как можно синхронизировать коллекции в многопоточной среде?
+- Что такое ConcurrentHashMap и в чем его особенности?
+- Что такое Vector и в чем его отличия от других реализаций List?
+- Что такое immutable коллекции и как их создать?
+- Какие есть специфические коллекции для работы с примитивными типами данных?
 
+- How is a HashMap implemented internally? What is the load factor in HashMap? What does it affect?
+- What is the time complexity of get() and put() in a HashMap? Another collections?
+- Why do equals() and hashCode() matter in collections like HashMap or HashSet?
+- What is a LinkedHashMap and when would you use it?
+- What are the main differences between TreeSet and HashSet?
+- How do Queue and Deque interfaces differ in usage?
+- How does Collections.synchronizedList() work internally?
+
+- How does Java handle hash collisions in a HashMap?
+- How does a TreeMap maintain order? What data structure does it use internally?
+- What are the benefits of using PriorityQueue and how does it work internally?
+- How do you remove duplicates from a list while preserving order?
+- How would you implement a Least Recently Used (LRU) cache using core Java collections?
+
+- What strategies would you use to benchmark and optimize collection-heavy code paths?
+- How do you design a system that performs billions of collection operations with minimal GC pressure?
+- Would you recommend using a Map with complex object keys? Under what conditions?
+- How do you store and index large-scale in-memory datasets using core collections?
 
 [//]: # (Can you explain what makes a good key for a HashMap in Java?)
 <details>
